@@ -1,0 +1,385 @@
+---
+layout: page
+title: "Insurance Coverage Gaps for MSPs | Breezy Risk Advisors"
+description: "Coverage fails when services, contract requirements, and policy language don't align. See the most common gaps and how to fix them."
+permalink: /coverage-gaps-framework/
+---
+
+<style>
+.coverage-one{
+  background: var(--bg-light);
+  padding: 84px 0 70px;
+}
+
+.coverage-one-inner{
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.coverage-one h1{
+  margin: 0 0 14px;
+  font-size: 46px;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  color: var(--primary);
+  font-weight: 900;
+  max-width: 920px;
+}
+
+.coverage-subhead{
+  margin: 0 0 18px;
+  color: var(--text-secondary);
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 860px;
+}
+
+.coverage-problem{
+  margin-top: 10px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+
+.coverage-problem p{
+  margin: 0 0 16px;
+  font-size: 17px;
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+
+.coverage-problem p:last-child{
+  margin-bottom: 0;
+}
+
+/* Framework block */
+.framework-block{
+  margin-top: 18px;
+  background: #fff;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.framework-block h2{
+  margin: 0 0 14px;
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--primary);
+  letter-spacing: -0.01em;
+}
+
+.framework-block p{
+  margin: 0 0 12px;
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.framework-block p:last-child{
+  margin-bottom: 0;
+}
+
+.framework-model{
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.framework-model .model-label{
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.framework-model ul{
+  margin: 0;
+  padding-left: 20px;
+  list-style: none;
+}
+
+.framework-model li{
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 6px;
+  position: relative;
+  padding-left: 8px;
+}
+
+.framework-model li::before{
+  content: '\2022';
+  position: absolute;
+  left: -12px;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* Mini gaps grid */
+.gaps-mini{
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.gap-mini{
+  background: #fff;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.25s;
+}
+
+/* Severity-based left border colors */
+.gap-mini:nth-child(1) {
+  border-left: 4px solid #DC2626;
+}
+
+.gap-mini:nth-child(2) {
+  border-left: 4px solid #F59E0B;
+}
+
+.gap-mini:nth-child(3) {
+  border-left: 4px solid #EAB308;
+}
+
+.gap-mini:hover{
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.07);
+}
+
+.gap-mini h3{
+  margin: 0 0 12px;
+  font-size: 17px;
+  font-weight: 900;
+  color: var(--primary);
+}
+
+.gap-mini p{
+  margin: 0;
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.coverage-bottom{
+  margin-top: 24px;
+}
+
+.coverage-takeaway{
+  background: rgba(10, 37, 64, 0.04);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px 24px;
+}
+
+.coverage-takeaway p{
+  margin: 0;
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.coverage-takeaway strong{
+  color: var(--primary);
+}
+
+/* CTA Section */
+.cgf-cta{
+  background: #0A2540;
+  width: 100%;
+  padding: 80px 0;
+}
+
+.cgf-cta-inner{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.cgf-cta-head{
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.cgf-cta-head h2{
+  font-size: 42px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.cgf-cta-head p{
+  font-size: 20px;
+  color: rgba(255,255,255,.9);
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.cgf-cta-card{
+  max-width: 520px;
+  margin: 0 auto;
+  background: rgba(255,255,255,.05);
+  border: 2px solid rgba(255,255,255,.15);
+  border-radius: 14px;
+  padding: 44px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.cgf-cta-card h3{
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 18px;
+}
+
+.cgf-cta-card p{
+  font-size: 16px;
+  color: rgba(255,255,255,.85);
+  line-height: 1.6;
+  margin-bottom: 26px;
+}
+
+.cgf-cta-card .btn-primary{
+  padding: 16px 36px;
+  font-size: 17px;
+}
+
+.cgf-cta-foot{
+  margin-top: 16px;
+  font-size: 13px;
+  color: rgba(255,255,255,.65);
+}
+
+/* Responsive */
+@media (max-width: 968px){
+  .coverage-one h1{ font-size: 36px; }
+  .gaps-mini{ grid-template-columns: 1fr; }
+  .cgf-cta-head h2{ font-size: 34px; }
+}
+
+@media (max-width: 768px){
+  .coverage-one{ padding: 70px 0 58px; }
+  .coverage-one h1{ font-size: 30px; }
+  .framework-block{ padding: 20px; }
+  .gap-mini{ padding: 20px; }
+  .cgf-cta-inner{ padding: 0 24px; }
+}
+</style>
+
+<!-- ONE-SCREEN EXECUTIVE BRIEF -->
+<section class="coverage-one">
+  <div class="container">
+    <div class="coverage-one-inner">
+
+      <h1>Insurance Coverage Gaps for MSPs</h1>
+
+      <div class="coverage-problem">
+        <p>
+          Most MSPs carry Tech E&O and Cyber insurance. Coverage failures are not accidental. They are structural.
+        </p>
+        <p>
+          Coverage fails when services, contract requirements, and policy language don't align. In denied claims and failed contract reviews, wording wins. Intent does not.
+        </p>
+      </div>
+
+      <!-- FRAMEWORK EXPLANATION -->
+      <div class="framework-block">
+        <h2>How the Coverage Gaps Framework Works</h2>
+
+        <p>
+          The Coverage Gaps Framework identifies where insurance fails for MSPs. It compares your services, contract requirements, and policy language to flag misalignment before claims or contract reviews expose it.
+        </p>
+
+        <div class="framework-model">
+          <p class="model-label">
+            The framework operates as a three-way alignment check:
+          </p>
+          <ul>
+            <li>Your services vs. policy coverage</li>
+            <li>Contract requirements vs. policy limits and terms</li>
+            <li>Claims scenarios vs. policy response</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- THE MOST COMMON GAPS -->
+      <h2 style="margin-top:32px;font-size:20px;font-weight:900;color:var(--primary)">
+        The Most Common Coverage Gaps
+      </h2>
+
+      <div class="gaps-mini">
+        <div class="gap-mini">
+          <h3>1) Covered services do not match your work</h3>
+          <p>Policies cover "IT consulting" but omit managed security services, EDR/XDR management, or incident response. <br>Claims are denied because the service was never explicitly covered.</p>
+        </div>
+
+        <div class="gap-mini">
+          <h3>2) Liability stops at your boundary</h3>
+          <p>Cyber policies cover breaches of YOUR network. MSPs operate inside client environments with admin access to dozens of networks. <br>One breach of a client system triggers multiple third-party lawsuits that fall outside standard coverage.</p>
+        </div>
+
+        <div class="gap-mini">
+          <h3>3) Limits fail enterprise contracts</h3>
+          <p>MSAs require specific limits, wording, and deductibles. <br>Many MSPs discover non-compliance days before go-live when certificates are audited.</p>
+        </div>
+      </div>
+
+      <div class="coverage-bottom">
+        <div class="coverage-takeaway">
+          <p>
+            <strong>If even one of these gaps applies to your MSP, coverage may fail.</strong>
+            Most gaps are fixable before contract reviews or claims expose them.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:24px">
+      <a href="{{ '/insights/msp-coverage-gaps/' | relative_url }}" style="
+           color: var(--accent);
+           font-size:18px;
+           font-weight:600;
+           text-decoration:none;
+         " onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">
+        View Complete Coverage Gaps Analysis &rarr;
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cgf-cta">
+  <div class="cgf-cta-inner">
+
+    <div class="cgf-cta-head">
+      <h2>Do Your Policies Actually Match Your Work, Contracts, and Claims?</h2>
+      <p>
+        Coverage fails when tested by contract reviews or claims. Validate alignment before a claim or contract review exposes the gaps.
+      </p>
+    </div>
+
+    <div class="cgf-cta-card">
+      <h3>Risk Intelligence Report</h3>
+      <p>
+        A focused review of your Tech E&O, Cyber, and contract requirements, identifying where coverage will respond, be disputed, or fail.
+      </p>
+      <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary">
+        Request a Risk Intelligence Report &rarr;
+      </a>
+      <div class="cgf-cta-foot">
+        No obligation. Most MSPs use the report to validate existing coverage.
+      </div>
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,1308 @@
+---
+layout: page
+title: "MSP Coverage Gap Assessment | Breezy Risk Advisors"
+description: "Quick 10-question assessment to identify coverage gaps in your cyber insurance and Tech E&O policies. Free, no email required."
+permalink: /msp-insurance-assessment/
+---
+
+<style>
+.assessment-page { padding-top: 20px; }
+
+#coverage-gap-quiz {
+    --primary:        #0A2540;
+    --accent:         #00D4AA;
+    --accent-hover:   #00f5c3;
+    --bg-light:       #f8f9fa;
+    --text-primary:   #0A2540;
+    --text-secondary: #555;
+    --border:         #e2e8f0;
+    --risk-red:       #DC2626;
+    --risk-orange:    #F59E0B;
+    --risk-yellow:    #EAB308;
+    --risk-green:     #00D4AA;
+}
+
+#coverage-gap-quiz {
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    max-width: 700px;
+    margin: 40px auto 0;
+    padding: 48px 44px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 24px rgba(10, 37, 64, 0.08);
+    line-height: 1.7;
+    color: var(--text-secondary);
+    position: relative;
+    z-index: 1;
+}
+#coverage-gap-quiz * { box-sizing: border-box; }
+
+#coverage-gap-quiz h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 0 0 8px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+}
+#coverage-gap-quiz h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 0 0 20px;
+    line-height: 1.25;
+}
+#coverage-gap-quiz h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 24px 0 12px;
+}
+#coverage-gap-quiz p {
+    font-size: 17px;
+    color: var(--text-secondary);
+    margin: 0 0 18px;
+    line-height: 1.7;
+}
+
+#coverage-gap-quiz .quiz-screen        { display: none; }
+#coverage-gap-quiz .quiz-screen.active { display: block; }
+
+#coverage-gap-quiz .intro-subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--accent);
+    margin: 0 0 20px;
+}
+#coverage-gap-quiz .intro-body {
+    font-size: 17px;
+    color: var(--text-secondary);
+    margin: 0 0 28px;
+    line-height: 1.7;
+}
+#coverage-gap-quiz .intro-features {
+    background: var(--bg-light);
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin: 0 0 28px;
+}
+#coverage-gap-quiz .intro-features strong {
+    display: block;
+    color: var(--primary);
+    font-size: 17px;
+    margin-bottom: 16px;
+}
+#coverage-gap-quiz .intro-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#coverage-gap-quiz .intro-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 14px;
+    font-size: 16px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+#coverage-gap-quiz .intro-features li:last-child { margin-bottom: 0; }
+#coverage-gap-quiz .intro-features li::before {
+    content: '';
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    margin-top: 2px;
+    background: var(--accent);
+    border-radius: 50%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%230A2540' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#coverage-gap-quiz .intro-meta {
+    font-size: 15px;
+    color: var(--text-secondary);
+    margin: 0 0 32px;
+}
+#coverage-gap-quiz .intro-credibility {
+    background: rgba(0, 212, 170, 0.06);
+    border-left: 3px solid var(--accent);
+    padding: 16px 20px;
+    margin: 0 0 28px;
+    font-size: 15px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+#coverage-gap-quiz .progress-label {
+    font-size: 14px;
+    color: var(--text-secondary);
+    font-weight: 500;
+    text-align: right;
+    margin-bottom: 8px;
+}
+#coverage-gap-quiz .progress-track {
+    background: var(--border);
+    border-radius: 8px;
+    height: 6px;
+    margin-bottom: 32px;
+    overflow: hidden;
+}
+#coverage-gap-quiz .progress-fill {
+    background: var(--accent);
+    height: 100%;
+    border-radius: 8px;
+    transition: width 0.35s ease;
+}
+
+#coverage-gap-quiz .question-tag {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 8px;
+}
+#coverage-gap-quiz .question-text {
+    font-size: 21px;
+    font-weight: 700;
+    color: var(--primary);
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+#coverage-gap-quiz .question-hint {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 24px;
+    font-style: italic;
+}
+
+#coverage-gap-quiz .options-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 28px;
+}
+#coverage-gap-quiz .option-item { margin-bottom: 10px; }
+#coverage-gap-quiz .option-label {
+    display: flex;
+    align-items: flex-start;
+    padding: 16px 20px;
+    background: var(--bg-light);
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s, box-shadow 0.2s, transform 0.15s;
+}
+#coverage-gap-quiz .option-label:hover {
+    border-color: var(--accent);
+    background: rgba(0, 212, 170, 0.04);
+    transform: translateY(-1px);
+}
+#coverage-gap-quiz .option-label.selected {
+    border-color: var(--accent);
+    background: rgba(0, 212, 170, 0.08);
+    box-shadow: 0 3px 10px rgba(0, 212, 170, 0.15);
+}
+#coverage-gap-quiz .option-label input {
+    margin-right: 14px;
+    margin-top: 3px;
+    accent-color: var(--accent);
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+#coverage-gap-quiz .option-text {
+    font-size: 16px;
+    color: var(--text-primary);
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+#coverage-gap-quiz .nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 24px;
+}
+#coverage-gap-quiz .nav-buttons .btn-back { visibility: hidden; }
+#coverage-gap-quiz .nav-buttons.show-back .btn-back { visibility: visible; }
+
+#coverage-gap-quiz .btn {
+    display: inline-block;
+    padding: 16px 32px;
+    font-size: 17px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.25s, transform 0.15s, box-shadow 0.25s;
+}
+#coverage-gap-quiz .btn-primary {
+    background: var(--accent);
+    color: var(--primary);
+    box-shadow: 0 4px 20px rgba(0, 212, 170, 0.3);
+}
+#coverage-gap-quiz .btn-primary:hover {
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(0, 212, 170, 0.4);
+}
+#coverage-gap-quiz .btn-primary:disabled {
+    background: var(--border);
+    color: #999;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+#coverage-gap-quiz .btn-back {
+    background: var(--bg-light);
+    color: var(--text-primary);
+    border: 2px solid var(--border);
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+}
+#coverage-gap-quiz .btn-back:hover {
+    border-color: var(--primary);
+    background: #fff;
+}
+
+#coverage-gap-quiz .lead-capture {
+    text-align: center;
+}
+#coverage-gap-quiz .lead-capture p {
+    font-size: 17px;
+    margin-bottom: 28px;
+}
+#coverage-gap-quiz .lead-form {
+    background: var(--bg-light);
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    padding: 32px;
+    margin-bottom: 24px;
+    text-align: left;
+}
+#coverage-gap-quiz .form-field {
+    margin-bottom: 20px;
+}
+#coverage-gap-quiz .form-field:last-child {
+    margin-bottom: 0;
+}
+#coverage-gap-quiz .form-field label {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+#coverage-gap-quiz .form-field input {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    background: #fff;
+    color: var(--text-primary);
+    transition: border-color 0.2s;
+}
+#coverage-gap-quiz .form-field input:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+#coverage-gap-quiz .form-notice {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-top: 16px;
+}
+#coverage-gap-quiz .form-error {
+    color: var(--risk-red);
+    font-size: 14px;
+    margin-top: 16px;
+    display: none;
+}
+
+#coverage-gap-quiz .score-block {
+    background: var(--primary);
+    border-radius: 14px;
+    padding: 40px 32px;
+    text-align: center;
+    margin-bottom: 28px;
+}
+#coverage-gap-quiz .score-number {
+    font-size: 68px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 6px;
+    font-family: 'JetBrains Mono', monospace;
+}
+#coverage-gap-quiz .score-number .score-denom {
+    font-size: 22px;
+    font-weight: 400;
+    opacity: 0.7;
+    font-family: 'DM Sans', sans-serif;
+}
+#coverage-gap-quiz .score-caption {
+    font-size: 16px;
+    color: rgba(255,255,255,0.75);
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+#coverage-gap-quiz .risk-badge {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+#coverage-gap-quiz .risk-badge.lower      { background: rgba(0,212,170,0.2);   color: var(--risk-green);  }
+#coverage-gap-quiz .risk-badge.moderate    { background: rgba(234,179,8,0.2);   color: var(--risk-yellow); }
+#coverage-gap-quiz .risk-badge.significant { background: rgba(245,158,11,0.2);  color: var(--risk-orange); }
+#coverage-gap-quiz .risk-badge.high        { background: rgba(220,38,38,0.2);   color: var(--risk-red);    }
+
+#coverage-gap-quiz .score-interpretation {
+    font-size: 17px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 28px;
+}
+#coverage-gap-quiz .score-interpretation strong { color: var(--primary); }
+
+#coverage-gap-quiz .assessment-disclaimer {
+    font-size: 15px;
+    color: var(--text-secondary);
+    font-style: italic;
+    background: var(--bg-light);
+    border-left: 3px solid var(--border);
+    padding: 16px 20px;
+    margin: 0 0 32px;
+    line-height: 1.7;
+}
+
+#coverage-gap-quiz .gaps-section h3 { margin-top: 0; }
+#coverage-gap-quiz .gap-card {
+    background: var(--bg-light);
+    border: 2px solid var(--border);
+    border-radius: 0 10px 10px 0;
+    padding: 20px 24px;
+    margin-bottom: 12px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+#coverage-gap-quiz .gap-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+#coverage-gap-quiz .gap-card.severity-red    { border-left: 4px solid var(--risk-red);    }
+#coverage-gap-quiz .gap-card.severity-orange { border-left: 4px solid var(--risk-orange); }
+#coverage-gap-quiz .gap-card.severity-yellow { border-left: 4px solid var(--risk-yellow); }
+#coverage-gap-quiz .gap-card h4 {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 0 0 6px;
+}
+#coverage-gap-quiz .gap-card p {
+    font-size: 15px;
+    color: var(--text-secondary);
+    margin: 0;
+    line-height: 1.6;
+}
+
+#coverage-gap-quiz .results-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 28px 0;
+}
+#coverage-gap-quiz .btn-outline {
+    background: var(--bg-light);
+    color: var(--text-primary);
+    border: 2px solid var(--border);
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s, transform 0.15s;
+}
+#coverage-gap-quiz .btn-outline:hover {
+    border-color: var(--accent);
+    background: #fff;
+    transform: translateY(-1px);
+}
+
+#coverage-gap-quiz .cta-box {
+    background: var(--primary);
+    border-radius: 14px;
+    padding: 40px 36px;
+    text-align: center;
+    margin-top: 32px;
+}
+#coverage-gap-quiz .cta-box h3 {
+    color: #fff;
+    font-size: 22px;
+    margin: 0 0 12px;
+}
+#coverage-gap-quiz .cta-box p {
+    color: rgba(255,255,255,0.8);
+    font-size: 16px;
+    max-width: 460px;
+    margin: 0 auto 24px;
+    line-height: 1.6;
+}
+#coverage-gap-quiz .cta-box .btn-primary { color: var(--primary); }
+#coverage-gap-quiz .cta-box .cta-note {
+    color: rgba(255,255,255,0.55);
+    font-size: 13px;
+    margin: 14px 0 0;
+}
+#coverage-gap-quiz .cta-box .cta-contact {
+    color: rgba(255,255,255,0.7);
+    font-size: 15px;
+    margin: 20px 0 0;
+}
+#coverage-gap-quiz .cta-box .cta-contact a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+}
+#coverage-gap-quiz .cta-box .cta-contact a:hover {
+    text-decoration: underline;
+}
+
+#coverage-gap-quiz .retake-link {
+    display: block;
+    text-align: center;
+    margin-top: 28px;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+#coverage-gap-quiz .retake-link a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+}
+#coverage-gap-quiz .retake-link a:hover { text-decoration: underline; }
+
+@media (max-width: 600px) {
+    #coverage-gap-quiz {
+        padding: 28px 22px;
+        border-radius: 0;
+        margin: 20px 0 0;
+    }
+    #coverage-gap-quiz h1  { font-size: 24px; }
+    #coverage-gap-quiz h2  { font-size: 22px; }
+    #coverage-gap-quiz .question-text { font-size: 19px; }
+    #coverage-gap-quiz .score-number   { font-size: 52px; }
+    #coverage-gap-quiz .score-block    { padding: 28px 20px; }
+    #coverage-gap-quiz .cta-box        { padding: 28px 20px; }
+    #coverage-gap-quiz .nav-buttons { flex-direction: column-reverse; }
+    #coverage-gap-quiz .nav-buttons .btn { width: 100%; text-align: center; }
+    #coverage-gap-quiz .results-actions { flex-direction: column; align-items: center; }
+}
+</style>
+
+<section class="assessment-page" style="padding: 40px 0 80px; background: var(--bg-light);">
+<div style="display: flex; justify-content: center; width: 100%;">
+<div id="coverage-gap-quiz">
+
+    <div id="screen-intro" class="quiz-screen active">
+        <h1>Do Your Policies Actually Cover What You Do?</h1>
+        <p class="intro-subtitle">The MSP Coverage Gap Assessment</p>
+
+        <p class="intro-body">
+            Most MSPs carry insurance they think protects them. But most policies have gaps that only show up when a contract review or a real claim tests them.
+        </p>
+        <p class="intro-body">
+            Drawing from years of policy analysis and real claim disputes, this quick assessment helps you identify coverage gaps before they find you.
+        </p>
+
+        <div class="intro-features">
+            <strong>In 3 minutes, you'll find out:</strong>
+            <ul>
+                <li>Which of your services might not be covered when it matters</li>
+                <li>Where your client contracts and your insurance don't line up</li>
+                <li>Whether your insurance would actually pay out during a real incident</li>
+            </ul>
+        </div>
+
+        <p class="intro-meta">10 questions | About 3 minutes | No email required</p>
+
+        <button class="btn btn-primary" id="start-quiz-btn">Start Assessment</button>
+    </div>
+
+    <div id="screen-question" class="quiz-screen">
+        <div class="progress-label">Question <span id="current-q">1</span> of 10</div>
+        <div class="progress-track">
+            <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+        </div>
+
+        <div class="question-tag">Question <span id="q-num">1</span></div>
+        <div class="question-text" id="q-text"></div>
+        <div class="question-hint" id="q-hint"></div>
+
+        <ul class="options-list" id="options-list"></ul>
+
+        <div class="nav-buttons" id="nav-buttons">
+            <button class="btn btn-back" id="back-btn">Back</button>
+            <button class="btn btn-primary" id="next-btn" disabled>Next</button>
+        </div>
+    </div>
+
+    <div id="screen-lead-capture" class="quiz-screen">
+        <div class="lead-capture">
+            <h2>Where Should We Send Your Results?</h2>
+            <p>Get your personalized coverage gap report with specific recommendations.</p>
+
+            <div class="lead-form">
+                <div class="form-field">
+                    <label for="lead-name">Name</label>
+                    <input type="text" id="lead-name" placeholder="Your name" required>
+                </div>
+                <div class="form-field">
+                    <label for="lead-email">Email</label>
+                    <input type="email" id="lead-email" placeholder="your@email.com" required>
+                </div>
+            </div>
+
+            <p class="form-error" id="form-error">Please enter both your name and email.</p>
+            <p class="form-notice">Your information stays with us. No spam.</p>
+
+            <button class="btn btn-primary" id="submit-lead-btn">Show My Results</button>
+        </div>
+    </div>
+
+    <div id="screen-results" class="quiz-screen">
+        <h2>Your Coverage Gap Assessment Results</h2>
+
+        <div class="score-block">
+            <div class="score-number" id="score-value">
+                &#8212;<span class="score-denom"> / 100</span>
+            </div>
+            <div class="score-caption">Coverage Protection Score</div>
+            <div class="risk-badge" id="risk-badge">Calculating&#8230;</div>
+        </div>
+
+        <div class="score-interpretation" id="score-interpretation"></div>
+
+        <p class="assessment-disclaimer"><strong>Disclaimer:</strong> This assessment provides a high-level snapshot of potential coverage gaps based on your responses. It is not a substitute for a thorough policy review and may not capture all gaps or nuances in your specific situation.</p>
+
+        <div class="gaps-section" id="gaps-section">
+            <h3>Gaps Identified</h3>
+            <div id="gaps-list"></div>
+        </div>
+
+        <div class="results-actions">
+            <button class="btn btn-outline" id="download-btn">Download PDF Report</button>
+        </div>
+
+        <div class="cta-box">
+            <h3>Want to Close These Gaps?</h3>
+            <p>Get a thorough assessment of your insurance and contractual obligations with a Risk Intelligence Report, identifying where coverage will respond, be disputed, or fail.</p>
+            <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary" id="cta-request-btn">Request a Risk Intelligence Report</a>
+            <p class="cta-note">No obligation. Most firms use the report to validate existing coverage.</p>
+            <p class="cta-contact">Have questions? <a href="{{ '/contact/' | relative_url }}">Get in touch</a></p>
+        </div>
+
+        <div class="retake-link">
+            <a href="#" id="retake-btn">Retake the assessment</a>
+        </div>
+    </div>
+
+</div>
+</div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" async></script>
+<script>
+(function () {
+  "use strict";
+
+  var EMAILJS_PUBLIC_KEY = "sOiOcAKgFW5frCaOm";
+  var EMAILJS_SERVICE_ID = "service_a41qbtg";
+  var EMAILJS_TEMPLATE_ID = "template_og2qpgh";
+  var BREEZY_LOGO_URL = "{{ '/assets/images/breezy-logo.png' | relative_url }}";
+  var BREEZY_INTERNAL_NOTIFY = "contact@breezyins.com";
+  var BREEZY_PUBLIC_SITE = "www.breezyins.com";
+  var QUIZ_NAME = "MSP Coverage Gap Assessment";
+  var TOTAL_QUESTIONS = 10;
+
+  function $(id) { return document.getElementById(id); }
+
+  function nowIsoDate_() {
+    var d = new Date();
+    var y = d.getFullYear();
+    var m = String(d.getMonth() + 1).padStart(2, "0");
+    var day = String(d.getDate()).padStart(2, "0");
+    return y + "-" + m + "-" + day;
+  }
+
+  function sanitizeFilenamePart_(s) {
+    return (String(s || "").trim().replace(/[^a-zA-Z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 60)) || "Lead";
+  }
+
+  function te(name, params) {
+    try { if (typeof gtag !== "undefined") gtag("event", name, params); } catch (e) {}
+  }
+
+  var emailJsInited = false;
+  function initEmailJs_() {
+    if (emailJsInited || !window.emailjs) return;
+    window.emailjs.init(EMAILJS_PUBLIC_KEY);
+    emailJsInited = true;
+  }
+
+  function sendEmailNotification_(templateParams) {
+    initEmailJs_();
+    if (!window.emailjs) return;
+    window.emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
+      .then(function(r) { console.log("QUIZ: EmailJS success", r.status); })
+      .catch(function(e) { console.warn("QUIZ: EmailJS failed", e); });
+  }
+
+  var BREEZY_LOGO_DATA_URL = null;
+
+  async function loadLogoDataUrl_() {
+    if (BREEZY_LOGO_DATA_URL) return BREEZY_LOGO_DATA_URL;
+    try {
+      var resp = await fetch(BREEZY_LOGO_URL, { cache: "force-cache" });
+      if (!resp.ok) throw new Error("Logo fetch failed");
+      var blob = await resp.blob();
+      return await new Promise(function(resolve, reject) {
+        var r = new FileReader();
+        r.onload = function() { BREEZY_LOGO_DATA_URL = r.result; resolve(r.result); };
+        r.onerror = reject;
+        r.readAsDataURL(blob);
+      });
+    } catch (e) {
+      console.warn("QUIZ: Logo fetch failed.", e);
+      return null;
+    }
+  }
+
+  var qd = {
+    questions: [
+      {
+        id: 1,
+        text: "How is your cyber insurance set up?",
+        hint: "Check your insurance documents. Cyber coverage works best as its own separate policy, not bundled inside a larger package.",
+        type: "single",
+        options: [
+          { id: "a", text: "It's its own separate policy", score: 10, gaps: [] },
+          { id: "b", text: "It's bundled with my general business insurance", score: 5, gaps: ["limited-coverage"] },
+          { id: "c", text: "I'm not sure how it's set up", score: 0, gaps: ["unknown-coverage"] },
+          { id: "d", text: "I don't have cyber insurance", score: 0, gaps: ["no-coverage"] }
+        ],
+        weight: 10
+      },
+      {
+        id: 2,
+        text: "Your cyber insurance and your Tech E&O insurance: are they from the same company?",
+        hint: "Tech E&O (also called Errors & Omissions or Professional liability) covers claims when your work causes problems for a client, like a misconfiguration that leads to downtime. Cyber insurance covers attacks on your own systems, like ransomware or a data breach. Having them with different carriers can create gaps when a claim involves both.",
+        type: "single",
+        options: [
+          { id: "a", text: "Yes, same company", score: 10, gaps: [] },
+          { id: "b", text: "No, different companies", score: 5, gaps: ["front-door"] },
+          { id: "c", text: "I don't have professional liability insurance", score: 3, gaps: [] },
+          { id: "d", text: "I'm not sure", score: 0, gaps: ["unknown-coverage"] }
+        ],
+        weight: 10
+      },
+      {
+        id: 3,
+        text: "Does your insurance policy specifically name the IT services you provide?",
+        hint: "General language like 'IT consulting' often won't cover specialized work like security testing or managed detection. The more specific, the better.",
+        type: "single",
+        options: [
+          { id: "a", text: "Yes, all my services are listed by name", score: 10, gaps: [] },
+          { id: "b", text: "Most of them are listed", score: 6, gaps: ["services-partial"] },
+          { id: "c", text: "It just says something general like 'IT services'", score: 3, gaps: ["services-not-listed"] },
+          { id: "d", text: "I haven't checked", score: 0, gaps: ["services-not-listed"] }
+        ],
+        weight: 9
+      },
+      {
+        id: 4,
+        text: "Which of these services do you provide? Select all that apply.",
+        hint: "Some services, like security assessments or compliance consulting, expose you to bigger claims if something goes wrong. Policies sometimes exclude these or cap the coverage.",
+        type: "multi",
+        options: [
+          { id: "a", text: "Penetration testing or security assessments", score: 0, gaps: ["services-not-listed"], flagService: true },
+          { id: "b", text: "Software development or custom code", score: 0, gaps: ["services-not-listed"], flagService: true },
+          { id: "c", text: "Cloud migration or cloud management", score: 0, gaps: [], flagService: false },
+          { id: "d", text: "Managed security services (SIEM, SOC, MDR)", score: 0, gaps: ["services-not-listed"], flagService: true },
+          { id: "e", text: "Compliance consulting (HIPAA, PCI, SOC 2)", score: 0, gaps: ["services-not-listed"], flagService: true },
+          { id: "f", text: "Data backup and recovery", score: 0, gaps: [], flagService: false },
+          { id: "g", text: "General IT support or help desk", score: 0, gaps: [], flagService: false }
+        ],
+        weight: 8,
+        scoring: "flag-based"
+      },
+      {
+        id: 5,
+        text: "If your contracts promise clients specific coverage or liability terms, does your insurance actually back that up?",
+        hint: "Most MSPs have indemnification or liability caps in their contracts. If your insurance doesn't match what you've promised, the gap comes out of your pocket.",
+        type: "single",
+        options: [
+          { id: "a", text: "Yes, I've verified my insurance covers what my contracts promise", score: 10, gaps: [] },
+          { id: "b", text: "I have liability terms in contracts but haven't checked if insurance covers them", score: 3, gaps: ["contractual-liability"] },
+          { id: "c", text: "My contracts don't include liability terms", score: 7, gaps: [] },
+          { id: "d", text: "I'm not sure what my contracts say", score: 0, gaps: ["contractual-liability"] }
+        ],
+        weight: 8
+      },
+      {
+        id: 6,
+        text: "If a cloud provider you rely on (AWS, Azure, Google Cloud) goes down and your clients are affected, does your insurance cover the losses?",
+        hint: "Most MSPs depend heavily on cloud infrastructure. But standard policies often don't cover outages at third-party providers. This gap surprises a lot of people.",
+        type: "single",
+        options: [
+          { id: "a", text: "Yes, outages at cloud providers are covered", score: 10, gaps: [] },
+          { id: "b", text: "I'm not sure", score: 3, gaps: ["third-party-outage"] },
+          { id: "c", text: "No, my policy only covers outages on my own systems", score: 0, gaps: ["third-party-outage"] },
+          { id: "d", text: "I don't rely much on cloud providers", score: 7, gaps: [] }
+        ],
+        weight: 8
+      },
+      {
+        id: 7,
+        text: "Does your policy cover ransomware payments, the money you'd pay to get your systems back?",
+        hint: "Ransomware coverage has gotten complicated. Even policies that say 'yes' often have conditions that reduce or eliminate the payout.",
+        type: "single",
+        options: [
+          { id: "a", text: "Yes, ransomware payments are fully covered", score: 10, gaps: [] },
+          { id: "b", text: "Yes, but with a lower limit than the rest of my policy", score: 6, gaps: ["ransomware-sublimit"] },
+          { id: "c", text: "No, ransomware payments are excluded", score: 0, gaps: ["ransomware-excluded"] },
+          { id: "d", text: "I'm not sure", score: 0, gaps: ["ransomware-fine-print"] }
+        ],
+        weight: 9
+      },
+      {
+        id: 8,
+        text: "If you proactively shut down your systems during an attack, to stop the attack from spreading, does your insurance cover the time your business is down?",
+        hint: "Shutting down early is often the right call. But some insurance policies only pay out if the systems were forced offline by the attack itself, not if you chose to shut them down.",
+        type: "single",
+        options: [
+          { id: "a", text: "Yes, this is covered whether the shutdown was forced or a choice", score: 10, gaps: [] },
+          { id: "b", text: "I'm not sure", score: 3, gaps: ["voluntary-shutdown"] },
+          { id: "c", text: "No, it only covers shutdowns forced by the attack", score: 0, gaps: ["voluntary-shutdown"] }
+        ],
+        weight: 7
+      },
+      {
+        id: 9,
+        text: "When did you last review your cyber and Tech E&O policy with your broker?",
+        hint: "A policy that made sense last year might have gaps today, especially if your business has changed.",
+        type: "single",
+        options: [
+          { id: "a", text: "Within the last 6 months", score: 10, gaps: [] },
+          { id: "b", text: "6 to 12 months ago", score: 7, gaps: [] },
+          { id: "c", text: "1 to 2 years ago", score: 4, gaps: ["outdated-review"] },
+          { id: "d", text: "More than 2 years ago or never", score: 0, gaps: ["outdated-review"] }
+        ],
+        weight: 6
+      },
+      {
+        id: 10,
+        text: "Has your business changed significantly since your current policy was written?",
+        hint: "Insurance policies don't update themselves. New services, more clients, and higher revenue often require coverage updates.",
+        type: "single",
+        options: [
+          { id: "a", text: "Yes, a lot has changed", score: 3, gaps: ["coverage-mismatch"] },
+          { id: "b", text: "Some things have changed", score: 6, gaps: ["coverage-mismatch"] },
+          { id: "c", text: "No, things are pretty stable", score: 10, gaps: [] },
+          { id: "d", text: "I'm not sure", score: 3, gaps: ["coverage-mismatch"] }
+        ],
+        weight: 6
+      }
+    ],
+    gaps: {
+      "front-door": { title: "The Front Door Problem", severity: "red", description: "When your cyber and professional liability policies are with different companies, each insurer may point to the other when a claim involves both a technology failure and a data breach. You end up fighting two companies instead of getting paid." },
+      "services-not-listed": { title: "Services Not Listed", severity: "orange", description: "Policies often only cover services that are specifically named. If your policy says 'IT consulting' but you do penetration testing or managed security, those services may not be covered when it matters." },
+      "services-partial": { title: "Partial Service Coverage", severity: "yellow", description: "Some of the services you provide may not be explicitly listed in your policy. It is worth checking whether your higher-risk services are specifically named." },
+      "contractual-liability": { title: "Contract vs. Policy Mismatch", severity: "orange", description: "Your client contracts may promise certain levels of coverage or responsibility. If your insurance does not match what your contracts say, you are on the hook for the difference." },
+      "third-party-outage": { title: "Cloud Outage Gap", severity: "orange", description: "Standard policies often do not cover losses from cloud provider or SaaS outages. If AWS, Azure, or a key vendor goes down and your clients suffer losses, you could be liable without coverage." },
+      "ransomware-fine-print": { title: "Ransomware Fine Print", severity: "yellow", description: "Many policies have hidden conditions around ransomware: lower limits, waiting periods, or exclusions that kick in under certain circumstances. The headline coverage number does not tell the whole story." },
+      "ransomware-sublimit": { title: "Ransomware Sublimit", severity: "yellow", description: "Your ransomware coverage has a lower limit than the rest of your policy. A serious ransomware event could cost more than this limit, leaving you to cover the rest." },
+      "ransomware-excluded": { title: "No Ransomware Coverage", severity: "red", description: "Your policy excludes ransomware payments entirely. Given how common ransomware attacks have become, this is a significant gap." },
+      "voluntary-shutdown": { title: "Voluntary Shutdown Gap", severity: "orange", description: "If you proactively shut down systems to stop an attack from spreading, your policy may not cover the resulting downtime, because the shutdown was your choice, not forced by the attacker." },
+      "limited-coverage": { title: "Bundled Cyber Coverage", severity: "orange", description: "Cyber coverage bundled with a general business policy typically offers less protection than a dedicated cyber policy: lower limits, more exclusions, and less flexibility." },
+      "unknown-coverage": { title: "Coverage Status Unknown", severity: "yellow", description: "Not knowing what your policy actually covers is a risk in itself. A policy review will clarify exactly what is covered and where the gaps are." },
+      "no-coverage": { title: "No Cyber Coverage", severity: "red", description: "Without cyber insurance, your business has no protection against breaches, ransomware, or liability claims from data incidents." },
+      "outdated-review": { title: "Policy Not Recently Reviewed", severity: "yellow", description: "Cyber threats evolve fast, and so does your business. A policy that has not been reviewed in over a year may have gaps that were not relevant when it was written." },
+      "coverage-mismatch": { title: "Policy Hasn't Kept Up", severity: "yellow", description: "Your business has grown or shifted, but your insurance may not reflect those changes. New services, more clients, and higher revenue often require updated coverage." }
+    }
+  };
+
+  var st = { cur: 0, ans: {}, res: null, lead: { name: "", email: "" } };
+
+  function ss(screenId) {
+    document.querySelectorAll("#coverage-gap-quiz .quiz-screen").forEach(function (s) {
+      s.classList.remove("active");
+    });
+    var el = $(screenId);
+    if (el) el.classList.add("active");
+  }
+
+  function sa() {
+    var q = qd.questions[st.cur];
+    var selected = document.querySelectorAll('input[name="q' + q.id + '"]:checked');
+
+    if (q.type === "multi") {
+      st.ans[q.id] = Array.prototype.map.call(selected, function (x) { return x.value; });
+    } else {
+      st.ans[q.id] = selected[0] ? selected[0].value : null;
+    }
+
+    var hasAnswer = q.type === "multi" ? (st.ans[q.id] && st.ans[q.id].length > 0) : !!st.ans[q.id];
+    $("next-btn").disabled = !hasAnswer;
+  }
+
+  function rq() {
+    var q = qd.questions[st.cur];
+    if (!q) return;
+
+    var p = Math.round((st.cur / TOTAL_QUESTIONS) * 100);
+
+    $("current-q").textContent = st.cur + 1;
+    $("q-num").textContent = st.cur + 1;
+    $("progress-fill").style.width = p + "%";
+    $("q-text").textContent = q.text;
+    $("q-hint").textContent = q.hint || "";
+
+    var list = $("options-list");
+    var inputType = q.type === "multi" ? "checkbox" : "radio";
+    var saved = st.ans[q.id];
+    list.innerHTML = "";
+
+    q.options.forEach(function (opt) {
+      var checked = q.type === "multi" ? (saved && saved.indexOf(opt.id) !== -1) : saved === opt.id;
+
+      var li = document.createElement("li");
+      li.className = "option-item";
+      li.innerHTML = '<label class="option-label ' + (checked ? "selected" : "") +
+        '"><input type="' + inputType + '" name="q' + q.id + '" value="' + opt.id + '"' +
+        (checked ? " checked" : "") + ' /><span class="option-text">' + opt.text + "</span></label>";
+
+      var inp = li.querySelector("input");
+      var lbl = li.querySelector("label");
+
+      inp.addEventListener("change", function () {
+        if (q.type === "multi") {
+          lbl.classList.toggle("selected", inp.checked);
+        } else {
+          list.querySelectorAll(".option-label").forEach(function (x) { x.classList.remove("selected"); });
+          lbl.classList.add("selected");
+        }
+        sa();
+      });
+
+      list.appendChild(li);
+    });
+
+    $("nav-buttons").classList.toggle("show-back", st.cur > 0);
+    sa();
+  }
+
+  function sq() {
+    st.cur = 0;
+    st.ans = {};
+    st.res = null;
+    st.lead = { name: "", email: "" };
+    te("quiz_start", { quiz_name: QUIZ_NAME });
+    ss("screen-question");
+    rq();
+  }
+
+  function nq() {
+    if (st.cur < qd.questions.length - 1) {
+      st.cur++;
+      rq();
+    } else {
+      ss("screen-lead-capture");
+    }
+  }
+
+  function pq() {
+    if (st.cur > 0) { st.cur--; rq(); }
+  }
+
+  function computeRiskLabel_(score) {
+    if (score >= 80) return "Lower Risk";
+    if (score >= 60) return "Moderate Gaps";
+    if (score >= 40) return "Significant Gaps";
+    return "High Risk";
+  }
+
+  function sr() {
+    var ts = 0, ms = 0, ig = {};
+
+    qd.questions.forEach(function (q) {
+      var a = st.ans[q.id];
+      ms += q.weight;
+
+      if (q.type === "multi") {
+        if (a && a.length > 0) {
+          var hasFlag = false;
+          a.forEach(function (oid) {
+            var o = q.options.find(function (x) { return x.id === oid; });
+            if (o && o.flagService) {
+              hasFlag = true;
+              (o.gaps || []).forEach(function (g) { ig[g] = true; });
+            }
+          });
+          ts += q.weight * (hasFlag ? 0.3 : 0.7);
+        }
+      } else {
+        if (a) {
+          var opt = q.options.find(function (x) { return x.id === a; });
+          if (opt) {
+            ts += (opt.score / 10) * q.weight;
+            (opt.gaps || []).forEach(function (g) { ig[g] = true; });
+          }
+        }
+      }
+    });
+
+    var score = Math.round((ts / ms) * 100);
+    var gaps = Object.keys(ig);
+    st.res = { score: score, gaps: gaps };
+
+    te("quiz_complete", { quiz_name: QUIZ_NAME, score: score, gaps_count: gaps.length });
+
+    var rl = computeRiskLabel_(score);
+
+    $("score-value").innerHTML = score + '<span class="score-denom"> / 100</span>';
+
+    var badge = $("risk-badge");
+    var interp = $("score-interpretation");
+    var bc = "high", it = "";
+
+    if (score >= 80) {
+      bc = "lower";
+      it = "<strong>Your coverage looks solid</strong> based on what you've told us. Even strong policies can hide gaps around contracts and third-party dependencies.";
+    } else if (score >= 60) {
+      bc = "moderate";
+      it = "<strong>A few areas need attention.</strong> Your assessment suggests gaps where coverage may not match your actual risk.";
+    } else if (score >= 40) {
+      bc = "significant";
+      it = "<strong>Several gaps between your policies and your risk.</strong> These often surface during contract review or after an incident.";
+    } else {
+      bc = "high";
+      it = "<strong>Meaningful gaps in your coverage.</strong> Based on your answers, your policies may not hold up well in a real claim scenario.";
+    }
+
+    badge.textContent = rl;
+    badge.className = "risk-badge " + bc;
+    interp.innerHTML = it;
+
+    var gl = $("gaps-list");
+    var gss = $("gaps-section");
+
+    if (gaps.length === 0) {
+      gss.style.display = "none";
+    } else {
+      gss.style.display = "block";
+      gl.innerHTML = "";
+
+      var pr = ["front-door","no-coverage","ransomware-excluded","contractual-liability","third-party-outage","services-not-listed","voluntary-shutdown","limited-coverage","ransomware-sublimit","ransomware-fine-print","services-partial","outdated-review","coverage-mismatch","unknown-coverage"];
+
+      gaps.sort(function (a, b) { return pr.indexOf(a) - pr.indexOf(b); });
+
+      gaps.slice(0, 5).forEach(function (gid) {
+        var g = qd.gaps[gid];
+        if (!g) return;
+        var c = document.createElement("div");
+        c.className = "gap-card severity-" + g.severity;
+        c.innerHTML = "<h4>" + g.title + "</h4><p>" + g.description + "</p>";
+        gl.appendChild(c);
+      });
+    }
+
+    ss("screen-results");
+  }
+
+  function sl() {
+    var n = ($("lead-name") && $("lead-name").value ? $("lead-name").value : "").trim();
+    var e = ($("lead-email") && $("lead-email").value ? $("lead-email").value : "").trim();
+    var err = $("form-error");
+
+    if (!n || !e) { if (err) err.style.display = "block"; return; }
+    if (err) err.style.display = "none";
+
+    st.lead.name = n;
+    st.lead.email = e;
+    te("generate_lead", { quiz_name: QUIZ_NAME, lead_email: e });
+
+    sr();
+
+    setTimeout(function () { sendLeadNotification_(); }, 250);
+  }
+
+  async function buildPdfDataUrl_() {
+    if (!window.jspdf || !window.jspdf.jsPDF) throw new Error("jsPDF not loaded");
+
+    var score = st.res ? st.res.score : 0;
+    var rl = computeRiskLabel_(score);
+    var dateStr = nowIsoDate_();
+
+    var j = window.jspdf.jsPDF;
+    var doc = new j();
+
+    doc.setFillColor(10, 37, 64);
+    doc.rect(0, 0, 210, 32, "F");
+
+    var logoDataUrl = await loadLogoDataUrl_();
+    if (logoDataUrl) {
+      try { doc.addImage(logoDataUrl, "PNG", 14, 9, 45, 12); } catch (e) {}
+    }
+
+    doc.setTextColor(255, 255, 255);
+    doc.setFontSize(16);
+    doc.setFont(undefined, "bold");
+    doc.text(QUIZ_NAME, 195, 15, { align: "right" });
+
+    doc.setFontSize(10);
+    doc.setFont(undefined, "normal");
+    doc.text("Results Summary", 195, 23, { align: "right" });
+
+    doc.setTextColor(0, 0, 0);
+    doc.setFontSize(10);
+    var infoY = 42;
+    if (st.lead && st.lead.name) { doc.text("Prepared for: " + st.lead.name, 20, infoY); infoY += 6; }
+    if (st.lead && st.lead.email) { doc.text("Email: " + st.lead.email, 20, infoY); infoY += 6; }
+    doc.text("Date: " + dateStr, 20, infoY);
+
+    doc.setTextColor(10, 37, 64);
+    doc.setFontSize(16);
+    doc.setFont(undefined, "bold");
+    doc.text("Your Coverage Gap Assessment Results", 20, 68);
+
+    doc.setFillColor(10, 37, 64);
+    doc.roundedRect(20, 74, 170, 30, 3, 3, "F");
+
+    doc.setTextColor(255, 255, 255);
+    doc.setFontSize(10);
+    doc.setFont(undefined, "normal");
+    doc.text("Coverage Protection Score", 28, 86);
+
+    var badgeColors = { "Lower Risk": [0, 212, 170], "Moderate Gaps": [234, 179, 8], "Significant Gaps": [245, 158, 11], "High Risk": [220, 38, 38] };
+    var badgeColor = badgeColors[rl] || [220, 38, 38];
+    doc.setTextColor(badgeColor[0], badgeColor[1], badgeColor[2]);
+    doc.setFontSize(9);
+    doc.setFont(undefined, "bold");
+    doc.text(rl.toUpperCase(), 28, 96);
+
+    doc.setTextColor(0, 212, 170);
+    doc.setFontSize(28);
+    doc.setFont(undefined, "bold");
+    doc.text(score + " / 100", 182, 92, { align: "right" });
+
+    var interpretation = "";
+    if (score >= 80) interpretation = "Your coverage looks solid based on what you've told us. Even strong policies can hide gaps around contracts and third-party dependencies.";
+    else if (score >= 60) interpretation = "A few areas need attention. Your assessment suggests gaps where coverage may not match your actual risk.";
+    else if (score >= 40) interpretation = "Several gaps between your policies and your risk. These often surface during contract review or after an incident.";
+    else interpretation = "Meaningful gaps in your coverage. Based on your answers, your policies may not hold up well in a real claim scenario.";
+
+    doc.setFontSize(10);
+    doc.setFont(undefined, "normal");
+    doc.setTextColor(85, 85, 85);
+    var interpLines = doc.splitTextToSize(interpretation, 170);
+    doc.text(interpLines, 20, 116);
+
+    var y = 116 + interpLines.length * 5 + 8;
+
+    doc.setFontSize(13);
+    doc.setFont(undefined, "bold");
+    doc.setTextColor(10, 37, 64);
+    doc.text("Gaps Identified", 20, y);
+    y += 10;
+
+    var severityColors = { red: [220, 38, 38], orange: [245, 158, 11], yellow: [234, 179, 8] };
+
+    doc.setFontSize(10);
+    (st.res && st.res.gaps ? st.res.gaps : []).slice(0, 5).forEach(function (gid) {
+      var g = qd.gaps[gid];
+      if (!g || y > 240) return;
+      var color = severityColors[g.severity] || severityColors.yellow;
+      doc.setFillColor(color[0], color[1], color[2]);
+      doc.rect(20, y - 4, 3, 14, "F");
+      doc.setFont(undefined, "bold");
+      doc.setTextColor(10, 37, 64);
+      doc.text(g.title, 26, y);
+      y += 5;
+      doc.setFont(undefined, "normal");
+      doc.setTextColor(85, 85, 85);
+      var lines = doc.splitTextToSize(g.description, 164);
+      doc.text(lines, 26, y);
+      y += lines.length * 4.5 + 8;
+    });
+
+    y += 8;
+    doc.setFontSize(8);
+    doc.setFont(undefined, "italic");
+    doc.setTextColor(120, 120, 120);
+    var disclaimerLines = doc.splitTextToSize("This assessment provides a high-level snapshot of potential coverage gaps based on your responses. It is not a substitute for a thorough policy review and may not capture all gaps or nuances in your specific situation.", 170);
+    doc.text(disclaimerLines, 20, y);
+    y += disclaimerLines.length * 4 + 6;
+
+    if (y < 250) {
+      doc.setFontSize(12);
+      doc.setFont(undefined, "bold");
+      doc.setTextColor(10, 37, 64);
+      doc.text("Next Step", 20, y);
+      y += 7;
+      doc.setFontSize(10);
+      doc.setFont(undefined, "normal");
+      doc.setTextColor(85, 85, 85);
+      doc.text("Request a Risk Intelligence Report to get a thorough review of your coverage.", 20, y);
+    }
+
+    doc.setFillColor(248, 249, 250);
+    doc.rect(0, 268, 210, 30, "F");
+    doc.setFontSize(10);
+    doc.setFont(undefined, "bold");
+    doc.setTextColor(10, 37, 64);
+    doc.text("CONTACT", 105, 276, { align: "center" });
+    doc.setFontSize(9);
+    doc.setFont(undefined, "normal");
+    doc.setTextColor(85, 85, 85);
+    doc.text("Breezy Risk Advisors  |  " + BREEZY_PUBLIC_SITE, 105, 283, { align: "center" });
+    doc.text("contact@breezyins.com  |  (717) 490-7670", 105, 290, { align: "center" });
+
+    return doc.output("datauristring");
+  }
+
+  async function dr() {
+    try {
+      var dataUrl = await buildPdfDataUrl_();
+      var score = st.res ? st.res.score : 0;
+      var dateStr = nowIsoDate_();
+      var safeName = sanitizeFilenamePart_(st.lead ? st.lead.name : "");
+      var filename = "Coverage-Gap-Assessment-" + safeName + "-" + dateStr + "-Score-" + score + ".pdf";
+      var a = document.createElement("a");
+      a.href = dataUrl;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      te("quiz_download_pdf", { quiz_name: QUIZ_NAME, score: score });
+    } catch (e) {
+      console.error("QUIZ: PDF download failed:", e);
+      alert("Sorry, the PDF could not be generated. Please refresh and try again.");
+    }
+  }
+
+  function buildEmailParams_() {
+    var score = st.res ? st.res.score : 0;
+    var riskLevel = computeRiskLabel_(score);
+    var gaps = st.res ? st.res.gaps : [];
+    var gapsDetail = "";
+    if (gaps.length > 0) {
+      gaps.forEach(function(gid, i) {
+        var g = qd.gaps[gid];
+        if (g) {
+          gapsDetail += (i + 1) + ". " + g.title + " (" + g.severity.toUpperCase() + ")\n";
+          gapsDetail += "   " + g.description + "\n\n";
+        }
+      });
+    } else {
+      gapsDetail = "No significant gaps identified.";
+    }
+    var answersSummary = "";
+    qd.questions.forEach(function(q) {
+      var answer = st.ans[q.id];
+      if (!answer) return;
+      answersSummary += "Q" + q.id + ": " + q.text + "\n";
+      if (q.type === "multi" && Array.isArray(answer)) {
+        answersSummary += answer.map(function(aid) {
+          var opt = q.options.find(function(o) { return o.id === aid; });
+          return opt ? "- " + opt.text : "";
+        }).filter(Boolean).join("\n") + "\n\n";
+      } else {
+        var opt = q.options.find(function(o) { return o.id === answer; });
+        answersSummary += "> " + (opt ? opt.text : answer) + "\n\n";
+      }
+    });
+    var servicesAnswer = st.ans[4];
+    var servicesList = "Not specified";
+    if (servicesAnswer && Array.isArray(servicesAnswer) && servicesAnswer.length > 0) {
+      var q4 = qd.questions.find(function(q) { return q.id === 4; });
+      if (q4) {
+        servicesList = servicesAnswer.map(function(aid) {
+          var opt = q4.options.find(function(o) { return o.id === aid; });
+          return opt ? opt.text : "";
+        }).filter(Boolean).join(", ");
+      }
+    }
+    var urgencyNote = "";
+    if (score < 40) urgencyNote = "HIGH PRIORITY: This lead has significant coverage gaps and may need immediate attention.";
+    else if (score < 60) urgencyNote = "MEDIUM PRIORITY: Several gaps identified. Good candidate for a Risk Intelligence Report.";
+    else if (score < 80) urgencyNote = "Standard follow-up. Some areas to review but no critical gaps.";
+    else urgencyNote = "Lower priority. Coverage appears solid but may still benefit from a review.";
+
+    return {
+      lead_name: st.lead ? st.lead.name : "",
+      lead_email: st.lead ? st.lead.email : "",
+      score: score,
+      risk_level: riskLevel,
+      gaps_count: gaps.length,
+      gaps_detail: gapsDetail,
+      services_list: servicesList,
+      answers_summary: answersSummary,
+      urgency_note: urgencyNote,
+      date: nowIsoDate_(),
+      to_email: BREEZY_INTERNAL_NOTIFY
+    };
+  }
+
+  function sendLeadNotification_() {
+    if (!st.res || !st.lead || !st.lead.email) return;
+    sendEmailNotification_(buildEmailParams_());
+  }
+
+  function bindQuizHandlers_() {
+    var root = $("coverage-gap-quiz");
+    if (!root || root.dataset.quizBound === "1") return;
+    root.dataset.quizBound = "1";
+
+    root.addEventListener("click", function (e) {
+      var t = e.target;
+      if (!t) return;
+      var el = t.closest ? t.closest("button, a, input") : t;
+      var id = el && el.id ? el.id : (t.id || "");
+
+      if (id === "start-quiz-btn") { e.preventDefault(); sq(); return; }
+      if (id === "back-btn") { e.preventDefault(); pq(); return; }
+      if (id === "next-btn") { e.preventDefault(); nq(); return; }
+      if (id === "submit-lead-btn") { e.preventDefault(); sl(); return; }
+      if (id === "download-btn") { e.preventDefault(); dr(); return; }
+      if (id === "retake-btn") { e.preventDefault(); sq(); return; }
+      if (id === "cta-request-btn") {
+        te("quiz_cta_click", { quiz_name: QUIZ_NAME, cta_text: "Request a Risk Intelligence Report" });
+        return;
+      }
+    });
+  }
+
+  function initQuiz_() {
+    if (!$("coverage-gap-quiz")) return;
+    if (!qd || !qd.questions || !qd.gaps) return;
+    bindQuizHandlers_();
+  }
+
+  initQuiz_();
+  setTimeout(initQuiz_, 600);
+})();
+</script>

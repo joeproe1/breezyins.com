@@ -1,0 +1,240 @@
+---
+layout: page
+title: "Insurance FAQs for MSPs"
+description: "Answers to common questions about Tech E&O, cyber liability, and insurance coverage gaps for MSPs."
+permalink: /faq/
+---
+
+<style>
+.faq-section { padding: 100px 0; background: var(--bg-light); padding-top: 140px !important; }
+.faq-wrap { max-width: 900px; margin: 0 auto; }
+.faq-header { text-align: center; max-width: 800px; margin: 0 auto 64px; }
+.faq-header h1 { font-size: 48px; font-weight: 800; color: var(--primary); margin: 0 0 12px; letter-spacing: -0.02em; }
+.faq-header p { font-size: 18px; color: var(--text-secondary); margin: 0; line-height: 1.7; }
+.accordion { max-width: 900px; margin: 0 auto; }
+.accordion-item { background: var(--bg-light); border: 2px solid var(--border); border-radius: 12px; margin-bottom: 16px; overflow: hidden; transition: all 0.25s; }
+.accordion-item:hover { border-color: var(--accent); box-shadow: 0 10px 24px rgba(0,0,0,0.06); }
+.accordion-header { padding: 22px 28px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #fff; gap: 16px; }
+.accordion-header h2 { font-size: 20px; color: var(--primary); font-weight: 800; margin: 0; flex: 1; letter-spacing: -0.01em; }
+.accordion-header .icon { font-size: 22px; color: var(--accent); transition: transform 0.25s; flex-shrink: 0; }
+.accordion-item.active .icon { transform: rotate(180deg); }
+.accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.25s ease-out; }
+.accordion-item.active .accordion-content { max-height: 2200px; transition: max-height 0.4s ease-in; }
+.accordion-body { padding: 0 28px 26px; background: #fff; }
+.accordion-body p { color: var(--text-secondary); line-height: 1.75; margin: 0 0 14px; font-size: 16px; }
+.accordion-body p:last-child { margin-bottom: 0; }
+.accordion-body ul { margin: 10px 0 14px 18px; padding-left: 0; }
+.accordion-body li { color: var(--text-secondary); line-height: 1.7; margin-bottom: 8px; font-size: 16px; }
+.accordion-body a { color: var(--accent); text-decoration: none; font-weight: 700; }
+.accordion-body a:hover { text-decoration: underline; }
+.faq-callout { margin-top: 14px; background: rgba(0,212,170,0.08); border: 1px solid rgba(0,212,170,0.22); border-radius: 12px; padding: 14px; color: var(--text-secondary); font-size: 14px; line-height: 1.6; }
+.faq-callout strong { color: var(--primary); font-weight: 800; }
+.ask-question-section { background: var(--primary); padding: 64px 0; color: #fff; }
+.ask-question-section .container { max-width: 640px; }
+.ask-question-section h2 { font-size: 28px; font-weight: 800; margin: 0 0 12px; text-align: center; color: #fff; }
+.ask-question-section p { text-align: center; margin: 0 0 28px; color: rgba(255,255,255,0.88); line-height: 1.7; }
+@media (max-width: 768px) {
+    .faq-section { padding-top: 100px !important; }
+    .faq-header h1 { font-size: 34px; }
+    .accordion-header { padding: 18px 22px; }
+    .accordion-header h2 { font-size: 18px; }
+    .accordion-body { padding: 0 22px 22px; }
+}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's the difference between Tech E&O and cyber liability insurance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tech E&O (Errors & Omissions) covers claims alleging financial loss arising from errors or failures in your professional services. Cyber liability covers cyber incidents like ransomware and data breaches, including incident response costs and liability tied to compromised data. Most MSPs need both."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do MSPs need different insurance than other tech companies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usually, yes. Standard insurance policies often define covered services too narrowly for MSP and security work, such as penetration testing, vulnerability assessments, monitoring, and incident response support. MSPs also have a distinct third-party exposure because you operate inside client environments."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Risk Intelligence Report, and how is it different from a quote?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A quote tells you the premium and a high-level description of coverage. The Risk Intelligence Report is a plain-English analysis that flags where coverage will respond, be disputed, or fail, and what to fix first. It covers coverage gaps tied to your services, contract compliance issues, scenario mapping, and fix options."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to get a Risk Intelligence Report?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Typically 48 hours once we have your documents. You send your current policies and up to three client agreements (MSAs/SOWs). We review coverage, contract requirements, and a few realistic claim scenarios, then share findings and next steps."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to switch brokers, and is there a fee?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Many firms use the Risk Intelligence Report to work more effectively with their current broker. The value is clarity: what your policies say, where the gaps are, and what to fix. If you decide to place coverage with Breezy after the report, the fee is credited."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you only work with MSPs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. I focus on MSPs and MSSPs because policy language for these services is nuanced, and small wording differences can determine whether a claim is paid or denied."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens after I receive the Risk Intelligence Report?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You choose how to use it: use it with your current broker to close the gaps and align coverage with contract requirements, or ask Breezy to help implement the fixes. The goal is simple: reduce surprises during enterprise onboarding and when a claim is evaluated."
+      }
+    }
+  ]
+}
+</script>
+
+<section class="faq-section">
+    <div class="container faq-wrap">
+        <div class="faq-header">
+            <h1>Frequently Asked Questions</h1>
+            <p>Common questions about insurance coverage, policy reviews, and working with Breezy.</p>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h2>What's the difference between Tech E&amp;O and cyber liability insurance?</h2>
+                    <span class="icon">&#9660;</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        <p><strong>Tech E&amp;O (Errors &amp; Omissions)</strong> covers claims alleging financial loss arising from errors or failures in your professional services.</p>
+                        <p><strong>Cyber liability</strong> covers cyber incidents like ransomware and data breaches, including incident response costs (forensics, legal, notification) and liability tied to compromised data.</p>
+                        <p>Most MSPs need both. The practical issue is that policies often draw the boundary differently, which can create gray areas for services like incident response support, security assessments, or managed security work.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h2>Do MSPs need different insurance than other tech companies?</h2>
+                    <span class="icon">&#9660;</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        <p>Usually, yes. Standard insurance policies often define covered services too narrowly for MSP and security work, such as penetration testing, vulnerability assessments, monitoring, and incident response support.</p>
+                        <p>MSPs also have a distinct third-party exposure because you operate inside client environments. One incident can trigger multiple client claims.</p>
+                        <p>If you want a quick overview, see the <a href="{{ '/coverage-gaps-framework/' | relative_url }}">Coverage Gaps Framework</a>.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h2>What is the Risk Intelligence Report, and how is it different from a quote?</h2>
+                    <span class="icon">&#9660;</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        <p>A quote tells you the premium and a high-level description of coverage. It rarely tells you where the real gaps are or how your policies perform against contract requirements and realistic claims.</p>
+                        <p>The <strong>Risk Intelligence Report</strong> is a plain-English analysis that flags where coverage will respond, be disputed, or fail, and what to fix first.</p>
+                        <ul>
+                            <li>Coverage gaps tied to the services you actually deliver</li>
+                            <li>Contract compliance issues (limits, deductibles, wording, notice requirements)</li>
+                            <li>Scenario mapping so you can see how claims are likely to be evaluated</li>
+                            <li>Fix options and cost guidance</li>
+                        </ul>
+                        <div class="faq-callout">
+                            <strong>Best fit:</strong> firms that already carry insurance and want to validate how it will respond in practice.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h2>How long does it take to get a Risk Intelligence Report?</h2>
+                    <span class="icon">&#9660;</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        <p>Typically <strong>48 hours</strong> once we have your documents.</p>
+                        <p>You send your current policies and up to three client agreements (MSAs/SOWs). We review coverage, contract requirements, and a few realistic claim scenarios, then share findings and next steps.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h2>Do I need to switch brokers, and is there a fee?</h2>
+                    <span class="icon">&#9660;</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        <p>No. Many firms use the Risk Intelligence Report to work more effectively with their current broker. The value is clarity: what your policies say, where the gaps are, and what to fix.</p>
+                        <p>If you decide to place coverage with Breezy after the report, the fee is credited.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h2>Do you only work with MSPs?</h2>
+                    <span class="icon">&#9660;</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        <p>Yes. I focus on MSPs and MSSPs because policy language for these services is nuanced, and small wording differences can determine whether a claim is paid or denied.</p>
+                        <p>If helpful, start with the <a href="{{ '/insights/msp-coverage-gaps/' | relative_url }}">Coverage Gaps guide</a> for the full analysis behind the patterns.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h2>What happens after I receive the Risk Intelligence Report?</h2>
+                    <span class="icon">&#9660;</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        <p>You choose how to use it:</p>
+                        <ul>
+                            <li><strong>Use it with your current broker</strong> to close the gaps and align coverage with contract requirements.</li>
+                            <li><strong>Ask Breezy to help implement the fixes</strong> (quoting, endorsements, and placement if needed).</li>
+                        </ul>
+                        <p>The goal is simple: reduce surprises during enterprise onboarding and when a claim is evaluated.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ask-question-section">
+    <div class="container">
+        <h2>Didn't see your question here?</h2>
+        <p>Email <a href="mailto:contact@breezyins.com" style="color: var(--accent); font-weight: 700;">contact@breezyins.com</a> and I'll get back to you.</p>
+    </div>
+</section>
+
+<script>
+document.querySelectorAll('.accordion-header').forEach(function(header) {
+    header.addEventListener('click', function() {
+        this.parentElement.classList.toggle('active');
+    });
+});
+</script>

@@ -1,0 +1,59 @@
+---
+layout: default
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "author": {
+    "@type": "Person",
+    "name": "{{ page.author | default: site.author }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Breezy Risk Advisors",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://breezyins.com/assets/images/breezy-logo.png"
+    }
+  },
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | absolute_url }}"
+  }
+}
+</script>
+<article class="post-content" itemscope itemtype="https://schema.org/Article">
+    <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="{{ '/' | relative_url }}">Home</a> &rsaquo;
+            <a href="{{ '/insights/' | relative_url }}">Insights</a> &rsaquo;
+            <span>{{ page.title }}</span>
+        </nav>
+
+        <header class="post-header">
+            {% if page.category %}<span class="post-category">{{ page.category }}</span>{% endif %}
+            <h1 itemprop="headline">{{ page.title }}</h1>
+            <div class="post-meta">
+                <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                    {{ page.date | date: "%B %d, %Y" }}
+                </time>
+                <span class="post-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    by <span itemprop="name">{{ page.author | default: site.author }}</span>
+                </span>
+                {% if page.read_time %}<span class="post-read-time">{{ page.read_time }} min read</span>{% endif %}
+            </div>
+        </header>
+
+        <div class="post-body" itemprop="articleBody">
+            {{ content }}
+        </div>
+
+        <footer class="post-footer">
+            {% include cta-banner.html %}
+        </footer>
+    </div>
+</article>

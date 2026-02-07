@@ -1,0 +1,28 @@
+---
+layout: page
+title: "Page Not Found"
+permalink: /404.html
+sitemap: false
+---
+
+<style>
+.error-section { padding: 120px 0 80px; text-align: center; }
+.error-section h1 { font-size: 120px; font-weight: 900; color: var(--accent); margin: 0; line-height: 1; }
+.error-section h2 { font-size: 32px; font-weight: 800; color: var(--primary); margin: 16px 0 12px; }
+.error-section p { font-size: 18px; color: var(--text-secondary); max-width: 500px; margin: 0 auto 32px; line-height: 1.7; }
+.error-links { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; }
+.error-links a { color: var(--accent); font-weight: 700; font-size: 16px; text-decoration: none; }
+.error-links a:hover { text-decoration: underline; }
+</style>
+
+<section class="error-section">
+    <h1>404</h1>
+    <h2>Page not found</h2>
+    <p>The page you're looking for doesn't exist or has been moved. Here are some places to start.</p>
+    <div class="error-links">
+        <a href="{{ '/' | relative_url }}">Homepage</a>
+        <a href="{{ '/insights/' | relative_url }}">Insights</a>
+        <a href="{{ '/risk-intelligence-report/' | relative_url }}">Risk Intelligence Report</a>
+        <a href="{{ '/contact/' | relative_url }}">Get in Touch</a>
+    </div>
+</section>

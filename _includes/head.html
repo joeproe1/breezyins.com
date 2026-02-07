@@ -1,0 +1,49 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% seo %}
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+<!-- Favicon -->
+<link rel="icon" href="{{ '/assets/images/favicon.png' | relative_url }}" sizes="32x32">
+<link rel="icon" href="{{ '/assets/images/favicon.png' | relative_url }}" sizes="192x192">
+<link rel="apple-touch-icon" href="{{ '/assets/images/favicon.png' | relative_url }}">
+
+<!-- Stylesheet -->
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+<!-- Organization Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Breezy Risk Advisors",
+  "url": "https://breezyins.com",
+  "logo": "https://breezyins.com/assets/images/breezy-logo.png",
+  "description": "{{ site.description }}",
+  "founder": {
+    "@type": "Person",
+    "name": "Joerg Proeve"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-717-490-7670",
+    "contactType": "sales",
+    "email": "contact@breezyins.com"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lancaster",
+    "addressRegion": "PA",
+    "addressCountry": "US"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/breezy-risk-advisors"
+  ]
+}
+</script>
+
+{% include analytics.html %}

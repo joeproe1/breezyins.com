@@ -1,0 +1,33 @@
+<header>
+    <div class="container">
+        <nav>
+            <a href="{{ '/' | relative_url }}" class="logo">BREEZY<span>.risk</span></a>
+
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="{{ '/' | relative_url }}#problem">The Problem</a></li>
+                <li><a href="{{ '/risk-intelligence-report/' | relative_url }}">Risk Intelligence Report</a></li>
+                <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+                <li class="has-dropdown">
+                    <a href="#" class="dropdown-trigger">Resources</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ '/insights/' | relative_url }}">Insights</a></li>
+                        <li>
+                            <a href="{{ '/msp-insurance-assessment/' | relative_url }}">
+                                <span class="desktop-label">Coverage Gap Assessment</span>
+                                <span class="mobile-label">Gap Assessment</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="{{ '/faq/' | relative_url }}">FAQ</a></li>
+                <li><a href="{{ '/contact/' | relative_url }}" class="btn btn-primary">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>

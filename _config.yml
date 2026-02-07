@@ -1,0 +1,60 @@
+# Site settings
+title: Breezy Risk Advisors
+description: "Tech E&O insurance cybersecurity coverage that actually responds. Find gaps before contract reviews or claims expose them."
+url: "https://breezyins.com"
+baseurl: ""
+author: Joerg Proeve
+
+# Contact info
+email: contact@breezyins.com
+phone: "(717) 490-7670"
+linkedin: "https://www.linkedin.com/in/joergproeve/"
+
+# Build settings
+markdown: kramdown
+permalink: /insights/:title/
+
+# Plugins (all GitHub Pages whitelisted)
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+
+# SEO tag defaults
+twitter:
+  card: summary_large_image
+
+# Feed settings
+feed:
+  path: /feed/
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - CNAME
+  - .gitignore
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Joerg Proeve"
+
+# Collections
+collections_dir: ""
+
+# Sass
+sass:
+  style: compressed
+  sass_dir: _sass

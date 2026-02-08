@@ -6,6 +6,7 @@ date: 2026-01-02
 author: Joerg Proeve
 category: Policy Deep-Dive
 read_time: "9 min read"
+image: /assets/images/Blog-Tech-EO-Exclusions.png
 permalink: /insights/your-tech-eo-policy-probably-excludes-the-services-you-actually-provide/
 redirect_from:
   - /tech-eo-policy-exclusions

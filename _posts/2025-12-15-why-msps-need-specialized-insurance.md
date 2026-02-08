@@ -6,6 +6,7 @@ date: 2025-12-15
 author: Joerg Proeve
 category: Coverage Gaps
 read_time: "6 min read"
+image: /assets/images/Blog-Why-MSPs-Need-Specialized-Insurance.png
 permalink: /msp-insurance/
 redirect_from:
   - /cybersecurity-consultant-insurance

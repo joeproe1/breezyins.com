@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Header - Cyber Liability MSP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0A2540;
+            overflow: hidden;
+        }
+
+        .header-image {
+            width: 100vw;
+            height: 100vh;
+            background: #0A2540;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Teal circle - right side, partially cropped */
+        .circle {
+            position: absolute;
+            width: 450px;
+            height: 450px;
+            border-radius: 50%;
+            background: #00D4AA;
+            opacity: 0.04;
+            right: -160px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .circle-ring {
+            position: absolute;
+            width: 420px;
+            height: 420px;
+            border-radius: 50%;
+            border: 1.5px solid #00D4AA;
+            opacity: 0.15;
+            right: -140px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .circle-ring-outer {
+            position: absolute;
+            width: 520px;
+            height: 520px;
+            border-radius: 50%;
+            border: 1px solid #00D4AA;
+            opacity: 0.08;
+            right: -190px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        /* Thin horizontal accent line */
+        .accent-line {
+            position: absolute;
+            bottom: 100px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: #00D4AA;
+            opacity: 0.25;
+        }
+
+        /* Content container */
+        .content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 72px 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* Category label */
+        .category {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #00D4AA;
+            margin-bottom: 24px;
+        }
+
+        /* Main title */
+        .title {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 52px;
+            font-weight: 700;
+            color: #FFFFFF;
+            line-height: 1.15;
+            margin-bottom: 20px;
+            max-width: 720px;
+        }
+
+        /* Subtitle */
+        .subtitle {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.6);
+            max-width: 600px;
+        }
+
+        /* Logo lockup */
+        .logo {
+            position: absolute;
+            bottom: 40px;
+            left: 80px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 17px;
+            font-weight: 700;
+            color: #FFFFFF;
+        }
+
+        .logo .teal {
+            color: #00D4AA;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header-image">
+
+    <!-- Background elements -->
+    <div class="circle"></div>
+    <div class="circle-ring"></div>
+    <div class="circle-ring-outer"></div>
+    <div class="accent-line"></div>
+
+    <!-- Text content -->
+    <div class="content">
+        <div class="category">Coverage Gaps</div>
+        <div class="title">Cyber Liability Insurance<br>for MSPs</div>
+        <div class="subtitle">What It Covers. What It Doesn't. What to Check.</div>
+    </div>
+
+    <!-- Logo -->
+    <div class="logo">BREEZY<span class="teal">.risk</span></div>
+
+</div>
+
+</body>
+</html>

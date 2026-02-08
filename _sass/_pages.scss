@@ -229,27 +229,45 @@
 // ============================================
 // BLOG / POSTS
 // ============================================
-.post-content {
-    padding-top: 120px;
-}
+.post-hero {
+    background: $primary;
+    padding: 160px 0 60px;
 
-.breadcrumbs {
-    font-size: 14px;
-    color: $text-secondary;
-    margin-bottom: 32px;
+    .breadcrumbs {
+        margin-bottom: 28px;
 
-    a {
-        color: $text-secondary;
+        a {
+            color: rgba(255, 255, 255, 0.65);
+            font-size: 15px;
+            font-weight: 500;
+            text-decoration: none;
 
-        &:hover {
+            &:hover {
+                color: $accent;
+            }
+        }
+    }
+
+    .post-header {
+        margin-bottom: 0;
+
+        .post-category {
             color: $accent;
         }
+
+        h1 {
+            color: #fff;
+            font-size: 42px;
+            margin-bottom: 16px;
+        }
+    }
+
+    .post-meta {
+        color: rgba(255, 255, 255, 0.65);
     }
 }
 
 .post-header {
-    margin-bottom: 40px;
-
     .post-category {
         display: inline-block;
         font-size: 13px;
@@ -278,6 +296,7 @@
     max-width: 760px;
     font-size: 18px;
     line-height: 1.8;
+    padding-top: 48px;
 
     h2 {
         margin-top: 48px;
@@ -532,8 +551,12 @@
         padding: 36px 28px;
     }
 
-    .post-header h1 {
-        font-size: 32px;
+    .post-hero {
+        padding: 120px 0 40px;
+
+        .post-header h1 {
+            font-size: 32px;
+        }
     }
 
     .page-hero {

@@ -32,16 +32,17 @@
 
 .hero .hero-breadcrumb {
     font-family: $font-heading;
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.12em;
-    color: #00D4AA;
-    margin-bottom: 20px;
+    letter-spacing: 0.10em;
+    color: $text-secondary;
+    margin-bottom: 24px;
     display: inline-block;
-    padding: 6px 14px;
+    padding: 12px 20px;
     background: rgba(0, 212, 170, 0.08);
-    border-radius: 4px;
+    border: 1px solid rgba(0, 212, 170, 0.22);
+    border-radius: 12px;
 }
 
 .hero-subheadline {
@@ -607,7 +608,8 @@
     }
 
     .hero-breadcrumb {
-        font-size: 10px;
+        font-size: 12px;
+        padding: 10px 16px;
     }
 
     .problem-card {

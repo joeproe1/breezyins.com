@@ -117,7 +117,9 @@
 // CTA Banner
 .cta-banner {
     background: $primary;
-    padding: 80px 0;
+    padding: 60px 0;
+    margin-bottom: 48px;
+    border-radius: 12px;
 
     .cta-banner-inner {
         max-width: 520px;

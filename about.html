@@ -10,9 +10,9 @@ image: /assets/images/joerg-portrait.jpg
 .about-section { padding-top: 140px; padding-bottom: 120px; }
 .bio-content { max-width: 800px; margin: 0 auto; }
 .profile-image { width: 180px; height: 180px; object-fit: cover; border-radius: 50%; box-shadow: 0 8px 30px rgba(0,0,0,0.12); border: 3px solid #FFFFFF; }
-.about-cta { background: linear-gradient(135deg, #0A2540 0%, #1a3a5c 100%); padding: 60px 40px; border-radius: 16px; text-align: center; margin: 80px auto 0; max-width: 800px; box-shadow: 0 8px 30px rgba(10,37,64,0.2); }
-.about-cta h2 { font-size: 36px; color: #FFFFFF; margin-bottom: 16px; }
-.about-cta p { font-size: 18px; color: rgba(255,255,255,0.9); margin-bottom: 36px; line-height: 1.6; }
+.about-cta { background: #0A2540; padding: 48px 40px; border-radius: 12px; text-align: center; margin: 80px auto 0; max-width: 1120px; }
+.about-cta h2 { font-size: 36px; color: #FFFFFF; margin-bottom: 16px; max-width: 780px; margin-left: auto; margin-right: auto; }
+.about-cta p { font-size: 16px; color: rgba(255,255,255,0.85); margin-bottom: 26px; line-height: 1.6; max-width: 640px; margin-left: auto; margin-right: auto; }
 .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
 .about-section h1 { font-size: 48px; text-align: center; }
 .about-section .subtitle { font-size: 18px; color: #5A7184; text-align: center; margin-bottom: 40px; }
@@ -77,13 +77,14 @@ image: /assets/images/joerg-portrait.jpg
                 </a>
             </div>
 
-            <div class="about-cta">
-                <h2 style="color:#FFFFFF">Find Out What Your Insurance Actually Covers</h2>
-                <p>Get a clear answer: Will your policy respond when you file a claim or need to prove coverage to a client?</p>
-                <div class="cta-buttons">
-                    <a href="{{ '/contact/' | relative_url }}" class="btn btn-accent">Request Your Report &rarr;</a>
-                    <a href="{{ '/contact/' | relative_url }}#schedule" class="btn btn-secondary" style="color: white; border-color: rgba(255,255,255,0.3);">Schedule a Call</a>
-                </div>
+        </div>
+
+        <div class="about-cta">
+            <h2>Find Out What Your Insurance Actually Covers</h2>
+            <p>Get a clear answer: Will your policy respond when you file a claim or need to prove coverage to a client?</p>
+            <div class="cta-buttons">
+                <a href="{{ '/contact/' | relative_url }}" class="btn btn-accent">Request Your Report &rarr;</a>
+                <a href="{{ '/contact/' | relative_url }}#schedule" class="btn btn-secondary" style="color: white; border-color: rgba(255,255,255,0.3);">Schedule a Call</a>
             </div>
         </div>
     </div>

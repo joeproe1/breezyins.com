@@ -6,15 +6,23 @@ permalink: /privacy/
 ---
 
 <style>
-.privacy-container { max-width: 900px; margin: 0 auto; padding: 120px 20px 60px; }
-.privacy-container h1 { font-size: 2.5rem; line-height: 1.2; color: #002244; }
-.privacy-container h2 { color: #002244; margin-top: 1.5em; }
-.effective-date { font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; color: #666; margin-bottom: 2rem; display: block; }
+.privacy-page { max-width: 800px; margin: 0 auto; padding: 140px 20px 60px; }
+.privacy-page h1 { font-size: 42px; font-weight: 800; color: var(--primary); margin: 0 0 8px; letter-spacing: -0.02em; }
+.privacy-page h2 { font-size: 22px; font-weight: 800; color: var(--primary); margin: 40px 0 16px; }
+.privacy-page p { font-size: 16px; color: var(--text-secondary); line-height: 1.8; margin: 0 0 16px; }
+.privacy-page ul { margin: 12px 0 20px; padding-left: 24px; }
+.privacy-page li { font-size: 16px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 10px; }
+.privacy-page li strong { color: var(--primary); }
+.privacy-page .effective-date { font-family: var(--font-mono); font-size: 14px; color: var(--text-secondary); margin-bottom: 32px; display: block; }
+@media (max-width: 768px) {
+    .privacy-page { padding-top: 100px; }
+    .privacy-page h1 { font-size: 32px; }
+}
 </style>
 
-<div class="privacy-container">
+<section class="privacy-page" markdown="1">
 
-# Privacy Policy for Breezy Risk Advisors
+# Privacy Policy
 
 <span class="effective-date">Effective Date: January 9, 2026</span>
 
@@ -65,4 +73,4 @@ If you have questions about how we handle your data, please contact us at:
 **Email:** contact@breezyins.com
 **Address:** Breezy Risk Advisors, Lancaster, PA
 
-</div>
+</section>

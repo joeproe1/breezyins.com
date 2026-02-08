@@ -6,6 +6,7 @@ date: 2025-12-29
 author: Joerg Proeve
 category: Coverage Gaps
 read_time: "8 min read"
+image: /assets/images/Blog-5-Coverage-Gaps.png
 permalink: /insights/msp-coverage-gaps/
 redirect_from:
   - /insurance-cybersecurity-consultants-coverage-gaps

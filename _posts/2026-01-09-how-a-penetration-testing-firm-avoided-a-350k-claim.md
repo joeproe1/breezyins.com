@@ -6,6 +6,7 @@ date: 2026-01-09
 author: Joerg Proeve
 category: Case Study
 read_time: "6 min read"
+image: /assets/images/Blog-Case-Study-Pentesting.png
 permalink: /insights/how-a-penetration-testing-firm-avoided-a-350k-claim/
 redirect_from:
   - /penetration-testing-insurance-claim

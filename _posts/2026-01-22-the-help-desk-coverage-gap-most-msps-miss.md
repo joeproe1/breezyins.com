@@ -6,6 +6,7 @@ date: 2026-01-22
 author: Joerg Proeve
 category: Coverage Gaps
 read_time: "7 min read"
+image: /assets/images/Blog-Help-Desk-Coverage-Gap.png
 permalink: /insights/the-help-desk-coverage-gap-most-msps-miss/
 redirect_from:
   - /tech-eo-help-desk-gap

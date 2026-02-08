@@ -85,11 +85,6 @@ permalink: /contact/
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     width: 100%;
-    font-size: 0;
-}
-#hubspot-form-container .hs-form .hs-button::after {
-    content: 'Get in Touch';
-    font-size: 16px;
 }
 #hubspot-form-container .hs-form .hs-button:hover {
     background: #00f5c3;
@@ -113,6 +108,16 @@ permalink: /contact/
         <div class="contact-card">
             <div id="hubspot-form-container"></div>
             <script>
+            // Watch for HubSpot button and rename it
+            var observer = new MutationObserver(function() {
+                var btn = document.querySelector('#hubspot-form-container .hs-button');
+                if (btn && btn.value !== 'Get in Touch') {
+                    btn.value = 'Get in Touch';
+                    btn.textContent = 'Get in Touch';
+                }
+            });
+            observer.observe(document.getElementById('hubspot-form-container'), { childList: true, subtree: true });
+
             var s = document.createElement("script");
             s.src = "//js.hsforms.net/forms/embed/v2.js";
             s.charset = "utf-8";
@@ -121,11 +126,7 @@ permalink: /contact/
                     region: "na1",
                     portalId: "50837133",
                     formId: "8b84f104-18ae-44f3-b563-c41176485fff",
-                    target: "#hubspot-form-container",
-                    onFormReady: function(form) {
-                        var btn = form.querySelector('.hs-button');
-                        if (btn) btn.textContent = 'Get in Touch';
-                    }
+                    target: "#hubspot-form-container"
                 });
             };
             document.head.appendChild(s);

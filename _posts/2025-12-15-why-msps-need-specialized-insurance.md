@@ -27,11 +27,8 @@ Most businesses buy Cyber Liability to protect their own data. But for MSPs, the
 - **Cyber Liability:** Covers your firm if your systems are hacked.
 - **Technology Errors & Omissions (Tech E&O):** This is the "Professional Liability" of the tech world. It covers you if a client sues because your advice was wrong, you missed a critical vulnerability, or your managed service went down and cost them revenue.
 
-<div style="background: #FFF8F0; border-left: 4px solid #FF6B35; padding: 24px; margin: 32px 0; border-radius: 0 8px 8px 0;">
-<p style="margin: 0; color: #5A7184; font-size: 16px;">
-<strong style="color: #FF6B35; display: block; margin-bottom: 8px;">The Gap:</strong>
-Many standard E&O policies exclude "Professional Services" like pentesting or SOC operations. If your policy excludes the very thing you do for a living, you have a massive exposure gap.
-</p>
+<div class="callout callout-orange">
+<p><strong>The Gap:</strong> Many standard E&O policies exclude "Professional Services" like pentesting or SOC operations. If your policy excludes the very thing you do for a living, you have a massive exposure gap.</p>
 </div>
 
 ## 2. Downstream Liability: One Breach, Dozens of Lawsuits
@@ -57,8 +54,6 @@ Many MSPs use 1099 contractors or offshore developers for specialized tasks like
 - **The Risk:** Many professional policies only cover "W-2 employees." If a contractor makes a mistake that leads to a $400K claim, your policy might deny it entirely.
 - **The Solution:** You need a policy that explicitly extends "Insured" status to independent contractors working on your behalf.
 
-<div style="background: #F0F9FF; border-left: 4px solid #00D4AA; padding: 24px; margin: 48px 0; border-radius: 0 8px 8px 0;">
-<p style="margin: 0; color: #0A2540; font-size: 16px; line-height: 1.7; font-weight: 600;">
-These four reasons explain why specialized coverage matters. But knowing the specific gaps in your current policies is what protects your business. I cover the <a href="{{ '/insights/msp-coverage-gaps/' | relative_url }}" style="color: #00D4AA; text-decoration: none;">5 most common coverage gaps</a> in detail in my next article.
-</p>
+<div class="callout callout-green">
+<p><strong>These four reasons explain why specialized coverage matters.</strong> But knowing the specific gaps in your current policies is what protects your business. I cover the <a href="{{ '/insights/msp-coverage-gaps/' | relative_url }}">5 most common coverage gaps</a> in detail in my next article.</p>
 </div>

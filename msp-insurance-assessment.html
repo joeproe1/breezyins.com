@@ -584,11 +584,9 @@ permalink: /msp-insurance-assessment/
         </div>
 
         <div class="cta-box">
-            <h3>Want to Close These Gaps?</h3>
-            <p>Get a thorough assessment of your insurance and contractual obligations with a Risk Intelligence Report, identifying where coverage will respond, be disputed, or fail.</p>
-            <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary" id="cta-request-btn">Request a Risk Intelligence Report</a>
-            <p class="cta-note">No obligation. Most firms use the report to validate existing coverage.</p>
-            <p class="cta-contact">Have questions? <a href="{{ '/contact/' | relative_url }}">Get in touch</a></p>
+            <h3>Want to Talk Through Your Results?</h3>
+            <p>I can walk you through what these results mean for your specific policies and contracts.</p>
+            <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary" id="cta-request-btn">Get in Touch</a>
         </div>
 
         <div class="retake-link">
@@ -1143,7 +1141,7 @@ permalink: /msp-insurance-assessment/
       doc.setFontSize(10);
       doc.setFont(undefined, "normal");
       doc.setTextColor(85, 85, 85);
-      doc.text("Request a Risk Intelligence Report to get a thorough review of your coverage.", 20, y);
+      doc.text("Get in touch at breezyins.com/contact to discuss your results.", 20, y);
     }
 
     doc.setFillColor(248, 249, 250);
@@ -1267,7 +1265,7 @@ permalink: /msp-insurance-assessment/
       if (id === "download-btn") { e.preventDefault(); dr(); return; }
       if (id === "retake-btn") { e.preventDefault(); sq(); return; }
       if (id === "cta-request-btn") {
-        te("quiz_cta_click", { quiz_name: QUIZ_NAME, cta_text: "Request a Risk Intelligence Report" });
+        te("quiz_cta_click", { quiz_name: QUIZ_NAME, cta_text: "Get in Touch" });
         return;
       }
     });

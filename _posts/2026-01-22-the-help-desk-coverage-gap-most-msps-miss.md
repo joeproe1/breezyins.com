@@ -73,4 +73,4 @@ A separate cyber liability policy with first-party coverage for social engineeri
 
 If **help desk services** represent more than 10% of your revenue, your current **Tech E&O policy** probably doesn't reflect your actual risk profile. That means you're either underinsured or overpaying, possibly both.
 
-**Want to know if you're covered?** [Request a Risk Intelligence Report]({{ '/contact/' | relative_url }}) to identify your help desk coverage gaps before your next renewal.
+**Want to know if you're covered?** [Get in touch]({{ '/contact/' | relative_url }}) and I'll help you figure out where you stand.

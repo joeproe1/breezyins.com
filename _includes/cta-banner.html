@@ -2,8 +2,8 @@
     <div class="container">
         <div class="cta-banner-inner">
             <h2>{{ include.title | default: "Find Out What Your Insurance Actually Covers" }}</h2>
-            <p>{{ include.subtitle | default: "Coverage fails when tested by contract reviews or claims. Validate alignment before a gap becomes a crisis." }}</p>
-            <a href="{{ '/contact/' | relative_url }}" class="btn btn-accent">{{ include.button | default: "Request a Risk Intelligence Report" }} &rarr;</a>
+            <p>{{ include.subtitle | default: "Whether you have a specific coverage question or just want to understand where you stand, I'm happy to talk." }}</p>
+            <a href="{{ '/contact/' | relative_url }}" class="btn btn-accent">{{ include.button | default: "Get in Touch" }} &rarr;</a>
             {% if include.fine_print %}<p class="cta-fine-print">{{ include.fine_print }}</p>{% endif %}
         </div>
     </div>

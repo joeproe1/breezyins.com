@@ -44,12 +44,14 @@ defaults:
       type: "pages"
     values:
       layout: "page"
+      image: /assets/images/breezy-og-default.png
   - scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
       author: "Joerg Proeve"
+      image: /assets/images/breezy-og-default.png
 
 # Collections
 collections_dir: ""

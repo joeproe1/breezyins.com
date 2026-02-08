@@ -60,12 +60,17 @@ Insurance companies aren't trying to be difficult, they're trying to manage thei
 
 **Rapidly Evolving Exposure:** The threat landscape changes monthly. Underwriters struggle to price risks involving technologies (like AI-driven threat hunting) that they don't fully understand.
 
-| Service Type | Standard Tech E&O | Specialized Cyber Pro Policy |
-|---|---|---|
-| Software Development | Covered | Covered |
-| Penetration Testing | **Often Excluded** | **Explicitly Covered** |
-| Vulnerability Scans | **Gray Area** | **Explicitly Covered** |
-| Incident Response | **Excluded** | **Explicitly Covered** |
+<table>
+<thead>
+<tr><th>Service Type</th><th>Standard Tech E&O</th><th>Specialized Cyber Pro Policy</th></tr>
+</thead>
+<tbody>
+<tr><td>Software Development</td><td style="color: #00D4AA; font-weight: 700;">Covered</td><td style="color: #00D4AA; font-weight: 700;">Covered</td></tr>
+<tr><td>Penetration Testing</td><td style="color: #DC2626; font-weight: 700;">Often Excluded</td><td style="color: #00D4AA; font-weight: 700;">Explicitly Covered</td></tr>
+<tr><td>Vulnerability Scans</td><td style="color: #F59E0B; font-weight: 700;">Gray Area</td><td style="color: #00D4AA; font-weight: 700;">Explicitly Covered</td></tr>
+<tr><td>Incident Response</td><td style="color: #DC2626; font-weight: 700;">Excluded</td><td style="color: #00D4AA; font-weight: 700;">Explicitly Covered</td></tr>
+</tbody>
+</table>
 
 ## What You Need Instead
 

@@ -26,7 +26,7 @@ Now let me show you the SPECIFIC gaps I find in every [Risk Intelligence Report]
 
 Your Technology E&O policy was written for companies that *use* technology, not companies that *secure* it.
 
-Look at your policy's definition of "professional services." I'll bet it says: "IT consulting, software implementation, network administration, and technical support."
+Look at your policy's definition of "professional services." I will bet it says: "IT consulting, software implementation, network administration, and technical support."
 
 Notice what's missing? Security assessments. Penetration testing. Vulnerability scanning. Red team exercises.
 
@@ -145,7 +145,7 @@ Carriers now make MFA a **warranty**, meaning it's a condition of coverage, not 
 
 These gaps exist because your broker doesn't understand the difference between an MSP and a generic "technology company." They don't know that your Tech E&O policy needs to cover offensive security work, that you hold admin credentials for dozens of client networks, or that "intentional acts" exclusions can deny coverage for authorized penetration testing.
 
-I'll be blunt: you need to either educate your current broker or find a new one.
+I will be blunt: you need to either educate your current broker or find a new one.
 
 ### Five Questions to Ask Your Broker:
 

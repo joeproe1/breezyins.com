@@ -63,14 +63,19 @@ permalink: /contact/
                         Contact form loading... If it doesn't appear, email <a href="mailto:contact@breezyins.com">contact@breezyins.com</a>
                     </p>
                 </div>
-                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
                 <script>
-                hbspt.forms.create({
-                    region: "na1",
-                    portalId: "50837133",
-                    formId: "2i4TxBBiuRPO1Y8QRdkhf_w",
-                    target: "#hubspot-form-container"
-                });
+                var s = document.createElement("script");
+                s.src = "//js.hsforms.net/forms/embed/v2.js";
+                s.charset = "utf-8";
+                s.onload = function() {
+                    hbspt.forms.create({
+                        region: "na1",
+                        portalId: "50837133",
+                        formId: "2i4TxBBiuRPO1Y8QRdkhf_w",
+                        target: "#hubspot-form-container"
+                    });
+                };
+                document.head.appendChild(s);
                 </script>
             </div>
 

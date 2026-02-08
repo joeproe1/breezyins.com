@@ -117,7 +117,11 @@ permalink: /contact/
                     region: "na1",
                     portalId: "50837133",
                     formId: "8b84f104-18ae-44f3-b563-c41176485fff",
-                    target: "#hubspot-form-container"
+                    target: "#hubspot-form-container",
+                    onFormReady: function(form) {
+                        var btn = form.querySelector('.hs-button');
+                        if (btn) btn.textContent = 'Get in Touch';
+                    }
                 });
             };
             document.head.appendChild(s);

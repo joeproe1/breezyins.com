@@ -1,38 +1,35 @@
 ---
 layout: page
-title: "Request a Risk Intelligence Report | Breezy Risk Advisors"
-description: "Request a Risk Intelligence Report or schedule a quick call to review your MSP insurance coverage."
+title: "Get in Touch | Breezy Risk Advisors"
+description: "Have a coverage question or want to understand how I work with MSPs? Get in touch. No commitment required."
 permalink: /contact/
 ---
 
 <style>
 .contact-page { padding-top: 140px !important; }
-.contact-shell { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
-.contact-header { text-align: center; margin-bottom: 56px; }
+.contact-shell { max-width: 720px; margin: 0 auto; padding: 0 40px; }
+.contact-header { text-align: center; margin-bottom: 48px; }
 .contact-header h1 { font-size: 48px; font-weight: 800; color: var(--primary); margin: 0 0 14px; letter-spacing: -0.02em; }
-.contact-header p { font-size: 18px; color: var(--text-secondary); max-width: 720px; margin: 0 auto; line-height: 1.7; }
-.contact-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px; align-items: start; }
-.contact-card { background: #fff; border: 2px solid var(--border); border-radius: 12px; padding: 40px; transition: all 0.25s; }
-.contact-card:hover { border-color: var(--accent); box-shadow: 0 10px 26px rgba(0, 212, 170, 0.14); }
-.contact-card.primary { border-color: rgba(0, 212, 170, 0.35); box-shadow: 0 12px 30px rgba(0, 212, 170, 0.12); }
-.contact-card h2 { font-size: 28px; font-weight: 800; color: var(--primary); margin: 0 0 8px; }
-.contact-card .subhead { font-size: 16px; color: var(--text-secondary); margin: 0 0 22px; line-height: 1.7; }
-.bullets-title { font-size: 16px; font-weight: 800; color: var(--primary); margin: 0 0 12px; }
-.bullets { list-style: none; padding: 0; margin: 0 0 26px; }
-.bullets li { padding: 6px 0; color: var(--text-secondary); font-size: 15px; display: flex; gap: 10px; align-items: flex-start; line-height: 1.6; }
-.bullets li .check { color: var(--accent); font-weight: 900; font-size: 18px; line-height: 1; flex-shrink: 0; }
-.secondary-cta { margin-top: 18px; }
-.secondary-cta .btn-secondary { width: 100%; justify-content: center; padding: 16px 32px; font-weight: 800; text-align: center; display: block; }
-.small-note { text-align: center; margin-top: 14px; font-size: 15px; color: var(--text-secondary); }
-.contact-footer-note { text-align: center; padding: 40px 20px; }
-.contact-footer-note p { font-size: 16px; color: var(--text-secondary); margin: 0; }
-.contact-footer-note a { color: var(--accent); font-weight: 700; }
+.contact-header p { font-size: 18px; color: var(--text-secondary); max-width: 600px; margin: 0 auto; line-height: 1.7; }
+.contact-card { background: #fff; border: 2px solid var(--border); border-radius: 12px; padding: 40px; }
+.contact-card .response-note { font-size: 15px; color: var(--text-secondary); margin-bottom: 24px; line-height: 1.6; }
+.contact-alternatives { max-width: 720px; margin: 40px auto 0; text-align: center; }
+.contact-alternatives h3 { font-size: 20px; font-weight: 700; color: var(--primary); margin-bottom: 24px; }
+.alt-options { display: flex; gap: 32px; justify-content: center; flex-wrap: wrap; }
+.alt-option { text-align: center; }
+.alt-option .alt-label { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-secondary); margin-bottom: 8px; }
+.alt-option a { font-size: 16px; font-weight: 600; color: var(--primary); text-decoration: none; transition: color 0.2s; }
+.alt-option a:hover { color: var(--accent); }
+.alt-divider { width: 1px; background: var(--border); }
 @media (max-width: 900px) {
     .contact-shell { padding: 0 24px; }
-    .contact-grid { grid-template-columns: 1fr; }
     .contact-card { padding: 30px 20px; }
     .contact-page { padding-top: 100px !important; }
     .contact-header h1 { font-size: 36px; }
+}
+@media (max-width: 480px) {
+    .alt-options { flex-direction: column; gap: 20px; }
+    .alt-divider { width: 100%; height: 1px; }
 }
 
 /* HubSpot form overrides */
@@ -99,77 +96,52 @@ permalink: /contact/
     font-size: 14px;
     color: var(--text-secondary);
 }
-.form-response-note {
-    font-size: 15px;
-    color: var(--text-secondary);
-    margin-bottom: 20px;
-    line-height: 1.6;
-}
 </style>
 
 <section class="contact-page" style="padding: 80px 0; background: var(--bg-light);">
     <div class="contact-shell">
         <div class="contact-header">
-            <h1>Request a Risk Intelligence Report</h1>
-            <p>Request a Risk Intelligence Report or schedule a quick call to review your current coverage.</p>
+            <h1>Get in Touch</h1>
+            <p>Whether you have a specific coverage question or just want to understand my approach, I'm happy to talk. No commitment required.</p>
         </div>
 
-        <div class="contact-grid">
-            <!-- PRIMARY: Risk Intelligence Report -->
-            <div class="contact-card primary">
-                <h2>Request a Risk Intelligence Report</h2>
-                <p class="subhead">Policy review plus a findings call focused on coverage gaps and contract compliance.</p>
+        <div class="contact-card">
+            <p class="response-note">I'll get back to you within one business day.</p>
+            <div id="hubspot-form-container"></div>
+            <script>
+            var s = document.createElement("script");
+            s.src = "//js.hsforms.net/forms/embed/v2.js";
+            s.charset = "utf-8";
+            s.onload = function() {
+                hbspt.forms.create({
+                    region: "na1",
+                    portalId: "50837133",
+                    formId: "8b84f104-18ae-44f3-b563-c41176485fff",
+                    target: "#hubspot-form-container"
+                });
+            };
+            document.head.appendChild(s);
+            </script>
+        </div>
 
-                <div style="margin-bottom: 22px;">
-                    <div class="bullets-title">What you get</div>
-                    <ul class="bullets">
-                        <li><span class="check">&#10003;</span><span>Estimated exposure in dollars</span></li>
-                        <li><span class="check">&#10003;</span><span>Contract compliance review (up to 3 MSAs)</span></li>
-                        <li><span class="check">&#10003;</span><span>Fix options and cost guidance</span></li>
-                    </ul>
+        <div class="contact-alternatives">
+            <h3>Other ways to reach me</h3>
+            <div class="alt-options">
+                <div class="alt-option">
+                    <div class="alt-label">Schedule a call</div>
+                    <a href="https://calendly.com/contact-breezyins/15min" target="_blank" rel="noopener">Pick a time &rarr;</a>
                 </div>
-
-                <div class="form-response-note">I will follow up with you within 48 hours.</div>
-                <div id="hubspot-form-container"></div>
-                <script>
-                var s = document.createElement("script");
-                s.src = "//js.hsforms.net/forms/embed/v2.js";
-                s.charset = "utf-8";
-                s.onload = function() {
-                    hbspt.forms.create({
-                        region: "na1",
-                        portalId: "50837133",
-                        formId: "8b84f104-18ae-44f3-b563-c41176485fff",
-                        target: "#hubspot-form-container"
-                    });
-                };
-                document.head.appendChild(s);
-                </script>
-            </div>
-
-            <!-- SECONDARY: Call -->
-            <div class="contact-card" id="schedule">
-                <h2>15-minute Coverage Check</h2>
-                <p class="subhead">A quick call to confirm where you are covered and what to verify next.</p>
-
-                <div style="margin-bottom: 22px;">
-                    <div class="bullets-title">What I will cover</div>
-                    <p style="font-size:15px; color:var(--text-secondary); line-height:1.7; margin:0;">
-                        Your current insurance setup, any coverage concerns, and whether a Risk Intelligence Report makes sense for your business.
-                    </p>
+                <div class="alt-divider"></div>
+                <div class="alt-option">
+                    <div class="alt-label">Email</div>
+                    <a href="mailto:contact@breezyins.com">contact@breezyins.com</a>
                 </div>
-
-                <div class="secondary-cta">
-                    <a href="https://calendly.com/contact-breezyins/15min" target="_blank" class="btn btn-secondary" rel="noopener">
-                        Schedule a call &rarr;
-                    </a>
+                <div class="alt-divider"></div>
+                <div class="alt-option">
+                    <div class="alt-label">Phone</div>
+                    <a href="tel:+17174907670">(717) 490-7670</a>
                 </div>
-                <div class="small-note">Pick a time that works for your schedule.</div>
             </div>
         </div>
     </div>
 </section>
-
-<div class="contact-footer-note">
-    <p>Questions? Email <a href="mailto:contact@breezyins.com">contact@breezyins.com</a> or call <a href="tel:+17174907670">(717) 490-7670</a></p>
-</div>

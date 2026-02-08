@@ -302,6 +302,108 @@ permalink: /risk-intelligence-report/
   .rir-final-inner{ padding: 40px 24px; }
   .rir-final-inner h2{ font-size: 28px; }
 }
+
+/* Modal */
+.rir-modal-overlay{
+  display:none;
+  position:fixed;
+  top:0;left:0;right:0;bottom:0;
+  background:rgba(10,37,64,.65);
+  backdrop-filter:blur(4px);
+  z-index:9999;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+.rir-modal-overlay.active{
+  display:flex;
+}
+.rir-modal{
+  background:#fff;
+  border-radius:14px;
+  padding:44px;
+  max-width:520px;
+  width:100%;
+  position:relative;
+  max-height:90vh;
+  overflow-y:auto;
+  box-shadow:0 24px 80px rgba(0,0,0,.25);
+}
+.rir-modal h2{
+  font-size:28px;
+  font-weight:800;
+  color:var(--primary);
+  margin:0 0 8px;
+}
+.rir-modal > p{
+  font-size:16px;
+  color:var(--text-secondary);
+  margin:0 0 24px;
+  line-height:1.6;
+}
+.rir-modal-close{
+  position:absolute;
+  top:16px;right:16px;
+  background:none;
+  border:none;
+  font-size:28px;
+  color:var(--text-secondary);
+  cursor:pointer;
+  line-height:1;
+  padding:4px 8px;
+  transition:color .2s;
+}
+.rir-modal-close:hover{
+  color:var(--primary);
+}
+
+/* HubSpot form overrides inside modal */
+#rir-hubspot-form .hs-form { font-family: 'DM Sans', sans-serif; }
+#rir-hubspot-form .hs-form fieldset { max-width: 100% !important; }
+#rir-hubspot-form .hs-form label {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600; font-size: 15px;
+  color: var(--primary); margin-bottom: 6px;
+}
+#rir-hubspot-form .hs-form .hs-input {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px; color: var(--primary);
+  background: #fff; border: 2px solid var(--border);
+  border-radius: 8px; padding: 12px 16px;
+  width: 100% !important; transition: border-color 0.2s;
+}
+#rir-hubspot-form .hs-form .hs-input:focus {
+  border-color: var(--accent); outline: none;
+}
+#rir-hubspot-form .hs-form .hs-error-msgs {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px; color: #FF6B35;
+  list-style: none; padding: 4px 0 0; margin: 0;
+}
+#rir-hubspot-form .hs-form textarea.hs-input {
+  min-height: 80px; resize: vertical;
+}
+#rir-hubspot-form .hs-form .hs-button {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px; font-weight: 600;
+  background: var(--accent); color: var(--primary);
+  border: none; border-radius: 8px;
+  padding: 14px 32px; cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+}
+#rir-hubspot-form .hs-form .hs-button:hover {
+  background: #00f5c3; transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 212, 170, 0.4);
+}
+#rir-hubspot-form .hs-form .hs-richtext {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px; color: var(--text-secondary);
+}
+@media(max-width: 480px){
+  .rir-modal{ padding: 28px 20px; }
+  .rir-modal h2{ font-size: 24px; }
+}
 </style>
 
 <!-- HERO -->
@@ -311,11 +413,6 @@ permalink: /risk-intelligence-report/
     <p class="rir-subhead">
       A fast, plain-English review of your insurance and client contracts, designed to show you where coverage will respond, where it will fail, and what to fix before you face a claim or lose a deal.
     </p>
-    <div class="rir-actions">
-      <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary" style="padding:18px 44px;">
-        Get in Touch &rarr;
-      </a>
-    </div>
   </div>
 </section>
 
@@ -403,10 +500,72 @@ permalink: /risk-intelligence-report/
 <!-- FINAL CTA -->
 <section class="rir-final">
   <div class="rir-final-inner">
-    <h2>Want to Know Where You Stand?</h2>
+    <h2>Ready to Find Out Where You Stand?</h2>
     <p>
-      Whether you want a full policy review or just have a question about your coverage, I'm happy to talk.
+      A focused review of your Tech E&O, Cyber, and contract requirements. You'll see exactly where coverage will respond, where it will be disputed, and where it won't pay.
     </p>
-    <a href="{{ '/contact/' | relative_url }}" class="btn-accent">Get in Touch &rarr;</a>
+    <a href="#" class="btn-accent" id="rir-request-btn">Request a Risk Intelligence Report &rarr;</a>
+    <div class="rir-final-foot">No obligation. I'll follow up within one business day.</div>
   </div>
 </section>
+
+<!-- RIR REQUEST MODAL -->
+<div class="rir-modal-overlay" id="rir-modal">
+  <div class="rir-modal">
+    <button class="rir-modal-close" id="rir-modal-close" aria-label="Close">&times;</button>
+    <h2>Request a Risk Intelligence Report</h2>
+    <p>Tell me a bit about your firm and I'll follow up within one business day.</p>
+    <div id="rir-hubspot-form"></div>
+  </div>
+</div>
+
+<script>
+(function() {
+  var btn = document.getElementById('rir-request-btn');
+  var modal = document.getElementById('rir-modal');
+  var closeBtn = document.getElementById('rir-modal-close');
+  var formLoaded = false;
+
+  function openModal(e) {
+    e.preventDefault();
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    if (!formLoaded) {
+      formLoaded = true;
+      var s = document.createElement('script');
+      s.src = '//js.hsforms.net/forms/embed/v2.js';
+      s.charset = 'utf-8';
+      s.onload = function() {
+        hbspt.forms.create({
+          region: 'na1',
+          portalId: '50837133',
+          formId: '8b84f104-18ae-44f3-b563-c41176485fff',
+          target: '#rir-hubspot-form',
+          onFormReady: function(form) {
+            var submitBtn = form.querySelector('.hs-button');
+            if (submitBtn) submitBtn.textContent = 'Request Report';
+          },
+          onFormSubmitted: function() {
+            setTimeout(function() { closeModal(); }, 2000);
+          }
+        });
+      };
+      document.head.appendChild(s);
+    }
+  }
+
+  function closeModal() {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  btn.addEventListener('click', openModal);
+  closeBtn.addEventListener('click', closeModal);
+  modal.addEventListener('click', function(e) {
+    if (e.target === modal) closeModal();
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && modal.classList.contains('active')) closeModal();
+  });
+})();
+</script>

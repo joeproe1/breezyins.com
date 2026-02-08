@@ -698,19 +698,6 @@ permalink: /msp-insurance-assessment/
       },
       {
         id: 3,
-        text: "Does your insurance policy specifically name the IT services you provide?",
-        hint: "General language like 'IT consulting' often won't cover specialized work like security testing or managed detection. The more specific, the better.",
-        type: "single",
-        options: [
-          { id: "a", text: "Yes, all my services are listed by name", score: 10, gaps: [] },
-          { id: "b", text: "Most of them are listed", score: 6, gaps: ["services-partial"] },
-          { id: "c", text: "It just says something general like 'IT services'", score: 3, gaps: ["services-not-listed"] },
-          { id: "d", text: "I haven't checked", score: 0, gaps: ["services-not-listed"] }
-        ],
-        weight: 9
-      },
-      {
-        id: 4,
         text: "Which of these services do you provide? Select all that apply.",
         hint: "Some services, like security assessments or compliance consulting, expose you to bigger claims if something goes wrong. Policies sometimes exclude these or cap the coverage.",
         type: "multi",
@@ -725,6 +712,19 @@ permalink: /msp-insurance-assessment/
         ],
         weight: 8,
         scoring: "flag-based"
+      },
+      {
+        id: 4,
+        text: "Does your insurance policy specifically name the IT services you provide?",
+        hint: "General language like 'IT consulting' often won't cover specialized work like security testing or managed detection. The more specific, the better.",
+        type: "single",
+        options: [
+          { id: "a", text: "Yes, all my services are listed by name", score: 10, gaps: [] },
+          { id: "b", text: "Most of them are listed", score: 6, gaps: ["services-partial"] },
+          { id: "c", text: "It just says something general like 'IT services'", score: 3, gaps: ["services-not-listed"] },
+          { id: "d", text: "I haven't checked", score: 0, gaps: ["services-not-listed"] }
+        ],
+        weight: 9
       },
       {
         id: 5,
@@ -779,19 +779,6 @@ permalink: /msp-insurance-assessment/
       },
       {
         id: 9,
-        text: "When did you last review your cyber and Tech E&O policy with your broker?",
-        hint: "A policy that made sense last year might have gaps today, especially if your business has changed.",
-        type: "single",
-        options: [
-          { id: "a", text: "Within the last 6 months", score: 10, gaps: [] },
-          { id: "b", text: "6 to 12 months ago", score: 7, gaps: [] },
-          { id: "c", text: "1 to 2 years ago", score: 4, gaps: ["outdated-review"] },
-          { id: "d", text: "More than 2 years ago or never", score: 0, gaps: ["outdated-review"] }
-        ],
-        weight: 6
-      },
-      {
-        id: 10,
         text: "Has your business changed significantly since your current policy was written?",
         hint: "Insurance policies don't update themselves. New services, more clients, and higher revenue often require coverage updates.",
         type: "single",
@@ -800,6 +787,19 @@ permalink: /msp-insurance-assessment/
           { id: "b", text: "Some things have changed", score: 6, gaps: ["coverage-mismatch"] },
           { id: "c", text: "No, things are pretty stable", score: 10, gaps: [] },
           { id: "d", text: "I'm not sure", score: 3, gaps: ["coverage-mismatch"] }
+        ],
+        weight: 6
+      },
+      {
+        id: 10,
+        text: "When did you last review your cyber and Tech E&O policy with your broker?",
+        hint: "A policy that made sense last year might have gaps today, especially if your business has changed.",
+        type: "single",
+        options: [
+          { id: "a", text: "Within the last 6 months", score: 10, gaps: [] },
+          { id: "b", text: "6 to 12 months ago", score: 7, gaps: [] },
+          { id: "c", text: "1 to 2 years ago", score: 4, gaps: ["outdated-review"] },
+          { id: "d", text: "More than 2 years ago or never", score: 0, gaps: ["outdated-review"] }
         ],
         weight: 6
       }
@@ -1212,13 +1212,13 @@ permalink: /msp-insurance-assessment/
         answersSummary += "> " + (opt ? opt.text : answer) + "\n\n";
       }
     });
-    var servicesAnswer = st.ans[4];
+    var servicesAnswer = st.ans[3];
     var servicesList = "Not specified";
     if (servicesAnswer && Array.isArray(servicesAnswer) && servicesAnswer.length > 0) {
-      var q4 = qd.questions.find(function(q) { return q.id === 4; });
-      if (q4) {
+      var q3 = qd.questions.find(function(q) { return q.id === 3; });
+      if (q3) {
         servicesList = servicesAnswer.map(function(aid) {
-          var opt = q4.options.find(function(o) { return o.id === aid; });
+          var opt = q3.options.find(function(o) { return o.id === aid; });
           return opt ? opt.text : "";
         }).filter(Boolean).join(", ");
       }

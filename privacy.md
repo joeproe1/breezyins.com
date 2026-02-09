@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Privacy Policy | Breezy Risk Advisors"
+title: "Privacy Policy"
 description: "Privacy policy for Breezy Risk Advisors. How we collect, use, and protect your information."
 permalink: /privacy/
 ---

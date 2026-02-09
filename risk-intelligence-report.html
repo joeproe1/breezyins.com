@@ -237,6 +237,41 @@ permalink: /risk-intelligence-report/
   line-height: 1.6;
 }
 .rir-mini-wide strong{ color: var(--primary); }
+.rir-steps{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.rir-step{
+  text-align: center;
+  padding: 28px 20px;
+}
+.rir-step-num{
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  border-radius: 50%;
+  background: rgba(0, 212, 170, 0.12);
+  color: var(--accent-dark, #0A2540);
+  font-weight: 900;
+  font-size: 18px;
+  margin: 0 auto 16px;
+  border: 2px solid rgba(0, 212, 170, 0.3);
+}
+.rir-step strong{
+  display: block;
+  font-size: 18px;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+.rir-step p{
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin: 0;
+}
 .rir-final{
   background:#fff;
   padding:48px 40px;
@@ -294,6 +329,7 @@ permalink: /risk-intelligence-report/
   .rir-hero h1{ font-size: 38px; }
   .rir-grid{ grid-template-columns: 1fr; }
   .rir-mini-wide{ margin-top: 14px; }
+  .rir-steps{ grid-template-columns: 1fr; gap: 24px; }
 }
 @media(max-width: 768px){
   .rir-hero{ padding: 86px 0 50px; }
@@ -493,6 +529,34 @@ permalink: /risk-intelligence-report/
         <strong>Designed for MSPs with up to ~50 employees</strong>, who want clear answers without months of process or a large consulting bill.
       </div>
 
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="rir-section">
+  <div class="container rir-wrap">
+    <div class="rir-center">
+      <h2>How It Works</h2>
+      <p>No long engagements, no complex onboarding. Three steps from first conversation to finished report.</p>
+    </div>
+
+    <div class="rir-steps">
+      <div class="rir-step">
+        <div class="rir-step-num">1</div>
+        <strong>Get in touch</strong>
+        <p>Tell me about your MSP, the services you deliver, and any specific concerns. A 15-minute call is usually enough to scope the review.</p>
+      </div>
+      <div class="rir-step">
+        <div class="rir-step-num">2</div>
+        <strong>Send your policies</strong>
+        <p>Share your current Tech E&O, Cyber, and up to 3 client contracts (MSAs or SOWs). I handle the rest.</p>
+      </div>
+      <div class="rir-step">
+        <div class="rir-step-num">3</div>
+        <strong>Get the report</strong>
+        <p>You receive a plain-English report with specific findings, exposure estimates, and clear next steps you can take to your broker.</p>
+      </div>
     </div>
   </div>
 </section>

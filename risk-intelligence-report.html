@@ -239,14 +239,23 @@ permalink: /risk-intelligence-report/
 .rir-mini-wide strong{ color: var(--primary); }
 .rir-steps{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  gap: 0;
   max-width: 960px;
   margin: 0 auto;
+  align-items: start;
 }
 .rir-step{
   text-align: center;
   padding: 28px 20px;
+}
+.rir-step-arrow{
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  color: rgba(0, 212, 170, 0.5);
+  font-size: 28px;
+  font-weight: 300;
 }
 .rir-step-num{
   width: 44px;
@@ -329,7 +338,8 @@ permalink: /risk-intelligence-report/
   .rir-hero h1{ font-size: 38px; }
   .rir-grid{ grid-template-columns: 1fr; }
   .rir-mini-wide{ margin-top: 14px; }
-  .rir-steps{ grid-template-columns: 1fr; gap: 24px; }
+  .rir-steps{ grid-template-columns: 1fr; gap: 0; }
+  .rir-step-arrow{ display: none; }
 }
 @media(max-width: 768px){
   .rir-hero{ padding: 86px 0 50px; }
@@ -547,11 +557,13 @@ permalink: /risk-intelligence-report/
         <strong>Get in touch</strong>
         <p>Tell me about your MSP, the services you deliver, and any specific concerns. A 15-minute call is usually enough to scope the review.</p>
       </div>
+      <div class="rir-step-arrow" aria-hidden="true">&#10132;</div>
       <div class="rir-step">
         <div class="rir-step-num">2</div>
         <strong>Send your policies</strong>
         <p>Share your current Tech E&O and Cyber insurance policies, and up to 3 client contracts (MSAs). I handle the rest.</p>
       </div>
+      <div class="rir-step-arrow" aria-hidden="true">&#10132;</div>
       <div class="rir-step">
         <div class="rir-step-num">3</div>
         <strong>Get the report</strong>

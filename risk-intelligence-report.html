@@ -239,48 +239,36 @@ permalink: /risk-intelligence-report/
 .rir-mini-wide strong{ color: var(--primary); }
 .rir-steps{
   display: grid;
-  grid-template-columns: 1fr auto 1fr auto 1fr;
+  grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
   gap: 0;
-  max-width: 960px;
+  max-width: 1060px;
   margin: 0 auto;
   align-items: start;
 }
 .rir-step{
   text-align: center;
-  padding: 28px 20px;
+  padding: 20px 16px;
 }
 .rir-step-arrow{
   display: flex;
   align-items: center;
-  margin-top: 48px;
+  margin-top: 28px;
   color: rgba(0, 212, 170, 0.5);
   font-size: 0;
   line-height: 0;
 }
 .rir-step-arrow svg{
-  width: 32px;
-  height: 32px;
-}
-.rir-step-num{
-  width: 44px;
-  height: 44px;
-  line-height: 44px;
-  border-radius: 50%;
-  background: rgba(0, 212, 170, 0.12);
-  color: var(--accent-dark, #0A2540);
-  font-weight: 900;
-  font-size: 18px;
-  margin: 0 auto 16px;
-  border: 2px solid rgba(0, 212, 170, 0.3);
+  width: 28px;
+  height: 28px;
 }
 .rir-step strong{
   display: block;
-  font-size: 18px;
+  font-size: 17px;
   color: var(--primary);
   margin-bottom: 10px;
 }
 .rir-step p{
-  font-size: 15px;
+  font-size: 14px;
   color: var(--text-secondary);
   line-height: 1.7;
   margin: 0;
@@ -342,8 +330,11 @@ permalink: /risk-intelligence-report/
   .rir-hero h1{ font-size: 38px; }
   .rir-grid{ grid-template-columns: 1fr; }
   .rir-mini-wide{ margin-top: 14px; }
-  .rir-steps{ grid-template-columns: 1fr; gap: 0; }
+  .rir-steps{ grid-template-columns: 1fr 1fr; gap: 0; }
   .rir-step-arrow{ display: none; }
+}
+@media(max-width: 580px){
+  .rir-steps{ grid-template-columns: 1fr; }
 }
 @media(max-width: 768px){
   .rir-hero{ padding: 86px 0 50px; }
@@ -557,21 +548,23 @@ permalink: /risk-intelligence-report/
 
     <div class="rir-steps">
       <div class="rir-step">
-        <div class="rir-step-num">1</div>
-        <strong>Get in touch</strong>
+        <strong>1. Get in touch</strong>
         <p>Tell me about your MSP, the services you deliver, and any specific concerns. A 15-minute call is usually enough to scope the review.</p>
       </div>
       <div class="rir-step-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
       <div class="rir-step">
-        <div class="rir-step-num">2</div>
-        <strong>Send your policies</strong>
+        <strong>2. Send your policies</strong>
         <p>Share your current Tech E&O and Cyber insurance policies, and up to 3 client contracts (MSAs). I handle the rest.</p>
       </div>
       <div class="rir-step-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
       <div class="rir-step">
-        <div class="rir-step-num">3</div>
-        <strong>Get the report</strong>
-        <p>You receive a plain-English report with specific findings, exposure estimates, and clear next steps. Includes a 30-minute walkthrough so you can ask me any questions.</p>
+        <strong>3. Get the report</strong>
+        <p>A plain-English report with specific findings, exposure estimates, and clear next steps. Includes a 30-minute walkthrough so you can ask me any questions.</p>
+      </div>
+      <div class="rir-step-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
+      <div class="rir-step">
+        <strong>4. Fix what matters</strong>
+        <p>Take the findings to your broker, or I can help you negotiate endorsements and policy changes directly. Most fixes are straightforward once you know what to ask for.</p>
       </div>
     </div>
   </div>

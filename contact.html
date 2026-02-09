@@ -106,32 +106,20 @@ permalink: /contact/
         </div>
 
         <div class="contact-card">
-            <div id="hubspot-form-container">
-                <div id="form-placeholder" style="min-height:280px;display:flex;align-items:center;justify-content:center;color:var(--text-secondary);font-size:15px;">Loading form...</div>
-            </div>
+            <div id="hubspot-form-container"></div>
             <script src="https://js.hsforms.net/forms/embed/v2.js" async></script>
             <script>
-            // Watch for HubSpot button and rename it
-            var observer = new MutationObserver(function() {
-                var btn = document.querySelector('#hubspot-form-container .hs-button');
-                if (btn && btn.value !== 'Get in Touch') {
-                    btn.value = 'Get in Touch';
-                    btn.textContent = 'Get in Touch';
-                }
-                var placeholder = document.getElementById('form-placeholder');
-                if (placeholder && document.querySelector('#hubspot-form-container .hs-form')) {
-                    placeholder.remove();
-                }
-            });
-            observer.observe(document.getElementById('hubspot-form-container'), { childList: true, subtree: true });
-
             function loadHubSpotForm() {
                 if (typeof hbspt !== 'undefined') {
                     hbspt.forms.create({
                         region: "na1",
                         portalId: "50837133",
                         formId: "8b84f104-18ae-44f3-b563-c41176485fff",
-                        target: "#hubspot-form-container"
+                        target: "#hubspot-form-container",
+                        onFormReady: function() {
+                            var btn = document.querySelector('#hubspot-form-container .hs-button');
+                            if (btn) { btn.value = 'Get in Touch'; }
+                        }
                     });
                 } else {
                     setTimeout(loadHubSpotForm, 50);

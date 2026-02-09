@@ -1,0 +1,368 @@
+---
+layout: page
+title: "MSP Coverage Gap: When Liability Stops at Your Boundary"
+description: "MSPs have admin access to dozens of client networks. Most cyber policies only cover breaches of your own. One client breach can trigger lawsuits your policy won't touch."
+permalink: /coverage-gaps/liability-boundary/
+---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Your Cyber Policy Covers Your Network. You Operate Inside Dozens of Networks.",
+  "description": "MSPs have admin access to dozens of client networks. Most cyber policies only cover breaches of your own. One client breach can trigger lawsuits your policy won't touch.",
+  "author": {
+    "@type": "Person",
+    "name": "Joerg Proeve"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Breezy Risk Advisors",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://breezyins.com/assets/images/breezy-logo.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://breezyins.com/coverage-gaps/liability-boundary/"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does my cyber insurance cover breaches of client networks I manage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the 'Computer System' or 'Insured Network' definition in your policy. If it says 'owned or leased by the Insured,' client networks are excluded. If it says 'operated by the Insured,' there's an argument for coverage, but carriers interpret this differently at claim time. Best case: the policy explicitly covers managed client systems."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Front Door Problem in MSP insurance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Front Door Problem happens when an MSP carries both Cyber and Tech E&O, and a claim falls between the two policies. The cyber carrier says it's a professional services failure (E&O claim). The E&O carrier says it's a cyber attack (cyber claim). Both carriers point fingers at each other, and neither pays. This is the most common coverage collision for MSPs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do aggregate limits affect MSPs with multiple clients?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your aggregate limit is the total pool available for all claims in a policy period. In a multi-client breach, each affected client files a separate claim. A $2M aggregate divided across 15 client claims leaves very little per client. Once the aggregate is exhausted, the carrier's duty to defend often ends, and remaining lawsuits come directly to you."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+.cg-detail{
+  background: var(--bg-light);
+  padding: 84px 0 70px;
+}
+.cg-detail-inner{
+  max-width: 780px;
+  margin: 0 auto;
+}
+.cg-breadcrumb{
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+.cg-breadcrumb a{
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+.cg-breadcrumb a:hover{
+  text-decoration: underline;
+}
+.cg-detail h1{
+  margin: 0 0 16px;
+  font-size: 42px;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--primary);
+  font-weight: 900;
+}
+.cg-detail .cg-intro{
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin: 0 0 32px;
+}
+.cg-detail h2{
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--primary);
+  margin: 48px 0 18px;
+  letter-spacing: -0.01em;
+}
+.cg-detail p{
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  margin: 0 0 16px;
+}
+.cg-detail ul{
+  margin: 0 0 20px;
+  padding-left: 20px;
+  list-style: none;
+}
+.cg-detail li{
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 8px;
+}
+.cg-detail li::before{
+  content: '\2022';
+  position: absolute;
+  left: -12px;
+  color: var(--accent);
+  font-weight: 700;
+}
+.cg-detail strong{
+  color: var(--primary);
+}
+.policy-quote{
+  background: #f1f5f9;
+  border-left: 4px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  padding: 20px 24px;
+  margin: 20px 0 24px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--primary);
+}
+.cg-scenario{
+  background: #fff;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  margin: 20px 0;
+}
+.cg-scenario h3{
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--primary);
+  margin: 0 0 12px;
+}
+.cg-scenario p{
+  font-size: 16px;
+  margin: 0;
+}
+.cg-steps{
+  counter-reset: step-counter;
+  margin: 24px 0;
+}
+.cg-step{
+  padding: 20px 24px 20px 24px;
+  margin-bottom: 16px;
+  background: #fff;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+}
+.cg-step p{
+  font-size: 16px;
+  margin: 0;
+}
+.cg-links{
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.cg-links a{
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+}
+.cg-links a:hover{
+  text-decoration: underline;
+}
+
+/* CTA */
+.cg-cta{
+  background: #fff;
+  padding: 48px 40px;
+}
+.cg-cta-inner{
+  max-width: 1120px;
+  margin: 0 auto;
+  background: #0A2540;
+  border-radius: 12px;
+  padding: 60px 48px;
+  text-align: center;
+}
+.cg-cta-inner h2{
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 16px;
+  line-height: 1.2;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cg-cta-inner p{
+  font-size: 16px;
+  color: rgba(255,255,255,.85);
+  line-height: 1.6;
+  margin: 0 0 26px;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cg-cta-inner .btn-accent{
+  display: inline-block;
+  padding: 16px 36px;
+  background: #00D4AA;
+  color: #0A2540;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 17px;
+  transition: all .3s cubic-bezier(.4,0,.2,1);
+  box-shadow: 0 4px 20px rgba(0,212,170,.3);
+}
+.cg-cta-inner .btn-accent:hover{
+  background: #00f5c3;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0,212,170,.4);
+}
+
+@media(max-width: 768px){
+  .cg-detail{ padding: 70px 0 58px; }
+  .cg-detail h1{ font-size: 32px; }
+  .cg-detail h2{ font-size: 22px; }
+  .cg-cta{ padding: 32px 20px; }
+  .cg-cta-inner{ padding: 40px 24px; }
+  .cg-cta-inner h2{ font-size: 28px; }
+  .cg-links{ flex-direction: column; gap: 12px; }
+}
+</style>
+
+<section class="cg-detail">
+  <div class="container">
+    <div class="cg-detail-inner">
+
+      <div class="cg-breadcrumb">
+        <a href="{{ '/coverage-gaps-framework/' | relative_url }}">Coverage Gaps Framework</a> &rsaquo; Liability Boundary
+      </div>
+
+      <h1>Your Cyber Policy Covers Your Network. You Operate Inside Dozens of Networks.</h1>
+      <p class="cg-intro">
+        MSPs don't work like normal businesses. You have admin credentials to 20, 50, sometimes 100 client environments. Your cyber policy was designed for companies that protect one network: their own.
+      </p>
+
+      <h2>The Problem</h2>
+      <p>
+        A standard cyber liability policy covers breaches of your network and your data. That makes sense for a law firm or a retailer. It doesn't make sense for an MSP.
+      </p>
+      <p>
+        You have privileged access to client systems. You push patches, manage endpoints, control backups, and hold the keys to their entire infrastructure. When something goes wrong in a client environment, the lawsuits come to you.
+      </p>
+      <p>The problem splits two ways:</p>
+      <p>
+        <strong>The boundary problem.</strong> Your cyber policy covers first-party losses (your systems, your data) and third-party liability from breaches of your environment. But the breach happened in a client's environment, using your credentials. Your carrier says: that's not your network. That's their network. File against their policy.
+      </p>
+      <p>
+        <strong>The Front Door Problem.</strong> You carry both Cyber and Tech E&O. An incident happens: attacker compromises your RMM tool and uses it to deploy ransomware across three client networks. You file a claim.
+      </p>
+      <ul>
+        <li>Your cyber carrier says: "This is a failure of your professional services. That's an E&O claim, not a cyber claim."</li>
+        <li>Your E&O carrier says: "This was a cyber attack. That's a cyber claim, not an E&O claim."</li>
+      </ul>
+      <p>
+        Both carriers point fingers at each other. Neither pays. This is the most common coverage collision I see.
+      </p>
+
+      <h2>Where This Gap Hides in Policy Language</h2>
+      <p>
+        <strong>In the cyber policy:</strong> Look at the "Insured Network" or "Computer System" definition. It typically says something like:
+      </p>
+      <div class="policy-quote">
+        "Computer System means any computer hardware, software, or network owned, operated, or leased by the Insured."
+      </div>
+      <p>
+        "Operated by the Insured" might cover client networks you manage. Or it might not. Carriers interpret this differently at claim time. If the definition says "owned or leased," client networks are clearly excluded.
+      </p>
+      <p>
+        <strong>In the E&O policy:</strong> Check whether "Technology Services" or "Professional Services" includes remote management and monitoring. If you're denied on the cyber side, you need E&O to pick it up. But E&O policies often exclude claims "arising from a cyber event" or "network security failure." That's the Front Door Problem: each policy has an exclusion that points to the other.
+      </p>
+      <p>
+        <strong>Aggregate limits:</strong> Even if one policy responds, check whether your aggregate limit can handle a multi-client event. A $2M aggregate looks adequate until one breach affects 15 client environments. Each client files a claim. $2M is the total pool. Once it's exhausted, the carrier's duty to defend often ends. You pay the rest.
+      </p>
+
+      <h2>Real-World Impact</h2>
+
+      <div class="cg-scenario">
+        <h3>Scenario 1: RMM compromise</h3>
+        <p>An attacker gains access to your RMM platform through a compromised technician credential. They deploy ransomware to 8 client networks in a single weekend. Each client suffers $100K-$500K in damages. Total exposure: $2M+. Your cyber carrier says the breaches happened on client networks, not yours. Your E&O carrier says this was a cyber attack, not a professional services error. You're stuck between two denial letters while 8 clients demand answers.</p>
+      </div>
+
+      <div class="cg-scenario">
+        <h3>Scenario 2: Credential misuse</h3>
+        <p>A former employee's VPN credentials weren't revoked. Someone uses them to access a client's financial system and initiates a fraudulent wire transfer. The client loses $180K and sues you. Your cyber policy covers breaches of your network. The breach was of the client's financial system, accessed through your credentials. Your carrier argues this falls outside the insured network definition.</p>
+      </div>
+
+      <div class="cg-scenario">
+        <h3>Scenario 3: Multi-tenant data breach</h3>
+        <p>A vulnerability in your PSA platform exposes client data across your entire book of business. 30 clients are affected. Notification costs alone run $300K. Your $2M aggregate limit covers forensics and notification for the first wave. By client 15, the aggregate is exhausted. The remaining 15 clients have no coverage from your policy. Their lawsuits come directly to you.</p>
+      </div>
+
+      <h2>How to Fix This</h2>
+
+      <div class="cg-steps">
+        <div class="cg-step">
+          <p><strong>1. Check the "Computer System" or "Insured Network" definition in your cyber policy.</strong> Does it include systems you manage for others, or only systems you own? The phrase "operated by the Insured" is better than "owned or leased by the Insured." Best case: the policy explicitly covers "managed client systems."</p>
+        </div>
+        <div class="cg-step">
+          <p><strong>2. Look for the Front Door Problem.</strong> Read your cyber policy's exclusions for anything mentioning "professional services" or "technology services errors." Then read your Tech E&O exclusions for anything mentioning "cyber event," "network security failure," or "data breach." If both policies exclude the other's territory, you have a gap.</p>
+        </div>
+        <div class="cg-step">
+          <p><strong>3. Check the aggregate limit in both your cyber and Tech E&O policies against your client count.</strong> Divide each aggregate by the number of clients you manage. That's your per-client coverage in a multi-tenant event. If the math doesn't work, you need higher limits or a different policy structure.</p>
+        </div>
+        <div class="cg-step">
+          <p><strong>4. Ask about "shared limits" vs. "stacking."</strong> Some carriers pay only the highest single limit when multiple coverages are triggered (so $1M Cyber + $1M E&O = $1M payout, not $2M). Others allow limits to stack. This matters when a single event crosses both policies.</p>
+        </div>
+        <div class="cg-step">
+          <p><strong>5. Consider excess coverage.</strong> If your client count or contract requirements demand more coverage than your current aggregate provides, an umbrella or excess policy sitting above both Cyber and E&O can close the gap.</p>
+        </div>
+      </div>
+
+      <div class="cg-links">
+        <a href="{{ '/coverage-gaps-framework/' | relative_url }}">&larr; Back to Coverage Gaps Framework</a>
+        <a href="{{ '/insights/cyber-liability-insurance-for-msps/' | relative_url }}">Read: Cyber Liability for MSPs &rarr;</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="cg-cta">
+  <div class="cg-cta-inner">
+    <h2>Want to Check Whether Your Policies Have This Gap?</h2>
+    <p>
+      I can review your cyber and Tech E&O policies side by side and tell you whether the boundary problem or the Front Door Problem applies to you. No commitment required.
+    </p>
+    <a href="{{ '/contact/' | relative_url }}" class="btn-accent">
+      Get in Touch &rarr;
+    </a>
+  </div>
+</section>

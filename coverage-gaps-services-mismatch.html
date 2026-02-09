@@ -1,0 +1,313 @@
+---
+layout: page
+title: "MSP Coverage Gap: When Your Policy Doesn't Match Your Services"
+description: "Most MSP policies define covered services as 'IT consulting.' If you do pen testing, incident response, or managed security, your carrier can deny the claim."
+permalink: /coverage-gaps/services-mismatch/
+---
+
+<style>
+.cg-detail{
+  background: var(--bg-light);
+  padding: 84px 0 70px;
+}
+.cg-detail-inner{
+  max-width: 780px;
+  margin: 0 auto;
+}
+.cg-breadcrumb{
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+.cg-breadcrumb a{
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+.cg-breadcrumb a:hover{
+  text-decoration: underline;
+}
+.cg-detail h1{
+  margin: 0 0 16px;
+  font-size: 42px;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--primary);
+  font-weight: 900;
+}
+.cg-detail .cg-intro{
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin: 0 0 32px;
+}
+.cg-detail h2{
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--primary);
+  margin: 48px 0 18px;
+  letter-spacing: -0.01em;
+}
+.cg-detail p{
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  margin: 0 0 16px;
+}
+.cg-detail ul{
+  margin: 0 0 20px;
+  padding-left: 20px;
+  list-style: none;
+}
+.cg-detail li{
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 8px;
+}
+.cg-detail li::before{
+  content: '\2022';
+  position: absolute;
+  left: -12px;
+  color: var(--accent);
+  font-weight: 700;
+}
+.cg-detail strong{
+  color: var(--primary);
+}
+.policy-quote{
+  background: #f1f5f9;
+  border-left: 4px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  padding: 20px 24px;
+  margin: 20px 0 24px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--primary);
+}
+.cg-scenario{
+  background: #fff;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  margin: 20px 0;
+}
+.cg-scenario h3{
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--primary);
+  margin: 0 0 12px;
+}
+.cg-scenario p{
+  font-size: 16px;
+  margin: 0;
+}
+.cg-steps{
+  counter-reset: step-counter;
+  margin: 24px 0;
+}
+.cg-step{
+  padding: 20px 24px 20px 24px;
+  margin-bottom: 16px;
+  background: #fff;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+}
+.cg-step p{
+  font-size: 16px;
+  margin: 0;
+}
+.cg-links{
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.cg-links a{
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+}
+.cg-links a:hover{
+  text-decoration: underline;
+}
+
+/* CTA */
+.cg-cta{
+  background: #fff;
+  padding: 48px 40px;
+}
+.cg-cta-inner{
+  max-width: 1120px;
+  margin: 0 auto;
+  background: #0A2540;
+  border-radius: 12px;
+  padding: 60px 48px;
+  text-align: center;
+}
+.cg-cta-inner h2{
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 16px;
+  line-height: 1.2;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cg-cta-inner p{
+  font-size: 16px;
+  color: rgba(255,255,255,.85);
+  line-height: 1.6;
+  margin: 0 0 26px;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cg-cta-inner .btn-accent{
+  display: inline-block;
+  padding: 16px 36px;
+  background: #00D4AA;
+  color: #0A2540;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 17px;
+  transition: all .3s cubic-bezier(.4,0,.2,1);
+  box-shadow: 0 4px 20px rgba(0,212,170,.3);
+}
+.cg-cta-inner .btn-accent:hover{
+  background: #00f5c3;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0,212,170,.4);
+}
+
+@media(max-width: 768px){
+  .cg-detail{ padding: 70px 0 58px; }
+  .cg-detail h1{ font-size: 32px; }
+  .cg-detail h2{ font-size: 22px; }
+  .cg-cta{ padding: 32px 20px; }
+  .cg-cta-inner{ padding: 40px 24px; }
+  .cg-cta-inner h2{ font-size: 28px; }
+  .cg-links{ flex-direction: column; gap: 12px; }
+}
+</style>
+
+<section class="cg-detail">
+  <div class="container">
+    <div class="cg-detail-inner">
+
+      <div class="cg-breadcrumb">
+        <a href="{{ '/coverage-gaps-framework/' | relative_url }}">Coverage Gaps Framework</a> &rsaquo; Services Mismatch
+      </div>
+
+      <h1>Your Policy Covers "IT Consulting." You Do Security Services.</h1>
+      <p class="cg-intro">
+        The most common coverage gap I see in MSP policies: the professional services definition doesn't match the work you do.
+      </p>
+
+      <h2>The Problem</h2>
+      <p>
+        Your Tech E&O policy has a "Professional Services" definition. It's usually on the declarations page or in a schedule. It describes the work your policy covers.
+      </p>
+      <p>
+        For most managed service providers, it says something like "information technology consulting services" or "computer consulting and support." That definition was written for break-fix IT shops in 2010.
+      </p>
+      <p>If you do any of the following, your policy may not cover it:</p>
+      <ul>
+        <li>Managed security services (EDR/XDR, SIEM management)</li>
+        <li>Penetration testing or vulnerability assessments</li>
+        <li>Incident response</li>
+        <li>Cloud migrations (Azure, AWS, GCP)</li>
+        <li>vCISO or security advisory work</li>
+        <li>Compliance assessments (SOC 2, HIPAA)</li>
+      </ul>
+      <p>
+        The carrier doesn't need to prove you did something wrong. They just need to show the service wasn't listed. If it's not in the definition, they argue it's not covered.
+      </p>
+
+      <h2>Where It Hides in Policy Language</h2>
+      <p>
+        Look at your Tech E&O declarations page. Find the definition for "Professional Services" or "Covered Services". It's usually one paragraph.
+      </p>
+      <p>Here's what a typical definition looks like:</p>
+      <div class="policy-quote">
+        "Professional Services means information technology consulting, network design and installation, software development, and related technical support services as described in the application."
+      </div>
+      <p>
+        Notice what's missing: no mention of security testing, incident response, managed detection, or cloud services.
+      </p>
+      <p>Some policies add:</p>
+      <div class="policy-quote">
+        "as described in the application."
+      </div>
+      <p>
+        This ties coverage to whatever you wrote on the original application. If you added pen testing after you applied, it may not be covered even if you told your broker.
+      </p>
+      <p>
+        The pen testing gap is particularly dangerous. Pen testing is intentional by design: you're deliberately trying to break into systems. Most policies have an "intentional acts" exclusion. Without a specific carve-out for "authorized security testing," the carrier can argue your pen test is an excluded intentional act. You authorized the test. The damage was intentional. Claim denied.
+      </p>
+
+      <h2>Real-World Impact</h2>
+
+      <div class="cg-scenario">
+        <h3>Scenario 1: Managed security failure</h3>
+        <p>You manage EDR for a client. An attacker bypasses the tool and encrypts their network. Client sues you for negligence. Your carrier reviews the claim, checks the professional services definition, and finds "IT consulting and network support." No mention of managed security or EDR management. They deny the claim. You're covering legal defense out of pocket.</p>
+      </div>
+
+      <div class="cg-scenario">
+        <h3>Scenario 2: Pen test goes wrong</h3>
+        <p>Your team runs an authorized pen test on a client's production environment. Something breaks. Client's e-commerce platform goes down for 24 hours. They claim $200K in lost revenue. Your carrier invokes the intentional acts exclusion: you intentionally attempted to compromise the system. Without a pen testing carve-out, they deny coverage.</p>
+      </div>
+
+      <div class="cg-scenario">
+        <h3>Scenario 3: Cloud migration failure</h3>
+        <p>You migrate a client from on-prem Exchange to Microsoft 365. Data loss during migration wipes three months of email archives. Client sues you. Your policy covers "network installation and technical support." But cloud migration isn't network installation. Carrier disputes the claim.</p>
+      </div>
+
+      <h2>What to Do</h2>
+
+      <div class="cg-steps">
+        <div class="cg-step">
+          <p><strong>1. Pull your declarations page.</strong> Find the Professional Services definition. Read it word for word. Does it describe what you do today, not what you did when you first applied?</p>
+        </div>
+        <div class="cg-step">
+          <p><strong>2. Compare it to your service catalog.</strong> List every service you sell. Check each one against the definition. If it's not there, it's a gap.</p>
+        </div>
+        <div class="cg-step">
+          <p><strong>3. Ask about pen testing specifically.</strong> If you do any security testing, check for an intentional acts carve-out. The phrase you are looking for: "authorized security testing" or "penetration testing performed with written client consent."</p>
+        </div>
+        <div class="cg-step">
+          <p><strong>4. Update the definition.</strong> Your broker can request an endorsement from your carrier to expand the professional services definition. This is usually straightforward and sometimes costs nothing. The key is asking before you need it.</p>
+        </div>
+        <div class="cg-step">
+          <p><strong>5. Review after adding new services.</strong> Every time you add a service line, e.g., vCISO, compliance, IR retainers, check whether your policy definition covers it. Don't assume your broker updated it.</p>
+        </div>
+      </div>
+
+      <div class="cg-links">
+        <a href="{{ '/coverage-gaps-framework/' | relative_url }}">&larr; Back to Coverage Gaps Framework</a>
+        <a href="{{ '/insights/your-tech-eo-policy-probably-excludes-the-services-you-actually-provide/' | relative_url }}">Read: Tech E&O Exclusions &rarr;</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="cg-cta">
+  <div class="cg-cta-inner">
+    <h2>Not Sure What Your Policy Covers?</h2>
+    <p>
+      I can review your professional services definition against the work you do and tell you where the gaps are. No commitment required.
+    </p>
+    <a href="{{ '/contact/' | relative_url }}" class="btn-accent">
+      Get in Touch &rarr;
+    </a>
+  </div>
+</section>

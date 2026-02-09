@@ -1,0 +1,372 @@
+---
+layout: page
+title: "MSP Coverage Gap: When Insurance Limits Don't Meet Contract Requirements"
+description: "Enterprise contracts require specific insurance limits, wording, and endorsements. Most MSPs discover the mismatch days before go-live. Here's what to check."
+permalink: /coverage-gaps/limits-vs-contracts/
+---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Your Contract Requires a $5M Limit. Your Policy Has $2M.",
+  "description": "Enterprise contracts require specific insurance limits, wording, and endorsements. Most MSPs discover the mismatch days before go-live. Here's what to check.",
+  "author": {
+    "@type": "Person",
+    "name": "Joerg Proeve"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Breezy Risk Advisors",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://breezyins.com/assets/images/breezy-logo.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://breezyins.com/coverage-gaps/limits-vs-contracts/"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What insurance do enterprise contracts require from MSPs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enterprise contracts typically require specific insurance limits (often $5M or more for both cyber and Tech E&O), additional insured status for the client, waiver of subrogation, primary and non-contributory language, standalone cyber coverage separate from E&O, specific deductible caps, and 30-day cancellation notice to the certificate holder. Missing any one of these can block the deal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the MSA Mirage in MSP insurance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The MSA Mirage is when an MSP signs a contract with an indemnification clause, assuming their insurance backs that promise. But most Tech E&O policies have a contractual liability exclusion: if you assumed liability by contract that goes beyond what you'd owe under negligence law alone, the policy won't cover it. The MSP thinks they're covered. They're not."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I negotiate insurance requirements in a client contract?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Not every insurance requirement in a contract is non-negotiable. Some clients will accept lower limits, combined instead of standalone coverage, or modified endorsement language if you explain your coverage structure. But you need to understand what your policies provide before you can have that conversation."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+.cg-detail{
+  background: var(--bg-light);
+  padding: 84px 0 70px;
+}
+.cg-detail-inner{
+  max-width: 780px;
+  margin: 0 auto;
+}
+.cg-breadcrumb{
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+.cg-breadcrumb a{
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+.cg-breadcrumb a:hover{
+  text-decoration: underline;
+}
+.cg-detail h1{
+  margin: 0 0 16px;
+  font-size: 42px;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--primary);
+  font-weight: 900;
+}
+.cg-detail .cg-intro{
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin: 0 0 32px;
+}
+.cg-detail h2{
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--primary);
+  margin: 48px 0 18px;
+  letter-spacing: -0.01em;
+}
+.cg-detail p{
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  margin: 0 0 16px;
+}
+.cg-detail ul{
+  margin: 0 0 20px;
+  padding-left: 20px;
+  list-style: none;
+}
+.cg-detail li{
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 8px;
+}
+.cg-detail li::before{
+  content: '\2022';
+  position: absolute;
+  left: -12px;
+  color: var(--accent);
+  font-weight: 700;
+}
+.cg-detail strong{
+  color: var(--primary);
+}
+.policy-quote{
+  background: #f1f5f9;
+  border-left: 4px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  padding: 20px 24px;
+  margin: 20px 0 24px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--primary);
+}
+.cg-scenario{
+  background: #fff;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  margin: 20px 0;
+}
+.cg-scenario h3{
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--primary);
+  margin: 0 0 12px;
+}
+.cg-scenario p{
+  font-size: 16px;
+  margin: 0;
+}
+.cg-steps{
+  counter-reset: step-counter;
+  margin: 24px 0;
+}
+.cg-step{
+  padding: 20px 24px 20px 24px;
+  margin-bottom: 16px;
+  background: #fff;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+}
+.cg-step p{
+  font-size: 16px;
+  margin: 0;
+}
+.cg-links{
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.cg-links a{
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+}
+.cg-links a:hover{
+  text-decoration: underline;
+}
+
+/* CTA */
+.cg-cta{
+  background: #fff;
+  padding: 48px 40px;
+}
+.cg-cta-inner{
+  max-width: 1120px;
+  margin: 0 auto;
+  background: #0A2540;
+  border-radius: 12px;
+  padding: 60px 48px;
+  text-align: center;
+}
+.cg-cta-inner h2{
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 16px;
+  line-height: 1.2;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cg-cta-inner p{
+  font-size: 16px;
+  color: rgba(255,255,255,.85);
+  line-height: 1.6;
+  margin: 0 0 26px;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cg-cta-inner .btn-accent{
+  display: inline-block;
+  padding: 16px 36px;
+  background: #00D4AA;
+  color: #0A2540;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 17px;
+  transition: all .3s cubic-bezier(.4,0,.2,1);
+  box-shadow: 0 4px 20px rgba(0,212,170,.3);
+}
+.cg-cta-inner .btn-accent:hover{
+  background: #00f5c3;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0,212,170,.4);
+}
+
+@media(max-width: 768px){
+  .cg-detail{ padding: 70px 0 58px; }
+  .cg-detail h1{ font-size: 32px; }
+  .cg-detail h2{ font-size: 22px; }
+  .cg-cta{ padding: 32px 20px; }
+  .cg-cta-inner{ padding: 40px 24px; }
+  .cg-cta-inner h2{ font-size: 28px; }
+  .cg-links{ flex-direction: column; gap: 12px; }
+}
+</style>
+
+<section class="cg-detail">
+  <div class="container">
+    <div class="cg-detail-inner">
+
+      <div class="cg-breadcrumb">
+        <a href="{{ '/coverage-gaps-framework/' | relative_url }}">Coverage Gaps Framework</a> &rsaquo; Limits vs. Contracts
+      </div>
+
+      <h1>Your Contract Requires a $5M Limit. Your Policy Has $2M.</h1>
+      <p class="cg-intro">
+        You're closing an enterprise deal. Procurement sends the master services agreement (MSA). Buried in the insurance requirements section: $5M cyber liability, $5M Tech E&O, additional insured endorsement, waiver of subrogation, primary and non-contributory language. Your policy has $2M limits and none of those endorsements. The deal stalls. Or dies.
+      </p>
+
+      <h2>The Problem</h2>
+      <p>
+        Enterprise contracts include insurance requirements. These aren't suggestions. They're conditions you must meet before work starts. Procurement teams audit certificates of insurance against the contract language, and they're getting more specific every year.
+      </p>
+      <p>
+        The typical MSP carries $1M-$2M in combined limits. That worked when your clients were 50-person companies with basic IT needs. It doesn't work when you're trying to close a deal with a company that has a legal team and a risk management department.
+      </p>
+      <p>The gap isn't just about limits. Contracts require specific policy features that many MSP policies don't include:</p>
+      <ul>
+        <li><strong>Additional insured status</strong> for the client</li>
+        <li><strong>Waiver of subrogation</strong> (prevents your carrier from suing the client)</li>
+        <li><strong>Primary and non-contributory</strong> language (your policy pays first)</li>
+        <li><strong>Standalone cyber coverage</strong> (not combined with Tech E&O)</li>
+        <li><strong>Specific deductible caps</strong> (your $50K deductible may exceed their threshold)</li>
+        <li><strong>30-day cancellation notice</strong> to the certificate holder</li>
+      </ul>
+      <p>
+        Missing any one of these can block the deal or put you in breach of the contract the day you sign it.
+      </p>
+
+      <h2>Where This Gap Hides in Policy Language</h2>
+      <p>
+        <strong>The indemnification trap.</strong> Most MSAs include an indemnification clause. You agree to "indemnify, defend, and hold harmless" the client from claims arising from your services. That sounds reasonable. But your Tech E&O policy may have a contractual liability exclusion: if you assumed liability by contract that goes beyond what you'd owe under negligence law alone (meaning, without the contract, a court would only hold you liable for your actual negligence, not the broader promise you made in the MSA), the policy won't cover it.
+      </p>
+      <p>
+        So you sign a contract promising to cover the client's losses. Then you file a claim. Your carrier says: you agreed to accept that liability by contract. We exclude contractual liability. Claim denied.
+      </p>
+      <p>
+        I call this the "MSA Mirage." The MSP thinks insurance backs the indemnification clause. It doesn't.
+      </p>
+      <p>
+        <strong>The certificate gap.</strong> Your broker issues a certificate of insurance (COI) that says you have a $2M limit. The contract requires $5M. The COI satisfies nobody. Worse, if the COI language doesn't exactly match what the contract requires (specific additional insured wording, primary and non-contributory endorsement), the client's risk team will reject it.
+      </p>
+      <p>
+        Some MSPs pressure their broker to issue a COI that says things the policy doesn't provide. This creates a separate E&O exposure for the broker, and it doesn't give you coverage. A COI only describes the coverage that already exists in your policy. It doesn't create coverage that isn't there.
+      </p>
+      <p>
+        <strong>Standalone cyber requirements.</strong> More enterprise contracts now require standalone cyber coverage, separate from your Tech E&O. Why? Because if you have combined limits and a large E&O claim exhausts the aggregate, there's nothing left for a cyber event. The client wants to know your cyber coverage can't be consumed by an unrelated professional liability claim.
+      </p>
+
+      <h2>Real-World Impact</h2>
+
+      <div class="cg-scenario">
+        <h3>Scenario 1: Deal dies in procurement</h3>
+        <p>You've been working a large enterprise prospect for three months. Technical evaluation passed. Pricing agreed. Procurement sends the contract with insurance requirements: $5M cyber, $5M Tech E&O, additional insured, waiver of subrogation. Your policy has $2M combined limits and no endorsements. Your broker says increasing limits will take 2-3 weeks and cost $15K-$25K more annually. The prospect's timeline is 10 days. Deal dies.</p>
+      </div>
+
+      <div class="cg-scenario">
+        <h3>Scenario 2: Breach of contract from day one</h3>
+        <p>You sign a contract requiring $3M standalone cyber coverage and 30-day cancellation notice to the client. Your policy has $2M combined and no cancellation notice requirement. You're technically in breach of contract from the moment you sign. If a claim happens and the client discovers the mismatch, they have both a negligence claim and a breach of contract claim. Your contractual liability exclusion may block coverage for the breach of contract piece.</p>
+      </div>
+
+      <div class="cg-scenario">
+        <h3>Scenario 3: Indemnification exceeds coverage</h3>
+        <p>Your contract includes broad indemnification: you agree to cover "any and all claims, damages, and expenses" arising from your services. Your client suffers a $3M breach they attribute to your negligence. You file a claim. Your Tech E&O carrier reviews the indemnification clause and invokes the contractual liability exclusion. You assumed unlimited liability by contract. The policy excludes liability assumed under contract beyond what the law would impose. Your $2M policy may not respond at all.</p>
+      </div>
+
+      <h2>How to Fix This</h2>
+
+      <div class="cg-steps">
+        <div class="cg-step">
+          <p><strong>1. Read the insurance section of every contract before you sign.</strong> Don't leave this to your broker after the fact. Understand what's required so you can negotiate or plan.</p>
+        </div>
+        <div class="cg-step">
+          <p><strong>2. Compare the insurance requirements in the contract to your current coverage.</strong> Make a simple checklist: required limits vs. actual limits, required endorsements vs. what you have, standalone vs. combined.</p>
+        </div>
+        <div class="cg-step">
+          <p><strong>3. Check your contractual liability exclusion in your Tech E&O policy.</strong> Does it exclude "liability assumed under contract"? If yes, your indemnification clauses may not be insured. Ask your broker whether a contractual liability carve-back endorsement is available.</p>
+        </div>
+        <div class="cg-step">
+          <p><strong>4. Plan for limit increases before you need them.</strong> Increasing limits takes time. If you're pursuing enterprise clients, get insurance quotes for higher limits now. Having a $5M option ready is better than scrambling during a procurement deadline.</p>
+        </div>
+        <div class="cg-step">
+          <p><strong>5. Negotiate insurance requirements in the contract.</strong> Not every requirement is non-negotiable. But some clients will accept $3M instead of $5M, or combined instead of standalone, if you explain your coverage structure. You need to know what you have before you can negotiate.</p>
+        </div>
+        <div class="cg-step">
+          <p><strong>6. Review your COI process.</strong> Make sure your broker issues certificates of insurance that accurately reflect your actual coverage. Don't ask for a COI that overstates what the policy provides. That creates more problems than it solves.</p>
+        </div>
+      </div>
+
+      <div class="cg-links">
+        <a href="{{ '/coverage-gaps-framework/' | relative_url }}">&larr; Back to Coverage Gaps Framework</a>
+        <a href="{{ '/insights/msp-coverage-gaps/' | relative_url }}">Read: 5 MSP Coverage Gaps &rarr;</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="cg-cta">
+  <div class="cg-cta-inner">
+    <h2>Not Sure If Your Coverage Meets Your Contracts?</h2>
+    <p>
+      I can compare your policy limits and endorsements against your contract requirements and tell you where the gaps are. No commitment required.
+    </p>
+    <a href="{{ '/contact/' | relative_url }}" class="btn-accent">
+      Get in Touch &rarr;
+    </a>
+  </div>
+</section>

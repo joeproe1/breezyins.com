@@ -6,7 +6,7 @@ date: 2026-02-15
 author: Joerg Proeve
 category: Coverage Gaps
 read_time: "7 min read"
-image: /assets/images/breezy-og-default.png
+image: /assets/images/Blog-MSP-Grew.png
 permalink: /insights/your-msp-grew-did-your-insurance/
 redirect_from:
   - /msp-insurance-audit

@@ -57,7 +57,7 @@ Here's how coverage works for an MSP. Every claim you could face falls into one 
 <div style="background: rgba(245,158,11,0.15); border-radius: 6px; padding: 10px 14px; font-size: 13px; color: rgba(255,255,255,0.85);">Misconfigured firewall allows data exfiltration</div>
 <div style="background: rgba(245,158,11,0.15); border-radius: 6px; padding: 10px 14px; font-size: 13px; color: rgba(255,255,255,0.85);">Vulnerability scan crashes production systems</div>
 </div>
-<div style="margin-top: 18px; background: #F59E0B; border-radius: 8px; padding: 16px 18px; font-size: 14px; font-weight: 600; color: #0A2540; line-height: 1.6; text-align: center;">Cyber says "that's an E&O claim."<br>E&O says "that's a cyber claim."<br><span style="font-size: 17px; font-weight: 800; letter-spacing: 0.02em;">Neither pays.</span></div>
+<div style="margin-top: 18px; background: #F59E0B; border-radius: 8px; padding: 16px 18px; font-size: 16px; font-weight: 600; color: #0A2540; line-height: 1.6; text-align: center;">Cyber says "it's an E&O claim."<br>E&O says "it's a cyber claim."<br><strong>Neither pays.</strong></div>
 </div>
 
 <div style="background: #0A2540; border-radius: 0 12px 12px 0; padding: 28px 24px; display: flex; flex-direction: column;">
@@ -77,7 +77,7 @@ Here's how coverage works for an MSP. Every claim you could face falls into one 
 
 The left and right zones are where your policies work as intended. A pure cyber event triggers cyber liability. A pure professional failure triggers Tech E&O. Straightforward.
 
-MSPs live in the orange middle zone. And that's where coverage often breaks down.
+MSPs live in the orange middle zone, in the Danger Zone. And that's where coverage often breaks down.
 
 ## Why the Danger Zone Exists
 
@@ -91,27 +91,32 @@ Your Tech E&O policy contains a "cyber event" exclusion:
 
 > *If the claim involves a network security failure, unauthorized access, or data breach, it doesn't belong here. Go file it under cyber.*
 
-When a claim involves both policies, like most MSP claims do, you're caught between two policies that each say the other one should pay. This is what I call [the Front Door Problem]({{ '/coverage-gaps/liability-boundary/' | relative_url }}), part of my 8-gap framework for MSP insurance.
+When a claim involves both policies, like most MSP claims do, you're caught between two policies that each say the other one should pay. This is what I call [the Front Door Problem]({{ '/coverage-gaps/liability-boundary/' | relative_url }}).
 
 ### How this plays out in practice
 
-**Scenario 1: The unpatched RMM.** You manage 30 client networks through a remote monitoring tool. A critical patch comes out, but it doesn't get applied for two weeks. During that window, an attacker exploits the vulnerability, moves laterally through your RMM, and deploys ransomware across 12 client environments.
+<div style="display: flex; flex-direction: column; gap: 24px; margin: 24px 0;">
 
-Your cyber carrier investigates and says: "The root cause was a failure to maintain your professional tools. That's a professional services error. File it under E&O."
+<div style="border-left: 3px solid #F59E0B; padding: 16px 20px; background: rgba(245,158,11,0.05); border-radius: 0 8px 8px 0;">
+<strong>Scenario 1: The unpatched RMM.</strong> You manage 30 client networks through a remote monitoring tool. A critical patch doesn't get applied for two weeks. An attacker exploits the vulnerability and deploys ransomware across most of your client environments.<br><br>
+Cyber carrier: <em>"Failure to maintain your professional tools. That's E&O."</em><br>
+E&O carrier: <em>"Damage caused by a cyberattack. That's cyber."</em><br>
+Both are technically right. You're stuck.
+</div>
 
-Your E&O carrier investigates and says: "The actual damage was caused by a cyberattack, ransomware. That's a cyber event. File it under cyber."
+<div style="border-left: 3px solid #F59E0B; padding: 16px 20px; background: rgba(245,158,11,0.05); border-radius: 0 8px 8px 0;">
+<strong>Scenario 2: The firewall misconfiguration.</strong> Your team sets up a firewall for a healthcare client. A rule gets misconfigured, leaving a port exposed. Three months later, an attacker exfiltrates patient records through that port.<br><br>
+E&O claim? Professional error. Cyber claim? Unauthorized access and data breach. The answer is both, and that's the problem.
+</div>
 
-Both carriers are technically right. And you're stuck.
+<div style="border-left: 3px solid #F59E0B; padding: 16px 20px; background: rgba(245,158,11,0.05); border-radius: 0 8px 8px 0;">
+<strong>Scenario 3: The vulnerability scan gone wrong.</strong> You run a vulnerability assessment for a client. The scan triggers an unexpected cascade that takes down their production database for 24 hours.<br><br>
+No attacker involved. No breach. But the client lost revenue. Your cyber policy says no security event. Your E&O policy says the scan is a "cyber-related activity." Neither wants it.
+</div>
 
-**Scenario 2: The firewall misconfiguration.** Your team sets up a new firewall for a healthcare client. A rule gets misconfigured, leaving a port exposed. Three months later, an attacker finds that open port and exfiltrates patient records.
+</div>
 
-E&O claim? You made a professional error (misconfigured firewall). Cyber claim? There was unauthorized access and a data breach. Again, the answer is both, and that's exactly the problem.
-
-**Scenario 3: The vulnerability scan gone wrong.** You're running an authorized vulnerability assessment for a client. The scan triggers an unexpected cascade that takes down the client's production database for 14 hours.
-
-No attacker was involved. No breach occurred. But the client lost revenue and they're holding you responsible. Your cyber policy says there was no security event. Your E&O policy says the scan constitutes a "cyber-related activity." Neither wants it.
-
-## How to Close the Gap
+## How You Can Close the Gap
 
 There are two ways to fix this, in order of effectiveness.
 
@@ -123,10 +128,25 @@ What doesn't work: carrying separate policies from different carriers and hoping
 
 ## Three Things to Check Right Now
 
-1. **Are your cyber and Tech E&O with the same carrier?** If yes, check whether they're written as a combined form or as separate policies that happen to be issued by the same company. Combined forms are stronger. Separate policies from the same carrier can still have coordination gaps.
-2. **Read the exclusions in both policies.** In your cyber policy, search for "professional services," "technology services," or "failure to render." In your E&O policy, search for "cyber," "network security," "unauthorized access," or "data breach." If each policy excludes what the other one covers, you have the danger zone problem.
-3. **Ask your broker the direct question.** "If my team misconfigures a client firewall and an attacker exploits that misconfiguration to steal data, which policy responds?" If your broker can't answer that in one sentence, your policies probably have a coordination gap.
+<div style="display: flex; flex-direction: column; gap: 20px; margin: 24px 0;">
 
-If you want a full analysis of how your cyber and E&O policies work together (or don't), that's one of the core things my [Risk Intelligence Report]({{ '/risk-intelligence-report/' | relative_url }}) covers. I compare both policies side by side, map the exclusions against each other, and flag exactly where the gaps are.
+<div style="display: flex; gap: 16px; align-items: flex-start;">
+<div style="min-width: 44px; height: 44px; background: #00D4AA; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'JetBrains Mono', monospace; font-size: 20px; font-weight: 700; color: #0A2540; flex-shrink: 0;">1</div>
+<div><strong>Are your cyber and Tech E&O with the same carrier?</strong> If yes, check whether they're written as a combined form or as separate policies that happen to be issued by the same company. Combined forms are stronger. Separate policies from the same carrier can still have coordination gaps.</div>
+</div>
 
-Or if you just want to talk through what you're seeing in your own policies, [get in touch]({{ '/contact/' | relative_url }}).
+<div style="display: flex; gap: 16px; align-items: flex-start;">
+<div style="min-width: 44px; height: 44px; background: #00D4AA; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'JetBrains Mono', monospace; font-size: 20px; font-weight: 700; color: #0A2540; flex-shrink: 0;">2</div>
+<div><strong>Read the exclusions in both policies.</strong> In your cyber policy, search for "professional services," "technology services," or "failure to render." In your E&O policy, search for "cyber," "network security," "unauthorized access," or "data breach." If each policy excludes what the other one covers, you have the danger zone problem.</div>
+</div>
+
+<div style="display: flex; gap: 16px; align-items: flex-start;">
+<div style="min-width: 44px; height: 44px; background: #00D4AA; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'JetBrains Mono', monospace; font-size: 20px; font-weight: 700; color: #0A2540; flex-shrink: 0;">3</div>
+<div><strong>Ask your broker this question.</strong> "If my team misconfigures a client firewall and an attacker exploits that misconfiguration to steal data, which policy responds?" If your broker can't answer that in one sentence, your policies probably have a coordination gap.</div>
+</div>
+
+</div>
+
+My [Risk Intelligence Report]({{ '/risk-intelligence-report/' | relative_url }}) reviews your policies, maps the exclusions, and flags exactly where the gaps are.
+
+If you have questions and just want to talk them through with me, [get in touch]({{ '/contact/' | relative_url }}).

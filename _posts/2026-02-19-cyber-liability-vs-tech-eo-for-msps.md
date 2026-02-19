@@ -91,26 +91,26 @@ Your Tech E&O policy contains a "cyber event" exclusion:
 
 > *If the claim involves a network security failure, unauthorized access, or data breach, it doesn't belong here. Go file it under cyber.*
 
-When a claim involves both policies, like most MSP claims do, you're caught between two policies that each say the other one should pay. This is what I call [the Front Door Problem]({{ '/coverage-gaps/liability-boundary/' | relative_url }}).
+When a claim involves both policies, like most MSP claims do, you're caught between two policies that each say the other one should pay. This is what I call the [Front Door Problem]({{ '/coverage-gaps/liability-boundary/' | relative_url }}).
 
 ### How this plays out in practice
 
 <div style="display: flex; flex-direction: column; gap: 24px; margin: 24px 0;">
 
 <div style="border-left: 3px solid #F59E0B; padding: 16px 20px; background: rgba(245,158,11,0.05); border-radius: 0 8px 8px 0;">
-<strong>Scenario 1: The unpatched RMM.</strong> You manage 30 client networks through a remote monitoring tool. A critical patch doesn't get applied for two weeks. An attacker exploits the vulnerability and deploys ransomware across most of your client environments.<br><br>
+<strong>Scenario 1: The unpatched RMM.</strong><br>You manage 30 client networks through a remote monitoring tool.<br><br>A critical patch doesn't get applied for two weeks. An attacker exploits the vulnerability and deploys ransomware across most of your client environments.<br><br>
 Cyber carrier: <em>"Failure to maintain your professional tools. That's E&O."</em><br>
 E&O carrier: <em>"Damage caused by a cyberattack. That's cyber."</em><br>
 Both are technically right. You're stuck.
 </div>
 
 <div style="border-left: 3px solid #F59E0B; padding: 16px 20px; background: rgba(245,158,11,0.05); border-radius: 0 8px 8px 0;">
-<strong>Scenario 2: The firewall misconfiguration.</strong> Your team sets up a firewall for a healthcare client. A rule gets misconfigured, leaving a port exposed. Three months later, an attacker exfiltrates patient records through that port.<br><br>
+<strong>Scenario 2: The firewall misconfiguration.</strong><br>Your team sets up a firewall for a healthcare client. A rule gets misconfigured, leaving a port exposed. Three months later, an attacker exfiltrates patient records through that port.<br><br>
 E&O claim? Professional error. Cyber claim? Unauthorized access and data breach. The answer is both, and that's the problem.
 </div>
 
 <div style="border-left: 3px solid #F59E0B; padding: 16px 20px; background: rgba(245,158,11,0.05); border-radius: 0 8px 8px 0;">
-<strong>Scenario 3: The vulnerability scan gone wrong.</strong> You run a vulnerability assessment for a client. The scan triggers an unexpected cascade that takes down their production database for 24 hours.<br><br>
+<strong>Scenario 3: The vulnerability scan gone wrong.</strong><br>You run a vulnerability assessment for a client. The scan triggers an unexpected cascade that takes down their production database for 24 hours.<br><br>
 No attacker involved. No breach. But the client lost revenue. Your cyber policy says no security event. Your E&O policy says the scan is a "cyber-related activity." Neither wants it.
 </div>
 
@@ -120,9 +120,9 @@ No attacker involved. No breach. But the client lost revenue. Your cyber policy 
 
 There are two ways to fix this, in order of effectiveness.
 
-**Option 1: Combined policy from one carrier.** Several carriers now write combined Tech E&O + Cyber policies designed specifically for technology companies and MSPs. When both coverages live in the same policy, there's no finger-pointing. The carrier can't argue with itself about which coverage applies. This is the cleanest fix.
+**Option 1: Combined policy from one carrier.**<br>Several carriers now write combined Tech E&O + Cyber policies designed specifically for technology companies and MSPs. When both coverages live in the same policy, there's no finger-pointing. The carrier can't argue with itself about which coverage applies. This is the cleanest fix.
 
-**Option 2: Coordinated policies with explicit overlap language.** If you carry separate cyber and E&O policies, make sure both policies explicitly address the overlap. Look for language like "failure to render professional services resulting in a network security event" in your cyber policy, and make sure your E&O doesn't blanket-exclude "cyber events." The two policies need to acknowledge that MSP claims will straddle both, and define who responds when they do.
+**Option 2: Coordinated policies with explicit overlap language.**<br>If you carry separate cyber and E&O policies, make sure both policies explicitly address the overlap. Look for language like "failure to render professional services resulting in a network security event" in your cyber policy, and make sure your E&O doesn't blanket-exclude "cyber events." The two policies need to acknowledge that MSP claims will straddle both, and define who responds when they do.
 
 What doesn't work: carrying separate policies from different carriers and hoping it sorts itself out at claim time. It won't.
 
@@ -147,6 +147,6 @@ What doesn't work: carrying separate policies from different carriers and hoping
 
 </div>
 
-My [Risk Intelligence Report]({{ '/risk-intelligence-report/' | relative_url }}) reviews your policies, maps the exclusions, and flags exactly where the gaps are.
+My [Risk Intelligence Report]({{ '/risk-intelligence-report/' | relative_url }}) reviews your policies in detail, maps the exclusions, and flags exactly where the coverage gaps are.
 
-If you have questions and just want to talk them through with me, [get in touch]({{ '/contact/' | relative_url }}).
+If you have questions about your insurance, [get in touch]({{ '/contact/' | relative_url }}).

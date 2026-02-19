@@ -147,4 +147,4 @@ What doesn't work: carrying separate policies from different carriers and hoping
 
 </div>
 
-My [Risk Intelligence Report]({{ '/risk-intelligence-report/' | relative_url }}) reviews your insurance policies in detail and flags exactly where the coverage gaps are. If you have questions about your insurance, get in touch with me.
+My [Risk Intelligence Report]({{ '/risk-intelligence-report/' | relative_url }}) reviews your insurance policies in detail and flags exactly where the coverage gaps are. If you have questions about your insurance, [get in touch]({{ '/contact/' | relative_url }}) with me.

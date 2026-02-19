@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Cyber Liability vs. Tech E&O for MSPs: What Each Covers and Where Claims Fall Through"
-description: "MSPs need both cyber liability and Tech E&O. But the handoff between them is where most coverage failures happen. A visual guide to what each policy covers, where they overlap, and how to close the gap."
+description: "MSPs need both cyber liability and Tech E&O. But the handoff between them is where most coverage failures happen. Here's how to close the gap."
 date: 2026-02-19
 author: Joerg Proeve
 category: Policy Deep-Dive
@@ -13,28 +13,30 @@ redirect_from:
   - /cyber-vs-eo/
 ---
 
-You carry both cyber liability and Tech E&O. Your broker told you that's what you need, and your broker was right. But here's the question nobody asks until a claim gets denied: where does one policy stop and the other start?
+You carry both cyber liability and Tech E&O insurance. Your broker told you that's what you need, and your broker was right. But here's the question nobody asks until a claim gets denied: do these two policies provide the protection I need?
 
-I review MSP policies every week, and the single most common coverage failure I see isn't a missing policy. It's two policies that refuse to talk to each other. The cyber carrier says the claim belongs to E&O. The E&O carrier says it's a cyber event. Both carriers are technically correct in their interpretation. And the MSP pays the bill.
+I review insurance policies for managed service providers (MSPs) every week, and the single most common coverage failure I see isn't a missing policy. It's that two policies are not aligned and refuse to talk to each other.
 
-This post explains the boundaries between these two policies. If you manage client networks for a living, this is the most important thing to understand about your insurance.
+When a claim hits, the cyber carrier says: this claim belongs to E&O. The E&O carrier says: no, it's a cyber event. Both carriers are technically correct in their interpretation of their insurance policies. And the MSP pays the bill.
+
+This post explains what cyber liability and Tech E&O insurance cover, and where the boundaries between these two policies are. If you're an MSP who manages client networks for a living, this is the most important thing to understand about your insurance.
 
 ## What Each Policy Is Designed to Cover
 
-Before we get to the gap, here's a quick breakdown of what each policy type is designed to do. (For the full deep dive on each, see my posts on [cyber liability]({{ '/insights/cyber-liability-insurance-for-msps/' | relative_url }}) and [Tech E&O exclusions]({{ '/insights/your-tech-eo-policy-probably-excludes-the-services-you-actually-provide/' | relative_url }}).)
+Before we go into the details, here's a breakdown of what each of the two policies is designed to do. (For the full deep dive on each, see my posts on [cyber liability]({{ '/insights/cyber-liability-insurance-for-msps/' | relative_url }}) and [Tech E&O exclusions]({{ '/insights/your-tech-eo-policy-probably-excludes-the-services-you-actually-provide/' | relative_url }}).)
 
-**Cyber Liability** protects against security events. A breach happens, ransomware hits, data gets exposed. The policy covers breach response costs, business interruption, extortion payments, and lawsuits from affected parties. It's built around the question: *what happened to your systems?*
+**Cyber Liability** protects you against security events, such as data breaches and ransomware attacks. It covers costs for breach response, business interruption, extortion payments, and lawsuits from parties affected by the breach. A cyber liability policy is built around the question: *what happened to your systems?*
 
-**Tech E&O** (or long: Technology Errors & Omissions) protects against professional service failures. You gave bad advice, a migration went wrong, your monitoring missed something critical, and a client suffered financial harm. It's built around the question: *what did you do (or fail to do) for a client?*
+**Tech E&O** (or long: Technology Errors & Omissions) protects you against professional service failures. You gave bad advice, a cloud migration went wrong, your monitoring missed something critical, and your client suffered financial harm. A Tech E&O policy is built around the question: *what did you do (or fail to do) for a client?*
 
-For a typical business, these two policies cover distinct risks with clean boundaries. For a managed service provider, those boundaries break down. Because your professional service IS managing technology. Your "error" IS a security failure. Your work and your network are the same thing.
+For a typical business, these two policies cover distinct risks with clean boundaries. However, for a managed service provider, these boundaries break down. Because your professional service IS managing technology. Your "error" IS a security failure. For an MSP, your work and your network are the same thing.
 
 ## The Three Zones
 
-Here's how to think about the coverage landscape for an MSP. Every claim you could face falls into one of three zones.
+Here's how coverage works for an MSP. Every claim you could face falls into one of three zones.
 
-<div style="margin: 40px -24px; font-family: 'DM Sans', sans-serif;">
-<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; min-height: 420px;">
+<div style="margin: 40px -24px; font-family: 'DM Sans', sans-serif; overflow-x: auto; -webkit-overflow-scrolling: touch;">
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; min-height: 420px; min-width: 780px;">
 
 <div style="background: #0A2540; border-radius: 12px 0 0 12px; padding: 28px 24px; display: flex; flex-direction: column;">
 <div style="font-family: 'JetBrains Mono', monospace; font-size: 18px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #00D4AA; margin-bottom: 10px;">Cyber Liability</div>
@@ -75,17 +77,21 @@ Here's how to think about the coverage landscape for an MSP. Every claim you cou
 
 The left and right zones are where your policies work as intended. A pure cyber event triggers cyber liability. A pure professional failure triggers Tech E&O. Straightforward.
 
-The middle zone is where MSPs actually live. And it's where coverage breaks down.
+MSPs live in the orange middle zone. And that's where coverage often breaks down.
 
 ## Why the Danger Zone Exists
 
-The danger zone isn't a bug in insurance. It's a structural problem with how policies are written.
+The danger zone isn't a bug in insurance. It's a **structural problem** with how policies are written.
 
-Your cyber liability policy contains a "professional services" exclusion. It says: if the claim arises from your professional services, advice, or technology work product, it doesn't belong here. Go file it under E&O.
+Your cyber liability policy contains a "professional services" exclusion:
 
-Your Tech E&O policy contains a "cyber event" exclusion. It says: if the claim involves a network security failure, unauthorized access, or data breach, it doesn't belong here. Go file it under cyber.
+> *If the claim arises from your professional services, advice, or technology work product, it doesn't belong here. Go file it under E&O.*
 
-When a claim involves both, like most MSP claims do, you're caught between two policies that each say the other one should pay. This is what I call [the Front Door Problem]({{ '/coverage-gaps/liability-boundary/' | relative_url }}), and it's Gap #3 in my 8-gap framework for MSP insurance.
+Your Tech E&O policy contains a "cyber event" exclusion:
+
+> *If the claim involves a network security failure, unauthorized access, or data breach, it doesn't belong here. Go file it under cyber.*
+
+When a claim involves both policies, like most MSP claims do, you're caught between two policies that each say the other one should pay. This is what I call [the Front Door Problem]({{ '/coverage-gaps/liability-boundary/' | relative_url }}), part of my 8-gap framework for MSP insurance.
 
 ### How this plays out in practice
 
@@ -93,7 +99,7 @@ When a claim involves both, like most MSP claims do, you're caught between two p
 
 Your cyber carrier investigates and says: "The root cause was a failure to maintain your professional tools. That's a professional services error. File it under E&O."
 
-Your E&O carrier investigates and says: "The actual damage was caused by a cyber attack, ransomware. That's a cyber event. File it under cyber."
+Your E&O carrier investigates and says: "The actual damage was caused by a cyberattack, ransomware. That's a cyber event. File it under cyber."
 
 Both carriers are technically right. And you're stuck.
 

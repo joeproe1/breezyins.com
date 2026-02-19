@@ -159,7 +159,7 @@ I will be blunt: you need to either educate your current broker or find a new on
 If they can't answer these questions clearly and confidently, you need a new broker.
 
 <div class="callout callout-green">
-<p><strong>This article covered 5 gaps. Our <a href="/contact/">Risk Intelligence Report</a> checks for over 60 common gaps across Cyber, Tech E&O, Contract Compliance, Workers Compensation, Crime, General Liability, and Media Liability.</strong></p>
+<p><strong>This article covered 5 gaps. Our <a href="/contact/">Risk Intelligence Report</a> uses a 25-point coverage gap framework built specifically for MSPs, checking across Cyber Liability, Tech E&O, and Contract Compliance.</strong></p>
 </div>
 
 ---

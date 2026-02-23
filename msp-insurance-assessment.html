@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "MSP Coverage Gap Assessment"
-description: "Quick 10-question assessment to identify coverage gaps in your cyber insurance and Tech E&O policies. Free, no email required."
+description: "Quick 10-question assessment to identify coverage gaps in your cyber insurance and Tech E&O policies. Free, instant results."
 permalink: /msp-insurance-assessment/
 ---
 
@@ -494,6 +494,46 @@ permalink: /msp-insurance-assessment/
 }
 #coverage-gap-quiz .retake-link a:hover { text-decoration: underline; }
 
+#coverage-gap-quiz .lead-capture { margin: 28px 0; }
+#coverage-gap-quiz .lead-capture h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 0 0 8px;
+    text-align: center;
+}
+#coverage-gap-quiz .lead-capture > p {
+    font-size: 15px;
+    color: var(--text-secondary);
+    text-align: center;
+    margin: 0 0 20px;
+    line-height: 1.6;
+}
+#coverage-gap-quiz .lead-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+#coverage-gap-quiz .lead-skip {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin: 4px 0 0;
+    text-align: center;
+}
+#coverage-gap-quiz .lead-skip a {
+    color: var(--text-secondary);
+    text-decoration: underline;
+}
+#coverage-gap-quiz .lead-skip a:hover { color: var(--accent); }
+#coverage-gap-quiz .lead-downloaded {
+    text-align: center;
+    font-size: 15px;
+    color: var(--accent);
+    font-weight: 600;
+    margin: 28px 0;
+}
+
 @media (max-width: 600px) {
     #coverage-gap-quiz {
         padding: 28px 22px;
@@ -536,7 +576,7 @@ permalink: /msp-insurance-assessment/
             </ul>
         </div>
 
-        <p class="intro-meta">10 questions | About 3 minutes | No email required</p>
+        <p class="intro-meta">10 questions | About 3 minutes | Free</p>
 
         <button class="btn btn-primary" id="start-quiz-btn">Start Assessment</button>
     </div>
@@ -579,8 +619,33 @@ permalink: /msp-insurance-assessment/
             <div id="gaps-list"></div>
         </div>
 
-        <div class="results-actions">
+        <div class="results-actions" id="results-actions">
             <button class="btn btn-outline" id="download-btn">Download PDF Report</button>
+        </div>
+
+        <div id="lead-capture" class="lead-capture" style="display:none;">
+            <h3>Get Your Personalized PDF Report</h3>
+            <p>Enter your name and email to receive a branded PDF with your results and gap details.</p>
+            <div class="lead-form">
+                <div class="form-field">
+                    <label for="lead-name">Name</label>
+                    <input type="text" id="lead-name" placeholder="Your name" autocomplete="name">
+                </div>
+                <div class="form-field">
+                    <label for="lead-email">Email</label>
+                    <input type="email" id="lead-email" placeholder="you@company.com" autocomplete="email">
+                </div>
+            </div>
+            <div class="lead-actions">
+                <button class="btn btn-primary" id="submit-lead-btn">Download Report</button>
+                <p class="form-notice">Only used to personalize the report. No spam, no lists.</p>
+                <p class="lead-skip"><a href="#" id="skip-lead-btn">Skip, just download the PDF</a></p>
+            </div>
+            <p class="form-error" id="form-error">Please enter both your name and email.</p>
+        </div>
+
+        <div id="lead-downloaded" class="lead-downloaded" style="display:none;">
+            PDF downloaded.
         </div>
 
         <div class="cta-box">
@@ -1005,7 +1070,30 @@ permalink: /msp-insurance-assessment/
       });
     }
 
+    var ra = $("results-actions");
+    var lc = $("lead-capture");
+    var ld = $("lead-downloaded");
+    if (ra) ra.style.display = "";
+    if (lc) lc.style.display = "none";
+    if (ld) ld.style.display = "none";
+
     ss("screen-results");
+  }
+
+  function showLeadForm_() {
+    var actions = $("results-actions");
+    var capture = $("lead-capture");
+    if (actions) actions.style.display = "none";
+    if (capture) capture.style.display = "block";
+    var nameInput = $("lead-name");
+    if (nameInput) nameInput.focus();
+  }
+
+  function hideLeadForm_() {
+    var capture = $("lead-capture");
+    var downloaded = $("lead-downloaded");
+    if (capture) capture.style.display = "none";
+    if (downloaded) downloaded.style.display = "block";
   }
 
   function sl() {
@@ -1020,7 +1108,8 @@ permalink: /msp-insurance-assessment/
     st.lead.email = e;
     te("generate_lead", { quiz_name: QUIZ_NAME, lead_email: e });
 
-    sr();
+    hideLeadForm_();
+    dr();
 
     setTimeout(function () { sendLeadNotification_(); }, 250);
   }
@@ -1262,7 +1351,8 @@ permalink: /msp-insurance-assessment/
       if (id === "back-btn") { e.preventDefault(); pq(); return; }
       if (id === "next-btn") { e.preventDefault(); nq(); return; }
       if (id === "submit-lead-btn") { e.preventDefault(); sl(); return; }
-      if (id === "download-btn") { e.preventDefault(); dr(); return; }
+      if (id === "skip-lead-btn") { e.preventDefault(); hideLeadForm_(); dr(); return; }
+      if (id === "download-btn") { e.preventDefault(); showLeadForm_(); return; }
       if (id === "retake-btn") { e.preventDefault(); sq(); return; }
       if (id === "cta-request-btn") {
         te("quiz_cta_click", { quiz_name: QUIZ_NAME, cta_text: "Get in Touch" });

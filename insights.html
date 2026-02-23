@@ -27,10 +27,19 @@ permalink: /insights/
 .post-card .post-meta .divider { color: var(--border); }
 .post-card .read-more { display: inline-flex; align-items: center; gap: 6px; color: var(--accent); font-weight: 700; font-size: 15px; text-decoration: none; margin-top: 16px; }
 .post-card .read-more:hover { text-decoration: underline; }
+.post-card-image-link { display: block; overflow: hidden; border-radius: 10px 10px 0 0; }
+.post-card-image { width: 100%; height: auto; display: block; transition: transform 0.3s ease; }
+.post-card:hover .post-card-image { transform: scale(1.03); }
+.insights-cta { text-align: center; max-width: 600px; margin: 56px auto 0; padding: 40px 36px; background: var(--primary); border-radius: 14px; }
+.insights-cta h3 { color: #fff; font-size: 22px; font-weight: 700; margin: 0 0 10px; }
+.insights-cta p { color: rgba(255,255,255,0.8); font-size: 16px; margin: 0 0 24px; line-height: 1.6; }
+.insights-cta .btn-primary { display: inline-block; padding: 16px 32px; font-size: 17px; font-weight: 700; background: var(--accent); color: var(--primary); border-radius: 8px; text-decoration: none; transition: background 0.25s, transform 0.15s; box-shadow: 0 4px 20px rgba(0, 212, 170, 0.3); }
+.insights-cta .btn-primary:hover { background: #00f5c3; transform: translateY(-2px); }
 @media (max-width: 768px) {
     .insights-section { padding-top: 100px; }
     .insights-header h1 { font-size: 34px; }
     .blog-grid { grid-template-columns: 1fr; }
+    .insights-cta { margin: 40px 0 0; padding: 28px 20px; }
 }
 </style>
 
@@ -45,7 +54,11 @@ permalink: /insights/
             {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
             {% for post in sorted_posts %}
             <div class="post-card">
-                {% if post.category %}
+                {% if post.image %}
+                <a href="{{ post.url | relative_url }}" class="post-card-image-link">
+                    <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="post-card-image" loading="lazy">
+                </a>
+                {% elsif post.category %}
                 <div class="post-card-accent post-card-accent--{{ post.category | slugify }}"></div>
                 {% endif %}
                 <div class="post-card-body">
@@ -53,9 +66,7 @@ permalink: /insights/
                     <div class="post-category">{{ post.category }}</div>
                     {% endif %}
                     <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-                    {% if post.excerpt %}
-                    <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
-                    {% endif %}
+                    <p class="post-excerpt">{{ post.description | default: post.excerpt | strip_html | truncate: 160 }}</p>
                     <div class="post-meta">
                         <span>{{ post.date | date: "%B %-d, %Y" }}</span>
                         {% if post.read_time %}
@@ -67,6 +78,12 @@ permalink: /insights/
                 </div>
             </div>
             {% endfor %}
+        </div>
+
+        <div class="insights-cta">
+            <h3>Not Sure Where Your Coverage Gaps Are?</h3>
+            <p>Take the free 3-minute assessment to find out which gaps might be hiding in your policies.</p>
+            <a href="{{ '/msp-insurance-assessment/' | relative_url }}" class="btn-primary">Take the Coverage Assessment</a>
         </div>
     </div>
 </section>

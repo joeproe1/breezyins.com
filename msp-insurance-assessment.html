@@ -680,12 +680,19 @@ permalink: /msp-insurance-assessment/
 
   function $(id) { return document.getElementById(id); }
 
+  var MONTHS_ = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
   function nowIsoDate_() {
     var d = new Date();
     var y = d.getFullYear();
     var m = String(d.getMonth() + 1).padStart(2, "0");
     var day = String(d.getDate()).padStart(2, "0");
     return y + "-" + m + "-" + day;
+  }
+
+  function nowReadableDate_() {
+    var d = new Date();
+    return MONTHS_[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
   }
 
   function sanitizeFilenamePart_(s) {
@@ -1141,37 +1148,41 @@ permalink: /msp-insurance-assessment/
     doc.setFont(undefined, "normal");
     doc.text("Results Summary", 195, 23, { align: "right" });
 
+    var readableDate = nowReadableDate_();
+
     doc.setTextColor(0, 0, 0);
     doc.setFontSize(10);
-    var infoY = 42;
+    var infoY = 38;
     if (st.lead && st.lead.name) { doc.text("Prepared for: " + st.lead.name, 20, infoY); infoY += 6; }
     if (st.lead && st.lead.email) { doc.text("Email: " + st.lead.email, 20, infoY); infoY += 6; }
-    doc.text("Date: " + dateStr, 20, infoY);
+    doc.text("Date: " + readableDate, 20, infoY);
 
+    var titleY = infoY + 12;
     doc.setTextColor(10, 37, 64);
     doc.setFontSize(16);
     doc.setFont(undefined, "bold");
-    doc.text("Your Coverage Gap Assessment Results", 20, 68);
+    doc.text("Your Coverage Gap Assessment Results", 20, titleY);
 
+    var scoreBlockY = titleY + 6;
     doc.setFillColor(10, 37, 64);
-    doc.roundedRect(20, 74, 170, 30, 3, 3, "F");
+    doc.roundedRect(20, scoreBlockY, 170, 30, 3, 3, "F");
 
     doc.setTextColor(255, 255, 255);
     doc.setFontSize(10);
     doc.setFont(undefined, "normal");
-    doc.text("Coverage Protection Score", 28, 86);
+    doc.text("Coverage Protection Score", 28, scoreBlockY + 12);
 
     var badgeColors = { "Lower Risk": [0, 212, 170], "Moderate Gaps": [234, 179, 8], "Significant Gaps": [245, 158, 11], "High Risk": [220, 38, 38] };
     var badgeColor = badgeColors[rl] || [220, 38, 38];
     doc.setTextColor(badgeColor[0], badgeColor[1], badgeColor[2]);
     doc.setFontSize(9);
     doc.setFont(undefined, "bold");
-    doc.text(rl.toUpperCase(), 28, 96);
+    doc.text(rl.toUpperCase(), 28, scoreBlockY + 22);
 
     doc.setTextColor(0, 212, 170);
     doc.setFontSize(28);
     doc.setFont(undefined, "bold");
-    doc.text(score + " / 100", 182, 92, { align: "right" });
+    doc.text(score + " / 100", 182, scoreBlockY + 18, { align: "right" });
 
     var interpretation = "";
     if (score >= 80) interpretation = "Your coverage looks solid based on what you've told us. Even strong policies can hide gaps around contracts and third-party dependencies.";
@@ -1179,13 +1190,14 @@ permalink: /msp-insurance-assessment/
     else if (score >= 40) interpretation = "Several gaps between your policies and your risk. These often surface during contract review or after an incident.";
     else interpretation = "Meaningful gaps in your coverage. Based on your answers, your policies may not hold up well in a real claim scenario.";
 
+    var interpY = scoreBlockY + 40;
     doc.setFontSize(10);
     doc.setFont(undefined, "normal");
     doc.setTextColor(85, 85, 85);
     var interpLines = doc.splitTextToSize(interpretation, 170);
-    doc.text(interpLines, 20, 116);
+    doc.text(interpLines, 20, interpY);
 
-    var y = 116 + interpLines.length * 5 + 8;
+    var y = interpY + interpLines.length * 5 + 8;
 
     doc.setFontSize(13);
     doc.setFont(undefined, "bold");

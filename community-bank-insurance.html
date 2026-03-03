@@ -78,95 +78,55 @@ permalink: /community-bank-insurance/
   font-size: 18px;
   line-height: 1.8;
 }
-.bank-narrow {
-  max-width: 800px;
-  margin: 0 auto;
-}
-.bank-narrow p {
-  font-size: 18px;
-  line-height: 1.8;
-  color: var(--text-secondary);
-  margin: 0 0 20px;
-}
-.bank-deliverables {
+.bank-problem-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
   max-width: 1100px;
   margin: 0 auto;
 }
-.bank-deliverable {
-  background: #fff;
+.bank-problem-card {
+  background: var(--bg-light);
   border-radius: 12px;
-  padding: 32px 28px;
+  padding: 48px 40px;
   border: 2px solid var(--border);
   transition: all 0.3s;
 }
-.bank-deliverable:hover {
-  border-color: var(--accent);
-}
-.bank-deliverable h3 {
+.bank-problem-card:nth-child(1) { border-left: 4px solid #DC2626; }
+.bank-problem-card:nth-child(2) { border-left: 4px solid #F59E0B; }
+.bank-problem-card:nth-child(3) { border-left: 4px solid #EAB308; }
+.bank-problem-card:hover { border-color: var(--accent); }
+.bank-problem-card h3 {
   font-size: 20px;
   color: var(--primary);
-  margin: 0 0 10px;
+  margin: 0 0 12px;
   font-weight: 700;
 }
-.bank-deliverable p {
+.bank-problem-card p {
   font-size: 16px;
   line-height: 1.7;
   color: var(--text-secondary);
   margin: 0;
 }
-.bank-deliverable.full-width {
-  grid-column: 1 / -1;
-  background: rgba(0, 212, 170, 0.06);
-  border-color: rgba(0, 212, 170, 0.22);
-}
-.bank-board {
+.bank-deliverables {
   max-width: 800px;
   margin: 0 auto;
 }
-.bank-board p {
-  font-size: 18px;
-  line-height: 1.8;
-  color: var(--text-secondary);
-  margin: 0 0 20px;
+.bank-deliverables ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-.bank-board .board-quote {
-  background: var(--bg-light);
-  border-left: 4px solid var(--accent);
-  padding: 24px 28px;
-  border-radius: 0 12px 12px 0;
-  margin: 28px 0;
+.bank-deliverables li {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
   font-size: 18px;
-  font-style: italic;
-  color: var(--primary);
   line-height: 1.7;
-}
-.bank-start {
-  max-width: 800px;
-  margin: 0 auto;
-}
-.bank-start p {
-  font-size: 18px;
-  line-height: 1.8;
   color: var(--text-secondary);
-  margin: 0 0 20px;
 }
-.bank-start ol {
-  font-size: 18px;
-  line-height: 1.8;
-  color: var(--text-secondary);
-  margin: 0 0 20px;
-  padding-left: 24px;
-}
-.bank-start ol li {
-  margin-bottom: 8px;
-}
-.bank-start .start-note {
-  font-size: 16px;
-  color: var(--text-secondary);
-  margin-top: 24px;
+.bank-deliverables li:last-child { border-bottom: none; }
+.bank-deliverables li strong {
+  color: var(--primary);
 }
 .bank-cta {
   background: #fff;
@@ -186,7 +146,7 @@ permalink: /community-bank-insurance/
   color: #fff;
   margin-bottom: 16px;
   line-height: 1.2;
-  max-width: 640px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -221,22 +181,11 @@ permalink: /community-bank-insurance/
   font-size: 13px;
   color: rgba(255, 255, 255, .65);
 }
-.bank-credibility {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-.bank-credibility p {
-  font-size: 18px;
-  line-height: 1.8;
-  color: var(--text-secondary);
-  margin: 0 0 16px;
-}
 @media (max-width: 968px) {
   .bank-hero h1 { font-size: 36px; }
   .bank-breadcrumb { font-size: 12px; padding: 10px 16px; }
-  .bank-deliverables { grid-template-columns: 1fr; }
-  .bank-deliverable.full-width { grid-column: 1; }
+  .bank-problem-grid { grid-template-columns: 1fr; }
+  .bank-problem-card { padding: 36px 28px; }
 }
 @media (max-width: 768px) {
   .bank-hero { padding: 86px 0 50px; }
@@ -247,124 +196,59 @@ permalink: /community-bank-insurance/
 }
 </style>
 
-<!-- Hero: The Problem -->
+<!-- Hero -->
 <section class="bank-hero">
   <div class="container bank-wrap">
     <div class="bank-breadcrumb">Risk Advisory for Community Banks</div>
     <h1>Nobody Has Read All Three Policies Together</h1>
     <p class="bank-subhead">
-      Your bank carries cyber insurance, a fidelity bond, and a D&O policy. Most likely, each is from a different carrier, with different definitions and different exclusions.
-    </p>
-    <p class="bank-subhead">
-      When a cyber incident hits, these policies point fingers at each other. Each carrier writes exclusions assuming another policy covers it. For incidents like wire fraud, vendor breaches, or ransomware followed by a regulatory investigation, the result is gaps where no carrier pays.
+      Your bank carries cyber insurance, a fidelity bond, and a D&amp;O policy from different carriers. Each carrier writes exclusions assuming another policy covers it. For incidents like wire fraud, vendor breaches, or ransomware followed by a regulatory investigation, the result is gaps where no carrier pays.
     </p>
   </div>
 </section>
 
-<!-- What I Do -->
-<section class="bank-section">
+<!-- Where It Breaks Down -->
+<section class="bank-section alt">
   <div class="container bank-wrap">
     <div class="bank-center">
-      <h2>What I Do</h2>
+      <h2>Where Bank Insurance Breaks Down</h2>
     </div>
-    <div class="bank-narrow">
-      <p>
-        I read the actual policy language across all three policies, then map out how they interact against real incident scenarios your bank is likely to face. This is not a policy summary. It is a forensic review of how your insurance program responds when tested.
-      </p>
+
+    <div class="bank-problem-grid">
+      <div class="bank-problem-card">
+        <h3>"Is that a cyber claim or a bond claim?"</h3>
+        <p>An employee clicks a spoofed email. A wire transfer goes out. Your cyber carrier says it is social engineering under the fidelity bond. Your bond carrier says it is computer fraud under the cyber policy. You are stuck in the middle.</p>
+      </div>
+
+      <div class="bank-problem-card">
+        <h3>"The board got sued after the breach"</h3>
+        <p>Regulators investigate your board's cybersecurity oversight. Your D&amp;O policy excludes claims "arising from" a cyber event. Your cyber policy does not cover board liability. Nobody pays for the defense.</p>
+      </div>
+
+      <div class="bank-problem-card">
+        <h3>"We had coverage. We thought."</h3>
+        <p>Your cyber policy requires MFA on all remote access. Your core banking vendor does not support it. After a breach, the carrier rescinds coverage based on a warranty you did not know you were violating.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- What You Get -->
-<section class="bank-section alt">
+<section class="bank-section">
   <div class="container bank-wrap">
     <div class="bank-center">
       <h2>What You Get</h2>
+      <p>I read the actual policy language across all three policies, then map how they interact against real incident scenarios your bank is likely to face.</p>
     </div>
 
     <div class="bank-deliverables">
-      <div class="bank-deliverable">
-        <h3>Cyber Policy Review</h3>
-        <p>Adequacy of sublimits, security warranties, incident response coverage, and regulatory proceeding definitions.</p>
-      </div>
-
-      <div class="bank-deliverable">
-        <h3>Fidelity Bond Review</h3>
-        <p>Does your bond actually pay when an employee is tricked into wiring funds, or does the fine print exclude it?</p>
-      </div>
-
-      <div class="bank-deliverable">
-        <h3>D&amp;O Review (Cyber Angle)</h3>
-        <p>If regulators or shareholders come after your board post-breach, does your D&amp;O respond or exclude cyber events?</p>
-      </div>
-
-      <div class="bank-deliverable">
-        <h3>Policy Interaction Map</h3>
-        <p>Which policy responds, which denies, and where the seams are. Mapped against the incident scenarios that matter for your bank.</p>
-      </div>
-
-      <div class="bank-deliverable">
-        <h3>Recommendations</h3>
-        <p>What to fix and how. Specific, actionable steps you can take to your broker or directly to your carriers.</p>
-      </div>
-
-      <div class="bank-deliverable">
-        <h3>Executive Summary with Risk Scorecard</h3>
-        <p>Board-ready overview with uninsured exposure quantified in dollar terms.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Why This Matters -->
-<section class="bank-section">
-  <div class="container bank-wrap">
-    <div class="bank-center">
-      <h2>Why This Matters for You and Your Board</h2>
-    </div>
-    <div class="bank-board">
-      <p>
-        Regulators increasingly expect boards to understand their bank's cyber risk posture. Whether your examiner is from the FDIC, OCC, or NCUA, the question is the same:
-      </p>
-      <div class="board-quote">
-        "How do you know your insurance is adequate?"
-      </div>
-      <p>
-        They expect a better answer than "Our broker said we are covered." This report gives you that answer, with the analysis behind it.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- Getting Started -->
-<section class="bank-section alt">
-  <div class="container bank-wrap">
-    <div class="bank-center">
-      <h2>What I Need from You to Get Started</h2>
-    </div>
-    <div class="bank-start">
-      <p>Three documents (full policies, not just the declarations pages):</p>
-      <ol>
-        <li>Your current cyber insurance policy</li>
-        <li>Your fidelity bond / financial institution bond</li>
-        <li>Your D&amp;O policy</li>
-      </ol>
-      <p>Plus some basic information about your bank: name, asset size, number of employees, and primary regulator.</p>
-      <p class="start-note">That is it. No lengthy onboarding process, no months of engagement. I review the policies, map the interactions, and deliver the findings.</p>
-    </div>
-  </div>
-</section>
-
-<!-- About -->
-<section class="bank-section">
-  <div class="container bank-wrap">
-    <div class="bank-credibility">
-      <p>
-        <strong>Joerg Proeve, Principal Risk Advisor</strong> has a 20+ year career in insurance spanning carriers, MGAs, and insurance startups. Former VP at CNA and AVP at Chubb. Former COO at a cyber insurance MGA. Early career in cybersecurity. MBA and Masters in Electrical Engineering.
-      </p>
-      <p>
-        <a href="{{ '/about/' | relative_url }}" style="color:#00D4AA; font-weight:600;">Read full background &rarr;</a>
-      </p>
+      <ul>
+        <li><strong>Cyber policy review:</strong> Sublimits, security warranties, incident response coverage</li>
+        <li><strong>Fidelity bond review:</strong> Does your bond actually pay when an employee is tricked into wiring funds, or does the fine print exclude it?</li>
+        <li><strong>D&amp;O review (cyber angle):</strong> If regulators come after your board post-breach, does your D&amp;O respond or exclude cyber events?</li>
+        <li><strong>Policy interaction map:</strong> Which policy responds, which denies, and where the seams are</li>
+        <li><strong>Executive summary with risk scorecard:</strong> Board-ready overview, with uninsured exposure quantified in dollar terms</li>
+      </ul>
     </div>
   </div>
 </section>
@@ -372,9 +256,9 @@ permalink: /community-bank-insurance/
 <!-- CTA -->
 <section class="bank-cta">
   <div class="bank-cta-inner">
-    <h2>Find Out Where Your Policies Disagree</h2>
+    <h2>Your Examiner Will Ask How You Know Your Insurance Is Adequate</h2>
     <p>
-      Send me the three policies. I will tell you where they overlap, where they conflict, and where no one pays.
+      They expect a better answer than "Our broker said we are covered." Send me the three policies. I will show you where they agree, where they conflict, and where no one pays.
     </p>
     <a href="{{ '/contact/' | relative_url }}" class="btn-accent">Get in Touch &rarr;</a>
     <div class="bank-cta-foot">No obligation. I will follow up within one business day.</div>

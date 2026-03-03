@@ -23,6 +23,19 @@ permalink: /community-bank-insurance/
   pointer-events: none;
 }
 .bank-wrap { max-width: 1100px; margin: 0 auto; }
+.bank-breadcrumb {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+  display: inline-block;
+  padding: 12px 20px;
+  background: rgba(0, 212, 170, 0.08);
+  border: 1px solid rgba(0, 212, 170, 0.22);
+  border-radius: 12px;
+}
 .bank-hero h1 {
   font-size: 48px;
   line-height: 1.15;
@@ -73,11 +86,17 @@ permalink: /community-bank-insurance/
   margin: 0 auto;
 }
 .bank-problem-card {
-  background: #fff;
+  background: var(--bg-light);
   border-radius: 12px;
-  padding: 32px 28px;
-  border: 1px solid var(--border);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  padding: 48px 40px;
+  border: 2px solid var(--border);
+  transition: all 0.3s;
+}
+.bank-problem-card:nth-child(1) { border-left: 4px solid #DC2626; }
+.bank-problem-card:nth-child(2) { border-left: 4px solid #F59E0B; }
+.bank-problem-card:nth-child(3) { border-left: 4px solid #EAB308; }
+.bank-problem-card:hover {
+  border-color: var(--accent);
 }
 .bank-problem-card h3 {
   font-size: 20px;
@@ -163,7 +182,9 @@ permalink: /community-bank-insurance/
 }
 @media (max-width: 968px) {
   .bank-hero h1 { font-size: 36px; }
+  .bank-breadcrumb { font-size: 12px; padding: 10px 16px; }
   .bank-problem-grid { grid-template-columns: 1fr; }
+  .bank-problem-card { padding: 36px 28px; }
 }
 @media (max-width: 768px) {
   .bank-hero { padding: 86px 0 50px; }
@@ -177,6 +198,7 @@ permalink: /community-bank-insurance/
 <!-- Hero -->
 <section class="bank-hero">
   <div class="container bank-wrap">
+    <div class="bank-breadcrumb">Risk Advisory for Community Banks</div>
     <h1>Three Policies. One Loss. Which Carrier Pays?</h1>
     <p class="bank-subhead">
       Community banks and credit unions carry cyber, fidelity bond, and D&O policies from different carriers. When something goes wrong, each carrier points to the other two. I help you find those gaps before a claim finds them first.

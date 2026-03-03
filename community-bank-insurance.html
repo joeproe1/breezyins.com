@@ -108,37 +108,25 @@ permalink: /community-bank-insurance/
   color: var(--text-secondary);
   margin: 0;
 }
-.bank-deliverables {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  max-width: 1100px;
-  margin: 0 auto 24px;
-}
-.bank-deliverable {
+.bank-highlight {
+  max-width: 800px;
+  margin: 0 auto;
   background: var(--bg-light);
   border-radius: 12px;
-  padding: 28px 24px;
   border-left: 4px solid var(--accent);
+  padding: 40px 36px;
 }
-.bank-deliverable h3 {
-  font-size: 18px;
+.bank-highlight h3 {
+  font-size: 24px;
   color: var(--primary);
-  margin: 0 0 8px;
-  font-weight: 700;
+  margin: 0 0 16px;
+  font-weight: 800;
 }
-.bank-deliverable p {
-  font-size: 16px;
-  line-height: 1.7;
+.bank-highlight p {
+  font-size: 18px;
+  line-height: 1.8;
   color: var(--text-secondary);
   margin: 0;
-}
-.bank-bottom-row {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-  max-width: 733px;
-  margin: 0 auto;
 }
 .bank-cta {
   background: #fff;
@@ -198,8 +186,6 @@ permalink: /community-bank-insurance/
   .bank-breadcrumb { font-size: 12px; padding: 10px 16px; }
   .bank-problem-grid { grid-template-columns: 1fr; }
   .bank-problem-card { padding: 36px 28px; }
-  .bank-deliverables { grid-template-columns: 1fr; }
-  .bank-bottom-row { grid-template-columns: 1fr; max-width: 100%; }
 }
 @media (max-width: 768px) {
   .bank-hero { padding: 86px 0 50px; }
@@ -255,29 +241,9 @@ permalink: /community-bank-insurance/
       <p>I read the actual policy language across all three policies, then map how they interact against real incident scenarios your bank is likely to face.</p>
     </div>
 
-    <div class="bank-deliverables">
-      <div class="bank-deliverable">
-        <h3>Cyber Policy Review</h3>
-        <p>Sublimits, security warranties, incident response coverage</p>
-      </div>
-      <div class="bank-deliverable">
-        <h3>Fidelity Bond Review</h3>
-        <p>Does your bond actually pay when an employee is tricked into wiring funds, or does the fine print exclude it?</p>
-      </div>
-      <div class="bank-deliverable">
-        <h3>D&amp;O Review (Cyber Angle)</h3>
-        <p>If regulators come after your board post-breach, does your D&amp;O respond or exclude cyber events?</p>
-      </div>
-    </div>
-    <div class="bank-bottom-row">
-      <div class="bank-deliverable">
-        <h3>Policy Interaction Map</h3>
-        <p>Which policy responds, which denies, and where the seams are</p>
-      </div>
-      <div class="bank-deliverable">
-        <h3>Executive Summary</h3>
-        <p>Board-ready overview, with uninsured exposure quantified in dollar terms</p>
-      </div>
+    <div class="bank-highlight">
+      <h3>The Policy Interaction Map</h3>
+      <p>I read all three policies together and map them against real incident scenarios: wire fraud, ransomware, vendor breach, regulatory investigation. For each scenario, you see which policy responds, which denies, and where no one pays. Delivered with a board-ready executive summary.</p>
     </div>
   </div>
 </section>

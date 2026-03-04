@@ -85,31 +85,31 @@ Community banks depend on banking platforms, payment processors, and online bank
 
 Scenario: Your banking platform vendor suffers a ransomware attack. Your own systems are fine, but you cannot process transactions, access accounts, or serve customers for three days.
 
-Many cyber policies either exclude third-party outages entirely, sublimit them, or require a "security failure" at the vendor. A configuration error, a failed update, or an operational failure at the vendor would not qualify. Your bank loses three days of operations, and the policy does not respond.
+Many cyber policies either exclude third-party outages entirely, sublimit them, or require a "security failure" at the vendor. A configuration error, a failed update, or an operational failure at the vendor would not qualify. Your bank loses three days of operations, and your policy does not respond.
 
 <div style="border-left: 3px solid #00D4AA; padding: 16px 20px; background: rgba(0,212,170,0.05); border-radius: 0 8px 8px 0; margin: 24px 0;">
 <strong>What to look for:</strong> Does your policy cover "dependent business interruption" or "contingent system failure"? Is there a sublimit? Does it require a "security event" at the vendor, or does it cover any "system outage"?
 </div>
 
-### Ransomware coverage has three hidden traps
+### Ransomware coverage has 3 hidden traps
 
 Ransomware is now a factor in the majority of cyber insurance claims, and financial institutions are among the most frequently targeted industries. Three things to check:
 
 <div style="display: flex; flex-direction: column; gap: 20px; margin: 24px 0;">
 
 <div style="border-left: 3px solid #F59E0B; padding: 16px 20px; background: rgba(245,158,11,0.05); border-radius: 0 8px 8px 0;">
-<strong>Trap 1: The sublimit.</strong><br>
-Your policy may say "$2M cyber" on the declarations page, but ransomware/extortion may be capped at $250K or $500K in the endorsements. If the demand exceeds your sublimit, you are paying the difference.
+<strong>Trap 1: Sublimits.</strong><br>
+Your policy may say "$2M cyber" on the declarations page, but ransomware/ extortion may be capped at $250K or $500K in the endorsements. If the demand exceeds your sublimit, you are paying the difference.
 </div>
 
 <div style="border-left: 3px solid #F59E0B; padding: 16px 20px; background: rgba(245,158,11,0.05); border-radius: 0 8px 8px 0;">
-<strong>Trap 2: The OFAC sanctions exclusion.</strong><br>
-Most policies exclude ransom payments if the attacker is on the OFAC sanctions list. Banks deal with OFAC sanctions in their day-to-day compliance work, but many do not realize the same sanctions rules apply to their insurance policy too. If you pay a ransom to a sanctioned group, the carrier denies the claim and you may face separate OFAC penalties.
+<strong>Trap 2: Security Warranties.</strong><br>
+Modern cyber policies include MFA, patching, EDR, and backup requirements as conditions of coverage. If the bank does not meet these controls when a ransomware event occurs, the entire claim can be denied, regardless of whether the missing control caused the breach. MFA was not enforced on a remote access connection? Claim denied. Not because MFA would have stopped the attack. Because MFA was a contractual condition and it was not in place.
 </div>
 
 <div style="border-left: 3px solid #DC2626; padding: 16px 20px; background: rgba(220,38,38,0.05); border-radius: 0 8px 8px 0;">
-<strong>Trap 3: Security warranties.</strong><br>
-Modern cyber policies include MFA, patching, EDR, and backup requirements as conditions of coverage. If the bank does not meet these controls when a ransomware event occurs, the entire claim can be denied, regardless of whether the missing control caused the breach. MFA was not enforced on a remote access connection? Claim denied. Not because MFA would have stopped the attack. Because MFA was a contractual condition and it was not in place.
+<strong>Trap 3: OFAC Sanctions Exclusion.</strong><br>
+Most policies exclude ransom payments if the attacker is on the OFAC sanctions list. Banks deal with OFAC sanctions in their day-to-day compliance work, but many do not realize the same sanctions rules apply to their insurance policy too. If you pay a ransom to a sanctioned group, the carrier denies the claim and you may face separate OFAC penalties.
 </div>
 
 </div>

@@ -5,7 +5,7 @@ description: "When wire fraud hits a community bank, the cyber carrier and the f
 date: 2026-03-03
 author: Joerg Proeve
 category: Community Banks
-read_time: "5 min read"
+read_time: "4 min read"
 image: /assets/images/Blog-Wire-Fraud-Bank.png
 permalink: /insights/wire-fraud-cyber-claim-or-bond-claim/
 ---

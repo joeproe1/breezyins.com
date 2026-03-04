@@ -5,7 +5,7 @@ description: "Bank examiners are asking harder questions about cyber coverage. H
 date: 2026-03-01
 author: Joerg Proeve
 category: Community Banks
-read_time: "5 min read"
+read_time: "4 min read"
 image: /assets/images/Blog-Examiner-Cyber-Insurance.png
 permalink: /insights/what-your-examiner-expects-from-cyber-insurance/
 ---

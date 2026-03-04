@@ -10,7 +10,7 @@ image: /assets/images/Blog-Wire-Fraud-Bank.png
 permalink: /insights/wire-fraud-cyber-claim-or-bond-claim/
 ---
 
-A controller at your bank gets an email from the CFO. It is urgent. A wire needs to go out today for a time-sensitive acquisition. The email looks right. The tone is right. The controller initiates the transfer.
+A controller at your bank gets an email from the CFO. It is urgent. A $475,000 wire needs to go out today for a time-sensitive acquisition. The email looks right. The tone is right. The controller initiates the transfer.
 
 Except the email was not from the CFO. It was a business email compromise attack. The money is gone. And now your bank has to file a claim.
 
@@ -34,7 +34,7 @@ Your bank carries two policies that should cover this: a cyber liability policy 
 
 Both carriers are technically correct under their own policy language. The cyber policy was designed for security breaches. The fidelity bond was designed for employee theft and forgery. A social engineering attack, where nobody breaks in and nobody steals, sits in the gap between the two.
 
-I see this pattern regularly when I review [community bank insurance programs]({{ '/community-bank-insurance/' | relative_url }}). Three policies on the books. Premiums paid every year. And when a wire fraud loss hits, two carriers pointing at each other while the bank absorbs the loss.
+I see this pattern regularly when I review [community bank insurance programs]({{ '/community-bank-insurance/' | relative_url }}). Two policies on the books. Premiums paid every year. And when a wire fraud loss hits, both carriers pointing at each other while the bank absorbs the loss.
 
 ## Why Deepfakes Make This Worse
 
@@ -54,27 +54,27 @@ If you have not looked at how your cyber policy and fidelity bond interact on wi
 
 <div style="border-left: 3px solid #00D4AA; padding: 16px 20px; background: rgba(0,212,170,0.05); border-radius: 0 8px 8px 0; margin: 24px 0;">
 <strong>1. Find your social engineering sublimits.</strong><br>
-Most cyber policies offer social engineering coverage as an endorsement, not a core coverage. Sublimits typically range from $100,000 to $250,000. If your bank processes wire transfers in the hundreds of thousands or millions, a $100,000 sublimit is not meaningful protection.
+Social engineering is usually an endorsement, not core coverage. Sublimits run $100K to $250K. If your wire volume is in the hundreds of thousands, that is not meaningful protection.
 </div>
 
 <div style="border-left: 3px solid #00D4AA; padding: 16px 20px; background: rgba(0,212,170,0.05); border-radius: 0 8px 8px 0; margin: 24px 0;">
 <strong>2. Check the definition of "social engineering."</strong><br>
-Does it cover only written electronic communications (email, text)? Or does it include voice and video? If the definition is limited to "electronic communication" or "email," an AI-generated phone call or video deepfake may fall outside the coverage grant.
+Does it cover only email and text, or does it include voice and video? If the definition says "electronic communication," a deepfake phone call may fall outside coverage.
 </div>
 
 <div style="border-left: 3px solid #00D4AA; padding: 16px 20px; background: rgba(0,212,170,0.05); border-radius: 0 8px 8px 0; margin: 24px 0;">
 <strong>3. Check your fidelity bond for a social engineering rider.</strong><br>
-Some fidelity bonds now offer social engineering endorsements. If yours has one, check the sublimit and the trigger language. Does it cover voice impersonation, or only written instructions? And does the sublimit stack with or replace your cyber policy's social engineering coverage?
+Some bonds now include one. Check the sublimit, whether it covers voice impersonation, and whether it stacks with your cyber policy's coverage.
 </div>
 
 <div style="border-left: 3px solid #00D4AA; padding: 16px 20px; background: rgba(0,212,170,0.05); border-radius: 0 8px 8px 0; margin: 24px 0;">
-<strong>4. Pull both policies side by side and look for exclusions that point to each other.</strong><br>
-This is the most important step. In your cyber policy, look for language excluding losses "covered by" or "available under" a fidelity bond. In your fidelity bond, look for exclusions referencing "cyber events" or losses "arising from" electronic communications. If each policy excludes what the other one covers, you have the finger-pointing gap.
+<strong>4. Look for exclusions that point to the other policy.</strong><br>
+Cyber excluding losses "available under" a fidelity bond. Bond excluding losses "arising from" electronic communications. If each excludes what the other covers, that is the gap.
 </div>
 
 <div style="border-left: 3px solid #00D4AA; padding: 16px 20px; background: rgba(0,212,170,0.05); border-radius: 0 8px 8px 0; margin: 24px 0;">
 <strong>5. Review callback verification requirements.</strong><br>
-Some policies require specific verification procedures as a condition of social engineering coverage. If your policy says you must "verify the instruction by telephone callback to a known number," and the caller on the other end is an AI-generated voice clone, did you satisfy the requirement? If nobody has an answer, that is the gap.
+Some policies require callback verification as a condition of coverage. If an AI-generated voice clone passes the callback, did you satisfy the requirement?
 </div>
 
 ## Close the Gap Before a Claim Forces the Question

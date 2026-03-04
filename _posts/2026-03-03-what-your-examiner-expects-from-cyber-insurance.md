@@ -20,12 +20,12 @@ I review insurance policies for community banks and credit unions. The gap betwe
 
 ## What Examiners Are Looking For
 
-The FFIEC IT Examination Handbook treats cyber insurance as a component of the bank's information security program, not a standalone checkbox. In practice, examiners want to see four things:
+The FFIEC (Federal Financial Institutions Examination Council) IT Examination Handbook treats cyber insurance as a component of the bank's information security program, not a standalone checkbox. In practice, examiners want to see four things:
 
 <div style="display: flex; flex-direction: column; gap: 16px; margin: 24px 0;">
 
 <div style="border-left: 3px solid #3B82F6; padding: 16px 20px; background: rgba(59,130,246,0.05); border-radius: 0 8px 8px 0;">
-<strong>Board-level review of coverage, not just approval of the premium.</strong> The board should be able to articulate what the cyber policy covers and does not cover. "Our broker recommended this policy and the premium is $X" is not a review. That is a rubber stamp.
+<strong>Board-level review of coverage, not just approval of the premium.</strong> The Board should be able to articulate what the cyber policy covers and does not cover. "Our broker recommended this policy and the premium is $X" is not a review. That is a rubber stamp.
 </div>
 
 <div style="border-left: 3px solid #3B82F6; padding: 16px 20px; background: rgba(59,130,246,0.05); border-radius: 0 8px 8px 0;">
@@ -37,7 +37,7 @@ The FFIEC IT Examination Handbook treats cyber insurance as a component of the b
 </div>
 
 <div style="border-left: 3px solid #3B82F6; padding: 16px 20px; background: rgba(59,130,246,0.05); border-radius: 0 8px 8px 0;">
-<strong>Understanding of how cyber, fidelity bond, and D&O interact.</strong> A ransomware attack that leads to a wire transfer loss, followed by a regulatory investigation into board oversight, touches all three policies. Examiners want to know which policy responds to which part. For a detailed look at the finger-pointing problem, see <a href="{{ '/insights/wire-fraud-cyber-claim-or-bond-claim/' | relative_url }}" style="color:#00D4AA; font-weight:600;">Wire Fraud: Is That a Cyber Claim or a Bond Claim?</a>
+<strong>Understanding of how cyber, fidelity bond, and D&O interact.</strong> A ransomware attack that leads to a wire transfer loss, followed by a regulatory investigation into Board oversight, touches all three policies. Examiners want to know which policy responds to which part. For a detailed look at the finger-pointing problem, see <a href="{{ '/insights/wire-fraud-cyber-claim-or-bond-claim/' | relative_url }}" style="color:#00D4AA; font-weight:600;">Wire Fraud: Is That a Cyber Claim or a Bond Claim?</a>
 </div>
 
 </div>
@@ -51,9 +51,8 @@ Every cyber policy I review for banks contains security warranty requirements. T
 These are not suggestions. They are coverage conditions. If the bank's IT environment does not match what the policy requires, the carrier can deny a claim or rescind coverage after a loss.
 
 <div style="border-left: 3px solid #DC2626; padding: 16px 20px; background: rgba(220,38,38,0.05); border-radius: 0 8px 8px 0; margin: 24px 0;">
-<strong>The three-list problem:</strong> Your examiner asks about controls. Your IT auditor tests controls. Your carrier requires controls. But nobody checks whether these three lists match.<br><br>
-The examiner reviews controls against the FFIEC CAT or NIST CSF. Your IT auditor tests against your internal policies. Your carrier lists required controls in the policy's warranty endorsement.<br><br>
-These three frameworks overlap but are not identical. <strong>A bank can pass its IT audit, satisfy its examiner, and still violate a policy warranty it did not know existed.</strong>
+<strong>The missing cross-check:</strong> Your examiner asks about controls. Your IT auditor tests controls. Your carrier requires controls. Nobody checks whether these three lists match.<br><br>
+<strong>A bank can pass its IT audit, satisfy its examiner, and still violate a policy warranty it did not know existed.</strong>
 </div>
 
 Fixing this requires someone to sit down with the policy and the IT audit findings in the same room. That almost never happens.
@@ -62,26 +61,23 @@ Fixing this requires someone to sit down with the policy and the IT audit findin
 
 <div style="border-left: 3px solid #00D4AA; padding: 16px 20px; background: rgba(0,212,170,0.05); border-radius: 0 8px 8px 0; margin: 24px 0;">
 <strong>1. Match your policy warranties to your IT audit.</strong><br>
-Pull the cyber policy's security warranty requirements (usually in an endorsement, a warranty schedule, or the application representations). List every control the carrier requires. Compare that list to your most recent IT audit findings.<br><br>
-Where they align, document it. Where they do not, you have a problem that needs to be fixed before a claim, not after. If your policy requires MFA on all remote access and your core banking vendor does not support it, that is a warranty gap.
+Pull your carrier's security warranty requirements. Compare every required control to your most recent IT audit findings. Where they do not match, you have a gap that needs fixing before a claim, not after.
 </div>
 
 <div style="border-left: 3px solid #00D4AA; padding: 16px 20px; background: rgba(0,212,170,0.05); border-radius: 0 8px 8px 0; margin: 24px 0;">
-<strong>2. Create a one-page coverage summary for the board.</strong><br>
-"We have $2M in cyber coverage" is not a board-level summary. The board needs to know what that $2M covers: first-party breach response, third-party liability, business interruption, regulatory defense, ransomware payments. They need to know the key sublimits (social engineering fraud is often capped at $100K or $250K, even on a $2M policy). And they need to know the major exclusions.<br><br>
-One page. Plain language. Updated at every renewal. When the examiner asks whether the board reviewed coverage, this document is the answer.
+<strong>2. Create a one-page coverage summary for the Board.</strong><br>
+What your policy covers, key sublimits, major exclusions. One page. Plain language. Updated at renewal. When the examiner asks whether the Board reviewed coverage, this is your answer.
 </div>
 
 <div style="border-left: 3px solid #00D4AA; padding: 16px 20px; background: rgba(0,212,170,0.05); border-radius: 0 8px 8px 0; margin: 24px 0;">
-<strong>3. Map your three policies against your five most likely incidents.</strong><br>
-Ransomware, wire fraud through social engineering, vendor breach, customer data breach, and regulatory investigation or board lawsuit following a cyber event.<br><br>
-For each scenario, document which of your three policies (cyber, fidelity bond, D&O) responds. Where a scenario falls between two policies and neither clearly covers it, that is the gap you need to address. A simple matrix showing incident type, responding policy, and coverage status is enough.
+<strong>3. Map your three policies against your most likely incidents.</strong><br>
+Ransomware, wire fraud, vendor breach, data breach, regulatory investigation. For each, document which policy responds (cyber, fidelity bond, D&O). Where a scenario falls between two policies, that is the gap to address.
 </div>
 
 ## Where This Leads
 
 Most community banks are not prepared for these questions. The fidelity bond alone runs 30 pages before riders. Expecting a compliance officer to cross-reference three policies from three carriers is unrealistic without help.
 
-This is what the [Risk Intelligence Report]({{ '/community-bank-insurance/' | relative_url }}) is designed to do. I read your cyber policy, fidelity bond, and D&O side by side, map how they interact against real incident scenarios, flag the security warranty gaps, and produce a board-ready report that answers the examiner's question before they ask it.
+This is what the [Risk Intelligence Report]({{ '/community-bank-insurance/' | relative_url }}) is designed to do. I read your cyber policy, fidelity bond, and D&O side by side, map how they interact against real incident scenarios, flag the security warranty gaps, and produce a Board-ready report that answers the examiner's question before they ask it.
 
 If your next exam is approaching, [get in touch]({{ '/contact/' | relative_url }}). I will tell you whether your current coverage holds up, or whether there are gaps worth fixing before the examiner finds them.

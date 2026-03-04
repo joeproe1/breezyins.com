@@ -10,11 +10,15 @@ image: /assets/images/Blog-Cyber-Insurance-Banks.png
 permalink: /insights/cyber-insurance-for-community-banks/
 ---
 
-Your bank has a cyber insurance policy. It's on the books. The premium gets paid. The board sees it listed in the risk management report.
+Your bank has a cyber insurance policy. It's on the books. The premium gets paid. The Board sees it listed in the risk management report.
 
 But when was the last time anyone checked what your cyber policy actually covers?
 
-I review cyber policies for clients across the country, and the most common reaction I get from bank leadership is some version of: "Wait, that's not covered?" The problem isn't that community banks buy bad policies. It's that cyber insurance was originally designed for companies that store data and operate a single network. Community banks do something more complex: they hold customer financial data, process transactions, move money, depend on multiple third-party vendors, and answer to multiple regulators. That's a different risk profile. Your cyber policy should reflect it.
+I review cyber policies for clients, and the most common reaction I get from bank leadership is some version of:
+
+*"Wait, that's not covered?"*
+
+The problem isn't that community banks buy bad cyber policies. It's that cyber insurance was originally designed for companies that store data and operate a single network. Community banks do something more complex: they hold customer financial data, process transactions, move money, depend on multiple third-party vendors, and answer to multiple regulators. That's a different risk profile. Your cyber policy should reflect it.
 
 Here's how to tell if it does.
 
@@ -22,30 +26,42 @@ Here's how to tell if it does.
 
 A cyber policy has two sides: first-party coverage (your own losses) and third-party coverage (when someone sues you).
 
-**First-party coverage typically includes:**
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 28px 0;">
 
-- **Breach response costs:** Forensics, legal counsel, customer notification, and credit monitoring. Even for a breach affecting a few hundred records, these costs routinely run into six figures.
-- **Business interruption:** Lost income and extra expenses while your systems are down due to a cyber event, after a waiting period (usually 8 hours).
-- **Cyber extortion/ransomware:** Ransom payments, negotiation expenses, and forensic support.
-- **Data restoration:** The cost to recover or recreate data destroyed or corrupted during an attack.
+<div style="border-left: 4px solid #00D4AA; padding: 24px 24px; background: rgba(0,212,170,0.05); border-radius: 0 10px 10px 0;">
+<strong style="font-size: 17px; color: #0A2540;">First-Party Coverage</strong><br>
+<span style="font-size: 14px; color: #6b7280;">Your own losses</span>
+<ul style="margin: 16px 0 0; padding-left: 18px; line-height: 1.8;">
+<li><strong>Breach response:</strong> Forensics, legal counsel, notification, credit monitoring. Even a few hundred records can run into six figures.</li>
+<li><strong>Business interruption:</strong> Lost income and extra expenses while systems are down, after a waiting period (usually 8 hours).</li>
+<li><strong>Cyber extortion/ransomware:</strong> Ransom payments, negotiation, forensic support.</li>
+<li><strong>Data restoration:</strong> Recovering or recreating data destroyed during an attack.</li>
+</ul>
+</div>
 
-**Third-party coverage typically includes:**
+<div style="border-left: 4px solid #3B82F6; padding: 24px 24px; background: rgba(59,130,246,0.05); border-radius: 0 10px 10px 0;">
+<strong style="font-size: 17px; color: #0A2540;">Third-Party Coverage</strong><br>
+<span style="font-size: 14px; color: #6b7280;">When someone sues you</span>
+<ul style="margin: 16px 0 0; padding-left: 18px; line-height: 1.8;">
+<li><strong>Network security liability:</strong> Defense costs and settlements when a security failure causes harm to a third party.</li>
+<li><strong>Privacy liability:</strong> Claims from failure to protect personal information.</li>
+<li><strong>Regulatory proceedings:</strong> Defense costs when regulators investigate after a breach. For banks, this matters more than in most industries.</li>
+</ul>
+</div>
 
-- **Network security liability:** Defense costs and settlements when a third party sues because a security failure caused them harm.
-- **Privacy liability:** Claims arising from failure to protect personal information.
-- **Regulatory proceedings:** Defense costs when a regulatory body investigates after a breach. For banks, this matters more than in most industries.
+</div>
 
 That's the standard package. For a typical business, it works reasonably well. For a community bank, it has blind spots that deserve attention.
 
-## Where Cyber Insurance Falls Short for Community Banks
+## Blind Spots: Where Cyber Insurance Falls Short for Community Banks
 
 ### Wire fraud and social engineering coverage is probably sublimited
 
-Wire fraud and business email compromise are among the costliest cyber threats facing banks. Business email compromise alone accounts for roughly $3 billion in reported losses annually. Banks are in the business of moving money, and attackers know it.
+Wire fraud and business email compromise (BEC) are among the costliest cyber threats facing banks. BEC alone accounts for roughly $3 billion in reported losses annually. Banks are in the business of moving money, and attackers know it.
 
 Most cyber policies offer social engineering coverage as an endorsement, not a core coverage. Sublimits typically range from $100K to $250K. If a bank employee is tricked into wiring $500K to a fraudulent account, the cyber policy sublimit may cover half. The fidelity bond may or may not respond, depending on whether the loss qualifies under the bond language.
 
-This is getting worse. AI-generated voice and video can now impersonate executives in real time, and most policy language was written for email-based scams. For a deeper look at how deepfakes are breaking callback verification procedures and widening this gap, see [Wire Fraud at Your Bank: Is That a Cyber Claim or a Bond Claim?]({{ '/insights/wire-fraud-cyber-claim-or-bond-claim/' | relative_url }})
+And it is getting worse. AI-generated voice and video can now impersonate executives in real time, and most policy language was written for email-based scams. For a deeper look at how deepfakes are breaking callback verification procedures and widening this gap, see [Wire Fraud at Your Bank: Is That a Cyber Claim or a Bond Claim?]({{ '/insights/wire-fraud-cyber-claim-or-bond-claim/' | relative_url }})
 
 <div style="border-left: 3px solid #00D4AA; padding: 16px 20px; background: rgba(0,212,170,0.05); border-radius: 0 8px 8px 0; margin: 24px 0;">
 <strong>What to look for:</strong> Check whether your social engineering sublimit is adequate for your wire transfer volume. Check whether the policy defines "social engineering" broadly enough to include AI-generated voice and video. And if your policy requires a callback verification procedure, ask whether that procedure accounts for voice impersonation.
@@ -55,9 +71,9 @@ This is getting worse. AI-generated voice and video can now impersonate executiv
 
 Banks carry fidelity bonds (covering employee dishonesty, forgery, computer fraud) alongside their cyber policies. These overlap in some areas and leave gaps in others.
 
-Social engineering and fraudulent wire transfers are the most common gap. The fidelity bond may require "direct" fraud, someone physically stealing or forging. The cyber policy requires a "cyber event." A business email compromise scam that tricks an employee into voluntarily initiating a legitimate wire transfer may not clearly fit either definition. The employee was not dishonest. There was no hack. Both carriers can argue it belongs to the other policy.
+Social engineering and fraudulent wire transfers are the most common gap. The fidelity bond may require "direct" fraud, someone physically stealing or forging. The cyber policy requires a "cyber event." A BEC scam that tricks an employee into voluntarily initiating a legitimate wire transfer may not clearly fit either definition. The employee was not dishonest. There was no hack. Both carriers can argue it belongs to the other policy.
 
-Directors and Officers (D&O) coverage adds another layer. If the board is sued after a breach for inadequate oversight of cybersecurity, does the D&O policy respond? Some D&O policies now exclude claims "arising from" a cyber event, pushing everything to the cyber policy. But the cyber policy may not cover board liability claims.
+Directors and Officers (D&O) coverage adds another layer. If the Board is sued after a breach for inadequate oversight of cybersecurity, does the D&O policy respond? Some D&O policies now exclude claims "arising from" a cyber event, pushing everything to the cyber policy. But the cyber policy may not cover Board liability claims.
 
 <div style="border-left: 3px solid #00D4AA; padding: 16px 20px; background: rgba(0,212,170,0.05); border-radius: 0 8px 8px 0; margin: 24px 0;">
 <strong>What to look for:</strong> Pull your cyber policy, fidelity bond, and D&O policy side by side. Check whether any of them have exclusions that push claims to one of the other policies. If you see phrases like "arising from a cyber event" in your D&O exclusions, or "computer fraud" carved out of your fidelity bond, those are the seams where coverage can fail.

@@ -18,7 +18,7 @@ I review cyber policies for clients, and the most common reaction I get from ban
 
 *"Wait, that's not covered?"*
 
-The problem isn't that community banks buy bad cyber policies. It's that cyber insurance was originally designed for companies that store data and operate a single network. Community banks do something more complex: they hold customer financial data, process transactions, move money, depend on multiple third-party vendors, and answer to multiple regulators. That's a different risk profile. Your cyber policy should reflect it.
+The problem isn't that community banks buy bad cyber policies. It's that cyber insurance was designed for companies that store data and run a single network. Community banks hold financial data, process transactions, move money, depend on third-party vendors, and answer to regulators. Different risk profile. Your policy should reflect it.
 
 Here's how to tell if it does.
 
@@ -30,7 +30,7 @@ A cyber policy has two sides: first-party coverage (your own losses) and third-p
 
 <div style="border-left: 4px solid #00D4AA; padding: 24px 24px; background: rgba(0,212,170,0.05); border-radius: 0 10px 10px 0;">
 <strong style="font-size: 17px; color: #0A2540;">First-Party Coverage</strong><br>
-<span style="font-size: 14px; color: #6b7280;">Your own losses</span>
+<em style="font-size: 16px; color: #6b7280;">Your own losses</em>
 <ul style="margin: 16px 0 0; padding-left: 18px; line-height: 1.8;">
 <li><strong>Breach response:</strong> Forensics, legal counsel, notification, credit monitoring. Even a few hundred records can run into six figures.</li>
 <li><strong>Business interruption:</strong> Lost income and extra expenses while systems are down, after a waiting period (usually 8 hours).</li>
@@ -41,7 +41,7 @@ A cyber policy has two sides: first-party coverage (your own losses) and third-p
 
 <div style="border-left: 4px solid #3B82F6; padding: 24px 24px; background: rgba(59,130,246,0.05); border-radius: 0 10px 10px 0;">
 <strong style="font-size: 17px; color: #0A2540;">Third-Party Coverage</strong><br>
-<span style="font-size: 14px; color: #6b7280;">When someone sues you</span>
+<em style="font-size: 16px; color: #6b7280;">When someone sues you</em>
 <ul style="margin: 16px 0 0; padding-left: 18px; line-height: 1.8;">
 <li><strong>Network security liability:</strong> Defense costs and settlements when a security failure causes harm to a third party.</li>
 <li><strong>Privacy liability:</strong> Claims from failure to protect personal information.</li>
@@ -93,23 +93,23 @@ Many cyber policies either exclude third-party outages entirely, sublimit them, 
 
 ### Ransomware coverage has 3 hidden traps
 
-Ransomware is now a factor in the majority of cyber insurance claims, and financial institutions are among the most frequently targeted industries. Three things to check:
+Financial institutions are among the most targeted industries for ransomware. Three things to check:
 
 <div style="display: flex; flex-direction: column; gap: 20px; margin: 24px 0;">
 
 <div style="border-left: 3px solid #F59E0B; padding: 16px 20px; background: rgba(245,158,11,0.05); border-radius: 0 8px 8px 0;">
 <strong>Trap 1: Sublimits.</strong><br>
-Your policy may say "$2M cyber" on the declarations page, but ransomware/ extortion may be capped at $250K or $500K in the endorsements. If the demand exceeds your sublimit, you are paying the difference.
+Your declarations page says "$2M cyber." But ransomware/ extortion may be capped at $250K in the endorsements. Demand exceeds your sublimit? You pay the difference.
 </div>
 
 <div style="border-left: 3px solid #F59E0B; padding: 16px 20px; background: rgba(245,158,11,0.05); border-radius: 0 8px 8px 0;">
 <strong>Trap 2: Security Warranties.</strong><br>
-Modern cyber policies include MFA, patching, EDR, and backup requirements as conditions of coverage. If the bank does not meet these controls when a ransomware event occurs, the entire claim can be denied, regardless of whether the missing control caused the breach. MFA was not enforced on a remote access connection? Claim denied. Not because MFA would have stopped the attack. Because MFA was a contractual condition and it was not in place.
+Cyber policies require MFA, patching, EDR, and backups as conditions of coverage. Miss one when a ransomware event hits, and the entire claim can be denied. MFA not enforced on remote access? Claim denied. Not because MFA would have stopped the attack. Because it was a contractual condition.
 </div>
 
 <div style="border-left: 3px solid #DC2626; padding: 16px 20px; background: rgba(220,38,38,0.05); border-radius: 0 8px 8px 0;">
 <strong>Trap 3: OFAC Sanctions Exclusion.</strong><br>
-Most policies exclude ransom payments if the attacker is on the OFAC sanctions list. Banks deal with OFAC sanctions in their day-to-day compliance work, but many do not realize the same sanctions rules apply to their insurance policy too. If you pay a ransom to a sanctioned group, the carrier denies the claim and you may face separate OFAC penalties.
+Most policies exclude ransom payments to OFAC-sanctioned groups. Banks deal with sanctions in daily compliance but many do not realize the same rules apply to their insurance. Pay a sanctioned group, and the carrier denies the claim. You may face OFAC penalties on top.
 </div>
 
 </div>
@@ -118,37 +118,30 @@ Most policies exclude ransom payments if the attacker is on the OFAC sanctions l
 
 Most cyber policies include regulatory proceedings coverage. But there are limits.
 
-Fines and penalties are often excluded, or covered only where "insurable by law." That language varies by state. For banks, the 36-hour incident notification rule means regulators will know about significant incidents quickly. The examination that follows can be extensive, and legal costs for responding to regulatory inquiries can run into six figures.
+Fines and penalties are often excluded, or covered only where "insurable by law." For banks, the 36-hour incident notification rule means regulators know quickly. The examination that follows can be extensive, and legal costs run into six figures.
 
-The gap: your policy covers "regulatory proceedings" but defines it narrowly. An FDIC investigation may not fit the policy's definition if it is framed as an examination rather than a formal enforcement action.
+The gap: your policy covers "regulatory proceedings" but may define it narrowly. An FDIC investigation framed as an examination rather than a formal enforcement action may not qualify.
 
 ## Security Warranties: Where Cybersecurity Controls and Insurance Collide
 
-Carriers increasingly require specific security controls as conditions of coverage. These are not recommendations. They are contractual requirements:
+Carriers require specific security controls as conditions of coverage: MFA on all remote access, EDR, patching within defined timelines, tested backups, email filtering, and employee security training. These are not recommendations. They are contractual requirements.
 
-- Multi-factor authentication (MFA) on all remote access points
-- Endpoint detection and response (EDR)
-- Regular patching within defined timelines
-- Tested and verified backups
-- Email filtering and anti-phishing tools
-- Security awareness training for employees
+If any control is missing when a claim hits, coverage can be voided. A security gap is not just a vulnerability. It is an insurance gap.
 
-The security controls your IT team or security assessor evaluates are the same controls your insurance carrier requires. If those controls are not in place, it is both a security risk and an insurance risk. A security gap does not just make you more vulnerable to an attack. It can void your coverage when the attack happens.
-
-If your bank works with an IT auditor or security firm, ask them to review your carrier's security warranty requirements alongside their assessment. For more on how examiner expectations, IT audit findings, and carrier requirements overlap (and where they do not), see [What Your Examiner Expects From Your Cyber Insurance]({{ '/insights/what-your-examiner-expects-from-cyber-insurance/' | relative_url }}).
+If your bank works with an IT auditor or security firm, have them review your carrier's warranty requirements alongside their assessment. For more on how examiner expectations and carrier requirements overlap, see [What Your Examiner Expects From Your Cyber Insurance]({{ '/insights/what-your-examiner-expects-from-cyber-insurance/' | relative_url }}).
 
 ## 5 Things to Check Before Your Next Board Meeting
 
-These checks take about 30 minutes. If you get through all five, you will know more about your cyber coverage than most community banks ever will.
+Thirty minutes. If you get through all five, you will know more about your cyber coverage than most community banks ever will.
 
-1. **Find your sublimits.** Look at the declarations page and any endorsements for ransomware/extortion and social engineering/wire fraud sublimits. Compare them to your aggregate limit. If either is less than 25% of your aggregate, flag it.
+1. **Find your sublimits.** Check ransomware and social engineering sublimits against your aggregate. Below 25%? Flag it.
 
-2. **Read your security warranties.** Go to the Conditions or Warranties section. List every security control required as a condition of coverage. Then check whether your bank meets every single one. One gap can void everything.
+2. **Read your security warranties.** List every control your policy requires. Verify your bank meets each one. One gap can void everything.
 
-3. **Check your vendor coverage.** Find the Business Interruption section and look for "dependent business interruption" or "contingent system failure" language. If your policy only covers outages at your own bank, you have a gap.
+3. **Check your vendor coverage.** Look for "dependent business interruption" language. If your policy only covers outages at your own bank, you have a gap.
 
-4. **Look at your policies together.** Pull the cyber policy, the fidelity bond, and the D&O policy. Check whether any of them have exclusions that push claims to one of the other policies. Where you see "arising from a cyber event" exclusions, that is a potential gap.
+4. **Look at your policies together.** Pull cyber, fidelity bond, and D&O. Look for exclusions that push claims to another policy. "Arising from a cyber event" in your D&O? That is a gap.
 
-5. **Ask about deepfake coverage.** Check whether your social engineering coverage defines "social engineering" broadly enough to include AI-generated voice and video, or whether the language is limited to written communications.
+5. **Ask about deepfake coverage.** Does your social engineering coverage include AI-generated voice and video, or just written communications?
 
 If any of these raises a question you cannot answer, bring it to your next broker conversation. Or if you would rather have someone who reads these for a living walk through it with you, [get in touch]({{ '/contact/' | relative_url }}). Learn more about how I work with [community banks]({{ '/community-bank-insurance/' | relative_url }}).

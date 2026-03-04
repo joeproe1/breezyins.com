@@ -112,21 +112,31 @@ permalink: /insights/
     var tabs = document.querySelectorAll('.filter-tab');
     var cards = document.querySelectorAll('.post-card');
 
+    function applyFilter(filter) {
+        tabs.forEach(function(t) {
+            t.classList.toggle('active', t.getAttribute('data-filter') === filter);
+        });
+        cards.forEach(function(card) {
+            if (filter === 'all' || card.getAttribute('data-industry') === filter) {
+                card.classList.remove('hidden');
+            } else {
+                card.classList.add('hidden');
+            }
+        });
+    }
+
     tabs.forEach(function(tab) {
         tab.addEventListener('click', function() {
             var filter = this.getAttribute('data-filter');
-
-            tabs.forEach(function(t) { t.classList.remove('active'); });
-            this.classList.add('active');
-
-            cards.forEach(function(card) {
-                if (filter === 'all' || card.getAttribute('data-industry') === filter) {
-                    card.classList.remove('hidden');
-                } else {
-                    card.classList.add('hidden');
-                }
-            });
+            applyFilter(filter);
         });
     });
+
+    // Apply filter from URL hash on page load (e.g. /insights/#community-banks)
+    var hashMap = { 'community-banks': 'banks', 'msps': 'msp' };
+    var hash = window.location.hash.replace('#', '');
+    if (hashMap[hash]) {
+        applyFilter(hashMap[hash]);
+    }
 })();
 </script>

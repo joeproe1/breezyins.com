@@ -2,7 +2,7 @@
 layout: post
 title: "Cyber Insurance for Community Banks: What It Covers, What It Doesn't, and What Your Board Should Be Asking"
 description: "Most community banks have a cyber policy. Few understand what it actually covers. Here is what to check before your next board meeting or examination."
-date: 2026-03-03
+date: 2026-02-27
 author: Joerg Proeve
 category: Community Banks
 read_time: "7 min read"

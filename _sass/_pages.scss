@@ -126,6 +126,113 @@
     }
 }
 
+// Stats band
+.stats-band {
+    padding: 56px 0;
+    background: $primary;
+    color: white;
+
+    .stats-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 48px;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    .stat-item {
+        text-align: center;
+        padding: 0 24px;
+
+        .stat-headline {
+            font-family: $font-heading;
+            font-size: 20px;
+            font-weight: 700;
+            color: $accent;
+            line-height: 1.4;
+            margin-bottom: 12px;
+        }
+
+        .stat-body {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
+            margin: 0;
+        }
+    }
+}
+
+// Cost of Waiting section
+.urgency-section {
+    padding: $section-padding 0;
+    background: $bg-light;
+
+    .urgency-content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.8;
+        color: $text-secondary;
+        margin-bottom: 20px;
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+// How It Works (3-step process)
+.steps-section {
+    padding: $section-padding 0;
+    background: white;
+
+    .steps-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+
+    .step-card {
+        position: relative;
+        padding: 40px 32px 36px;
+        background: $bg-light;
+        border-radius: 12px;
+        border: 1px solid $border;
+
+        .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: $primary;
+            color: $accent;
+            font-family: $font-heading;
+            font-size: 18px;
+            font-weight: 700;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 22px;
+            margin-bottom: 14px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.7;
+            color: $text-secondary;
+            margin: 0;
+        }
+    }
+}
+
 // Solution section
 .solution-section {
     padding: $section-padding 0;
@@ -683,8 +790,19 @@
 
     .problem-section,
     .solution-section,
-    .about-section {
+    .about-section,
+    .urgency-section,
+    .steps-section {
         padding: $section-padding-mobile 0;
+    }
+
+    .steps-section .steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-band .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
     }
 
     .cta-banner h2 {

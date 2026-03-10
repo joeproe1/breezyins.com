@@ -500,6 +500,56 @@
     margin-top: 60px;
 }
 
+// Share buttons
+.share-bar {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    max-width: 760px;
+    margin: 48px auto 0;
+    padding: 24px 24px 0;
+    border-top: 1px solid $border;
+}
+
+.share-label {
+    font-family: $font-heading;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: $text-secondary;
+    white-space: nowrap;
+}
+
+.share-links {
+    display: flex;
+    gap: 10px;
+}
+
+.share-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid $border;
+    font-size: 14px;
+    font-weight: 600;
+    color: $text-secondary;
+    text-decoration: none;
+    transition: all 0.2s;
+
+    &:hover {
+        color: $primary;
+        border-color: $accent;
+        background: rgba(0, 212, 170, 0.05);
+    }
+
+    svg {
+        flex-shrink: 0;
+    }
+}
+
 // Blog index / post cards
 .blog-grid {
     display: grid;
@@ -674,5 +724,11 @@
         h1 {
             font-size: 36px;
         }
+    }
+
+    .share-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
     }
 }

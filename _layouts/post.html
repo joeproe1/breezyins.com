@@ -29,7 +29,7 @@ layout: default
 }
 </script>
 <article itemscope itemtype="https://schema.org/Article">
-    <div class="post-hero">
+    <div class="post-hero{% if page.category == 'Community Banks' %} post-hero--banks{% endif %}">
         <div class="container">
             <nav class="breadcrumbs" aria-label="Breadcrumb">
                 <a href="{{ '/insights/' | relative_url }}">&larr; Back to Insights</a>

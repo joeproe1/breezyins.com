@@ -2,7 +2,7 @@
 layout: post
 title: "Wire Fraud at Your Bank: Is That a Cyber Claim or a Bond Claim?"
 description: "When wire fraud hits a community bank, the cyber carrier and the fidelity bond carrier both point to the other policy. Here is how to close the gap before a claim forces the question."
-date: 2026-03-03
+date: 2026-03-10
 author: Joerg Proeve
 category: Community Banks
 read_time: "4 min read"

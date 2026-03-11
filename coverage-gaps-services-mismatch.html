@@ -225,6 +225,42 @@ permalink: /coverage-gaps/services-mismatch/
   text-decoration: underline;
 }
 
+/* Related Gaps */
+.cg-related{
+  margin-top: 40px;
+  padding: 28px 32px;
+  background: rgba(0,212,170,.04);
+  border: 1px solid rgba(0,212,170,.15);
+  border-radius: 8px;
+}
+.cg-related h3{
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 0 0 16px;
+}
+.cg-related ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.cg-related li{
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+.cg-related a{
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+.cg-related a:hover{
+  text-decoration: underline;
+}
+
 /* CTA */
 .cg-cta{
   background: #fff;
@@ -283,6 +319,7 @@ permalink: /coverage-gaps/services-mismatch/
   .cg-cta-inner{ padding: 40px 24px; }
   .cg-cta-inner h2{ font-size: 28px; }
   .cg-links{ flex-direction: column; gap: 12px; }
+  .cg-related{ padding: 20px 24px; }
 }
 </style>
 
@@ -376,6 +413,14 @@ permalink: /coverage-gaps/services-mismatch/
         <div class="cg-step">
           <p><strong>5. Review after adding new services.</strong> Every time you add a service line, e.g., vCISO, compliance, IR retainers, check whether your policy definition covers it. Don't assume your broker updated it.</p>
         </div>
+      </div>
+
+      <div class="cg-related">
+        <h3>Related Coverage Gaps</h3>
+        <ul>
+          <li><a href="{{ '/coverage-gaps/limits-vs-contracts/' | relative_url }}">Limits vs. Contracts</a> — Your contract requires a $5M limit. Your policy has $2M.</li>
+          <li><a href="{{ '/coverage-gaps/liability-boundary/' | relative_url }}">The Liability Boundary</a> — Your cyber policy covers your network. You operate inside dozens of networks.</li>
+        </ul>
       </div>
 
       <div class="cg-links">

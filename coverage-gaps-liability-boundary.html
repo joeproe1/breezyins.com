@@ -225,6 +225,42 @@ permalink: /coverage-gaps/liability-boundary/
   text-decoration: underline;
 }
 
+/* Related Gaps */
+.cg-related{
+  margin-top: 40px;
+  padding: 28px 32px;
+  background: rgba(0,212,170,.04);
+  border: 1px solid rgba(0,212,170,.15);
+  border-radius: 8px;
+}
+.cg-related h3{
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 0 0 16px;
+}
+.cg-related ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.cg-related li{
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+.cg-related a{
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+.cg-related a:hover{
+  text-decoration: underline;
+}
+
 /* CTA */
 .cg-cta{
   background: #fff;
@@ -283,6 +319,7 @@ permalink: /coverage-gaps/liability-boundary/
   .cg-cta-inner{ padding: 40px 24px; }
   .cg-cta-inner h2{ font-size: 28px; }
   .cg-links{ flex-direction: column; gap: 12px; }
+  .cg-related{ padding: 20px 24px; }
 }
 </style>
 
@@ -373,6 +410,14 @@ permalink: /coverage-gaps/liability-boundary/
         <div class="cg-step">
           <p><strong>5. Consider excess coverage.</strong> If your client count or contract requirements demand more coverage than your current aggregate provides, an umbrella or excess policy sitting above both Cyber and E&O can close the gap.</p>
         </div>
+      </div>
+
+      <div class="cg-related">
+        <h3>Related Coverage Gaps</h3>
+        <ul>
+          <li><a href="{{ '/coverage-gaps/limits-vs-contracts/' | relative_url }}">Limits vs. Contracts</a> — Your contract requires a $5M limit. Your policy has $2M.</li>
+          <li><a href="{{ '/coverage-gaps/services-mismatch/' | relative_url }}">The Services Mismatch</a> — Your policy covers "IT consulting." You do security services.</li>
+        </ul>
       </div>
 
       <div class="cg-links">

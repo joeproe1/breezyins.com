@@ -488,12 +488,17 @@ permalink: /blind-spot-report/
       from_name: name,
       reply_to: email,
       subject: "Blind Spot Report Download: " + name,
-      message: "New Blind Spot Report download.\n\n" +
-               "Name: " + name + "\n" +
-               "Email: " + email + "\n" +
-               "Date: " + dateStr + "\n" +
-               "Source: breezyins.com/blind-spot-report/\n\n" +
-               "This lead downloaded the MSP Blind Spot Report PDF."
+      message: "New Blind Spot Report download from breezyins.com/blind-spot-report/",
+      lead_name: name,
+      lead_email: email,
+      date: dateStr,
+      score: "N/A",
+      risk_level: "Blind Spot Report Download",
+      gaps_count: "3 (report covers services gap, contract gap, liability gap)",
+      gaps_detail: "This lead downloaded the Blind Spot Report PDF.\nNo quiz was taken. Follow up to discuss their specific coverage.",
+      services_list: "Not specified (report download only)",
+      answers_summary: "No quiz responses. Lead came through the Blind Spot Report landing page.",
+      urgency_note: "BLIND SPOT REPORT LEAD: Good candidate for a Risk Intelligence Review conversation."
     };
 
     window.emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)

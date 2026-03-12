@@ -1,0 +1,514 @@
+---
+layout: page
+title: "The MSP Blind Spot Report"
+description: "Three places your MSP insurance fails during a claim. A free 2-page report covering the coverage gaps most brokers miss."
+permalink: /blind-spot-report/
+---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "The MSP Blind Spot Report",
+  "description": "Three places your MSP insurance fails during a claim. A free 2-page report covering the coverage gaps most brokers miss.",
+  "url": "https://breezyins.com/blind-spot-report/",
+  "author": {
+    "@type": "Person",
+    "name": "Joerg Proeve"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Breezy Risk Advisors"
+  }
+}
+</script>
+
+<style>
+/* Blind Spot Report page styles */
+.bsr-hero {
+  background: var(--bg-light, #f8f9fa);
+  padding: 84px 0 70px;
+}
+
+.bsr-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.bsr-hero h1 {
+  margin: 0 0 14px;
+  font-size: 42px;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--primary, #0A2540);
+  font-weight: 900;
+}
+
+.bsr-subtitle {
+  margin: 0 0 28px;
+  color: var(--text-secondary, #555);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.bsr-intro {
+  margin-bottom: 32px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--border, #e5e7eb);
+}
+
+.bsr-intro p {
+  margin: 0 0 16px;
+  font-size: 17px;
+  color: var(--text-secondary, #555);
+  line-height: 1.75;
+}
+
+.bsr-intro p:last-child {
+  margin-bottom: 0;
+}
+
+/* What's inside section */
+.bsr-contents {
+  margin-bottom: 36px;
+}
+
+.bsr-contents h2 {
+  margin: 0 0 16px;
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--primary, #0A2540);
+}
+
+.bsr-contents ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.bsr-contents li {
+  font-size: 16px;
+  color: var(--text-secondary, #555);
+  line-height: 1.7;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 24px;
+}
+
+.bsr-contents li::before {
+  content: '\2022';
+  position: absolute;
+  left: 6px;
+  color: var(--accent, #00D4AA);
+  font-weight: 700;
+}
+
+/* Download section */
+.bsr-download {
+  background: #fff;
+  border: 2px solid var(--border, #e5e7eb);
+  border-radius: 12px;
+  padding: 40px 32px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.bsr-download h2 {
+  margin: 0 0 8px;
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--primary, #0A2540);
+}
+
+.bsr-download .bsr-download-sub {
+  margin: 0 0 24px;
+  font-size: 16px;
+  color: var(--text-secondary, #555);
+}
+
+.bsr-download .btn-download {
+  display: inline-block;
+  padding: 16px 36px;
+  background: var(--accent, #00D4AA);
+  color: var(--primary, #0A2540);
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  transition: all .3s cubic-bezier(.4,0,.2,1);
+  box-shadow: 0 4px 20px rgba(0,212,170,.3);
+  font-family: 'DM Sans', sans-serif;
+}
+
+.bsr-download .btn-download:hover {
+  background: var(--accent-hover, #00f5c3);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0,212,170,.4);
+}
+
+/* Lead capture form */
+.bsr-lead-capture {
+  display: none;
+  text-align: center;
+}
+
+.bsr-lead-capture p {
+  font-size: 17px;
+  margin-bottom: 24px;
+  color: var(--text-secondary, #555);
+}
+
+.bsr-lead-form {
+  background: var(--bg-light, #f8f9fa);
+  border: 2px solid var(--border, #e5e7eb);
+  border-radius: 12px;
+  padding: 32px;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.bsr-form-field {
+  margin-bottom: 20px;
+}
+
+.bsr-form-field:last-child {
+  margin-bottom: 0;
+}
+
+.bsr-form-field label {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--primary, #0A2540);
+  margin-bottom: 8px;
+}
+
+.bsr-form-field input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-family: 'DM Sans', sans-serif;
+  border: 2px solid var(--border, #e5e7eb);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--text-primary, #1a1a2e);
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.bsr-form-field input:focus {
+  outline: none;
+  border-color: var(--accent, #00D4AA);
+}
+
+.bsr-lead-actions {
+  text-align: center;
+}
+
+.bsr-lead-actions .btn-download {
+  display: inline-block;
+  padding: 16px 36px;
+  background: var(--accent, #00D4AA);
+  color: var(--primary, #0A2540);
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  transition: all .3s cubic-bezier(.4,0,.2,1);
+  box-shadow: 0 4px 20px rgba(0,212,170,.3);
+  font-family: 'DM Sans', sans-serif;
+}
+
+.bsr-lead-actions .btn-download:hover {
+  background: var(--accent-hover, #00f5c3);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0,212,170,.4);
+}
+
+.bsr-form-notice {
+  font-size: 14px;
+  color: var(--text-secondary, #555);
+  margin-top: 16px;
+}
+
+.bsr-form-error {
+  color: #DC2626;
+  font-size: 14px;
+  margin-top: 16px;
+  display: none;
+}
+
+.bsr-skip {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.bsr-skip a {
+  color: var(--text-secondary, #555);
+  text-decoration: underline;
+}
+
+.bsr-skip a:hover {
+  color: var(--primary, #0A2540);
+}
+
+.bsr-downloaded {
+  display: none;
+  text-align: center;
+  font-size: 16px;
+  color: var(--text-secondary, #555);
+  padding: 16px 0;
+}
+
+/* CTA Section */
+.bsr-cta {
+  background: #fff;
+  padding: 48px 0;
+}
+
+.bsr-cta-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  background: #0A2540;
+  border-radius: 12px;
+  padding: 52px 48px;
+  text-align: center;
+}
+
+.bsr-cta-inner h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 14px;
+  line-height: 1.2;
+}
+
+.bsr-cta-inner p {
+  font-size: 16px;
+  color: rgba(255,255,255,.85);
+  line-height: 1.6;
+  margin-bottom: 24px;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bsr-cta-inner .btn-accent {
+  display: inline-block;
+  padding: 16px 36px;
+  background: #00D4AA;
+  color: #0A2540;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 17px;
+  transition: all .3s cubic-bezier(.4,0,.2,1);
+  box-shadow: 0 4px 20px rgba(0,212,170,.3);
+}
+
+.bsr-cta-inner .btn-accent:hover {
+  background: #00f5c3;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0,212,170,.4);
+}
+
+.bsr-cta-foot {
+  margin-top: 14px;
+  font-size: 13px;
+  color: rgba(255,255,255,.6);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .bsr-hero { padding: 60px 0 50px; }
+  .bsr-hero h1 { font-size: 30px; }
+  .bsr-download { padding: 28px 20px; }
+  .bsr-lead-form { padding: 24px 20px; }
+  .bsr-cta-inner { padding: 36px 24px; }
+  .bsr-cta-inner h2 { font-size: 26px; }
+}
+</style>
+
+<!-- Hero + Content -->
+<section class="bsr-hero">
+  <div class="container">
+    <div class="bsr-inner">
+
+      <h1>The MSP Blind Spot Report</h1>
+      <p class="bsr-subtitle">Three places your insurance fails during a claim.</p>
+
+      <div class="bsr-intro">
+        <p>
+          Most managed service providers sign contracts, add service lines, and take on new clients without checking whether their insurance still covers what they actually do. The gaps do not show up until a claim is filed or a client audits your certificates.
+        </p>
+        <p>
+          This free 2-page report covers the three coverage failures I find most often when reviewing MSP policies, and a quick checklist to see if you are exposed.
+        </p>
+      </div>
+
+      <div class="bsr-contents">
+        <h2>What the Report Covers</h2>
+        <ul>
+          <li>The services gap: your policy was written for IT support, but you deliver security services, cloud migrations, or compliance consulting</li>
+          <li>The contract gap: your MSA promises coverage your policy will not back up</li>
+          <li>The liability gap: your cyber policy covers your network, not the client environments where you operate</li>
+          <li>A self-assessment checklist you can run in five minutes</li>
+        </ul>
+      </div>
+
+      <!-- Download Section -->
+      <div class="bsr-download" id="bsr-download-section">
+        <h2>Download the Report</h2>
+        <p class="bsr-download-sub">Free. Two pages. No fluff.</p>
+        <button class="btn-download" id="bsr-download-btn" onclick="bsrShowLeadForm()">Download PDF &rarr;</button>
+      </div>
+
+      <!-- Lead Capture Form (hidden until download clicked) -->
+      <div class="bsr-lead-capture" id="bsr-lead-capture">
+        <h3 style="font-size:20px;font-weight:900;color:var(--primary);margin:0 0 8px;">Download Your Blind Spot Report</h3>
+        <p>Enter your name and email so I can follow up if it makes sense. Or skip and download directly.</p>
+
+        <div class="bsr-lead-form">
+          <div class="bsr-form-field">
+            <label for="bsr-lead-name">Name</label>
+            <input type="text" id="bsr-lead-name" placeholder="Your name" autocomplete="name">
+          </div>
+          <div class="bsr-form-field">
+            <label for="bsr-lead-email">Email</label>
+            <input type="email" id="bsr-lead-email" placeholder="you@company.com" autocomplete="email">
+          </div>
+        </div>
+
+        <div class="bsr-lead-actions">
+          <button class="btn-download" id="bsr-submit-lead" onclick="bsrSubmitLead()">Download Report</button>
+          <p class="bsr-form-notice">Just a personal follow-up if it makes sense. No spam.</p>
+          <p class="bsr-skip"><a href="#" id="bsr-skip-btn" onclick="bsrSkipAndDownload(event)">Skip and download without sharing info</a></p>
+        </div>
+        <p class="bsr-form-error" id="bsr-form-error">Please enter both your name and email.</p>
+      </div>
+
+      <!-- Post-download confirmation -->
+      <div class="bsr-downloaded" id="bsr-downloaded">
+        PDF downloaded. Check your downloads folder.
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="bsr-cta">
+  <div class="container">
+    <div class="bsr-cta-inner">
+      <h2>Want to See How Your Specific Policies Stack Up?</h2>
+      <p>
+        The Blind Spot Report covers the patterns. A Risk Intelligence Review looks at your actual policies, your contracts, and your service delivery model. 30 minutes. No obligation.
+      </p>
+      <a href="{{ '/contact/' | relative_url }}" class="btn-accent">
+        Get in Touch &rarr;
+      </a>
+      <p class="bsr-cta-foot">Or email <a href="mailto:{{ site.email }}" style="color:rgba(255,255,255,.85);">{{ site.email }}</a> | call <a href="tel:+17174907670" style="color:rgba(255,255,255,.85);">{{ site.phone }}</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3.12.1/dist/email.min.js" integrity="sha384-VDbnsk/qjpIVHPQMkJiROI+vW/7cw0k8TFYVLUabm7EWoLEDwcXh09XQ6gQ86Y0B" crossorigin="anonymous" async></script>
+
+<script>
+(function () {
+  "use strict";
+
+  var EMAILJS_PUBLIC_KEY = "sOiOcAKgFW5frCaOm";
+  var EMAILJS_SERVICE_ID = "service_a41qbtg";
+  var EMAILJS_TEMPLATE_ID = "template_og2qpgh";
+  var BREEZY_INTERNAL_NOTIFY = "contact@breezyins.com";
+  var PDF_URL = "{{ '/assets/downloads/breezy-blind-spot-report.pdf' | relative_url }}";
+
+  var emailJsInited = false;
+
+  function initEmailJs() {
+    if (emailJsInited || !window.emailjs) return;
+    window.emailjs.init(EMAILJS_PUBLIC_KEY);
+    emailJsInited = true;
+  }
+
+  function trackEvent(name, params) {
+    try { if (typeof gtag !== "undefined") gtag("event", name, params); } catch (e) {}
+  }
+
+  function downloadPdf() {
+    var link = document.createElement("a");
+    link.href = PDF_URL;
+    link.download = "Breezy-Blind-Spot-Report.pdf";
+    link.target = "_blank";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    trackEvent("blind_spot_download", { method: "pdf" });
+
+    document.getElementById("bsr-download-section").style.display = "none";
+    document.getElementById("bsr-lead-capture").style.display = "none";
+    document.getElementById("bsr-downloaded").style.display = "block";
+  }
+
+  function sendLeadNotification(name, email) {
+    initEmailJs();
+    if (!window.emailjs) return;
+
+    var now = new Date();
+    var dateStr = now.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+
+    var templateParams = {
+      to_email: BREEZY_INTERNAL_NOTIFY,
+      from_name: name,
+      reply_to: email,
+      subject: "Blind Spot Report Download: " + name,
+      message: "New Blind Spot Report download.\n\n" +
+               "Name: " + name + "\n" +
+               "Email: " + email + "\n" +
+               "Date: " + dateStr + "\n" +
+               "Source: breezyins.com/blind-spot-report/\n\n" +
+               "This lead downloaded the MSP Blind Spot Report PDF."
+    };
+
+    window.emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
+      .then(function (r) { console.log("BSR: EmailJS success", r.status); })
+      .catch(function (e) { console.warn("BSR: EmailJS failed", e); });
+  }
+
+  // Expose functions globally
+  window.bsrShowLeadForm = function () {
+    document.getElementById("bsr-download-section").style.display = "none";
+    document.getElementById("bsr-lead-capture").style.display = "block";
+    trackEvent("blind_spot_form_shown", {});
+  };
+
+  window.bsrSubmitLead = function () {
+    var name = document.getElementById("bsr-lead-name").value.trim();
+    var email = document.getElementById("bsr-lead-email").value.trim();
+    var errorEl = document.getElementById("bsr-form-error");
+
+    if (!name || !email || email.indexOf("@") < 1) {
+      errorEl.style.display = "block";
+      return;
+    }
+    errorEl.style.display = "none";
+
+    sendLeadNotification(name, email);
+    trackEvent("blind_spot_lead", { lead_name: name });
+    downloadPdf();
+  };
+
+  window.bsrSkipAndDownload = function (e) {
+    if (e) e.preventDefault();
+    trackEvent("blind_spot_skip", {});
+    downloadPdf();
+  };
+})();
+</script>

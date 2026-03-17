@@ -255,6 +255,21 @@
     color: var(--bank-accent-text);
 }
 
+// Bank breadcrumb (matches homepage hero-breadcrumb style)
+.bank-hero__breadcrumb {
+    font-family: $font-heading;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.10em;
+    color: var(--bank-accent);
+    display: inline-block;
+    padding: 12px 20px;
+    background: rgba(126,174,232,0.10);
+    border: 1px solid rgba(126,174,232,0.22);
+    border-radius: 12px;
+}
+
 // Bank hero
 .bank-hero {
     background: var(--bank-dark);
@@ -575,6 +590,26 @@
     color: $text-secondary;
 }
 
+// Credibility chips in hero
+.hero-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 28px;
+}
+
+.hero-chip {
+    font-family: $font-heading;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: $text-secondary;
+    background: rgba(0, 212, 170, 0.08);
+    border: 1px solid rgba(0, 212, 170, 0.22);
+    border-radius: 8px;
+    padding: 8px 14px;
+}
+
 // Problem section
 .problem-section {
     padding: $section-padding 0;
@@ -590,17 +625,15 @@
 
 .problem-card {
     background: $bg-light;
-    padding: 48px 40px;
+    padding: 24px 28px;
     border-radius: 12px;
     border: 2px solid $border;
     transition: all 0.3s;
 
-    &:nth-child(1) { border-left: 4px solid $severity-high; }
-    &:nth-child(2) { border-left: 4px solid $severity-medium; }
-    &:nth-child(3) { border-left: 4px solid $severity-low; }
+    border-left: 4px solid #D97706;
 
     &:hover {
-        border-color: $accent;
+        border-color: #D97706;
         transform: translateY(-4px);
         box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
     }
@@ -614,6 +647,17 @@
         line-height: 1.7;
         font-size: 16px;
     }
+}
+
+// Trigger label on problem cards
+.trigger-label {
+    font-family: $font-heading;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: $text-primary;
+    margin-bottom: 12px;
 }
 
 .stat-footer {
@@ -745,10 +789,77 @@
     background: $bg-light;
 }
 
+// Walkaway list (styled bullets)
+.walkaway-list {
+    list-style: none;
+    padding: 0;
+    margin: 28px 0;
+
+    li {
+        position: relative;
+        padding-left: 28px;
+        margin-bottom: 18px;
+        font-size: 18px;
+        line-height: 1.7;
+        color: $text-secondary;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 11px;
+            width: 8px;
+            height: 8px;
+            background: $accent;
+            border-radius: 50%;
+        }
+    }
+}
+
 // About section (homepage)
 .about-section {
     padding: $section-padding 0;
     background: white;
+}
+
+// About preview (mini bio on homepage)
+.about-preview {
+    padding: $section-padding 0;
+    background: white;
+
+    p {
+        font-size: 18px;
+        line-height: 1.8;
+        color: $text-secondary;
+        margin-bottom: 20px;
+    }
+}
+
+.about-preview-grid {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-preview-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 15%;
+    flex-shrink: 0;
+}
+
+.about-preview-text {
+    flex: 1;
+}
+
+@media (max-width: $bp-tablet) {
+    .about-preview-grid {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 // CTA Banner
@@ -1332,6 +1443,15 @@
     .hero-breadcrumb {
         font-size: 12px;
         padding: 10px 16px;
+    }
+
+    .hero-chip {
+        font-size: 11px;
+        padding: 6px 12px;
+    }
+
+    .walkaway-list li {
+        font-size: 17px;
     }
 
     .problem-card {

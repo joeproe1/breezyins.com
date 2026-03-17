@@ -1,8 +1,517 @@
 // ============================================
-// HOMEPAGE
+// HOMEPAGE — NEW HERO (2026-03-16 redesign)
+// ============================================
+
+// Single-column hero
+.hero-single {
+    background: #fff;
+    padding: 80px 40px 64px;
+    border-bottom: 0.5px solid #e0e8e5;
+}
+
+.hero-single__inner {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+}
+
+@media (max-width: 768px) {
+    .hero-single { padding: 60px 20px 48px; }
+}
+
+// Eyebrow
+.eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: var(--radius-sm);
+    padding: 5px 12px;
+    font-family: $font-heading;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    width: fit-content;
+}
+.eyebrow--msp {
+    background: var(--msp-accent-bg);
+    border: 0.5px solid var(--msp-accent-border);
+    color: var(--msp-accent-text);
+}
+.eyebrow__dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--msp-accent);
+    flex-shrink: 0;
+}
+
+// Headline
+.hero-headline {
+    font-size: 52px;
+    line-height: 1.15;
+    color: var(--msp-dark);
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+
+@media (max-width: 968px) {
+    .hero-headline { font-size: 38px; }
+}
+@media (max-width: 768px) {
+    .hero-headline { font-size: 32px; }
+}
+
+// Body
+.hero-body {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #4a6660;
+    margin: 0;
+    max-width: 700px;
+}
+
+// Credential chips
+.chip-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.chip {
+    font-size: 11px;
+    border-radius: var(--radius-sm);
+    padding: 4px 10px;
+    border: 0.5px solid;
+}
+.chip--msp {
+    color: var(--msp-accent-text);
+    background: var(--msp-accent-bg);
+    border-color: var(--msp-accent-border);
+}
+
+// CTA button
+.btn {
+    display: inline-block;
+    padding: 13px 26px;
+    border-radius: var(--radius-md);
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    width: fit-content;
+}
+.btn--msp {
+    background: var(--msp-accent);
+    color: #003d2e;
+}
+.btn--msp:hover { background: #00b38e; }
+
+// Right dark panel
+.hero-right {
+    padding: 48px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.hero-right--msp { background: var(--msp-dark); }
+
+.hero-right__rings::before,
+.hero-right__rings::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+}
+.hero-right__rings::before {
+    width: 200px; height: 200px;
+    top: -60px; right: -60px;
+    border: 1px solid rgba(0,201,160,0.10);
+}
+.hero-right__rings::after {
+    width: 120px; height: 120px;
+    top: -30px; right: -30px;
+    border: 1px solid rgba(0,201,160,0.16);
+}
+
+// Panel label
+.panel-label {
+    font-family: $font-heading;
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin: 0 0 20px;
+}
+.panel-label--msp { color: var(--msp-accent); }
+
+// Gap rows
+.gap-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 13px 16px;
+    border-left: 2px solid rgba(0,201,160,0.3);
+    border-radius: 0 4px 4px 0;
+    margin-bottom: 12px;
+    background: rgba(255,255,255,0.04);
+}
+.gap-row--active {
+    border-left-color: var(--msp-accent);
+    background: rgba(255,255,255,0.06);
+}
+
+.gap-num {
+    font-family: $font-heading;
+    font-size: 10px;
+    margin-top: 2px;
+    min-width: 20px;
+}
+.gap-num--msp     { color: var(--msp-accent); }
+.gap-num--muted-msp { color: var(--msp-gap-muted); }
+
+.gap-title {
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 0 2px;
+}
+.gap-title--light { color: #e8f5f2; }
+
+.gap-body {
+    font-size: 11px;
+    margin: 0;
+    line-height: 1.4;
+}
+.gap-body--msp { color: var(--msp-gap-muted); }
+
+.gap-more {
+    font-size: 11px;
+    margin: 8px 0 0 36px;
+    color: var(--msp-gap-dim);
+}
+.gap-see-all {
+    color: var(--msp-accent);
+    text-decoration: none;
+    margin-left: 4px;
+}
+
+// Service bar
+.service-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    background: #fff;
+    border-top: 0.5px solid #e0e8e5;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.service-bar__items {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+.service-item {
+    font-size: 12px;
+    color: #4a6660;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.service-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.service-dot--msp { background: var(--msp-accent); }
+.service-bar__license {
+    font-size: 11px;
+    color: #a0b8b2;
+    font-family: $font-heading;
+    letter-spacing: 1px;
+}
+
+// ============================================
+// COMMUNITY BANK PAGE (2026-03-16 redesign)
+// ============================================
+
+// Override page-content padding for bank page
+.page-content:has(.bank-hero) {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+// Bank eyebrow
+.eyebrow--bank {
+    background: var(--bank-accent-bg);
+    border: 0.5px solid var(--bank-accent-border);
+    color: var(--bank-accent-text);
+}
+
+// Bank hero
+.bank-hero {
+    background: var(--bank-dark);
+    padding: 56px 40px 48px;
+    position: relative;
+    overflow: hidden;
+}
+.bank-hero__rings::before,
+.bank-hero__rings::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+}
+.bank-hero__rings::before {
+    width: 280px; height: 280px;
+    top: -80px; right: -80px;
+    border: 1px solid rgba(126,174,232,0.10);
+}
+.bank-hero__rings::after {
+    width: 160px; height: 160px;
+    top: -40px; right: -40px;
+    border: 1px solid rgba(126,174,232,0.15);
+}
+
+.bank-hero__headline {
+    font-size: 38px;
+    line-height: 1.15;
+    color: var(--bank-text-light);
+    margin: 20px 0;
+    font-weight: 700;
+    letter-spacing: -1px;
+    max-width: 600px;
+}
+@media (max-width: 768px) {
+    .bank-hero__headline { font-size: 28px; }
+}
+
+.bank-hero__body {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--bank-accent);
+    margin: 0 0 28px;
+    max-width: 520px;
+}
+
+.bank-hero__actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.bank-hero__sub {
+    font-size: 12px;
+    color: var(--bank-gap-dim);
+}
+
+// Bank buttons
+.btn--bank {
+    background: var(--bank-accent);
+    color: var(--bank-dark);
+}
+.btn--bank:hover { background: #6a9fd8; }
+
+.btn--bank-mid {
+    background: var(--bank-mid);
+    color: #c8d8f5;
+}
+.btn--bank-mid:hover { background: #143060; }
+
+// Scenarios section
+.bank-scenarios {
+    background: #fff;
+    padding: 48px 40px;
+    border-bottom: 0.5px solid #e0e8e5;
+}
+
+.panel-label--bank-section {
+    font-family: $font-heading;
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #888;
+    margin: 0 0 28px;
+}
+
+.scenarios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+.scenario-card {
+    background: #fff;
+    border: 0.5px solid #e0e8e5;
+    border-left: 3px solid #c0311a;
+    border-radius: var(--radius-lg);
+    padding: 20px 24px;
+}
+
+.scenario-label {
+    font-family: $font-heading;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: #c0311a;
+    font-weight: 600;
+    margin: 0 0 8px;
+}
+
+.scenario-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0d1f3c;
+    margin: 0 0 8px;
+}
+
+.scenario-body {
+    font-size: 13px;
+    color: #4a6660;
+    line-height: 1.55;
+    margin: 0 0 12px;
+}
+
+.scenario-verdict {
+    font-size: 12px;
+    font-weight: 600;
+    color: #c0311a;
+    background: #fdf0ee;
+    border-radius: var(--radius-sm);
+    padding: 5px 10px;
+    display: inline-block;
+    border: 0.5px solid #f0c0b8;
+}
+
+// Product section
+.bank-product {
+    background: #f4f7f6;
+    padding: 48px 40px;
+    border-bottom: 0.5px solid #e0e8e5;
+}
+
+.bank-product__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .bank-product__grid { grid-template-columns: 1fr; gap: 32px; }
+}
+
+.panel-label--bank {
+    font-family: $font-heading;
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: var(--bank-mid);
+    margin: 0 0 16px;
+}
+
+.bank-product__headline {
+    font-size: 26px;
+    font-weight: 700;
+    color: #0d1f3c;
+    margin: 0 0 16px;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+}
+
+.bank-product__body {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #4a6660;
+    margin: 0 0 24px;
+}
+
+// Checklist
+.bank-product__checklist {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.check-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 14px 16px;
+    background: #fff;
+    border-radius: 8px;
+    border: 0.5px solid #e0e8e5;
+}
+
+.check-dot {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.check-dot--bank {
+    background: var(--bank-accent-bg);
+}
+.check-dot--bank::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--bank-mid);
+}
+
+.check-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #0d1f3c;
+    margin: 0 0 2px;
+}
+
+.check-body {
+    font-size: 12px;
+    color: #4a6660;
+    margin: 0;
+    line-height: 1.4;
+}
+
+// Closing bar
+.bank-closing {
+    background: var(--bank-dark);
+    padding: 28px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.bank-closing__quote {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--bank-text-light);
+    margin: 0 0 4px;
+}
+
+.bank-closing__sub {
+    font-size: 13px;
+    color: var(--bank-gap-dim);
+    margin: 0;
+}
+
+// ============================================
+// HOMEPAGE — LEGACY (kept for reference, overridden by new hero)
 // ============================================
 .hero {
-    padding: 180px 0 120px;
+    padding: 180px 0 80px;
     background: linear-gradient(135deg, $bg-light 0%, $white 100%);
     position: relative;
     overflow: hidden;
@@ -20,9 +529,6 @@
 }
 
 .hero-content {
-    max-width: 900px;
-    margin: 0 auto;
-
     h1 {
         font-size: 52px;
         line-height: 1.15;

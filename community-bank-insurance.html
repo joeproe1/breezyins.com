@@ -28,245 +28,127 @@ permalink: /community-bank-insurance/
 }
 </script>
 
-<style>
-.bank-hero {
-  padding: 96px 0 56px;
-  background: linear-gradient(135deg, var(--bg-light) 0%, #ffffff 100%);
-  position: relative;
-  overflow: hidden;
-}
-.bank-hero::before {
-  content: "";
-  position: absolute;
-  top: -45%;
-  right: -18%;
-  width: 780px;
-  height: 780px;
-  background: radial-gradient(circle, rgba(0, 212, 170, 0.08) 0%, transparent 70%);
-  pointer-events: none;
-}
-.bank-wrap { max-width: 1100px; margin: 0 auto; }
-.bank-breadcrumb {
-  font-size: 13px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.10em;
-  color: var(--text-secondary);
-  margin-bottom: 24px;
-  display: inline-block;
-  padding: 12px 20px;
-  background: rgba(0, 212, 170, 0.08);
-  border: 1px solid rgba(0, 212, 170, 0.22);
-  border-radius: 12px;
-}
-.bank-hero h1 {
-  font-size: 48px;
-  line-height: 1.15;
-  letter-spacing: -0.03em;
-  color: var(--primary);
-  font-weight: 800;
-  margin: 14px 0 14px;
-  max-width: 900px;
-}
-.bank-subhead {
-  font-size: 18px;
-  line-height: 1.7;
-  color: var(--text-secondary);
-  max-width: 860px;
-  margin: 0 0 22px;
-}
-.bank-section {
-  padding: 72px 0;
-  background: #fff;
-}
-.bank-section.alt {
-  background: var(--bg-light);
-}
-.bank-center {
-  text-align: center;
-  max-width: 920px;
-  margin: 0 auto 46px;
-}
-.bank-center h2 {
-  font-size: 36px;
-  color: var(--primary);
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  margin: 0 0 16px;
-}
-.bank-center p {
-  margin: 0 auto;
-  max-width: 860px;
-  color: var(--text-secondary);
-  font-size: 18px;
-  line-height: 1.8;
-}
-.bank-problem-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-.bank-problem-card {
-  background: var(--bg-light);
-  border-radius: 12px;
-  padding: 48px 40px;
-  border: 2px solid var(--border);
-  transition: all 0.3s;
-}
-.bank-problem-card:nth-child(1) { border-left: 4px solid #DC2626; }
-.bank-problem-card:nth-child(2) { border-left: 4px solid #F59E0B; }
-.bank-problem-card:nth-child(3) { border-left: 4px solid #EAB308; }
-.bank-problem-card:hover { border-color: var(--accent); }
-.bank-problem-card h3 {
-  font-size: 20px;
-  color: var(--primary);
-  margin: 0 0 12px;
-  font-weight: 700;
-}
-.bank-problem-card p {
-  font-size: 16px;
-  line-height: 1.7;
-  color: var(--text-secondary);
-  margin: 0;
-}
-.bank-what-text {
-  max-width: 800px;
-  margin: 0 auto;
-}
-.bank-what-text p {
-  font-size: 18px;
-  line-height: 1.8;
-  color: var(--text-secondary);
-  margin: 0;
-}
-.bank-cta {
-  background: #fff;
-  padding: 48px 40px;
-}
-.bank-cta-inner {
-  max-width: 1120px;
-  margin: 0 auto;
-  background: #0A2540;
-  border-radius: 12px;
-  padding: 60px 48px;
-  text-align: center;
-}
-.bank-cta-inner h2 {
-  font-size: 36px;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 16px;
-  line-height: 1.2;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.bank-cta-inner p {
-  font-size: 16px;
-  color: rgba(255, 255, 255, .85);
-  line-height: 1.6;
-  margin-bottom: 26px;
-  max-width: 640px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.bank-cta-inner .btn-accent {
-  display: inline-block;
-  padding: 16px 36px;
-  background: #00D4AA;
-  color: #0A2540;
-  font-weight: 700;
-  text-decoration: none;
-  border-radius: 8px;
-  font-size: 17px;
-  transition: all .3s cubic-bezier(.4, 0, .2, 1);
-  box-shadow: 0 4px 20px rgba(0, 212, 170, .3);
-}
-.bank-cta-inner .btn-accent:hover {
-  background: #00f5c3;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(0, 212, 170, .4);
-}
-.bank-cta-foot {
-  margin-top: 16px;
-  font-size: 13px;
-  color: rgba(255, 255, 255, .65);
-}
-@media (max-width: 968px) {
-  .bank-hero h1 { font-size: 36px; }
-  .bank-breadcrumb { font-size: 12px; padding: 10px 16px; }
-  .bank-problem-grid { grid-template-columns: 1fr; }
-  .bank-problem-card { padding: 36px 28px; }
-}
-@media (max-width: 768px) {
-  .bank-hero { padding: 86px 0 50px; }
-  .bank-hero h1 { font-size: 32px; }
-  .bank-cta { padding: 32px 20px; }
-  .bank-cta-inner { padding: 40px 24px; }
-  .bank-cta-inner h2 { font-size: 28px; }
-}
-</style>
-
-<!-- Hero -->
+<!-- SECTION 1: HERO -->
 <section class="bank-hero">
-  <div class="container bank-wrap">
-    <div class="bank-breadcrumb">Risk Advisory for Community Banks</div>
-    <h1>Nobody Has Read All Three Policies Together</h1>
-    <p class="bank-subhead">
-      Your bank carries cyber insurance, a fidelity bond, and a D&amp;O policy from different carriers. Each carrier writes exclusions assuming another policy covers it. For incidents like wire fraud, vendor breaches, or ransomware followed by a regulatory investigation, this can result in gaps where no carrier pays.
-    </p>
+  <div class="bank-hero__rings"></div>
+
+  <div class="eyebrow eyebrow--bank">
+    RISK ADVISORY · COMMUNITY BANKS &amp; CREDIT UNIONS
+  </div>
+
+  <h1 class="bank-hero__headline">
+    Nobody has read all three<br>policies together.
+  </h1>
+
+  <p class="bank-hero__body">
+    Your cyber policy, fidelity bond, and D&amp;O each assume another policy
+    covers the gaps. For wire fraud, vendor breaches, or ransomware followed
+    by a regulatory investigation — that assumption fails.
+  </p>
+
+  <div class="bank-hero__actions">
+    <a href="/contact/" class="btn btn--bank">
+      Request a Risk Intelligence Report →
+    </a>
+    <span class="bank-hero__sub">Examiner-ready. Board-ready. No broker jargon.</span>
   </div>
 </section>
 
-<!-- Where It Breaks Down -->
-<section class="bank-section alt">
-  <div class="container bank-wrap">
-    <div class="bank-center">
-      <h2>Where Insurance for Banks Breaks Down</h2>
+<!-- SECTION 2: SCENARIOS -->
+<section class="bank-scenarios">
+  <p class="panel-label panel-label--bank-section">WHERE BANK INSURANCE BREAKS DOWN</p>
+
+  <div class="scenarios-grid">
+
+    <div class="scenario-card">
+      <p class="scenario-label">SCENARIO 01 · WIRE FRAUD</p>
+      <h3 class="scenario-title">"Is that a cyber claim or a bond claim?"</h3>
+      <p class="scenario-body">
+        An employee clicks a spoofed email. A wire transfer goes out. Your cyber
+        carrier says social engineering falls under the fidelity bond. Your bond
+        carrier says computer fraud falls under cyber.
+      </p>
+      <span class="scenario-verdict">You are stuck in the middle.</span>
     </div>
 
-    <div class="bank-problem-grid">
-      <div class="bank-problem-card">
-        <h3>"Is that a cyber claim or a bond claim?"</h3>
-        <p>An employee clicks a spoofed email. A wire transfer goes out. Your cyber carrier says: <em>"Social engineering falls under the fidelity bond."</em> Your fidelity bond carrier says: <em>"Computer fraud falls under the cyber policy."</em> <strong>You are stuck in the middle.</strong></p>
+    <div class="scenario-card">
+      <p class="scenario-label">SCENARIO 02 · BOARD LIABILITY</p>
+      <h3 class="scenario-title">"The board got sued after the breach"</h3>
+      <p class="scenario-body">
+        Regulators investigate board oversight of cybersecurity. Your D&amp;O
+        excludes claims "arising from" a cyber event. Your cyber policy does not
+        cover board defense costs.
+      </p>
+      <span class="scenario-verdict">Nobody pays for the defense.</span>
+    </div>
+
+    <div class="scenario-card">
+      <p class="scenario-label">SCENARIO 03 · SECURITY WARRANTY</p>
+      <h3 class="scenario-title">"We had coverage. We thought."</h3>
+      <p class="scenario-body">
+        Your cyber policy requires MFA on all remote access. Your core banking
+        vendor does not support it. After a breach, the carrier rescinds
+        coverage on a warranty you did not know you were making.
+      </p>
+      <span class="scenario-verdict">Coverage voided at the worst moment.</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- SECTION 3: PRODUCT -->
+<section class="bank-product">
+  <div class="bank-product__grid">
+
+    <div class="bank-product__copy">
+      <p class="panel-label panel-label--bank">THE RISK INTELLIGENCE REPORT</p>
+      <h2 class="bank-product__headline">
+        I read the policies your carriers assume someone else read.
+      </h2>
+      <p class="bank-product__body">
+        I review your cyber policy, fidelity bond, and D&amp;O side by side —
+        actual policy language, not declarations pages. I map how they interact
+        against real incident scenarios and deliver a board-ready report with
+        uninsured exposure quantified in dollar terms.
+      </p>
+      <a href="/contact/" class="btn btn--bank-mid">Get in Touch →</a>
+    </div>
+
+    <div class="bank-product__checklist">
+
+      <div class="check-item">
+        <div class="check-dot check-dot--bank"></div>
+        <div>
+          <p class="check-title">Policy language review</p>
+          <p class="check-body">Cyber, fidelity bond, and D&amp;O read together, not in isolation</p>
+        </div>
       </div>
 
-      <div class="bank-problem-card">
-        <h3>"The Board got sued after the breach"</h3>
-        <p>Regulators investigate your Board's cybersecurity oversight. Your D&amp;O policy excludes claims "arising from" a cyber event. Your cyber policy does not cover Board liability. <strong>Nobody pays for its defense.</strong></p>
+      <div class="check-item">
+        <div class="check-dot check-dot--bank"></div>
+        <div>
+          <p class="check-title">Scenario-mapped gap analysis</p>
+          <p class="check-body">Which policy responds, which denies, where no one pays</p>
+        </div>
       </div>
 
-      <div class="bank-problem-card">
-        <h3>"We had coverage, we thought&hellip;"</h3>
-        <p>Your cyber policy requires MFA on all remote access. Your core banking vendor does not support it. <strong>After a breach, the carrier rescinds coverage</strong> based on a security warranty you did not know you were violating.</p>
+      <div class="check-item">
+        <div class="check-dot check-dot--bank"></div>
+        <div>
+          <p class="check-title">Examiner-ready documentation</p>
+          <p class="check-body">Uninsured exposure quantified in dollar terms, board-ready format</p>
+        </div>
       </div>
+
     </div>
   </div>
 </section>
 
-<!-- What You Get -->
-<section class="bank-section">
-  <div class="container bank-wrap">
-    <div class="bank-center">
-      <h2>The Risk Intelligence Report</h2>
-    </div>
-
-    <div class="bank-what-text">
-      <p>I review your cyber policy, fidelity bond, and D&amp;O side by side, reading the actual policy language, not just the declarations pages. Then I map how they interact against real incident scenarios your bank is likely to face: which policy responds, which denies, and where the seams are. You get a board-ready report with uninsured exposure quantified in dollar terms.</p>
-      <p style="margin-top: 24px;"><a href="{{ '/insights/#community-banks' | relative_url }}" style="color:var(--brand-primary); font-weight:600; text-decoration:none; font-size:18px;">Read more about insurance risk for community banks &rarr;</a></p>
-    </div>
+<!-- SECTION 4: CLOSING BAR -->
+<div class="bank-closing">
+  <div>
+    <p class="bank-closing__quote">"Our broker said we are covered."</p>
+    <p class="bank-closing__sub">Your examiner expects a better answer than that.</p>
   </div>
-</section>
-
-<!-- CTA -->
-<section class="bank-cta">
-  <div class="bank-cta-inner">
-    <h2>Your Examiner Will Ask How You Know Your Insurance Is Adequate</h2>
-    <p>
-      They expect a better answer than "Our broker said we are covered." I will show you where your insurance policies agree, where they conflict, and where no one pays.
-    </p>
-    <a href="{{ '/contact/' | relative_url }}" class="btn-accent">Get in Touch &rarr;</a>
-  </div>
-</section>
+  <a href="/contact/" class="btn btn--bank">Request Your Report →</a>
+</div>

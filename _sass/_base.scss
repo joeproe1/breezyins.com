@@ -7,6 +7,32 @@
     --text-secondary: #{$text-secondary};
     --border: #{$border};
     --brand-primary: #{$primary};
+
+    // MSP palette
+    --msp-dark:        #0d2420;
+    --msp-accent:      #00c9a0;
+    --msp-accent-bg:   #e8f7f2;
+    --msp-accent-border: #a0dfc9;
+    --msp-accent-text: #005c44;
+    --msp-gap-muted:   #6b9e91;
+    --msp-gap-dim:     #4a7a6e;
+
+    // Bank palette
+    --bank-dark:       #0d1f3c;
+    --bank-mid:        #1a3a6b;
+    --bank-accent:     #7eaee8;
+    --bank-accent-bg:  #e8eef8;
+    --bank-accent-border: #b0c4e8;
+    --bank-accent-text: #1a3a6b;
+    --bank-gap-muted:  #6b88ae;
+    --bank-gap-dim:    #4a6888;
+    --bank-text-light: #e8f0fa;
+    --bank-text-mid:   #d8e8f8;
+
+    // Shared
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 10px;
 }
 
 // Reset

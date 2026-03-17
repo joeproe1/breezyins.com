@@ -302,7 +302,6 @@
     margin: 0 0 24px;
     font-weight: 700;
     letter-spacing: -0.03em;
-    max-width: 700px;
 }
 @media (max-width: $bp-desktop) {
     .bank-hero__headline { font-size: 38px; }
@@ -315,8 +314,7 @@
     font-size: 18px;
     line-height: 1.7;
     color: var(--bank-accent);
-    margin: 0 0 24px;
-    max-width: 640px;
+    margin: 0;
 }
 
 .bank-hero__sub {
@@ -690,6 +688,7 @@
 .stat-footer {
     text-align: center;
     padding: 28px 40px;
+    margin-top: 60px;
     background: $primary;
     color: white;
     border-radius: 12px;

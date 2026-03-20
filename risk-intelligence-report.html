@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Risk Intelligence Report for MSPs"
-description: "A plain-English review of your insurance and client contracts. See where coverage will respond, where it will fail, and what to fix."
+title: "Risk Intelligence Report | Breezy Risk Advisors"
+description: "A plain-English review of your policies and contracts. See where coverage holds, where it fails, and what to fix before your next deal, audit, or claim forces the question."
 permalink: /risk-intelligence-report/
 ---
 
@@ -9,8 +9,8 @@ permalink: /risk-intelligence-report/
 {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Risk Intelligence Report for MSPs",
-  "description": "A plain-English review of your insurance and client contracts. See where coverage will respond, where it will fail, and what to fix.",
+  "name": "Risk Intelligence Report",
+  "description": "A plain-English review of your policies and contracts. See where coverage holds, where it fails, and what to fix before your next deal, audit, or claim forces the question.",
   "provider": {
     "@type": "Organization",
     "name": "Breezy Risk Advisors",
@@ -22,7 +22,7 @@ permalink: /risk-intelligence-report/
   },
   "audience": {
     "@type": "Audience",
-    "audienceType": "Managed Service Providers"
+    "audienceType": "Managed Service Providers, Community Banks, Credit Unions"
   },
   "url": "https://breezyins.com/risk-intelligence-report/"
 }
@@ -170,7 +170,7 @@ permalink: /risk-intelligence-report/
   text-align:center;
 }
 .rir-mock-body{
-  padding: 22px;
+  padding: 28px 22px;
   background: #FAFAFA;
 }
 .rir-mock-block{
@@ -201,7 +201,7 @@ permalink: /risk-intelligence-report/
 }
 .rir-mock-list{
   display:grid;
-  gap: 10px;
+  gap: 12px;
 }
 .rir-mock-item{
   background:#fff;
@@ -223,7 +223,7 @@ permalink: /risk-intelligence-report/
   letter-spacing:.12em;
 }
 .rir-what{
-  padding-top: 40px;
+  padding-top: 0;
 }
 .rir-what h3{
   font-family: var(--font-mono);
@@ -251,18 +251,134 @@ permalink: /risk-intelligence-report/
   line-height: 1.7;
   font-size: 16px;
 }
-.rir-mini-wide{
-  grid-column: 1 / -1;
-  margin-top: 18px;
-  background: rgba(0, 212, 170, 0.08);
-  border: 1px solid rgba(0, 212, 170, 0.22);
+
+/* Who It's For - dual vertical cards */
+.rir-verticals{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+.rir-vertical-card{
   border-radius: 12px;
-  padding: 16px 16px;
-  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  background: #fff;
+}
+.rir-vertical-header{
+  padding: 20px 24px;
+  font-family: var(--font-mono);
   font-size: 14px;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.rir-vertical-header--msp{
+  background: rgba(0, 212, 170, 0.10);
+  color: #0A2540;
+  border-bottom: 3px solid var(--accent);
+}
+.rir-vertical-header--bank{
+  background: var(--bank-accent-bg);
+  color: var(--bank-accent-text);
+  border-bottom: 3px solid var(--bank-accent);
+}
+.rir-vertical-body{
+  padding: 24px;
+}
+.rir-vertical-label{
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin: 0 0 10px;
+}
+.rir-vertical-label + .rir-vertical-label{
+  margin-top: 20px;
+}
+.rir-vertical-list{
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0;
+}
+.rir-vertical-list li{
+  padding: 6px 0;
+  color: var(--text-secondary);
+  font-size: 15px;
+  line-height: 1.6;
+  padding-left: 20px;
+  position: relative;
+}
+.rir-vertical-list li::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 13px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.rir-vertical-card--msp .rir-vertical-list li::before{
+  background: var(--accent);
+}
+.rir-vertical-card--bank .rir-vertical-list li::before{
+  background: var(--bank-accent);
+}
+.rir-vertical-covers{
+  font-size: 15px;
+  color: var(--primary);
+  font-weight: 600;
+  margin: 0;
   line-height: 1.6;
 }
-.rir-mini-wide strong{ color: var(--primary); }
+.rir-vertical-link{
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.rir-vertical-link--msp{
+  color: var(--primary);
+}
+.rir-vertical-link--msp:hover{
+  text-decoration: underline;
+}
+.rir-vertical-link--bank{
+  color: var(--bank-accent-text);
+}
+.rir-vertical-link--bank:hover{
+  text-decoration: underline;
+}
+
+/* What You Will Learn items */
+.rir-learn-list{
+  max-width: 880px;
+  margin: 0 auto;
+  display: grid;
+  gap: 0;
+}
+.rir-learn-item{
+  padding: 24px 0;
+  border-bottom: 1px solid var(--border);
+}
+.rir-learn-item:last-child{ border-bottom: none; }
+.rir-learn-item strong{
+  display: block;
+  color: var(--primary);
+  font-size: 19px;
+  margin-bottom: 8px;
+}
+.rir-learn-item p{
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
 .rir-steps{
   display: grid;
   grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
@@ -292,6 +408,7 @@ permalink: /risk-intelligence-report/
   font-size: 19px;
   color: var(--primary);
   margin-bottom: 10px;
+  white-space: nowrap;
 }
 .rir-step p{
   font-size: 16px;
@@ -355,9 +472,7 @@ permalink: /risk-intelligence-report/
 @media(max-width: 968px){
   .rir-hero h1{ font-size: 38px; }
   .rir-grid{ grid-template-columns: 1fr; }
-  .rir-mini-wide{ margin-top: 14px; }
-  .rir-steps{ grid-template-columns: 1fr 1fr; gap: 0; }
-  .rir-step-arrow{ display: none; }
+  .rir-verticals{ grid-template-columns: 1fr; }
 }
 @media(max-width: 580px){
   .rir-steps{ grid-template-columns: 1fr; }
@@ -368,6 +483,8 @@ permalink: /risk-intelligence-report/
   .rir-final{ padding: 32px 20px; }
   .rir-final-inner{ padding: 40px 24px; }
   .rir-final-inner h2{ font-size: 28px; }
+  .rir-steps{ grid-template-columns: 1fr 1fr; gap: 0; }
+  .rir-step-arrow{ display: none; }
 }
 
 /* Modal */
@@ -476,23 +593,34 @@ permalink: /risk-intelligence-report/
 <!-- HERO -->
 <section class="rir-hero">
   <div class="container rir-wrap">
-    <div style="font-family:var(--font-mono);font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:12px;">Risk Intelligence Report</div>
-    <h1>Will Your Insurance Hold Up When It Matters?</h1>
+    <div style="font-family:var(--font-mono);font-size:13px;font-weight:600;letter-spacing:.10em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:24px;display:inline-block;padding:12px 20px;background:rgba(0,212,170,0.08);border:1px solid rgba(0,212,170,0.22);border-radius:12px;">Risk Intelligence Report</div>
+    <h1>Know Where You Stand Before the Next Deal Forces the Question</h1>
     <p class="rir-subhead">
-      Enterprise deal. Client lawsuit. Contract renewal. These are the moments that expose coverage gaps. The Risk Intelligence Report shows you where you stand before one of them forces the question.
+      You are adding services, signing bigger contracts, fielding compliance audits. Each one tests whether your policies match what you actually do. The Risk Intelligence Report reads the fine print and tells you where coverage will hold, where it will fail, and what to fix.
     </p>
   </div>
 </section>
 
-<!-- WHAT IT IS -->
+<!-- WHAT YOU WILL LEARN -->
 <section class="rir-section">
   <div class="container rir-wrap">
     <div class="rir-center">
-      <h2>What the Risk Intelligence Report Does</h2>
-      <p>
-        The report flags the gaps that create surprises during enterprise onboarding and claims.
-        You get specific policy-language findings and practical next steps, not generic risk scoring, for MSPs who already have insurance and want to know if it will cover what they do.
-      </p>
+      <h2>What You Will Learn</h2>
+    </div>
+
+    <div class="rir-learn-list">
+      <div class="rir-learn-item">
+        <strong>Where your contracts outrun your coverage</strong>
+        <p>Client agreements promise protections your policies exclude. The report cross-references your MSAs against actual policy language, clause by clause, so you see what holds and what does not.</p>
+      </div>
+      <div class="rir-learn-item">
+        <strong>Where two carriers will both say no</strong>
+        <p>Cyber and Tech E&amp;O (or cyber, fidelity bond, and D&amp;O for banks) can point at each other when a claim hits. The report maps which policy responds to which incident, so there are no surprises at the worst possible time.</p>
+      </div>
+      <div class="rir-learn-item">
+        <strong>What to fix and what it costs</strong>
+        <p>Specific dollar-denominated exposure for each gap, with recommended endorsements and policy changes your broker can request at renewal. No vague findings. Numbers you can act on.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -517,14 +645,15 @@ permalink: /risk-intelligence-report/
         <div class="rir-mock-body">
           <div class="rir-mock-block">
             <div class="rir-mock-label">Executive summary</div>
-            <div class="rir-mock-kpi">Potential uncovered exposure: <span>$847,000</span></div>
+            <div class="rir-mock-kpi">Uncovered insurance exposure: $1.2M – $1.8M</div>
           </div>
 
           <div class="rir-mock-list">
-            <div class="rir-mock-item">Coverage Gap Analysis</div>
-            <div class="rir-mock-item">Contract Compliance Review</div>
-            <div class="rir-mock-item">Estimated Financial Exposure</div>
-            <div class="rir-mock-item">Clear Fixes + Next Steps</div>
+            <div class="rir-mock-item">Coverage Reality Check</div>
+            <div class="rir-mock-item">Contract Risk Check</div>
+            <div class="rir-mock-item">Policy Interaction Analysis</div>
+            <div class="rir-mock-item">Financial Exposure</div>
+            <div class="rir-mock-item">Recommendations</div>
           </div>
         </div>
 
@@ -536,26 +665,71 @@ permalink: /risk-intelligence-report/
         <h3>What you get</h3>
 
         <div class="rir-item">
-          <strong>Coverage Gap Analysis</strong>
-          <p>Line-by-line check of your insurance policies against the services you deliver: managed services, security assessments, pen testing, incident response, cloud migrations.</p>
+          <strong>Coverage Reality Check</strong>
+          <p>Do your policies cover the services you deliver? Line-by-line check against real incident scenarios.</p>
         </div>
 
         <div class="rir-item">
-          <strong>Contract Compliance Review</strong>
-          <p>Review of up to 3 client agreements (MSAs) to flag where limits, deductibles, cancellation notice, or required wording don't match.</p>
+          <strong>Contract Risk Check</strong>
+          <p>Review of up to 3 client agreements to flag where your MSAs promise coverage you do not carry.</p>
         </div>
 
         <div class="rir-item">
-          <strong>Fixes you can act on</strong>
-          <p>Clear recommendations on what to change, why it matters, and what to ask your broker to update.</p>
+          <strong>Policy Interaction Analysis</strong>
+          <p>When a claim hits, which policy responds? Maps cyber, Tech E&amp;O, fidelity bond, and D&amp;O coverage to specific incident types so no one can point at someone else.</p>
+        </div>
+
+        <div class="rir-item">
+          <strong>Financial Exposure</strong>
+          <p>Dollar ranges for each gap so you can prioritize what to fix first.</p>
+        </div>
+
+        <div class="rir-item">
+          <strong>Recommendations</strong>
+          <p>What to change, why it matters, and what to ask your broker to update.</p>
         </div>
       </div>
 
-      <!-- FULL-WIDTH GREEN BOX -->
-      <div class="rir-mini-wide">
-        <strong>Built for growing MSPs</strong> with complex service portfolios, enterprise contracts, or acquisition activity. Clear answers without months of process or a large consulting bill.
-        <br><br>
-        <strong>Community banks and credit unions:</strong> I also offer a bank-specific Risk Intelligence Report covering cyber, fidelity bond, and D&amp;O policy interactions. <a href="{{ '/community-bank-insurance/' | relative_url }}" style="color:var(--primary);font-weight:600;text-decoration:underline;">Learn more &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHO IT'S FOR -->
+<section class="rir-section">
+  <div class="container rir-wrap">
+    <div class="rir-center">
+      <h2>Who Needs It</h2>
+    </div>
+
+    <div class="rir-verticals">
+
+      <div class="rir-vertical-card rir-vertical-card--msp">
+        <div class="rir-vertical-header rir-vertical-header--msp">Managed Service Providers</div>
+        <div class="rir-vertical-body">
+          <div class="rir-vertical-label">When you need it</div>
+          <ul class="rir-vertical-list">
+            <li>Enterprise contracts with coverage requirements</li>
+            <li>Growth through acquisition or new service lines</li>
+            <li>Client security audits and compliance reviews</li>
+          </ul>
+          <div class="rir-vertical-label" style="margin-top:20px;">What the report covers</div>
+          <p class="rir-vertical-covers">Tech E&amp;O + Cyber + MSA compliance</p>
+        </div>
+      </div>
+
+      <div class="rir-vertical-card rir-vertical-card--bank">
+        <div class="rir-vertical-header rir-vertical-header--bank">Community Banks &amp; Credit Unions</div>
+        <div class="rir-vertical-body">
+          <div class="rir-vertical-label">When you need it</div>
+          <ul class="rir-vertical-list">
+            <li>Board-level cyber risk reporting</li>
+            <li>Examiner questions about coverage adequacy</li>
+            <li>Vendor risk and third-party coverage gaps</li>
+          </ul>
+          <div class="rir-vertical-label" style="margin-top:20px;">What the report covers</div>
+          <p class="rir-vertical-covers">Cyber + Fidelity Bond + D&amp;O policy interaction</p>
+          <a href="{{ '/community-bank-insurance/' | relative_url }}" class="rir-vertical-link rir-vertical-link--bank">Learn more &rarr;</a>
+        </div>
       </div>
 
     </div>
@@ -563,7 +737,7 @@ permalink: /risk-intelligence-report/
 </section>
 
 <!-- HOW IT WORKS -->
-<section class="rir-section">
+<section class="rir-section alt">
   <div class="container rir-wrap">
     <div class="rir-center">
       <h2>How It Works</h2>
@@ -573,22 +747,22 @@ permalink: /risk-intelligence-report/
     <div class="rir-steps">
       <div class="rir-step">
         <strong>1. Get in touch</strong>
-        <p>Tell me about your MSP, the services you deliver, and your insurance concerns. A 15-minute call is usually enough to scope the review.</p>
+        <p>Describe your situation.<br>15 minutes is usually enough.</p>
       </div>
       <div class="rir-step-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
       <div class="rir-step">
-        <strong>2. Send your policies</strong>
-        <p>Share your Tech E&O, Cyber, and client contracts (MSAs). I run each document against real incident scenarios and identify where policies conflict and where contracts promise coverage you do not carry.</p>
+        <strong>2. Send your documents</strong>
+        <p>Policies and client contracts.<br>I read each one against real incident scenarios.</p>
       </div>
       <div class="rir-step-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
       <div class="rir-step">
         <strong>3. Get the findings</strong>
-        <p>A plain-English report with specific findings, dollar amounts attached to each gap, and recommended next steps. Includes a 30-minute walkthrough.</p>
+        <p>Plain-English report.<br>Real numbers on every gap. 30-minute walkthrough.</p>
       </div>
       <div class="rir-step-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
       <div class="rir-step">
         <strong>4. Fix what matters</strong>
-        <p>You can take the findings to your current broker, or I can help you negotiate policy changes and endorsements directly. Most fixes are straightforward once you know what to ask for.</p>
+        <p>Take the findings to your broker, or I help you negotiate changes directly.</p>
       </div>
     </div>
   </div>
@@ -597,12 +771,12 @@ permalink: /risk-intelligence-report/
 <!-- FINAL CTA -->
 <section class="rir-final">
   <div class="rir-final-inner">
-    <h2>Ready to Find Out Where You Stand?</h2>
+    <h2>A Deal, an Audit, or a Claim Will Test Your Coverage</h2>
     <p>
-      A focused review of your Tech E&O, Cyber, and contract requirements. You'll see exactly where coverage will respond, where it will be disputed, and where it won't pay.
+      Find out where you stand before one of them does.
     </p>
     <a href="#" class="btn-accent" id="rir-request-btn">Request a Risk Intelligence Report &rarr;</a>
-    <div class="rir-final-foot">No obligation. I'll follow up within one business day.</div>
+    <div class="rir-final-foot">No obligation. I will follow up within one business day.</div>
   </div>
 </section>
 

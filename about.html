@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Joerg Proeve | Founder"
-description: "20 years in insurance (Chubb, CNA, cyber MGA). Cybersecurity background. I help managed service providers find the gaps between their contracts and their coverage."
+title: "About Breezy Risk Advisors"
+description: "Independent risk advisory. I audit insurance programs for community banks, credit unions, and managed service providers. No policies sold. No commissions earned. Just what is in your coverage."
 permalink: /about/
 image: /assets/images/joerg-portrait.jpg
 ---
@@ -21,6 +21,11 @@ image: /assets/images/joerg-portrait.jpg
 .about-section p { font-size: 18px; line-height: 1.8; color: #5A7184; margin-bottom: 20px; }
 .about-section a:not(.btn) { color: #00D4AA; font-weight: 600; }
 .about-section a:hover { text-decoration: underline; }
+.about-section ul { list-style: none; padding: 0; margin: 0 0 20px 0; }
+.about-section ul li { font-size: 18px; line-height: 1.8; color: #5A7184; padding: 8px 0 8px 28px; position: relative; }
+.about-section ul li::before { content: ""; position: absolute; left: 0; top: 18px; width: 8px; height: 8px; background: #00D4AA; border-radius: 50%; }
+.referral-list li { margin-bottom: 8px; }
+.referral-list li strong { color: #0A2540; }
 .credentials-inline { background: #F7FAFC; padding: 32px; border-radius: 12px; border-left: 4px solid #00D4AA; margin: 32px 0; }
 .credentials-inline p { margin-bottom: 0; font-size: 16px; }
 @media (max-width: 968px) {
@@ -39,6 +44,46 @@ image: /assets/images/joerg-portrait.jpg
 }
 </style>
 
+<!-- Organization Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Breezy Risk Advisors",
+  "url": "https://breezyins.com",
+  "logo": "https://breezyins.com/assets/images/logo.png",
+  "description": "Independent risk advisory firm. Breezy Risk Advisors audits insurance programs for community banks, credit unions, and managed service providers. No policies sold. No commissions earned. Risk Intelligence Reports provide line-by-line policy analysis against operations, contracts, and regulatory requirements.",
+  "founder": {
+    "@type": "Person",
+    "name": "Joerg Proeve"
+  },
+  "foundingDate": "2025",
+  "serviceType": ["Risk Intelligence Report", "Insurance Audit", "Policy Review", "Coverage Gap Analysis", "Contract Compliance Review"],
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "audience": [
+    {
+      "@type": "Audience",
+      "audienceType": "Community Banks"
+    },
+    {
+      "@type": "Audience",
+      "audienceType": "Credit Unions"
+    },
+    {
+      "@type": "Audience",
+      "audienceType": "Managed Service Providers"
+    }
+  ],
+  "knowsAbout": ["Cyber Insurance", "Fidelity Bond", "Directors and Officers Insurance", "Tech E&O", "Policy Interaction Analysis", "Coverage Gap Analysis", "MSP Insurance", "Community Bank Insurance"],
+  "sameAs": [
+    "https://www.linkedin.com/company/breezy-risk-advisors/"
+  ]
+}
+</script>
+
 <!-- Person Schema -->
 <script type="application/ld+json">
 {
@@ -48,7 +93,7 @@ image: /assets/images/joerg-portrait.jpg
   "jobTitle": "Founder & Principal Risk Advisor",
   "url": "https://breezyins.com/about/",
   "image": "https://breezyins.com/assets/images/joerg-portrait.jpg",
-  "description": "Insurance risk advisor for managed service providers. 20+ years in insurance at Chubb, CNA, and cyber MGA. Cybersecurity background.",
+  "description": "Independent risk advisor who audits insurance programs for community banks, credit unions, and managed service providers. 20+ years in insurance at Chubb, CNA, and a cyber MGA. MSc Electrical Engineering, MBA from London Business School. Does not sell insurance or earn commissions.",
   "worksFor": {
     "@type": "Organization",
     "name": "Breezy Risk Advisors",
@@ -64,7 +109,7 @@ image: /assets/images/joerg-portrait.jpg
       "name": "London Business School"
     }
   ],
-  "knowsAbout": ["Cyber Insurance", "Tech E&O", "MSP Insurance", "Professional Liability", "Cybersecurity", "Community Bank Insurance", "Fidelity Bond", "D&O Insurance"],
+  "knowsAbout": ["Cyber Insurance", "Tech E&O", "MSP Insurance", "Professional Liability", "Cybersecurity", "Community Bank Insurance", "Credit Union Insurance", "Fidelity Bond", "D&O Insurance", "Policy Interaction Analysis", "Coverage Gap Analysis"],
   "sameAs": [
     "https://www.linkedin.com/in/joergproeve/"
   ]
@@ -73,28 +118,56 @@ image: /assets/images/joerg-portrait.jpg
 
 <section class="about-section">
     <div class="container">
-        <h1>About Joerg Proeve</h1>
-        <p class="subtitle">Founder &amp; Principal Risk Advisor</p>
-        <p style="text-align: center; font-size: 18px; color: #5A7184; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto;">
-            I help MSPs close enterprise deals and survive claims.
-        </p>
+        <h1>About Breezy Risk Advisors</h1>
+        <p class="subtitle">Founded by Joerg Proeve</p>
+
+        <div style="text-align: center; margin-bottom: 48px;">
+            <img src="{{ '/assets/images/joerg-portrait.jpg' | relative_url }}" alt="Joerg Proeve, Founder of Breezy Risk Advisors" class="profile-image">
+        </div>
 
         <div class="bio-content">
-            <div style="text-align: center; margin-bottom: 48px;">
-                <img src="{{ '/assets/images/joerg-portrait.jpg' | relative_url }}" alt="Joerg Proeve, Founder of Breezy Risk Advisors" class="profile-image">
-            </div>
 
-            <h2>Built from the Carrier Side</h2>
-            <p>Most brokers have only ever sold insurance. An engineer by training, I started my career in cybersecurity before spending two decades inside the insurance industry, first at Chubb and CNA, then I founded a parametric InsurTech startup and helped build a cyber MGA. I have sat in the rooms where carriers decide what gets covered and what gets excluded.</p>
-            <p><strong>I started Breezy Risk Advisors because the businesses that need the most sophisticated coverage analysis are getting the least.</strong></p>
+            <h2>What Breezy Risk Advisors Is</h2>
+            <p>Breezy Risk Advisors is an independent risk advisory firm. I review and audit insurance programs. I don't sell insurance or place policies. My incentive is to tell you what is actually in your coverage.</p>
+
+            <h2>What I Do</h2>
+            <p>I start with your policies, your contracts, and your operations. The deliverable is a <a href="{{ '/risk-intelligence-report/' | relative_url }}">Risk Intelligence Report</a>: a structured, line-by-line analysis of your insurance policies against your operations, contracts, and regulatory requirements. For community banks and credit unions, that means reading your cyber policy, fidelity bond, and D&amp;O coverage together and mapping how they interact against real incident scenarios. For managed service providers, that means comparing your Tech E&amp;O and cyber coverage against the contracts you sign with clients and the services you deliver.</p>
+            <p>The output is a report with specific findings, policy-language citations, and a prioritized list of what needs to change. Not a summary. Not a second opinion over coffee. A documented audit you can hand to your board, your examiner, or your broker.</p>
+
+            <h2>Who I Work With</h2>
+            <p><strong><a href="{{ '/community-bank-insurance/' | relative_url }}">Community banks and credit unions.</a></strong> I work with institutions where three overlapping policies (cyber, fidelity bond, D&amp;O) create coverage confusion that only surfaces at claim time or during an examination.</p>
+            <p><strong>Managed service providers.</strong> Small to midsized MSPs in growth mode, adding service lines, closing enterprise contracts, or serving regulated verticals. I review Tech E&amp;O and cyber coverage against the contracts and services that create real liability.</p>
+
+            <h2>How I Am Different</h2>
+            <p>I am the independent layer that verifies your broker's work. Not a replacement.</p>
+            <p>Your broker places insurance and earns a commission on what they sell. That is a useful service, but that's not an independent assessment. I serve a similar function to an external auditor: I read the policy language, test it against real scenarios, and report what I find. An advisor who also sells you the product has a structural conflict. I do not.</p>
+            <p>What makes my analysis different from a standard broker review:</p>
+            <ul>
+                <li>I read the full policy wording in detail, not just the declarations page</li>
+                <li>I test coverage against specific incident scenarios (e.g., wire fraud, ransomware, regulatory investigation, board liability)</li>
+                <li>For banks, I map how three policies (cyber liability, fidelity bond, D&amp;O) interact and where each carrier points to the other two</li>
+                <li>For managed service providers, I compare cyber liability and Tech E&amp;O coverage against client contracts and service delivery</li>
+                <li>I identify exclusions, sublimits, and warranty conditions that would realistically block a claim</li>
+            </ul>
+
+            <h2>How My Engagement Works</h2>
+            <p>I work on a fixed-fee, project basis. No commitment to move your insurance.</p>
+            <p>You send me your policies. I review them. You receive a report and a walkthrough call. If you want to act on the findings, you take them to your broker, or I can help you find one. The audit stands on its own regardless of what you do next.</p>
+
+            <h2>Who Refers Clients to Me</h2>
+            <p>Many of my clients come through trusted partners who already have a seat at the table:</p>
+            <ul class="referral-list">
+                <li><strong>IT audit and compliance firms.</strong> SOC 2 auditors and cybersecurity consultants who assess your controls but do not review whether your insurance matches those controls. I close that gap.</li>
+                <li><strong>CPA firms.</strong> Accounting firms that serve community banks and see insurance questions surface during audits and examinations.</li>
+                <li><strong>Attorneys.</strong> Technology attorneys who review contracts and see indemnification clauses that exceed their client's coverage.</li>
+            </ul>
+            <p>If you are an audit, compliance, or legal professional and your clients ask you insurance questions you cannot answer, let's talk.</p>
+
+            <h2>Founder</h2>
+            <p>Breezy Risk Advisors was founded by Joerg Proeve in 2025.</p>
+            <p>I spent 20 years inside the insurance industry. I worked on the carrier side, at Chubb and CNA, where coverage decisions are made. I founded a parametric insurance startup. I helped build and scale a cyber insurance MGA. I have sat in the rooms where carriers decide what gets paid and what gets denied.</p>
+            <p>I earned an MSc in Electrical Engineering and started my career in cybersecurity. That technical background means I understand the technology my clients deliver, not just the policies that are supposed to cover it. I also hold an MBA from London Business School.</p>
             <p><a href="https://www.linkedin.com/in/joergproeve/" target="_blank" rel="noopener">View my LinkedIn profile &rarr;</a></p>
-            <p>My background changes how I read your policies. I understand the technology you deliver, so I can spot where policy language does not match what your team does. I am not scanning for checkboxes. I am looking for the same ambiguities and exclusion triggers that a carrier's claims team will use to deny a payout. When I flag a gap, it is because I have seen that exact scenario play out from the inside.</p>
-
-            <h2>How We Work Together</h2>
-            <p>I work with managed service providers that have outgrown their broker's understanding: MSPs adding service lines, closing enterprise contracts, acquiring firms, or serving regulated verticals like healthcare and finance.</p>
-            <p>I also work with <a href="{{ '/community-bank-insurance/' | relative_url }}">community banks and credit unions</a> where overlapping cyber, fidelity bond, and D&O policies create coverage confusion that only surfaces at claim time.</p>
-            <p>The <a href="{{ '/risk-intelligence-report/' | relative_url }}">Risk Intelligence Report</a> is a detailed review of your current policies to identify gaps and exclusions. No sales pitch. Just an honest assessment of where you stand and what needs fixing.</p>
-
 
         </div>
 

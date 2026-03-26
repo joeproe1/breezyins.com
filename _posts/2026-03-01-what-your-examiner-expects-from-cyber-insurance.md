@@ -78,6 +78,6 @@ Ransomware, wire fraud, vendor breach, data breach, regulatory investigation. Fo
 
 Most community banks are not prepared for these questions. The fidelity bond alone runs 30 pages before riders. Expecting a compliance officer to cross-reference three policies from three carriers is unrealistic without help.
 
-This is what the [Risk Intelligence Report]({{ '/community-bank-insurance/' | relative_url }}) is designed to do. I read your cyber policy, fidelity bond, and D&O side by side, map how they interact against real incident scenarios, flag the security warranty gaps, and produce a Board-ready report that answers the examiner's question before they ask it.
+This is what the [Risk Intelligence Report]({{ '/risk-intelligence-report/' | relative_url }}) is designed to do. I read your cyber policy, fidelity bond, and D&O side by side, map how they interact against real incident scenarios, flag the security warranty gaps, and produce a Board-ready report that answers the examiner's question before they ask it.
 
 If your next exam is approaching, [get in touch]({{ '/contact/' | relative_url }}). I will tell you whether your current coverage holds up, or whether there are gaps worth fixing before the examiner finds them.

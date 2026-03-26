@@ -34,7 +34,7 @@ Your bank carries two policies that should cover this: a cyber liability policy 
 
 Both carriers are technically correct under their own policy language. The cyber policy was designed for security breaches. The fidelity bond was designed for employee theft and forgery. A social engineering attack, where nobody breaks in and nobody steals, sits in the gap between the two.
 
-I see this pattern regularly when I review [community bank insurance programs]({{ '/community-bank-insurance/' | relative_url }}). Two policies on the books. Premiums paid every year. And when a wire fraud loss hits, both carriers pointing at each other while the bank absorbs the loss.
+I see this pattern regularly when I review [community bank insurance programs]({{ '/' | relative_url }}#situations). Two policies on the books. Premiums paid every year. And when a wire fraud loss hits, both carriers pointing at each other while the bank absorbs the loss.
 
 ## Why Deepfakes Make This Worse
 

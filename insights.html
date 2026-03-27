@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Insurance Insights for MSPs and Community Banks"
-description: "Coverage gap analysis, policy reviews, and risk management articles for managed service providers and community banks."
+title: "Insurance Insights for Community Banks and MSPs"
+description: "Coverage gap analysis, policy reviews, and risk management articles for community banks, credit unions, and managed service providers."
 permalink: /insights/
 ---
 
@@ -55,13 +55,13 @@ permalink: /insights/
     <div class="container">
         <div class="insights-header">
             <h1>Insights</h1>
-            <p>Coverage gap analysis, contract compliance, and risk management for managed service providers and community banks.</p>
+            <p>Coverage gap analysis, contract compliance, and risk management for community banks, credit unions, and managed service providers.</p>
         </div>
 
         <div class="filter-tabs">
-            <button class="filter-tab active" data-filter="all">All</button>
+            <button class="filter-tab" data-filter="all">All</button>
+            <button class="filter-tab active" data-filter="banks">Community Banks</button>
             <button class="filter-tab" data-filter="msp">MSPs</button>
-            <button class="filter-tab" data-filter="banks">Community Banks</button>
         </div>
 
         <div class="blog-grid">
@@ -102,7 +102,7 @@ permalink: /insights/
     </div>
 </section>
 
-{% include cta-banner.html title="Find Out What Your Insurance Covers Before a Claim Tests It" subtitle="Your next client contract, your next incident, your next enterprise deal. Any of those can expose a coverage problem you did not know you had. Let's figure out where you stand." %}
+{% include cta-banner.html title="Find Out What Your Coverage Looks Like Before an Examiner Asks" subtitle="Your next examination, your next board review, your next policy renewal. Any of those can expose a coverage problem you did not know you had." %}
 
 <script>
 (function() {
@@ -129,11 +129,9 @@ permalink: /insights/
         });
     });
 
-    // Apply filter from URL hash on page load (e.g. /insights/#community-banks)
-    var hashMap = { 'community-banks': 'banks', 'msps': 'msp' };
+    // Apply filter from URL hash on page load, or default to banks
+    var hashMap = { 'community-banks': 'banks', 'msps': 'msp', 'all': 'all' };
     var hash = window.location.hash.replace('#', '');
-    if (hashMap[hash]) {
-        applyFilter(hashMap[hash]);
-    }
+    applyFilter(hashMap[hash] || 'banks');
 })();
 </script>

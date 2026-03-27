@@ -1,8 +1,8 @@
 <section class="cta-banner">
     <div class="container">
         <div class="cta-banner-inner">
-            <h2>{{ include.title | default: "Find Out What Your Insurance Actually Covers" }}</h2>
-            <p>{{ include.subtitle | default: "Whether you have a specific coverage question or just want to understand where you stand, I'm happy to talk." }}</p>
+            <h2>{{ include.title | default: "Find Out What Your Coverage Looks Like Before an Examiner Asks" }}</h2>
+            <p>{{ include.subtitle | default: "Whether you have a specific coverage question or just want to understand where you stand, I am happy to talk." }}</p>
             <a href="{{ '/contact/' | relative_url }}" class="btn btn-accent">{{ include.button | default: "Get in Touch" }} &rarr;</a>
             {% if include.fine_print %}<p class="cta-fine-print">{{ include.fine_print }}</p>{% endif %}
         </div>

@@ -32,7 +32,7 @@ description: "I don't sell insurance. I audit it. Risk Intelligence Reports for 
     "name": "United States"
   },
   "serviceType": ["Insurance Advisory", "Policy Audit", "Risk Intelligence Report"],
-  "knowsAbout": ["Cyber Insurance", "Tech E&O", "MSP Insurance", "Professional Liability", "Contract Compliance", "Community Bank Insurance", "Fidelity Bond", "D&O Insurance"],
+  "knowsAbout": ["Community Bank Insurance", "Credit Union Insurance", "Fidelity Bond", "D&O Insurance", "Wire Fraud Coverage", "FDIC Examination", "NCUA Compliance", "Policy Interaction Analysis", "Cyber Insurance", "Tech E&O", "MSP Insurance", "Professional Liability", "Contract Compliance"],
   "sameAs": [
     "https://www.linkedin.com/company/breezy-risk-advisors",
     "https://www.linkedin.com/in/joergproeve/"
@@ -61,15 +61,10 @@ description: "I don't sell insurance. I audit it. Risk Intelligence Reports for 
     color: #555;
     margin-bottom: 24px;
 }
-.msp-section .walkaway-list li {
-    font-size: 17px;
-}
-.msp-section .msp-closing {
-    font-size: 18px;
-    line-height: 1.7;
-    color: #555;
-    margin-top: 24px;
-    margin-bottom: 18px;
+.msp-section p.section-lede {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 </style>
 
@@ -161,28 +156,14 @@ description: "I don't sell insurance. I audit it. Risk Intelligence Reports for 
 <!-- For Managed Service Providers -->
 <section class="msp-section">
   <div class="container">
-    <div class="msp-section-inner">
-      <h2>For Managed Service Providers</h2>
-
-      <p class="section-lede">
-        MSPs face a different version of the same problem: policies that don't match what you actually do or what your contracts require.
+    <div class="msp-section-inner" style="text-align:center;">
+      <h2 style="font-size:24px; margin-bottom:12px;">Also Serving Managed Service Providers</h2>
+      <p class="section-lede" style="margin-bottom:16px;">
+        MSPs face a different version of the same problem: policies written for IT support, contracts that promise coverage you do not have, and cyber and E&amp;O policies that point fingers at each other during a claim. I review those, too.
       </p>
-
-      <ul class="walkaway-list">
-        <li>Your Tech E&amp;O defines covered services too narrowly for the work you deliver</li>
-        <li>Your cyber and E&amp;O policies point fingers at each other when a client claim hits</li>
-        <li>Your MSA commitments exceed what your coverage will pay</li>
-      </ul>
-
-      <p class="msp-closing">
-        If you are an MSP adding service lines, closing enterprise contracts, or serving regulated verticals, the Risk Intelligence Report maps your exposure.
-      </p>
-
-      <div class="section-actions">
-        <a href="{{ '/coverage-gaps-framework/' | relative_url }}" class="btn-text" style="color:var(--brand-primary); font-weight:600; text-decoration:none; font-size:18px;">
-          Learn more about MSP coverage gaps &rarr;
-        </a>
-      </div>
+      <a href="{{ '/risk-intelligence-report/' | relative_url }}" class="btn-text" style="color:var(--brand-primary); font-weight:600; text-decoration:none; font-size:17px;">
+        Learn more about the Risk Intelligence Report &rarr;
+      </a>
     </div>
   </div>
 </section>
@@ -209,4 +190,4 @@ description: "I don't sell insurance. I audit it. Risk Intelligence Reports for 
   </div>
 </section>
 
-{% include cta-banner.html title="A Contract or Claim Will Test Your Coverage" subtitle="Find out where you stand before it does." button="Get in Touch" %}
+{% include cta-banner.html title="Your Next Examination Will Test Your Coverage" subtitle="Find out where you stand before a claim, a board review, or an examiner forces the question." button="Get in Touch" %}

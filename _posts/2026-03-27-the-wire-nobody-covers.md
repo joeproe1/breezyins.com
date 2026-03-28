@@ -32,15 +32,21 @@ The bond does have a funds transfer clause that covers this type of loss, but it
 
 <div style="background: #0A2540; border-radius: 12px; padding: 32px; margin: 32px 0; color: #fff;">
 <h3 style="color: #00D4AA; margin-top: 0; font-size: 18px;">Three-Policy Breakdown</h3>
-<div style="display: flex; flex-direction: column; gap: 16px;">
-<div style="border-left: 3px solid #3B82F6; padding: 8px 16px;">
-<strong style="color: #93C5FD;">Cyber policy:</strong> Social engineering coverage not purchased. No response. $0.
+<div style="display: flex; flex-wrap: wrap; gap: 16px;">
+<div style="flex: 1; min-width: 220px; background: rgba(59,130,246,0.1); border-left: 4px solid #3B82F6; border-radius: 8px; padding: 20px;">
+<div style="color: #93C5FD; font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px;">Cyber Policy</div>
+<div style="color: rgba(255,255,255,0.8); font-size: 15px; line-height: 1.55;">Social engineering coverage not purchased. No response.</div>
+<div style="margin-top: 14px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.12); font-size: 20px; font-weight: 700; color: #93C5FD;">$0</div>
 </div>
-<div style="border-left: 3px solid #F59E0B; padding: 8px 16px;">
-<strong style="color: #FCD34D;">Fidelity bond:</strong> Voluntary parting exclusion applies (employee acted on his own authority). Funds transfer clause pays out with 50% co-payment. Recovery: $200,000.
+<div style="flex: 1; min-width: 220px; background: rgba(245,158,11,0.1); border-left: 4px solid #F59E0B; border-radius: 8px; padding: 20px;">
+<div style="color: #FCD34D; font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px;">Fidelity Bond</div>
+<div style="color: rgba(255,255,255,0.8); font-size: 15px; line-height: 1.55;">Voluntary parting exclusion applies. Funds transfer clause pays out with 50% co-payment.</div>
+<div style="margin-top: 14px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.12); font-size: 20px; font-weight: 700; color: #FCD34D;">$200,000</div>
 </div>
-<div style="border-left: 3px solid #8B5CF6; padding: 8px 16px;">
-<strong style="color: #C4B5FD;">D&O policy:</strong> Not directly triggered. No board-level claim filed yet.
+<div style="flex: 1; min-width: 220px; background: rgba(139,92,246,0.1); border-left: 4px solid #8B5CF6; border-radius: 8px; padding: 20px;">
+<div style="color: #C4B5FD; font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px;">D&amp;O Policy</div>
+<div style="color: rgba(255,255,255,0.8); font-size: 15px; line-height: 1.55;">Not directly triggered. No board-level claim filed yet.</div>
+<div style="margin-top: 14px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.12); font-size: 20px; font-weight: 700; color: #C4B5FD;">$0</div>
 </div>
 </div>
 <p style="margin-top: 20px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.15); font-size: 20px; font-weight: 700; color: #fff;">
@@ -58,13 +64,13 @@ The pattern repeats because the same gap exists at institution after institution
 
 Federal courts have ruled on this pattern repeatedly. The answer is consistent: if the employee had authority to send the wire and chose to send it, the fact that he was deceived does not change the outcome. The bond treats it as voluntary.
 
-<div style="border-left: 3px solid #3B82F6; padding: 12px 20px; margin: 20px 0; color: #333;">
-<strong>Midlothian Enterprises v. Owners Insurance</strong> (Virginia, 2020)<br>
+<div style="border-left: 3px solid #3B82F6; padding: 12px 20px; margin: 20px 0; font-size: 15px; color: #555; line-height: 1.65;">
+<strong style="font-size: 16px; color: #333;">Midlothian Enterprises v. Owners Insurance</strong> <span style="color: #777;">(Virginia, 2020)</span><br>
 Midlothian, a property management company, had an employee wire $42,000 based on a fraudulent email impersonating the company president. The crime policy was issued by Owners Insurance, a subsidiary of Auto-Owners Insurance Group, one of the largest mutual insurers in the country. The court held that the voluntary parting exclusion "unambiguously" bars coverage. The employee had authority. She acted willingly. The fact that someone tricked her into it did not make the transfer involuntary. The loss amount was small. The legal principle is not.
 </div>
 
-<div style="border-left: 3px solid #3B82F6; padding: 12px 20px; margin: 20px 0; color: #333;">
-<strong>SJ Computers v. Travelers</strong> (Minnesota, 2022)<br>
+<div style="border-left: 3px solid #3B82F6; padding: 12px 20px; margin: 20px 0; font-size: 15px; color: #555; line-height: 1.65;">
+<strong style="font-size: 16px; color: #333;">SJ Computers v. Travelers</strong> <span style="color: #777;">(Minnesota, 2022)</span><br>
 SJ Computers, an IT company, lost nearly $600,000 to fake vendor invoices sent from a lookalike email address. The company's commercial crime policy had two applicable coverages: Computer Fraud at $1 million and Social Engineering at $100,000. The court ruled that the two do not overlap. Because no system was hacked, the loss was classified as social engineering, and recovery was capped at $100,000. The company absorbed 83% of the loss.
 </div>
 

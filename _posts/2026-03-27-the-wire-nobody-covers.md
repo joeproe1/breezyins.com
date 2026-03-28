@@ -34,24 +34,24 @@ The bond does have a funds transfer clause that covers this type of loss, but it
 <h3 style="color: #00D4AA; margin-top: 0; font-size: 18px;">Three-Policy Breakdown</h3>
 <div style="color: rgba(255,255,255,0.6); font-size: 15px; margin-bottom: 16px;">Loss: $400,000</div>
 <div style="display: flex; flex-wrap: wrap; gap: 16px;">
-<div style="flex: 1; min-width: 220px; background: rgba(59,130,246,0.1); border-left: 4px solid #3B82F6; border-radius: 8px; padding: 20px;">
+<div style="flex: 1; min-width: 180px; background: rgba(59,130,246,0.1); border-left: 4px solid #3B82F6; border-radius: 8px; padding: 20px;">
 <div style="color: #93C5FD; font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px;">Cyber Policy</div>
 <div style="color: rgba(255,255,255,0.8); font-size: 15px; line-height: 1.55;">Social engineering coverage not purchased. No response.</div>
-<div style="margin-top: 14px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.12);"><div style="font-size: 12px; color: rgba(255,255,255,0.45); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px;">Recovery</div><div style="font-size: 20px; font-weight: 700; color: #93C5FD;">$0</div></div>
+<div style="margin-top: 14px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.12); display: flex; align-items: baseline; gap: 8px;"><div style="font-size: 12px; color: rgba(255,255,255,0.45); text-transform: uppercase; letter-spacing: 0.05em;">Recovery</div><div style="font-size: 20px; font-weight: 700; color: #93C5FD;">$0</div></div>
 </div>
-<div style="flex: 1; min-width: 220px; background: rgba(245,158,11,0.1); border-left: 4px solid #F59E0B; border-radius: 8px; padding: 20px;">
+<div style="flex: 1; min-width: 180px; background: rgba(245,158,11,0.1); border-left: 4px solid #F59E0B; border-radius: 8px; padding: 20px;">
 <div style="color: #FCD34D; font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px;">Fidelity Bond</div>
 <div style="color: rgba(255,255,255,0.8); font-size: 15px; line-height: 1.55;">Voluntary parting exclusion applies. Funds transfer clause pays out with 50% co-payment.</div>
-<div style="margin-top: 14px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.12);"><div style="font-size: 12px; color: rgba(255,255,255,0.45); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px;">Recovery</div><div style="font-size: 20px; font-weight: 700; color: #FCD34D;">$200,000</div></div>
+<div style="margin-top: 14px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.12); display: flex; align-items: baseline; gap: 8px;"><div style="font-size: 12px; color: rgba(255,255,255,0.45); text-transform: uppercase; letter-spacing: 0.05em;">Recovery</div><div style="font-size: 20px; font-weight: 700; color: #FCD34D;">$200,000</div></div>
 </div>
-<div style="flex: 1; min-width: 220px; background: rgba(139,92,246,0.1); border-left: 4px solid #8B5CF6; border-radius: 8px; padding: 20px;">
+<div style="flex: 1; min-width: 180px; background: rgba(139,92,246,0.1); border-left: 4px solid #8B5CF6; border-radius: 8px; padding: 20px;">
 <div style="color: #C4B5FD; font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px;">D&amp;O Policy</div>
 <div style="color: rgba(255,255,255,0.8); font-size: 15px; line-height: 1.55;">Not directly triggered. No board-level claim filed yet.</div>
-<div style="margin-top: 14px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.12);"><div style="font-size: 12px; color: rgba(255,255,255,0.45); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px;">Recovery</div><div style="font-size: 20px; font-weight: 700; color: #C4B5FD;">$0</div></div>
+<div style="margin-top: 14px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.12); display: flex; align-items: baseline; gap: 8px;"><div style="font-size: 12px; color: rgba(255,255,255,0.45); text-transform: uppercase; letter-spacing: 0.05em;">Recovery</div><div style="font-size: 20px; font-weight: 700; color: #C4B5FD;">$0</div></div>
 </div>
 </div>
 <p style="margin-top: 20px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.15); font-size: 20px; font-weight: 700; color: #fff;">
-Recovery: $200,000 on a $400,000 loss. The bank absorbs the rest.
+Recovery: $200,000 on a $400,000 loss.<br>The bank absorbs $200,000.
 </p>
 </div>
 

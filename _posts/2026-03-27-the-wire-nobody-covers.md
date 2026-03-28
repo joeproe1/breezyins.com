@@ -6,7 +6,7 @@ date: 2026-03-27
 author: Joerg Proeve
 category: Community Banks
 read_time: "5 min read"
-image: /assets/images/Blog-Wire-Fraud-Bank.png
+image: /assets/images/Blog-Wire-Nobody-Covers.png
 permalink: /insights/the-wire-nobody-covers/
 ---
 

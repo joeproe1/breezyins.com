@@ -1,0 +1,81 @@
+---
+layout: post
+title: "The Wire Nobody Covers: How a $400,000 Loss Fell Between Three Policies"
+description: "A community bank wires $400,000 based on a fraudulent email. The cyber policy does not cover it. The fidelity bond says the employee acted voluntarily. The bank recovers less than half."
+date: 2026-03-27
+author: Joerg Proeve
+category: Community Banks
+read_time: "5 min read"
+image: /assets/images/Blog-Wire-Fraud-Bank.png
+permalink: /insights/the-wire-nobody-covers/
+---
+
+A lending officer gets an urgent email from one of the bank's biggest commercial depositors. A $400,000 wire needs to go out today for a construction draw. The vendor is waiting. The project timeline is at risk. The email includes a new account number and a phone number for verification.
+
+He calls the number. Someone picks up, confirms the details, thanks him for the quick turnaround. The wire goes out.
+
+Two days later, the real depositor calls about something unrelated. The wire comes up. He never sent that email. He never answered that call. He had no construction draw pending. The phone number in the email belonged to the fraudster. The $400,000 is gone.
+
+## Three Policies, Zero Answers
+
+On paper, this community bank is well protected. It carries a cyber policy, a fidelity bond, and a directors and officers (D&O) policy, each from a different carrier. $15 million in aggregate limits across the three.
+
+The bank scrambles. It contacts law enforcement, flags the receiving account, and tries to claw the money back. Most of it is already gone. The bank calls its broker, who starts working the claim. Three policies, three carriers, three separate claims processes. This is not what most brokers deal with on a typical Monday.
+
+**The cyber carrier responds first.** Social engineering coverage was not included on the policy. The option was available but never purchased. Why not? Because everyone assumed the fidelity bond covered fraud. The cyber policy has no path to recovery.
+
+**The fidelity bond carrier responds next.** The bond has what is called a voluntary parting exclusion. In plain English: if the employee had authority to send the wire and chose to send it, the loss is excluded, even if he was deceived. The lending officer was not forced to send that wire. He was tricked, but he acted on his own authority using the bank's normal wire process. Under the bond language, that makes it voluntary.
+
+The bond does have a funds transfer clause that covers this type of loss, but it comes with a 50 percent co-payment. On a $400,000 wire, the bond pays $200,000. The bank absorbs the other $200,000.
+
+**The third policy, D&O, is not triggered directly.** No shareholder has filed a claim. No regulator has opened an investigation. Not yet. But the board now has to explain to examiners why a $400,000 fraud resulted in a $200,000 unrecovered loss, and why the bank's insurance program left the most common fraud scenario only half covered.
+
+<div style="background: #0A2540; border-radius: 12px; padding: 32px; margin: 32px 0; color: #fff;">
+<h3 style="color: #00D4AA; margin-top: 0; font-size: 18px;">Three-Policy Breakdown</h3>
+<div style="display: flex; flex-direction: column; gap: 16px;">
+<div style="border-left: 3px solid #3B82F6; padding: 8px 16px;">
+<strong style="color: #93C5FD;">Cyber policy:</strong> Social engineering coverage not purchased. No response. $0.
+</div>
+<div style="border-left: 3px solid #F59E0B; padding: 8px 16px;">
+<strong style="color: #FCD34D;">Fidelity bond:</strong> Voluntary parting exclusion applies (employee acted on his own authority). Funds transfer clause pays out with 50% co-payment. Recovery: $200,000.
+</div>
+<div style="border-left: 3px solid #8B5CF6; padding: 8px 16px;">
+<strong style="color: #C4B5FD;">D&O policy:</strong> Not directly triggered. No board-level claim filed yet.
+</div>
+</div>
+<p style="margin-top: 20px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.15); font-size: 20px; font-weight: 700; color: #fff;">
+Recovery: $200,000 on a $400,000 loss. The bank absorbs the rest.
+</p>
+</div>
+
+## This Is Not a One-in-a-Million Scenario
+
+About 80 percent of community bank and credit union decision-makers reported more than $500,000 in total fraud losses in the prior year, the highest of any segment surveyed, including enterprise banks and fintechs ([Alloy 2024 State of Fraud Benchmark Report](https://www.alloy.com/resources/state-of-fraud-benchmark-report)).
+
+The pattern repeats because the same gap exists at institution after institution: the cyber policy says this is a crime, not a cyber event. The fidelity bond says the employee acted voluntarily. Both carriers point at each other. The bank holds the loss.
+
+## Courts Have Been Clear on This
+
+Federal courts have ruled on this pattern repeatedly. The answer is consistent: if the employee had authority to send the wire and chose to send it, the fact that he was deceived does not change the outcome. The bond treats it as voluntary.
+
+In **Midlothian Enterprises v. Owners Insurance** (Virginia, 2020), Midlothian, a property management company, had an employee wire $42,000 based on a fraudulent email impersonating the company president. The crime policy was issued by Owners Insurance, a subsidiary of Auto-Owners Insurance Group, one of the largest mutual insurers in the country. The court held that the voluntary parting exclusion "unambiguously" bars coverage. The employee had authority. She acted willingly. The fact that someone tricked her into it did not make the transfer involuntary. The loss amount was small. The legal principle is not.
+
+In **SJ Computers v. Travelers** (Minnesota, 2022), SJ Computers, an IT company, lost nearly $600,000 to fake vendor invoices sent from a lookalike email address. The company's commercial crime policy had two applicable coverages: Computer Fraud at $1 million and Social Engineering at $100,000. The court ruled that the two do not overlap. Because no system was hacked, the loss was classified as social engineering, and recovery was capped at $100,000. The company absorbed 83% of the loss.
+
+These cases involve general businesses, not banks. The legal principles apply the same way to a financial institution bond. No published court case exists where a community bank was the policyholder in a social engineering coverage dispute. Banks settle these quietly. The gap is the same. It just does not make it to a published opinion.
+
+## The Fix
+
+The community bank in this scenario added social engineering coverage to its cyber policy and negotiated a higher limit on the fidelity bond's funds transfer clause at the next renewal. Coverage it could have had all along.
+
+Three things to check now:
+
+**1. If you do not have social engineering coverage on your cyber policy, add it.** This is the most common gap I find when reviewing community bank cyber policies. The option is usually available on the form. It just was not selected.
+
+**2. Check the social engineering limit on your fidelity bond.** If it is $100,000 or $250,000, that is too little for any community bank handling wire transfers. Make sure it matches your Computer Fraud limit, or get as close as you can.
+
+**3. Eliminate or reduce the co-payment.** A 50 percent co-payment on a funds transfer clause means the bank absorbs half of every loss, even when the coverage responds. On a $400,000 wire fraud, that is $200,000 out of the bank's pocket. The co-payment can often be negotiated down or removed at renewal.
+
+You cannot fix what you have not checked.
+
+If your bank has not had someone review how your cyber policy, fidelity bond, and D&O interact on wire fraud, [get in touch]({{ '/contact/' | relative_url }}).

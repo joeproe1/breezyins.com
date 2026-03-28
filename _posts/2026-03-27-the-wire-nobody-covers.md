@@ -50,7 +50,7 @@ Recovery: $200,000 on a $400,000 loss. The bank absorbs the rest.
 
 ## This Is Not a One-in-a-Million Scenario
 
-About 80 percent of community bank and credit union decision-makers reported more than $500,000 in total fraud losses in the prior year, the highest of any segment surveyed, including enterprise banks and fintechs ([Alloy 2024 State of Fraud Benchmark Report](https://www.alloy.com/resources/state-of-fraud-benchmark-report)).
+About 80 percent of community bank and credit union decision-makers reported more than $500,000 in total fraud losses in the prior year, the highest of any segment surveyed, including enterprise banks and fintechs ([Alloy, 2024 Fraud Benchmark](https://www.alloy.com/resources/state-of-fraud-benchmark-report)).
 
 The pattern repeats because the same gap exists at institution after institution: the cyber policy says this is a crime, not a cyber event. The fidelity bond says the employee acted voluntarily. Both carriers point at each other. The bank holds the loss.
 
@@ -58,9 +58,15 @@ The pattern repeats because the same gap exists at institution after institution
 
 Federal courts have ruled on this pattern repeatedly. The answer is consistent: if the employee had authority to send the wire and chose to send it, the fact that he was deceived does not change the outcome. The bond treats it as voluntary.
 
-In **Midlothian Enterprises v. Owners Insurance** (Virginia, 2020), Midlothian, a property management company, had an employee wire $42,000 based on a fraudulent email impersonating the company president. The crime policy was issued by Owners Insurance, a subsidiary of Auto-Owners Insurance Group, one of the largest mutual insurers in the country. The court held that the voluntary parting exclusion "unambiguously" bars coverage. The employee had authority. She acted willingly. The fact that someone tricked her into it did not make the transfer involuntary. The loss amount was small. The legal principle is not.
+<div style="border-left: 3px solid #3B82F6; padding: 12px 20px; margin: 20px 0; color: #333;">
+<strong>Midlothian Enterprises v. Owners Insurance</strong> (Virginia, 2020)<br>
+Midlothian, a property management company, had an employee wire $42,000 based on a fraudulent email impersonating the company president. The crime policy was issued by Owners Insurance, a subsidiary of Auto-Owners Insurance Group, one of the largest mutual insurers in the country. The court held that the voluntary parting exclusion "unambiguously" bars coverage. The employee had authority. She acted willingly. The fact that someone tricked her into it did not make the transfer involuntary. The loss amount was small. The legal principle is not.
+</div>
 
-In **SJ Computers v. Travelers** (Minnesota, 2022), SJ Computers, an IT company, lost nearly $600,000 to fake vendor invoices sent from a lookalike email address. The company's commercial crime policy had two applicable coverages: Computer Fraud at $1 million and Social Engineering at $100,000. The court ruled that the two do not overlap. Because no system was hacked, the loss was classified as social engineering, and recovery was capped at $100,000. The company absorbed 83% of the loss.
+<div style="border-left: 3px solid #3B82F6; padding: 12px 20px; margin: 20px 0; color: #333;">
+<strong>SJ Computers v. Travelers</strong> (Minnesota, 2022)<br>
+SJ Computers, an IT company, lost nearly $600,000 to fake vendor invoices sent from a lookalike email address. The company's commercial crime policy had two applicable coverages: Computer Fraud at $1 million and Social Engineering at $100,000. The court ruled that the two do not overlap. Because no system was hacked, the loss was classified as social engineering, and recovery was capped at $100,000. The company absorbed 83% of the loss.
+</div>
 
 These cases involve general businesses, not banks. The legal principles apply the same way to a financial institution bond. No published court case exists where a community bank was the policyholder in a social engineering coverage dispute. Banks settle these quietly. The gap is the same. It just does not make it to a published opinion.
 
@@ -70,11 +76,20 @@ The community bank in this scenario added social engineering coverage to its cyb
 
 Three things to check now:
 
-**1. If you do not have social engineering coverage on your cyber policy, add it.** This is the most common gap I find when reviewing community bank cyber policies. The option is usually available on the form. It just was not selected.
-
-**2. Check the social engineering limit on your fidelity bond.** If it is $100,000 or $250,000, that is too little for any community bank handling wire transfers. Make sure it matches your Computer Fraud limit, or get as close as you can.
-
-**3. Eliminate or reduce the co-payment.** A 50 percent co-payment on a funds transfer clause means the bank absorbs half of every loss, even when the coverage responds. On a $400,000 wire fraud, that is $200,000 out of the bank's pocket. The co-payment can often be negotiated down or removed at renewal.
+<div style="background: #f8faf9; border-radius: 10px; padding: 28px 32px; margin: 24px 0;">
+<div style="display: flex; gap: 16px; margin-bottom: 20px;">
+<div style="min-width: 32px; height: 32px; background: #00D4AA; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #0A2540; font-size: 16px;">1</div>
+<div><strong>If you do not have social engineering coverage on your cyber policy, add it.</strong> This is the most common gap I find when reviewing community bank cyber policies. The option is usually available on the form. It just was not selected.</div>
+</div>
+<div style="display: flex; gap: 16px; margin-bottom: 20px;">
+<div style="min-width: 32px; height: 32px; background: #00D4AA; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #0A2540; font-size: 16px;">2</div>
+<div><strong>Check the social engineering limit on your fidelity bond.</strong> If it is $100,000 or $250,000, that is too little for any community bank handling wire transfers. Make sure it matches your Computer Fraud limit, or get as close as you can.</div>
+</div>
+<div style="display: flex; gap: 16px;">
+<div style="min-width: 32px; height: 32px; background: #00D4AA; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #0A2540; font-size: 16px;">3</div>
+<div><strong>Eliminate or reduce the co-payment.</strong> A 50 percent co-payment on a funds transfer clause means the bank absorbs half of every loss, even when the coverage responds. On a $400,000 wire fraud, that is $200,000 out of the bank's pocket. The co-payment can often be negotiated down or removed at renewal.</div>
+</div>
+</div>
 
 You cannot fix what you have not checked.
 

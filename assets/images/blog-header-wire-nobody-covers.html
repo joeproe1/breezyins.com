@@ -12,21 +12,57 @@
         body {
             margin: 0;
             padding: 0;
-            background: #0A2540;
+            background: #0E3054;
             overflow: hidden;
         }
 
         .header-image {
             width: 100vw;
             height: 100vh;
-            background: #0A2540;
+            background: #0E3054;
             position: relative;
             overflow: hidden;
         }
 
+        .circle {
+            position: absolute;
+            width: 450px;
+            height: 450px;
+            border-radius: 50%;
+            background: #00D4AA;
+            opacity: 0.10;
+            right: -160px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .circle-ring {
+            position: absolute;
+            width: 420px;
+            height: 420px;
+            border-radius: 50%;
+            border: 2px solid #00D4AA;
+            opacity: 0.30;
+            right: -140px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .circle-ring-outer {
+            position: absolute;
+            width: 520px;
+            height: 520px;
+            border-radius: 50%;
+            border: 1.5px solid #00D4AA;
+            opacity: 0.18;
+            right: -190px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
         .accent-line {
             position: absolute;
-            bottom: 80px;
+            bottom: 100px;
             left: 0;
             right: 0;
             height: 2px;
@@ -40,117 +76,46 @@
             left: 0;
             right: 0;
             bottom: 0;
-            padding: 52px 72px 100px;
+            padding: 72px 80px;
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
 
-        .top-row {
-            display: flex;
-            align-items: baseline;
-            gap: 24px;
-            margin-bottom: 28px;
-        }
-
         .category {
             font-family: 'JetBrains Mono', monospace;
-            font-size: 16px;
+            font-size: 24px;
             font-weight: 600;
             letter-spacing: 0.12em;
             text-transform: uppercase;
             color: #00D4AA;
+            margin-bottom: 24px;
         }
 
         .title {
             font-family: 'DM Sans', sans-serif;
-            font-size: 36px;
+            font-size: 64px;
             font-weight: 700;
             color: #FFFFFF;
             line-height: 1.15;
+            margin-bottom: 20px;
+            max-width: 720px;
         }
 
-        .boxes {
-            display: flex;
-            gap: 20px;
-        }
-
-        .policy-box {
-            flex: 1;
-            border-radius: 10px;
-            padding: 24px 22px;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .box-cyber {
-            background: rgba(59, 130, 246, 0.12);
-            border-left: 4px solid #3B82F6;
-        }
-
-        .box-bond {
-            background: rgba(245, 158, 11, 0.12);
-            border-left: 4px solid #F59E0B;
-        }
-
-        .box-do {
-            background: rgba(139, 92, 246, 0.12);
-            border-left: 4px solid #8B5CF6;
-        }
-
-        .box-label {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 15px;
-            font-weight: 600;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            margin-bottom: 14px;
-        }
-
-        .box-cyber .box-label { color: #93C5FD; }
-        .box-bond .box-label { color: #FCD34D; }
-        .box-do .box-label { color: #C4B5FD; }
-
-        .box-text {
+        .subtitle {
             font-family: 'DM Sans', sans-serif;
-            font-size: 17px;
+            font-size: 32px;
             font-weight: 400;
-            color: rgba(255, 255, 255, 0.8);
-            line-height: 1.5;
-            flex: 1;
-        }
-
-        .box-result {
-            font-family: 'DM Sans', sans-serif;
-            font-size: 22px;
-            font-weight: 700;
-            margin-top: auto;
-            padding-top: 12px;
-            border-top: 1px solid rgba(255, 255, 255, 0.15);
-        }
-
-        .box-cyber .box-result { color: #93C5FD; }
-        .box-bond .box-result { color: #FCD34D; }
-        .box-do .box-result { color: #C4B5FD; }
-
-        .recovery {
-            margin-top: 28px;
-            font-family: 'DM Sans', sans-serif;
-            font-size: 24px;
-            font-weight: 700;
-            color: #FFFFFF;
-        }
-
-        .recovery .amount {
-            color: #00D4AA;
+            color: rgba(255, 255, 255, 0.7);
+            max-width: 600px;
         }
 
         .logo {
             position: absolute;
-            bottom: 28px;
-            left: 72px;
+            bottom: 40px;
+            left: 80px;
             font-family: 'JetBrains Mono', monospace;
-            font-size: 22px;
+            font-size: 26px;
             font-weight: 700;
             color: #FFFFFF;
         }
@@ -163,35 +128,15 @@
 <body>
 
 <div class="header-image">
+    <div class="circle"></div>
+    <div class="circle-ring"></div>
+    <div class="circle-ring-outer"></div>
     <div class="accent-line"></div>
 
     <div class="content">
-        <div class="top-row">
-            <div class="category">Community Banks</div>
-            <div class="title">The Wire Nobody Covers</div>
-        </div>
-
-        <div class="boxes">
-            <div class="policy-box box-cyber">
-                <div class="box-label">Cyber Policy</div>
-                <div class="box-text">Social engineering coverage not purchased. No response.</div>
-                <div class="box-result">$0</div>
-            </div>
-
-            <div class="policy-box box-bond">
-                <div class="box-label">Fidelity Bond</div>
-                <div class="box-text">Voluntary parting exclusion applies. Funds transfer clause pays out with 50% co-payment.</div>
-                <div class="box-result">$200,000</div>
-            </div>
-
-            <div class="policy-box box-do">
-                <div class="box-label">D&amp;O Policy</div>
-                <div class="box-text">Not directly triggered. No board-level claim filed yet.</div>
-                <div class="box-result">$0</div>
-            </div>
-        </div>
-
-        <div class="recovery">Recovery: <span class="amount">$200,000</span> on a $400,000 loss. The bank absorbs the rest.</div>
+        <div class="category">Community Banks</div>
+        <div class="title">The Wire Nobody Covers</div>
+        <div class="subtitle">How a $400,000 loss fell between three policies.</div>
     </div>
 
     <div class="logo">BREEZY<span class="teal">.risk</span></div>

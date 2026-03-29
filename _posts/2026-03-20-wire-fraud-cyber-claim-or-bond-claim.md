@@ -7,7 +7,9 @@ author: Joerg Proeve
 category: Community Banks
 read_time: "4 min read"
 image: /assets/images/Blog-Wire-Fraud-Bank.png
-permalink: /insights/wire-fraud-cyber-claim-or-bond-claim/
+permalink: /insights/when-ai-clones-your-cfos-voice/
+redirect_from:
+  - /insights/wire-fraud-cyber-claim-or-bond-claim/
 ---
 
 An operations manager at a community bank gets a call from the CFO. He is at a closing and needs a $350,000 wire sent to an escrow account before end of day. He gives the account details. The voice is his. The cadence is his. The request is the kind of thing he would ask for.

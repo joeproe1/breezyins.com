@@ -61,7 +61,7 @@ Wire fraud and business email compromise (BEC) are among the costliest cyber thr
 
 Most cyber policies offer social engineering coverage as an endorsement, not a core coverage. Sublimits typically range from $100K to $250K. If a bank employee is tricked into wiring $500K to a fraudulent account, the cyber policy sublimit may cover half. The fidelity bond may or may not respond, depending on whether the loss qualifies under the bond language.
 
-And it is getting worse. AI-generated voice and video can now impersonate executives in real time, and most policy language was written for email-based scams. For a deeper look at how deepfakes are breaking callback verification procedures and widening this gap, see [Wire Fraud at Your Bank: Is That a Cyber Claim or a Bond Claim?]({{ '/insights/wire-fraud-cyber-claim-or-bond-claim/' | relative_url }})
+And it is getting worse. AI-generated voice and video can now impersonate executives in real time, and most policy language was written for email-based scams. For a deeper look at how deepfakes are breaking callback verification procedures and widening this gap, see [When AI Clones Your CFO's Voice]({{ '/insights/wire-fraud-cyber-claim-or-bond-claim/' | relative_url }})
 
 <div style="border-left: 3px solid #00D4AA; padding: 16px 20px; background: rgba(0,212,170,0.05); border-radius: 0 8px 8px 0; margin: 24px 0;">
 <strong>What to look for:</strong> Check whether your social engineering sublimit is adequate for your wire transfer volume. Check whether the policy defines "social engineering" broadly enough to include AI-generated voice and video. And if your policy requires a callback verification procedure, ask whether that procedure accounts for voice impersonation.

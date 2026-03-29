@@ -37,7 +37,7 @@ The FFIEC (Federal Financial Institutions Examination Council) IT Examination Ha
 </div>
 
 <div style="border-left: 3px solid #3B82F6; padding: 16px 20px; background: rgba(59,130,246,0.05); border-radius: 0 8px 8px 0;">
-<strong>Understanding of how cyber, fidelity bond, and D&O interact.</strong> A ransomware attack that leads to a wire transfer loss, followed by a regulatory investigation into Board oversight, touches all three policies. Examiners want to know which policy responds to which part. For a detailed look at the finger-pointing problem, see <a href="{{ '/insights/wire-fraud-cyber-claim-or-bond-claim/' | relative_url }}" style="color:#00D4AA; font-weight:600;">Wire Fraud: Is That a Cyber Claim or a Bond Claim?</a>
+<strong>Understanding of how cyber, fidelity bond, and D&O interact.</strong> A ransomware attack that leads to a wire transfer loss, followed by a regulatory investigation into Board oversight, touches all three policies. Examiners want to know which policy responds to which part. For a detailed look at how deepfakes are breaking callback verification and widening the coverage gap, see <a href="{{ '/insights/wire-fraud-cyber-claim-or-bond-claim/' | relative_url }}" style="color:#00D4AA; font-weight:600;">When AI Clones Your CFO's Voice</a>
 </div>
 
 </div>

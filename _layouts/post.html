@@ -28,11 +28,41 @@ layout: default
   }
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ '/' | absolute_url }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Insights",
+      "item": "{{ '/insights/' | absolute_url }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": {{ page.title | jsonify }},
+      "item": "{{ page.url | absolute_url }}"
+    }
+  ]
+}
+</script>
 <article itemscope itemtype="https://schema.org/Article">
     <div class="post-hero{% if page.category == 'Community Banks' %} post-hero--banks{% endif %}">
         <div class="container">
             <nav class="breadcrumbs" aria-label="Breadcrumb">
-                <a href="{{ '/insights/' | relative_url }}">&larr; Back to Insights</a>
+                <a href="{{ '/' | relative_url }}">Home</a>
+                <span class="breadcrumb-sep" aria-hidden="true">&rsaquo;</span>
+                <a href="{{ '/insights/' | relative_url }}">Insights</a>
+                <span class="breadcrumb-sep" aria-hidden="true">&rsaquo;</span>
+                <span class="breadcrumb-current" aria-current="page">{{ page.title }}</span>
             </nav>
 
             <header class="post-header">

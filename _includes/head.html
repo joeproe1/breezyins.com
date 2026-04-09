@@ -25,48 +25,99 @@
 <!-- Stylesheet -->
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
-<!-- Organization Schema -->
+<!-- Site Identity Schema (canonical: ProfessionalService + Person) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Breezy Risk Advisors",
-  "url": "https://breezyins.com",
-  "logo": "https://breezyins.com/assets/images/breezy-logo.png",
-  "description": "{{ site.description }}",
-  "founder": {
-    "@type": "Person",
-    "name": "Joerg Proeve"
-  },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+1-717-490-7670",
-    "contactType": "sales",
-    "email": "contact@breezyins.com"
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Lancaster",
-    "addressRegion": "PA",
-    "addressCountry": "US"
-  },
-  "knowsAbout": [
-    "Community Bank Insurance",
-    "Credit Union Insurance",
-    "Cyber Insurance",
-    "Fidelity Bond",
-    "D&O Insurance",
-    "Wire Fraud Coverage",
-    "FDIC Examination",
-    "NCUA Compliance",
-    "23 NYCRR 500",
-    "Policy Interaction Analysis",
-    "Tech E&O",
-    "MSP Insurance",
-    "Risk Intelligence Report"
-  ],
-  "sameAs": [
-    "https://www.linkedin.com/company/breezy-risk-advisors"
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "{{ site.url }}/#organization",
+      "name": "{{ site.title }}",
+      "url": "{{ site.url }}",
+      "logo": "{{ site.url }}/assets/images/breezy-logo.png",
+      "image": "{{ site.url }}/assets/images/breezy-og-default.png",
+      "description": "{{ site.description }}",
+      "foundingDate": "2025",
+      "founder": { "@id": "{{ site.url }}/#joerg" },
+      "telephone": "+1-717-490-7670",
+      "email": "{{ site.email }}",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-717-490-7670",
+        "contactType": "sales",
+        "email": "{{ site.email }}"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lancaster",
+        "addressRegion": "PA",
+        "addressCountry": "US"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "serviceType": [
+        "Insurance Audit",
+        "Policy Review",
+        "Risk Intelligence Report",
+        "Coverage Gap Analysis"
+      ],
+      "audience": [
+        { "@type": "Audience", "audienceType": "Community Banks" },
+        { "@type": "Audience", "audienceType": "Credit Unions" },
+        { "@type": "Audience", "audienceType": "Managed Service Providers" }
+      ],
+      "knowsAbout": [
+        "Community Bank Insurance",
+        "Credit Union Insurance",
+        "Cyber Insurance",
+        "Fidelity Bond",
+        "D&O Insurance",
+        "Wire Fraud Coverage",
+        "FDIC Examination",
+        "NCUA Compliance",
+        "23 NYCRR 500",
+        "Policy Interaction Analysis",
+        "Tech E&O",
+        "MSP Insurance",
+        "Risk Intelligence Report"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/company/breezy-risk-advisors"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "{{ site.url }}/#joerg",
+      "name": "{{ site.author }}",
+      "jobTitle": "Independent Risk Advisor",
+      "url": "{{ site.url }}/about/",
+      "image": "{{ site.url }}/assets/images/joerg-portrait.jpg",
+      "description": "Independent risk advisor who audits insurance programs for community banks, credit unions, and managed service providers. 20+ years in insurance at Chubb, CNA, and a cyber MGA. MSc Electrical Engineering, MBA from London Business School. Does not sell insurance or earn commissions.",
+      "worksFor": { "@id": "{{ site.url }}/#organization" },
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "Karlsruhe Institute of Technology" },
+        { "@type": "CollegeOrUniversity", "name": "London Business School" }
+      ],
+      "knowsAbout": [
+        "Community Bank Insurance",
+        "Credit Union Insurance",
+        "Cyber Insurance",
+        "Fidelity Bond",
+        "D&O Insurance",
+        "Tech E&O",
+        "MSP Insurance",
+        "Professional Liability",
+        "Cybersecurity",
+        "Policy Interaction Analysis",
+        "Coverage Gap Analysis"
+      ],
+      "sameAs": [
+        "{{ site.linkedin }}"
+      ]
+    }
   ]
 }
 </script>

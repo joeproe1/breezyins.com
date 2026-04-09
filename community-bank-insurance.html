@@ -1,17 +1,759 @@
 ---
-layout: null
+layout: page
+title: "Community Bank Insurance: Cyber, Fidelity Bond, and D&O Coverage Audits"
+description: "Independent insurance audits for community banks and credit unions. I read your cyber policy, fidelity bond, and D&O coverage together and find the gaps before an examiner or a claim does."
 permalink: /community-bank-insurance/
 ---
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta http-equiv="refresh" content="0; url={{ '/' | relative_url }}">
-<link rel="canonical" href="{{ '/' | absolute_url }}">
-<title>Redirecting</title>
-</head>
-<body>
-<p>This page has moved. <a href="{{ '/' | relative_url }}">Click here</a> if you are not redirected.</p>
-<script>window.location.replace("{{ '/' | relative_url }}");</script>
-</body>
-</html>
+
+<!-- Article Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Community Bank Insurance That Holds Up When You Need It",
+  "description": "Independent insurance audits for community banks and credit unions. I read your cyber policy, fidelity bond, and D&O coverage together and find the gaps before an examiner or a claim does.",
+  "author": {
+    "@type": "Person",
+    "name": "Joerg Proeve",
+    "url": "https://breezyins.com/about/",
+    "jobTitle": "Independent Risk Advisor"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Breezy Risk Advisors",
+    "url": "https://breezyins.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://breezyins.com/assets/images/breezy-logo.png"
+    }
+  },
+  "datePublished": "2026-04-09",
+  "dateModified": "2026-04-09",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://breezyins.com/community-bank-insurance/"
+  },
+  "about": [
+    "Community Bank Insurance",
+    "Cyber Insurance",
+    "Fidelity Bond",
+    "D&O Insurance",
+    "Wire Fraud Coverage",
+    "FDIC Examination",
+    "NCUA Compliance"
+  ]
+}
+</script>
+
+<!-- BreadcrumbList Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://breezyins.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Community Bank Insurance",
+      "item": "https://breezyins.com/community-bank-insurance/"
+    }
+  ]
+}
+</script>
+
+<style>
+/* Zero out .page-content padding (bank hero owns its own top spacing) */
+.page-content { padding-top: 0; padding-bottom: 0; }
+
+/* ----- Section 1: Hero overrides ----- */
+.bank-hero .container { position: relative; z-index: 2; max-width: 980px; }
+.bank-hero__hook {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--bank-text-light);
+  margin: 0 0 8px;
+  line-height: 1.4;
+}
+.bank-hero__source {
+  font-size: 13px;
+  color: var(--bank-gap-dim);
+  font-style: italic;
+  margin: 0 0 28px;
+}
+.bank-hero__lede {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--bank-accent);
+  margin: 0 0 32px;
+  max-width: 820px;
+}
+.bank-hero__actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* ----- Section 2: Three-Way Collision ----- */
+.collision-section {
+  padding: 80px 0;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+}
+.collision-section .container { max-width: 1080px; }
+.collision-intro {
+  max-width: 880px;
+  margin: 0 auto 48px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  text-align: center;
+}
+.collision-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+.collision-card {
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--bank-mid);
+  border-radius: 12px;
+  padding: 32px 28px;
+}
+.collision-card__label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--bank-mid);
+  margin-bottom: 14px;
+}
+.collision-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0A2540;
+  margin: 0 0 12px;
+}
+.collision-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin: 0;
+}
+.collision-tagline {
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--bank-mid);
+  margin: 32px 0;
+}
+.collision-close {
+  max-width: 880px;
+  margin: 32px auto 0;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .collision-grid { grid-template-columns: 1fr; }
+}
+
+/* ----- Section 3a: Interaction Map ----- */
+.interaction-section {
+  padding: 80px 0 60px;
+  background: var(--bg-light);
+}
+.interaction-section .container { max-width: 1080px; }
+.interaction-preamble {
+  max-width: 820px;
+  margin: 0 auto 16px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  text-align: center;
+}
+.interaction-map-title {
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--bank-dark);
+  margin: 28px 0 14px;
+}
+.interaction-map-wrap {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #fff;
+}
+.interaction-map {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  min-width: 720px;
+  table-layout: fixed;
+}
+.interaction-map col { width: 25%; }
+.interaction-map td[rowspan] { text-align: center; vertical-align: middle; }
+.interaction-map thead th {
+  background: var(--bank-dark);
+  color: #fff;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 16px 18px;
+  text-align: left;
+  border-bottom: 4px solid var(--bank-accent);
+}
+.interaction-map tbody td {
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  font-weight: 500;
+  vertical-align: middle;
+}
+.interaction-map tbody td:last-child { border-right: none; }
+.interaction-map tbody tr:last-child td { border-bottom: none; }
+.interaction-map .cell-incident {
+  font-weight: 700;
+  color: #0A2540;
+  background: #f3f5f9;
+}
+.interaction-map .cell-green {
+  background: #e6f5e9;
+  color: #1a5e2a;
+  font-weight: 600;
+}
+.interaction-map .cell-yellow {
+  background: #fff5d6;
+  color: #8a5a00;
+  font-weight: 600;
+}
+.interaction-map .cell-red {
+  background: #fde8e6;
+  color: #8c1a0a;
+  font-weight: 600;
+}
+.interaction-map .cell-grey {
+  background: #ececec;
+  color: #777;
+  font-weight: 500;
+}
+.interaction-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+  justify-content: center;
+  margin-top: 24px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+.interaction-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.interaction-legend .swatch {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  display: inline-block;
+}
+.interaction-caption {
+  max-width: 820px;
+  margin: 36px auto 0;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+  font-weight: 700;
+  color: #0A2540;
+}
+
+/* ----- Section 3b: Three Scenarios ----- */
+.scenarios-section {
+  padding: 40px 0 100px;
+  background: var(--bg-light);
+}
+.scenarios-section .container { max-width: 1180px; }
+.scenarios-section .scenarios-grid { margin-bottom: 0; }
+.scenarios-section__intro {
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin: 0 auto 36px;
+  max-width: 720px;
+}
+.scenarios-section .scenario-card { padding: 32px 28px 28px; }
+.scenarios-section .scenario-body {
+  font-size: 15px;
+  line-height: 1.65;
+}
+.scenarios-section .scenario-verdict {
+  font-size: 13px;
+  font-weight: 700;
+  color: #c0311a;
+  background: #fdf0ee;
+  border-left: 3px solid #c0311a;
+  border-radius: 0 6px 6px 0;
+  padding: 12px 16px;
+  display: block;
+  border: 1px solid #f0c0b8;
+  border-left-width: 3px;
+  line-height: 1.5;
+  margin-top: 16px;
+}
+
+/* ----- Section 4: What an Independent Audit Finds ----- */
+.audit-section {
+  padding: 80px 0;
+  background: #fff;
+}
+.audit-section .container { max-width: 880px; }
+.audit-lede {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin: 0 0 36px;
+}
+.audit-checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 36px;
+}
+.audit-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 18px 22px;
+  background: var(--bg-light);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--bank-mid);
+}
+.audit-check__dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--bank-accent-bg);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+.audit-check__dot::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--bank-mid);
+}
+.audit-check p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0A2540;
+  font-weight: 500;
+}
+.audit-close {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin: 36px 0;
+}
+.audit-actions { margin-top: 32px; }
+
+/* ----- Mini Bio (between Audit and Final CTA) ----- */
+.bank-bio {
+  padding: 72px 0;
+  background: #fff;
+  border-top: 1px solid var(--border);
+}
+.bank-bio .container { max-width: 880px; }
+.bank-bio__grid {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 36px;
+  align-items: center;
+}
+.bank-bio__photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--bank-accent-bg);
+}
+.bank-bio__name {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0A2540;
+  margin: 0 0 4px;
+  letter-spacing: -0.01em;
+}
+.bank-bio__title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--bank-mid);
+  margin: 0 0 18px;
+}
+.bank-bio p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin: 0 0 16px;
+}
+.bank-bio__link {
+  color: var(--bank-mid);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 16px;
+}
+.bank-bio__link:hover { text-decoration: underline; }
+@media (max-width: 640px) {
+  .bank-bio__grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 24px;
+  }
+  .bank-bio__photo { margin: 0 auto; }
+}
+
+/* ----- Section 5: Final CTA ----- */
+.bank-final {
+  background: var(--bank-dark);
+  padding: 72px 40px;
+  position: relative;
+  overflow: hidden;
+}
+.bank-final::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  border: 1px solid rgba(126,174,232,0.10);
+  pointer-events: none;
+}
+.bank-final::after {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid rgba(126,174,232,0.16);
+  pointer-events: none;
+}
+.bank-final__inner {
+  max-width: 880px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.bank-final h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--bank-text-light);
+  margin: 0 0 16px;
+  letter-spacing: -0.02em;
+}
+.bank-final p {
+  font-size: 17px;
+  color: var(--bank-accent);
+  margin: 0 0 32px;
+  line-height: 1.6;
+}
+.bank-final__actions {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .bank-final h2 { font-size: 28px; }
+  .bank-final { padding: 56px 24px; }
+}
+
+/* ----- Byline ----- */
+.bank-byline {
+  background: #fff;
+  padding: 36px 0 72px;
+  border-top: 1px solid var(--border);
+}
+.bank-byline .container { max-width: 880px; }
+.bank-byline p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin: 0;
+}
+.bank-byline strong {
+  color: #0A2540;
+  font-weight: 700;
+  font-style: normal;
+}
+.bank-byline a {
+  color: var(--bank-mid);
+  font-weight: 600;
+  font-style: normal;
+  text-decoration: none;
+}
+.bank-byline a:hover { text-decoration: underline; }
+
+/* ----- Hero responsive ----- */
+@media (max-width: 768px) {
+  .bank-hero__hook { font-size: 19px; }
+  .bank-hero__lede { font-size: 17px; }
+}
+</style>
+
+<!-- ========================================
+     SECTION 1: HERO
+     ======================================== -->
+<section class="bank-breadcrumb-bar">
+  <div class="container">
+    <div class="bank-hero__breadcrumb">Community Bank Insurance</div>
+  </div>
+</section>
+
+<section class="bank-hero">
+  <div class="bank-hero__rings"></div>
+  <div class="container">
+    <h1 class="bank-hero__headline">Community Bank Insurance That Holds Up When You Need It</h1>
+    <p class="bank-hero__hook">94% of community bankers rate cybersecurity as their top risk. How many have actually read their cyber policy?</p>
+    <p class="bank-hero__source">Source: CSBS 2025 Annual Survey</p>
+    <p class="bank-hero__lede">
+      Most community banks and credit unions carry cyber insurance, a fidelity bond, and a directors and officers policy. Each one was written for a different problem by a different part of the insurance industry. Almost nobody reads them together. I do.
+    </p>
+    <div class="bank-hero__actions">
+      <a href="{{ '/risk-intelligence-report/' | relative_url }}" class="btn btn--bank">See What a Risk Intelligence Report Covers &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================
+     SECTION 2: THREE-WAY COLLISION
+     ======================================== -->
+<section class="collision-section">
+  <div class="container">
+    <h2 class="bank-section-heading">Three Domains. Three Teams. No Coordination.</h2>
+    <p class="collision-intro">
+      Every community bank and credit union manages cyber risk across three separate teams that almost never sit in the same room. Your broker handles coverage. Your IT team or CISO handles controls. Your compliance officer handles examinations. The broker does not know what controls IT actually runs. IT does not know what the policy requires. Compliance may not realize that a failed examination can trigger or void a claim.
+    </p>
+
+    <div class="collision-grid">
+      <div class="collision-card">
+        <div class="collision-card__label">Coverage</div>
+        <h3>Broker and Carrier</h3>
+        <p>Renewal cycle. Policy language. Sublimits, exclusions, warranty conditions.</p>
+      </div>
+      <div class="collision-card">
+        <div class="collision-card__label">Controls</div>
+        <h3>IT or CISO</h3>
+        <p>Daily operations. Technical safeguards. MFA, EDR, patching, backups.</p>
+      </div>
+      <div class="collision-card">
+        <div class="collision-card__label">Compliance</div>
+        <h3>Compliance and Risk Officer</h3>
+        <p>Examination cycle. Regulatory standards. FDIC, OCC, NCUA, or NYDFS depending on charter and state.</p>
+      </div>
+    </div>
+
+    <p class="collision-close">
+      And community banks face this collision under unusual pressure: a 36-hour notification rule, core vendor concentration, and the same threat actors that target the largest financial institutions.
+    </p>
+  </div>
+</section>
+
+<!-- ========================================
+     SECTION 3a: INTERACTION MAP
+     ======================================== -->
+<section class="interaction-section">
+  <div class="container">
+    <h2 class="bank-section-heading">Three Policies. One Incident. Who Pays?</h2>
+    <p class="interaction-preamble">
+      The map below is an example I built from actual policy reviews. Carriers and policy forms vary. The pattern of who pays and who points the finger does not. Green means the policy responds at meaningful limits, yellow means it responds, but with conditions or caps, red means excluded or no coverage.
+    </p>
+
+    <div class="interaction-map-title">Policy Interaction Map</div>
+
+    <div class="interaction-map-wrap">
+      <table class="interaction-map">
+        <colgroup>
+          <col><col><col><col>
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Incident</th>
+            <th>Cyber Policy</th>
+            <th>Fidelity Bond</th>
+            <th>D&amp;O Policy</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="cell-incident">Ransomware</td>
+            <td class="cell-green">Covered</td>
+            <td class="cell-yellow">Extortion sublimited</td>
+            <td class="cell-grey" rowspan="3">Not applicable</td>
+          </tr>
+          <tr>
+            <td class="cell-incident">Wire fraud</td>
+            <td class="cell-yellow">Sublimited ($250K)</td>
+            <td class="cell-yellow">Sublimited with conditions</td>
+          </tr>
+          <tr>
+            <td class="cell-incident">Vendor breach</td>
+            <td class="cell-green">Covered</td>
+            <td class="cell-red">No coverage</td>
+          </tr>
+          <tr>
+            <td class="cell-incident">Data breach</td>
+            <td class="cell-green">Covered</td>
+            <td class="cell-red">No coverage</td>
+            <td class="cell-red">Excluded except investigative costs</td>
+          </tr>
+          <tr>
+            <td class="cell-incident">Board liability after a cyber event</td>
+            <td class="cell-red">Excluded</td>
+            <td class="cell-grey">Not applicable</td>
+            <td class="cell-red">Cyber exclusion</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="interaction-caption">These three policies were never designed to work together. Nobody checks whether they do.</p>
+  </div>
+</section>
+
+<!-- ========================================
+     SECTION 3b: THREE SCENARIOS
+     ======================================== -->
+<section class="scenarios-section">
+  <div class="container">
+    <h3 class="bank-section-heading">How These Gaps Show Up at Claim Time</h3>
+    <p class="scenarios-section__intro">Three real examples from policy reviews. Different banks, different carriers, same pattern.</p>
+    <div class="scenarios-grid">
+      <div class="scenario-card">
+        <div class="scenario-label">Wire Fraud</div>
+        <h3 class="scenario-title">A $400,000 wire goes out the door</h3>
+        <p class="scenario-body">
+          A lending officer wires $400,000 against a spoofed email. The cyber policy excludes social engineering. The fidelity bond's voluntary parting exclusion applies. The funds transfer endorsement carries a 50% co-payment.
+        </p>
+        <div class="scenario-verdict">Recoverable: $200,000 on a $400,000 loss.</div>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-label">Regulatory Investigation</div>
+        <h3 class="scenario-title">50,000 records, three proceedings, one gap</h3>
+        <p class="scenario-body">
+          A breach exposes 50,000 customer records. Three proceedings follow within 60 days. The D&amp;O policy excludes anything arising out of a cyber event. The cyber policy excludes D&amp;O-style claims. Directors face personal liability.
+        </p>
+        <div class="scenario-verdict">In every institution I have reviewed, some version of this gap exists.</div>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-label">Security Warranty Rescission</div>
+        <h3 class="scenario-title">Coverage rescinded after the breach</h3>
+        <p class="scenario-body">
+          The cyber application asks whether MFA is enforced on all remote access. The bank answers yes. A core banking vendor's admin portal does not. The carrier rescinds coverage on warranty grounds.
+        </p>
+        <div class="scenario-verdict">A gap in your controls is a gap in your coverage.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================
+     SECTION 4: WHAT AN INDEPENDENT AUDIT FINDS
+     ======================================== -->
+<section class="audit-section">
+  <div class="container">
+    <h2 class="bank-section-heading">What an Independent Audit Finds</h2>
+
+    <p class="audit-lede">
+      Reading those three policies together is the work I do. The deliverable is a Risk Intelligence Report, built for three audiences: your board, your examiner, and your broker.
+    </p>
+
+    <div class="audit-checklist">
+      <div class="audit-check">
+        <div class="audit-check__dot"></div>
+        <p>Which policy responds, which denies, and where the bank carries the loss</p>
+      </div>
+      <div class="audit-check">
+        <div class="audit-check__dot"></div>
+        <p>Exclusions, sublimits, and warranty conditions that block claims</p>
+      </div>
+      <div class="audit-check">
+        <div class="audit-check__dot"></div>
+        <p>Examiner-ready documentation with findings in dollar terms</p>
+      </div>
+    </div>
+
+    <p class="audit-close">
+      When an examiner asks whether the board reviewed the institution's insurance program, the report is what you put in front of them: a detailed analysis with a remediation plan, not a marketing summary from a broker.
+    </p>
+
+    <div class="audit-actions">
+      <a href="{{ '/risk-intelligence-report/' | relative_url }}" class="btn btn--bank">Learn more about the Risk Intelligence Report &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================
+     MINI BIO
+     ======================================== -->
+<section class="bank-bio">
+  <div class="container">
+    <div class="bank-bio__grid">
+      <img src="{{ '/assets/images/joerg-homepage.jpg' | relative_url }}" alt="Joerg Proeve, Independent Risk Advisor at Breezy Risk Advisors" class="bank-bio__photo">
+      <div>
+        <h3 class="bank-bio__name">Joerg Proeve</h3>
+        <p class="bank-bio__title">Independent Risk Advisor</p>
+        <p>I spent 20 years inside the insurance industry at carriers and insurtechs. Engineering background, cybersecurity early on. I do not sell insurance. I audit it.</p>
+        <a href="{{ '/about/' | relative_url }}" class="bank-bio__link">More about my background &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================
+     SECTION 5: FINAL CTA
+     ======================================== -->
+<section class="bank-final">
+  <div class="bank-final__inner">
+    <h2>Find Out Where Your Bank's Coverage Fails</h2>
+    <p>One week from documents to walkthrough. Independent. Fee-based. Examiner-ready.</p>
+    <div class="bank-final__actions">
+      <a href="{{ '/contact/' | relative_url }}" class="btn btn--bank">Get in Touch</a>
+    </div>
+  </div>
+</section>
+

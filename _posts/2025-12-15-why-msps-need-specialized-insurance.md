@@ -11,6 +11,9 @@ permalink: /msp-insurance/
 redirect_from:
   - /cybersecurity-consultant-insurance
   - /cybersecurity-consultant-insurance/
+archived: true
+sitemap: false
+noindex: true
 ---
 
 Most firms have $500,000 or more in coverage gaps, and don't know it.

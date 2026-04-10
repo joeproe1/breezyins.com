@@ -11,6 +11,9 @@ permalink: /insights/the-help-desk-coverage-gap-most-msps-miss/
 redirect_from:
   - /tech-eo-help-desk-gap
   - /tech-eo-help-desk-gap/
+archived: true
+sitemap: false
+noindex: true
 ---
 
 You're a **cybersecurity professional** running an **MSP or security consultancy**. You also run a help desk for your clients, password resets, software troubleshooting, user support. It's 20% of your revenue and keeps clients sticky.

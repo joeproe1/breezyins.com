@@ -11,6 +11,9 @@ permalink: /insights/your-tech-eo-policy-probably-excludes-the-services-you-actu
 redirect_from:
   - /tech-eo-policy-exclusions
   - /tech-eo-policy-exclusions/
+archived: true
+sitemap: false
+noindex: true
 ---
 
 If you're an MSP, there's a good chance your Tech Errors & Omissions (E&O) insurance doesn't actually cover some of your core revenue-generating services. I've seen it happen countless times: a claim gets filed, the insured reaches for their E&O policy, and discovers, too late, that penetration testing, vulnerability assessments, or managed security services are explicitly excluded.

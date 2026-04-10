@@ -11,6 +11,9 @@ permalink: /insights/msp-coverage-gaps/
 redirect_from:
   - /insurance-cybersecurity-consultants-coverage-gaps
   - /insurance-cybersecurity-consultants-coverage-gaps/
+archived: true
+sitemap: false
+noindex: true
 ---
 
 **Tech E&O insurance for MSPs** is fundamentally broken. You wouldn't let a client run their network without a firewall. You wouldn't skip penetration testing before a major launch. So why are you trusting your insurance broker when they say you're "fully covered"?

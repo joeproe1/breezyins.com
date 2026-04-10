@@ -11,6 +11,9 @@ permalink: /insights/how-a-penetration-testing-firm-avoided-a-350k-claim/
 redirect_from:
   - /penetration-testing-insurance-claim
   - /penetration-testing-insurance-claim/
+archived: true
+sitemap: false
+noindex: true
 ---
 
 **This is a real-world scenario about how proper Tech E&O coverage turned a $350,000 claim into a $25,000 deductible, and what most cybersecurity consultants miss.**

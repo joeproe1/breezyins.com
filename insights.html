@@ -59,9 +59,9 @@ permalink: /insights/
         </div>
 
         <div class="filter-tabs">
-            <button class="filter-tab active" data-filter="all">All</button>
+            <button class="filter-tab active" data-filter="banks">Community Banks</button>
             <button class="filter-tab" data-filter="msp">MSPs</button>
-            <button class="filter-tab" data-filter="banks">Community Banks</button>
+            <button class="filter-tab" data-filter="all">All</button>
         </div>
 
         <div class="blog-grid">
@@ -132,10 +132,12 @@ permalink: /insights/
     });
 
     // Apply filter from URL hash on page load (e.g. /insights/#community-banks)
-    var hashMap = { 'community-banks': 'banks', 'msps': 'msp' };
+    var hashMap = { 'community-banks': 'banks', 'msps': 'msp', 'all': 'all' };
     var hash = window.location.hash.replace('#', '');
     if (hashMap[hash]) {
         applyFilter(hashMap[hash]);
+    } else {
+        applyFilter('banks');
     }
 })();
 </script>

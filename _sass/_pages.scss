@@ -815,31 +815,27 @@
     background: $bg-light;
 }
 
-// Walkaway list (styled bullets)
+// Walkaway list (icon + text)
 .walkaway-list {
     list-style: none;
     padding: 0;
     margin: 28px 0;
 
     li {
-        position: relative;
-        padding-left: 28px;
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
         margin-bottom: 18px;
         font-size: 18px;
         line-height: 1.7;
         color: $text-secondary;
-
-        &::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 11px;
-            width: 8px;
-            height: 8px;
-            background: $accent;
-            border-radius: 50%;
-        }
     }
+}
+
+.walkaway-icon {
+    color: $accent;
+    flex-shrink: 0;
+    margin-top: 5px;
 }
 
 // About section (homepage)

@@ -128,6 +128,10 @@ permalink: /community-bank-insurance/
   border-radius: 12px;
   padding: 32px 28px;
 }
+.collision-card__icon {
+  color: var(--bank-mid);
+  margin-bottom: 12px;
+}
 .collision-card__label {
   font-family: 'JetBrains Mono', monospace;
   font-size: 11px;
@@ -349,23 +353,10 @@ permalink: /community-bank-insurance/
   border: 1px solid var(--border);
   border-left: 3px solid var(--bank-mid);
 }
-.audit-check__dot {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background: var(--bank-accent-bg);
+.audit-check__icon {
+  color: var(--bank-mid);
   flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-top: 2px;
-}
-.audit-check__dot::after {
-  content: '';
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--bank-mid);
 }
 .audit-check p {
   margin: 0;
@@ -527,6 +518,42 @@ permalink: /community-bank-insurance/
 }
 .bank-byline a:hover { text-decoration: underline; }
 
+/* ----- Scenario accordion (mobile) ----- */
+.scenario-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.scenario-toggle {
+  display: none;
+  font-size: 14px;
+  color: #c0311a;
+  transition: transform 0.3s;
+  flex-shrink: 0;
+  margin-top: 4px;
+  margin-left: 12px;
+}
+@media (max-width: 768px) {
+  .scenario-toggle { display: block; }
+  .scenario-card__header { cursor: pointer; }
+  .scenario-card__body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+  }
+  .scenario-card.is-open .scenario-card__body {
+    max-height: 400px;
+  }
+  .scenario-card.is-open .scenario-toggle {
+    transform: rotate(180deg);
+  }
+  /* Suppress hover lift on mobile accordion */
+  .scenarios-section .scenario-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
 /* ----- Hero responsive ----- */
 @media (max-width: 768px) {
   .bank-hero__hook { font-size: 19px; }
@@ -550,7 +577,7 @@ permalink: /community-bank-insurance/
     <p class="bank-hero__hook">94% of community bankers rate cybersecurity as their top risk. How many have actually read their cyber policy?</p>
     <p class="bank-hero__source">Source: CSBS 2025 Annual Survey</p>
     <p class="bank-hero__lede">
-      Most community banks and credit unions carry cyber insurance, a fidelity bond, and a directors and officers policy. Each one was written for a different problem by a different part of the insurance industry. Almost nobody reads them together. I do.
+      Community banks carry cyber insurance, a fidelity bond, and D&amp;O insurance. Each policy was written for a different problem by a different carrier. Almost nobody reads them together. I do.
     </p>
     <div class="bank-hero__actions">
       <a href="{{ '/risk-intelligence-report/' | relative_url }}" class="btn btn--bank">See What a Risk Intelligence Report Covers &rarr;</a>
@@ -563,23 +590,26 @@ permalink: /community-bank-insurance/
      ======================================== -->
 <section class="collision-section">
   <div class="container">
-    <h2 class="bank-section-heading">The Three-Way Collision</h2>
+    <h2 class="bank-section-heading">Where Coverage, Controls, and Compliance Collide</h2>
     <p class="collision-intro">
-      Every community bank and credit union manages cyber risk across three separate teams that almost never sit in the same room. Your broker handles coverage. Your IT team or CISO handles controls. Your compliance officer handles examinations. The broker does not know what controls IT actually runs. IT does not know what the policy requires. Compliance may not realize that a failed examination can trigger or void a claim.
+      Every community bank manages cyber risk across three separate teams that almost never sit in the same room. The broker does not know what controls IT runs. IT does not know what the policy requires. Compliance may not realize that a failed examination can trigger or void a claim.
     </p>
 
     <div class="collision-grid">
       <div class="collision-card">
+        <svg class="collision-card__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         <div class="collision-card__label">Coverage</div>
         <h3>Broker and Carrier</h3>
         <p>Renewal cycle. Policy language. Sublimits, exclusions, warranty conditions.</p>
       </div>
       <div class="collision-card">
+        <svg class="collision-card__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
         <div class="collision-card__label">Controls</div>
         <h3>IT or CISO</h3>
         <p>Daily operations. Technical safeguards. MFA, EDR, patching, backups.</p>
       </div>
       <div class="collision-card">
+        <svg class="collision-card__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/><path d="M9 14l2 2 4-4"/></svg>
         <div class="collision-card__label">Compliance</div>
         <h3>Compliance and Risk Officer</h3>
         <p>Examination cycle. Regulatory standards. FDIC, OCC, NCUA, or NYDFS depending on charter and state.</p>
@@ -599,10 +629,8 @@ permalink: /community-bank-insurance/
   <div class="container">
     <h2 class="bank-section-heading">Three Policies. But Who Pays?</h2>
     <p class="interaction-preamble">
-      The map below is an example I built from actual policy reviews. Carriers and policy forms vary. The pattern of who pays and who points the finger does not. Green means the policy responds at meaningful limits, yellow means it responds with conditions or caps, red means excluded or no coverage.
+      This Policy Interaction Map is from actual policy reviews. Carriers and forms vary. The pattern of who pays and who points the finger does not.
     </p>
-
-    <div class="interaction-map-title">Policy Interaction Map</div>
 
     <div class="interaction-map-wrap">
       <table class="interaction-map">
@@ -660,33 +688,54 @@ permalink: /community-bank-insurance/
 <section class="scenarios-section">
   <div class="container">
     <h3 class="bank-section-heading">How Coverage Gaps Show Up at Claim Time</h3>
-    <p class="scenarios-section__intro">Three examples from my policy reviews.</p>
+    <p class="scenarios-section__intro">Examples from my policy reviews.</p>
     <div class="scenarios-grid">
       <div class="scenario-card">
-        <div class="scenario-label">Wire Fraud</div>
-        <h3 class="scenario-title">A $400,000 wire goes out the door</h3>
-        <p class="scenario-body">
-          A lending officer wires $400,000 against a spoofed email. The cyber policy excludes social engineering. The fidelity bond's voluntary parting exclusion applies. The funds transfer endorsement carries a 50% co-payment.
-        </p>
-        <div class="scenario-verdict">Recoverable: $200,000 on a $400,000 loss.</div>
+        <div class="scenario-card__header">
+          <div>
+            <div class="scenario-label">Wire Fraud</div>
+            <h3 class="scenario-title">A $400,000 wire goes out the door</h3>
+          </div>
+          <span class="scenario-toggle" aria-hidden="true">&#9660;</span>
+        </div>
+        <div class="scenario-card__body">
+          <p class="scenario-body">
+            A lending officer wires $400K against a spoofed email. The cyber policy excludes social engineering. The fidelity bond carries a 50% co-payment.
+          </p>
+          <div class="scenario-verdict">Recoverable: $200K on a $400K loss.</div>
+        </div>
       </div>
 
       <div class="scenario-card">
-        <div class="scenario-label">Regulatory Investigation</div>
-        <h3 class="scenario-title">50,000 records, three proceedings, one gap</h3>
-        <p class="scenario-body">
-          A breach exposes 50,000 customer records. Three proceedings follow within 60 days. The D&amp;O policy excludes anything arising out of a cyber event. The cyber policy excludes D&amp;O-style claims. Directors face personal liability.
-        </p>
-        <div class="scenario-verdict">In every institution I have reviewed, some version of this gap exists.</div>
+        <div class="scenario-card__header">
+          <div>
+            <div class="scenario-label">Regulatory Investigation</div>
+            <h3 class="scenario-title">50,000 records, three proceedings, one gap</h3>
+          </div>
+          <span class="scenario-toggle" aria-hidden="true">&#9660;</span>
+        </div>
+        <div class="scenario-card__body">
+          <p class="scenario-body">
+            A breach triggers three regulatory proceedings. The D&amp;O excludes anything arising from a cyber event. The cyber policy excludes board defense costs. Directors face personal liability.
+          </p>
+          <div class="scenario-verdict">In every institution I have reviewed, some version of this gap exists.</div>
+        </div>
       </div>
 
       <div class="scenario-card">
-        <div class="scenario-label">Security Warranty Rescission</div>
-        <h3 class="scenario-title">Coverage rescinded after the breach</h3>
-        <p class="scenario-body">
-          The cyber application asks whether MFA is enforced on all remote access. The bank answers yes. A core banking vendor's admin portal does not. The carrier rescinds coverage on warranty grounds.
-        </p>
-        <div class="scenario-verdict">A gap in your controls is a gap in your coverage.</div>
+        <div class="scenario-card__header">
+          <div>
+            <div class="scenario-label">Security Warranty Rescission</div>
+            <h3 class="scenario-title">Coverage rescinded after the breach</h3>
+          </div>
+          <span class="scenario-toggle" aria-hidden="true">&#9660;</span>
+        </div>
+        <div class="scenario-card__body">
+          <p class="scenario-body">
+            The cyber application asks whether MFA is enforced on all remote access. A core banking vendor's admin portal does not support it. The carrier rescinds coverage on warranty grounds.
+          </p>
+          <div class="scenario-verdict">A gap in your controls is a gap in your coverage.</div>
+        </div>
       </div>
     </div>
   </div>
@@ -700,30 +749,30 @@ permalink: /community-bank-insurance/
     <h2 class="bank-section-heading">What My Independent Audit Finds</h2>
 
     <p class="audit-lede">
-      I read these three policies together, in detail. You will receive a Risk Intelligence Report serving three audiences: your board, your examiner, and your broker.
+      I read your cyber policy, fidelity bond, and D&amp;O together, in detail. The report serves three audiences: your board, your examiner, and your broker.
     </p>
 
     <div class="audit-checklist">
       <div class="audit-check">
-        <div class="audit-check__dot"></div>
+        <svg class="audit-check__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="7 8 3 12 7 16"/><polyline points="17 8 21 12 17 16"/><line x1="12" y1="3" x2="12" y2="21"/></svg>
         <p>Which policy responds, which denies, and where the bank carries the loss</p>
       </div>
       <div class="audit-check">
-        <div class="audit-check__dot"></div>
+        <svg class="audit-check__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
         <p>Exclusions, sublimits, and warranty conditions that block claims</p>
       </div>
       <div class="audit-check">
-        <div class="audit-check__dot"></div>
+        <svg class="audit-check__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
         <p>Vendor contracts that demand coverage your policies do not deliver</p>
       </div>
       <div class="audit-check">
-        <div class="audit-check__dot"></div>
+        <svg class="audit-check__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
         <p>Examiner-ready documentation with findings in dollar terms</p>
       </div>
     </div>
 
     <p class="audit-close">
-      When an examiner asks whether the board reviewed the insurance program, you can put this report in front of them: a detailed analysis with a clear, step by step remediation plan.
+      When an examiner asks whether the board reviewed the insurance program, you hand them this report: findings, dollar ranges, and a remediation plan.
     </p>
 
     <div class="audit-actions">
@@ -761,4 +810,32 @@ permalink: /community-bank-insurance/
     </div>
   </div>
 </section>
+
+<script>
+(function() {
+  var mq = window.matchMedia('(max-width: 768px)');
+  var cards = document.querySelectorAll('.scenarios-section .scenario-card');
+
+  function initAccordion() {
+    if (!mq.matches) {
+      cards.forEach(function(card) { card.classList.remove('is-open'); });
+      return;
+    }
+    if (cards.length) cards[0].classList.add('is-open');
+  }
+
+  cards.forEach(function(card) {
+    var header = card.querySelector('.scenario-card__header');
+    if (header) {
+      header.addEventListener('click', function() {
+        if (!mq.matches) return;
+        card.classList.toggle('is-open');
+      });
+    }
+  });
+
+  initAccordion();
+  mq.addListener(initAccordion);
+})();
+</script>
 

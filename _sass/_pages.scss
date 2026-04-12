@@ -674,6 +674,12 @@
     }
 }
 
+// Icon on problem cards
+.problem-card__icon {
+    color: #D97706;
+    margin-bottom: 8px;
+}
+
 // Trigger label on problem cards
 .trigger-label {
     font-family: $font-heading;

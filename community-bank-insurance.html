@@ -592,7 +592,7 @@ permalink: /community-bank-insurance/
   <div class="container">
     <h2 class="bank-section-heading">Where Coverage, Controls, and Compliance Collide</h2>
     <p class="collision-intro">
-      Every community bank manages cyber risk across three separate teams that almost never sit in the same room. The broker does not know what controls IT runs. IT does not know what the policy requires. Compliance may not realize that a failed examination can trigger or void a claim.
+      Three teams. Three priorities. They almost never sit in the same room.
     </p>
 
     <div class="collision-grid">
@@ -600,25 +600,48 @@ permalink: /community-bank-insurance/
         <svg class="collision-card__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         <div class="collision-card__label">Coverage</div>
         <h3>Broker and Carrier</h3>
-        <p>Renewal cycle. Policy language. Sublimits, exclusions, warranty conditions.</p>
+        <p>Policy language, exclusions, sublimits, warranties.</p>
       </div>
       <div class="collision-card">
         <svg class="collision-card__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
         <div class="collision-card__label">Controls</div>
         <h3>IT or CISO</h3>
-        <p>Daily operations. Technical safeguards. MFA, EDR, patching, backups.</p>
+        <p>MFA, EDR, patching, backups, vendor access.</p>
       </div>
       <div class="collision-card">
         <svg class="collision-card__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/><path d="M9 14l2 2 4-4"/></svg>
         <div class="collision-card__label">Compliance</div>
         <h3>Compliance and Risk Officer</h3>
-        <p>Examination cycle. Regulatory standards. FDIC, OCC, NCUA, or NYDFS depending on charter and state.</p>
+        <p>FDIC, OCC, NCUA exams and 36-hour reporting.</p>
       </div>
     </div>
 
     <p class="collision-close">
-      And community banks face this collision under unusual pressure: a 36-hour notification rule, core vendor concentration, and the same threat actors that target the largest financial institutions.
+      The result: gaps that only surface during a claim, an exam, or a board review.
     </p>
+  </div>
+</section>
+
+<!-- ========================================
+     POLICY OVERLAP DIAGRAM
+     ======================================== -->
+<section style="padding: 0 0 0; background: #fff;">
+  <div class="container" style="max-width: 680px; text-align: center;">
+    <svg viewBox="0 0 500 420" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:500px; margin: 0 auto; display:block;" aria-label="Venn diagram showing where Cyber, Fidelity Bond, and D&amp;O policies overlap and leave coverage gaps">
+      <!-- Three overlapping circles -->
+      <circle cx="200" cy="175" r="135" fill="#7eaee8" fill-opacity="0.15" stroke="#1a3a6b" stroke-width="2"/>
+      <circle cx="300" cy="175" r="135" fill="#D97706" fill-opacity="0.12" stroke="#D97706" stroke-width="2"/>
+      <circle cx="250" cy="280" r="135" fill="#0d1f3c" fill-opacity="0.10" stroke="#0d1f3c" stroke-width="2"/>
+
+      <!-- Policy labels (inside circles, away from edges) -->
+      <text x="135" y="130" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700" fill="#1a3a6b" text-anchor="middle" letter-spacing="0.05em">CYBER</text>
+      <text x="365" y="122" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700" fill="#D97706" text-anchor="middle" letter-spacing="0.05em">FIDELITY</text>
+      <text x="365" y="140" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700" fill="#D97706" text-anchor="middle" letter-spacing="0.05em">BOND</text>
+      <text x="250" y="370" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700" fill="#0d1f3c" text-anchor="middle" letter-spacing="0.05em">D&amp;O</text>
+
+      <!-- Center label -->
+      <text x="250" y="215" font-family="'JetBrains Mono', monospace" font-size="15" font-weight="700" fill="#B91C1C" text-anchor="middle" letter-spacing="0.05em">COVERAGE GAPS</text>
+    </svg>
   </div>
 </section>
 
@@ -694,13 +717,13 @@ permalink: /community-bank-insurance/
         <div class="scenario-card__header">
           <div>
             <div class="scenario-label">Wire Fraud</div>
-            <h3 class="scenario-title">A $400,000 wire goes out the door</h3>
+            <h3 class="scenario-title">$400K wire. Spoofed email.</h3>
           </div>
           <span class="scenario-toggle" aria-hidden="true">&#9660;</span>
         </div>
         <div class="scenario-card__body">
           <p class="scenario-body">
-            A lending officer wires $400K against a spoofed email. The cyber policy excludes social engineering. The fidelity bond carries a 50% co-payment.
+            Cyber excludes social engineering. Bond carries a 50% co-payment.
           </p>
           <div class="scenario-verdict">Recoverable: $200K on a $400K loss.</div>
         </div>
@@ -710,29 +733,29 @@ permalink: /community-bank-insurance/
         <div class="scenario-card__header">
           <div>
             <div class="scenario-label">Regulatory Investigation</div>
-            <h3 class="scenario-title">50,000 records, three proceedings, one gap</h3>
+            <h3 class="scenario-title">Breach triggers three proceedings.</h3>
           </div>
           <span class="scenario-toggle" aria-hidden="true">&#9660;</span>
         </div>
         <div class="scenario-card__body">
           <p class="scenario-body">
-            A breach triggers three regulatory proceedings. The D&amp;O excludes anything arising from a cyber event. The cyber policy excludes board defense costs. Directors face personal liability.
+            D&amp;O excludes cyber-related claims. Cyber excludes board defense. Directors face personal exposure.
           </p>
-          <div class="scenario-verdict">In every institution I have reviewed, some version of this gap exists.</div>
+          <div class="scenario-verdict">Some version of this gap exists in every institution I have reviewed.</div>
         </div>
       </div>
 
       <div class="scenario-card">
         <div class="scenario-card__header">
           <div>
-            <div class="scenario-label">Security Warranty Rescission</div>
-            <h3 class="scenario-title">Coverage rescinded after the breach</h3>
+            <div class="scenario-label">Security Warranty</div>
+            <h3 class="scenario-title">Policy requires MFA everywhere.</h3>
           </div>
           <span class="scenario-toggle" aria-hidden="true">&#9660;</span>
         </div>
         <div class="scenario-card__body">
           <p class="scenario-body">
-            The cyber application asks whether MFA is enforced on all remote access. A core banking vendor's admin portal does not support it. The carrier rescinds coverage on warranty grounds.
+            Your core vendor doesn't support it. Breach happens. Carrier rescinds coverage on warranty grounds.
           </p>
           <div class="scenario-verdict">A gap in your controls is a gap in your coverage.</div>
         </div>

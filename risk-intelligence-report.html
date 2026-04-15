@@ -124,7 +124,7 @@ permalink: /risk-intelligence-report/
   display:grid;
   grid-template-columns: 520px 1fr;
   gap: 46px;
-  align-items:start;
+  align-items:center;
 }
 .rir-mock{
   background:#fff;
@@ -136,8 +136,8 @@ permalink: /risk-intelligence-report/
 }
 .rir-badge{
   position:absolute;
-  top:70px;
-  left:16px;
+  top:32px;
+  right:16px;
   background: #00D4AA;
   color: rgba(255,255,255,.85);
   padding:6px 12px;
@@ -236,7 +236,7 @@ permalink: /risk-intelligence-report/
   letter-spacing:.12em;
 }
 .rir-what{
-  padding-top: 48px;
+  padding-top: 0;
 }
 .rir-what h3{
   font-family: var(--font-mono);
@@ -609,7 +609,7 @@ permalink: /risk-intelligence-report/
     <div style="font-family:var(--font-mono);font-size:13px;font-weight:600;letter-spacing:.10em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:24px;display:inline-block;padding:12px 20px;background:rgba(0,212,170,0.08);border:1px solid rgba(0,212,170,0.22);border-radius:12px;">Risk Intelligence Report</div>
     <h1>Know Where You Stand</h1>
     <p class="rir-subhead">
-      Your business changed. Your policies did not. The Risk Intelligence Report reads the fine print and tells you where coverage holds, where it fails, and what to prioritize.
+      The threats changed. Your policies did not. The Risk Intelligence Report reads the fine print and tells you where coverage holds, where it fails, and what to prioritize.
     </p>
   </div>
 </section>
@@ -623,12 +623,12 @@ permalink: /risk-intelligence-report/
 
     <div class="rir-learn-list">
       <div class="rir-learn-item">
-        <strong>Where your contracts outrun your coverage</strong>
-        <p>Client agreements promise protections your policies exclude. The report cross-references your MSAs against actual policy language, clause by clause, so you see what holds and what does not.</p>
-      </div>
-      <div class="rir-learn-item">
         <strong>Where two carriers will both say no</strong>
         <p>When multiple policies cover the same incident, each carrier can point at the other and decline. Cyber and Tech E&amp;O for managed service providers. Cyber, fidelity bond, and D&amp;O for banks. The report maps which policy responds to which scenario, so there are no surprises at the worst possible time.</p>
+      </div>
+      <div class="rir-learn-item">
+        <strong>Where your contracts outrun your coverage</strong>
+        <p>Client agreements promise protections your policies exclude. The report cross-references your MSAs against actual policy language, clause by clause, so you see what holds and what does not.</p>
       </div>
       <div class="rir-learn-item">
         <strong>What to fix and what it costs</strong>
@@ -643,7 +643,7 @@ permalink: /risk-intelligence-report/
   <div class="container rir-wrap">
     <div class="rir-center">
       <h2>What the Report Covers</h2>
-      <p>The Risk Intelligence Report covers seven areas: cyber liability, fidelity bond, directors and officers (D&amp;O), policy interaction analysis, vendor coverage alignment, regulatory response readiness, and security warranty compliance.</p>
+      <p>The Risk Intelligence Report covers seven areas.</p>
     </div>
 
     <div class="rir-learn-list">
@@ -684,35 +684,10 @@ permalink: /risk-intelligence-report/
   <div class="container rir-wrap">
     <div class="rir-grid">
 
-      <!-- Sample mock -->
-      <div class="rir-mock" aria-label="Sample Risk Intelligence Report">
+      <!-- Policy Interaction Map sample -->
+      <div class="rir-mock" aria-label="Sample Policy Interaction Map from a Risk Intelligence Report">
         <div class="rir-badge">SAMPLE</div>
-
-        <div class="rir-mock-header">
-          <div class="rir-mock-header-top">
-            <div class="rir-mock-logo">BREEZY<span>.risk</span></div>
-            <div class="rir-mock-firm">Your Firm Name</div>
-          </div>
-          <p class="rir-mock-title">Risk Intelligence Report</p>
-        </div>
-
-        <div class="rir-mock-body">
-          <div class="rir-mock-block">
-            <div class="rir-mock-label">Executive summary</div>
-            <div class="rir-mock-kpi">Total Uninsured Exposure: $1.2M – $1.8M</div>
-            <div class="rir-mock-kpi" style="margin-top:8px;">Forensic Risk Scorecard: 38 / 100</div>
-            <div class="rir-mock-kpi" style="margin-top:8px;">Gaps Identified: 14 (7 Critical, 6 High)</div>
-          </div>
-
-          <div class="rir-mock-list">
-            <div class="rir-mock-item">Policy Deep Dives</div>
-            <div class="rir-mock-item">Policy Interaction Map</div>
-            <div class="rir-mock-item">Vendor &amp; Compliance Analysis</div>
-            <div class="rir-mock-item">Implementation Roadmap</div>
-          </div>
-        </div>
-
-        <div class="rir-mock-footer">CONFIDENTIAL</div>
+        <img src="{{ '/assets/images/Policy-Interaction-Map.png' | relative_url }}" alt="Policy Interaction Map showing how cyber, fidelity bond, and D&O policies respond to five common incidents: ransomware, wire fraud, vendor outage, data breach, and board liability" style="width:100%;display:block;" loading="lazy">
       </div>
 
       <!-- What you get -->
@@ -726,54 +701,12 @@ permalink: /risk-intelligence-report/
 
         <div class="rir-item">
           <strong>Policy Interaction Map</strong>
-          <p>When a claim hits, which policy responds? Maps coverage to specific incident types so no one can point at someone else.</p>
+          <p>Five incidents, three policies. The map on the left shows which policy responds to each scenario and where carriers will point at each other.</p>
         </div>
 
         <div class="rir-item">
           <strong>Implementation Roadmap</strong>
           <p>Prioritized fixes with cost estimates. What to change, what it costs, and what to ask your broker.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- WHO IT'S FOR -->
-<section class="rir-section">
-  <div class="container rir-wrap">
-    <div class="rir-center">
-      <h2>Who Needs It</h2>
-    </div>
-
-    <div class="rir-verticals">
-
-      <div class="rir-vertical-card rir-vertical-card--bank">
-        <div class="rir-vertical-header rir-vertical-header--bank">Community Banks &amp; Credit Unions</div>
-        <div class="rir-vertical-body">
-          <div class="rir-vertical-label">When you need it</div>
-          <ul class="rir-vertical-list">
-            <li>Board-level cyber risk reporting</li>
-            <li>Examiner questions about coverage adequacy</li>
-            <li>Vendor risk and third-party coverage gaps</li>
-          </ul>
-          <div class="rir-vertical-label" style="margin-top:20px;">What the report covers</div>
-          <p class="rir-vertical-covers">Seven areas: cyber liability, fidelity bond, D&amp;O, policy interaction analysis, vendor coverage alignment, regulatory response readiness, and security warranty compliance.</p>
-          <a href="{{ '/community-bank-insurance/' | relative_url }}" class="rir-vertical-link rir-vertical-link--bank">Learn more &rarr;</a>
-        </div>
-      </div>
-
-      <div class="rir-vertical-card rir-vertical-card--msp">
-        <div class="rir-vertical-header rir-vertical-header--msp">Managed Service Providers</div>
-        <div class="rir-vertical-body">
-          <div class="rir-vertical-label">When you need it</div>
-          <ul class="rir-vertical-list">
-            <li>Enterprise contracts with coverage requirements</li>
-            <li>Growth through acquisition or new service lines</li>
-            <li>Client security audits and compliance reviews</li>
-          </ul>
-          <div class="rir-vertical-label" style="margin-top:20px;">What the report covers</div>
-          <p class="rir-vertical-covers">Tech E&amp;O + Cyber + MSA compliance</p>
         </div>
       </div>
 
@@ -797,7 +730,7 @@ permalink: /risk-intelligence-report/
       <div class="rir-step-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
       <div class="rir-step">
         <strong>2. Send your documents</strong>
-        <p>Policies and contracts. Vendor agreements for banks, client MSAs for MSPs.<br>I read each one against real incident scenarios.</p>
+        <p>Policies and vendor agreements. I read each one against real incident scenarios.</p>
       </div>
       <div class="rir-step-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
       <div class="rir-step">

@@ -16,31 +16,37 @@ That is the problem. When a cyber incident hits, it does not stay inside the bou
 
 The policy interaction map below shows how this plays out, row by row.
 
-<img src="{{ '/assets/images/Policy-Interaction-Map.png' | relative_url }}" alt="Policy Interaction Map: five incidents mapped against cyber, fidelity bond, and D&O policies showing coverage gaps" style="width:100%;border-radius:10px;margin:24px 0 8px;border:1px solid #e2e8f0;" loading="lazy">
+<p style="font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#64748b;margin:24px 0 8px 0;">Policy Interaction Map</p>
+<div style="position:relative;margin:0 0 8px;">
+<div style="position:absolute;top:52px;right:16px;background:#00D4AA;color:rgba(255,255,255,.85);padding:6px 12px;border-radius:999px;font-size:12px;font-weight:800;letter-spacing:.08em;z-index:1;">SAMPLE</div>
+<img src="{{ '/assets/images/Policy-Interaction-Map.png' | relative_url }}" alt="Policy Interaction Map: five incidents mapped against cyber, fidelity bond, and D&O policies showing coverage gaps" style="width:100%;border-radius:10px;border:1px solid #e2e8f0;display:block;" loading="lazy">
+</div>
 
-## Wire Transfer Fraud
+## Row by Row: How Policies Respond to Cyber Incidents
 
-Wire transfer fraud may be the most common and most expensive cyber-related loss at community banks. The cyber policy often excludes it unless social engineering coverage was purchased as an add-on, or sublimits it well below the policy's headline limit. The fidelity bond often covers wire fraud, but with strict conditions: a co-payment, a sublimit, or a verification step the bank may not have documented. The D&O does not respond directly. The result: the bank's largest realistic loss is often the one with the weakest coverage. I wrote a [detailed walkthrough of how this plays out]({{ '/insights/the-wire-nobody-covers/' | relative_url }}) in a separate post.
+### Wire Fraud
 
-## Ransomware
+Wire transfer fraud may be the most common and most expensive cyber-related loss at community banks. However, the cyber policy often excludes it unless social engineering coverage was purchased as an add-on, or sublimits it well below the policy's headline limit. The fidelity bond often covers wire fraud, but with strict conditions: a co-payment, a sublimit, or a verification step the bank may not have documented. The D&O does not respond directly. The result: the bank's largest realistic loss is often the one with the weakest coverage. I wrote a [detailed walkthrough of how this plays out]({{ '/insights/the-wire-nobody-covers/' | relative_url }}) in a separate post.
 
-The cyber policy covers this. That is the straightforward one. The fidelity bond may also respond, but typically with a sublimit on the extortion or computer fraud clause. The real question is whether the ransom payment and the business interruption loss both fall under the cyber limit, or whether the bond picks up part of it. If nobody has mapped this in advance, the bank finds out during the claim.
+### Ransomware
 
-## Vendor Outage
+Most cyber policies cover this. That is the straightforward one. The fidelity bond may also respond, but typically with a sublimit on the extortion or computer fraud clause. The real question is whether the ransom payment and the business interruption loss both fall under the cyber limit, or whether the bond picks up part of it. If nobody has mapped this in advance, the bank finds out during the claim.
 
-When a critical vendor goes down and the bank cannot operate, the cyber policy may cover the business interruption, but only if the vendor qualifies under the policy's definition. Many cyber policies limit dependent business interruption to IT vendors and exclude non-IT service providers. The fidelity bond does not cover this. The D&O does not cover this. If the bank's core processor or cloud provider is not listed, the loss is uninsured.
+### Vendor Outage
 
-## Data Breach and Regulatory Investigation
+When a critical vendor (e.g. FIS, Fiserv, Jack Henry) goes down and the bank cannot operate, the cyber policy may cover the business interruption, but only if the vendor qualifies under the policy's definition. Many cyber policies limit dependent business interruption to IT vendors and exclude non-IT service providers. The fidelity bond does not cover this. The D&O does not cover this. If the bank's core processor or cloud provider is not listed, the loss is uninsured.
+
+### Data Breach and Regulatory Investigation
 
 A data breach triggers the cyber policy for breach response costs: forensics, notification, credit monitoring. That part usually works. The gap shows up on the regulatory side. When state regulators or the OCC opens an investigation, defense costs can run into six figures. The cyber policy may cover some of it, but investigation defense often falls under the D&O. If the D&O carries a cyber exclusion, which many do, the bank has no coverage for the investigation that follows the breach. Two policies, and neither one covers the regulatory response cleanly.
 
-## Board Liability After a Breach
+### Board Liability After a Breach
 
 After a significant cyber event, the question shifts from "what happened" to "who is responsible." Shareholder derivative claims, regulatory enforcement actions, and examiner scrutiny all land on the board. The cyber policy does not cover board liability. The D&O should, but many D&O policies now carry broad cyber exclusions that carve out any claim "arising from" a data breach or cyber event. If the D&O excludes cyber-related claims, the board has no coverage for the fallout from the very incident the cyber policy was supposed to handle.
 
-## The Pattern
+## What the Map Tells You
 
-Look at the map as a whole. The rows with the most red are the ones where coverage breaks down: wire transfer fraud, regulatory investigations, board liability after a breach. These are not outliers. They are the incidents that land on a community bank CFO's desk.
+Look at the policy interaction map as a whole. The rows with the most red are the ones where coverage breaks down: wire transfer fraud, regulatory investigations, board liability after a breach. These are not outliers. They are the incidents that land on a community bank CFO's desk.
 
 Most banks that carry all three policies assume they are covered. But nobody has read the policies together and asked: for this specific incident, which carrier pays? Until someone does that work, each carrier has a reason to say no, and the bank holds the loss.
 

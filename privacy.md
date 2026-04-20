@@ -70,7 +70,7 @@ We may update this policy to reflect changes in our practices or legal requireme
 
 If you have questions about how we handle your data, please contact us at:
 
-**Email:** contact@breezyins.com
+**Email:** contact@breezyrisk.com
 **Address:** Breezy Risk Advisors, Lancaster, PA
 
 </section>

@@ -591,6 +591,26 @@
     border-radius: 12px;
 }
 
+.hero-tagline {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 20px 0 0;
+    color: #2c3e50;
+}
+
+.hero-subtext {
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 20px 0 0;
+    color: $text-secondary;
+    max-width: 780px;
+}
+
+.hero-cta {
+    margin-top: 28px;
+}
+
 .hero-subheadline {
     font-size: 1.4rem;
     font-weight: 600;

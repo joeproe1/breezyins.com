@@ -95,79 +95,7 @@ permalink: /community-bank-insurance/
   align-items: center;
 }
 
-/* ----- Section 2: Three-Way Collision ----- */
-.collision-section {
-  padding: 80px 0;
-  background: #fff;
-  border-bottom: 1px solid var(--border);
-}
-.collision-section .container { max-width: 1080px; }
-.collision-intro {
-  max-width: 880px;
-  margin: 0 auto 48px;
-  font-size: 18px;
-  line-height: 1.7;
-  color: var(--text-secondary);
-  text-align: center;
-}
-.collision-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin-bottom: 40px;
-}
-.collision-card {
-  background: var(--bg-light);
-  border: 1px solid var(--border);
-  border-top: 4px solid var(--bank-mid);
-  border-radius: 12px;
-  padding: 32px 28px;
-}
-.collision-card__icon {
-  color: var(--bank-mid);
-  margin-bottom: 12px;
-}
-.collision-card__label {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--bank-mid);
-  margin-bottom: 14px;
-}
-.collision-card h3 {
-  font-size: 22px;
-  font-weight: 700;
-  color: #0A2540;
-  margin: 0 0 12px;
-}
-.collision-card p {
-  font-size: 15px;
-  line-height: 1.6;
-  color: var(--text-secondary);
-  margin: 0;
-}
-.collision-tagline {
-  text-align: center;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  color: var(--bank-mid);
-  margin: 32px 0;
-}
-.collision-close {
-  max-width: 880px;
-  margin: 32px auto 0;
-  font-size: 17px;
-  line-height: 1.7;
-  color: var(--text-secondary);
-  text-align: center;
-}
-@media (max-width: 768px) {
-  .collision-grid { grid-template-columns: 1fr; }
-}
+/* ----- Collision section removed (Apr 21) — content compressed into interaction map intro ----- */
 
 /* ----- Section 3a: Interaction Map ----- */
 .interaction-section {
@@ -580,54 +508,17 @@ permalink: /community-bank-insurance/
 </section>
 
 <!-- ========================================
-     SECTION 2: THREE-WAY COLLISION
-     ======================================== -->
-<section class="collision-section">
-  <div class="container">
-    <h2 class="bank-section-heading">Where Coverage, Controls, and Compliance Collide</h2>
-    <p class="collision-intro">
-      Three teams. Three priorities. They rarely sit in the same room.
-    </p>
-
-    <div class="collision-grid">
-      <div class="collision-card">
-        <svg class="collision-card__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        <div class="collision-card__label">Coverage</div>
-        <h3>Broker and Carrier</h3>
-        <p>Policy language, exclusions, sublimits, warranties.</p>
-      </div>
-      <div class="collision-card">
-        <svg class="collision-card__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-        <div class="collision-card__label">Controls</div>
-        <h3>IT or CISO</h3>
-        <p>MFA, EDR, patching, backups, vendor access.</p>
-      </div>
-      <div class="collision-card">
-        <svg class="collision-card__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/><path d="M9 14l2 2 4-4"/></svg>
-        <div class="collision-card__label">Compliance</div>
-        <h3>Compliance and Risk Officer</h3>
-        <p>FDIC, OCC, NCUA exams and 36-hour reporting.</p>
-      </div>
-    </div>
-
-    <p class="collision-close">
-      The result: gaps that only surface during a claim, an exam, or a board review.
-    </p>
-    <p class="collision-close" style="font-size:15px; font-style:italic; margin-top:16px; color:var(--text-secondary);">
-      94% of community bankers rate cybersecurity as their top risk. How many have read the policies that respond to it?
-      <span style="display:block; font-size:13px; margin-top:4px; color:var(--bank-gap-dim);">Source: CSBS 2025 Annual Survey</span>
-    </p>
-  </div>
-</section>
-
-<!-- ========================================
-     SECTION 3a: INTERACTION MAP
+     SECTION 2: INTERACTION MAP
      ======================================== -->
 <section class="interaction-section">
   <div class="container">
     <h2 class="bank-section-heading">Three Policies, But Who Pays?</h2>
     <p class="interaction-preamble">
-      This Policy Interaction Map is from actual policy reviews. Carriers and forms vary. The pattern of who pays and who points the finger does not.
+      Coverage is the broker's job. Controls are IT's job. Compliance is the risk officer's job. Nobody reads all three policies together. This map is from actual policy reviews. Carriers and forms vary. The pattern does not.
+    </p>
+    <p class="interaction-preamble" style="font-size:15px; font-style:italic; margin-top:0; color:var(--text-secondary);">
+      94% of community bankers rate cybersecurity as their top risk. How many have read the policies that respond to it?
+      <span style="display:block; font-size:13px; margin-top:4px; color:var(--bank-gap-dim);">Source: CSBS 2025 Annual Survey</span>
     </p>
 
     <p class="interaction-map-title">Policy Interaction Map — Sample Community Bank</p>
@@ -678,6 +569,10 @@ permalink: /community-bank-insurance/
     </div>
 
     <p class="interaction-caption">These three policies were never designed to work together, leaving unintentional gaps.</p>
+
+    <div style="text-align:center; margin-top:28px;">
+      <a href="{{ '/contact/' | relative_url }}" class="bank-bio__link" style="font-size:17px;">Get in Touch &rarr;</a>
+    </div>
   </div>
 </section>
 
@@ -748,7 +643,7 @@ permalink: /community-bank-insurance/
     <h2 class="bank-section-heading">What My Independent Audit Finds</h2>
 
     <p class="audit-lede">
-      The Risk Intelligence Report covers seven areas: cyber liability, fidelity bond, directors and officers (D&amp;O), policy interaction analysis, vendor coverage alignment, regulatory response readiness, and security warranty compliance. Written in plain English for you, your board, and your examiner.
+      Written in plain English for you, your board, and your examiner.
     </p>
 
     <div class="audit-checklist">

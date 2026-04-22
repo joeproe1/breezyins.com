@@ -13,6 +13,9 @@ redirect_from:
   - /msp-insurance-audit/
   - /insurance-audit-growing-msps
   - /insurance-audit-growing-msps/
+archived: true
+sitemap: false
+noindex: true
 ---
 
 Your managed service provider (MSP) looked different two years ago. Maybe you were a break-fix shop that added managed security services. Maybe you acquired a smaller firm and inherited their client contracts. Maybe you landed your first enterprise deal and signed an MSA with indemnification language you'd never seen before. <strong>Your insurance policy doesn't know any of that happened.</strong>

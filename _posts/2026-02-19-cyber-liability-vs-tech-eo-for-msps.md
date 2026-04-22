@@ -11,6 +11,9 @@ permalink: /insights/cyber-liability-vs-tech-eo-for-msps/
 redirect_from:
   - /cyber-vs-eo
   - /cyber-vs-eo/
+archived: true
+sitemap: false
+noindex: true
 ---
 
 You carry both cyber liability and Tech E&O insurance. Your broker told you that's what you need, and your broker was right. But here's the question nobody asks until a claim gets denied: do these two policies provide the protection I need?

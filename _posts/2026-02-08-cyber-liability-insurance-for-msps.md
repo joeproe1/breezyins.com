@@ -11,6 +11,9 @@ permalink: /insights/cyber-liability-insurance-for-msps/
 redirect_from:
   - /cyber-liability-msp
   - /cyber-liability-msp/
+archived: true
+sitemap: false
+noindex: true
 ---
 
 You have a cyber liability policy. You pay the premium every year. Your broker tells you it covers "cyber incidents."

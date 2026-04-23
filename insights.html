@@ -64,9 +64,6 @@ permalink: /insights/
                 <div class="post-card-accent post-card-accent--{{ post.category | slugify }}"></div>
                 {% endif %}
                 <div class="post-card-body">
-                    {% if post.category %}
-                    <div class="post-category">{{ post.category }}</div>
-                    {% endif %}
                     <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
                     <p class="post-excerpt">{{ post.description | default: post.excerpt | strip_html | truncate: 160 }}</p>
                     <div class="post-meta">

@@ -89,24 +89,24 @@ Without it, one inaccurate answer on a 15-page application can nullify $5 millio
 
 In the bank cyber policies I have reviewed to date, none included a no-rescission clause. Some carriers offer it as standard on their commercial forms. It is worth asking for at renewal.
 
-## The Fix
+## What to Do Before Your Next Renewal
 
 <div style="background: #f8faf9; border-radius: 10px; padding: 28px 32px; margin: 24px 0;">
 <div style="display: flex; gap: 16px; margin-bottom: 20px;">
 <div style="min-width: 32px; height: 32px; background: #00D4AA; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #0A2540; font-size: 16px;">1</div>
-<div><strong>Audit every answer on your current cyber application.</strong> Pull the application your bank submitted. Compare every "yes" to your current IT environment. Not what you planned to have. What you have today. If anything has changed, disclose it to the carrier in writing now.</div>
+<div><strong>Pull your cyber application.</strong> Compare every "yes" to what your IT environment looks like today. If anything changed, disclose it to the carrier in writing.</div>
 </div>
 <div style="display: flex; gap: 16px; margin-bottom: 20px;">
 <div style="min-width: 32px; height: 32px; background: #00D4AA; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #0A2540; font-size: 16px;">2</div>
-<div><strong>Ask your broker about a no-rescission clause.</strong> If the policy does not include one, request it at renewal. If the carrier refuses, that tells you something about how they plan to handle claims.</div>
+<div><strong>Ask for a no-rescission clause.</strong> If the carrier refuses, that tells you how they plan to handle claims.</div>
 </div>
 <div style="display: flex; gap: 16px; margin-bottom: 20px;">
 <div style="min-width: 32px; height: 32px; background: #00D4AA; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #0A2540; font-size: 16px;">3</div>
-<div><strong>Cross-check your application against your IT audit.</strong> Your IT auditor and your insurance application ask similar questions with different standards. Where they disagree, you have a gap to close before a claim exposes it.</div>
+<div><strong>Cross-check the application against your IT audit.</strong> They ask similar questions with different standards. Where they disagree, close the gap before a claim exposes it.</div>
 </div>
 <div style="display: flex; gap: 16px;">
 <div style="min-width: 32px; height: 32px; background: #00D4AA; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #0A2540; font-size: 16px;">4</div>
-<div><strong>Watch for vendor-managed controls that change without notice.</strong> If your core banking vendor or SOC provider changes a control that your application warranted, you may have an inadvertent misrepresentation. Build a notification requirement into your vendor agreements.</div>
+<div><strong>Watch for vendor changes.</strong> If a vendor changes a control your application warranted, you have an inadvertent misrepresentation. Build a notification requirement into your vendor agreements.</div>
 </div>
 </div>
 

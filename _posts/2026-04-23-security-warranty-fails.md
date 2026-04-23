@@ -44,7 +44,7 @@ A **denial** means the carrier says this particular loss is not covered. An excl
 
 **Rescission** is different. The carrier voids the policy from inception. It is treated as if the policy never existed. The carrier returns the premium and walks away from everything: not just this claim, but any claim under that policy period.
 
-Rescission requires a material misrepresentation in the application. The carrier does not need to prove the bank lied. An honest mistake, a control that lapsed after submission, a vendor-managed system that changed without the bank's knowledge, any of these can be enough. In *Columbia Casualty v. Cottage Health* ([C.D. Cal., 2015](https://www.insideprivacy.com/data-security/cybersecurity/cyber-insurer-seeks-to-void-data-breach-coverage-because-of-purported-misstatements-in-policy-application/)), the carrier sought to void coverage after the insured misrepresented its security controls on a self-assessment that was part of the application.
+Rescission requires a material misrepresentation in the application. The carrier does not need to prove the bank lied. An honest mistake, a control that lapsed after submission, a vendor-managed system that changed without the bank's knowledge, any of these can be enough.
 
 <div style="background: #0A2540; border-radius: 12px; padding: 32px; margin: 32px 0; color: #fff;">
 <h3 style="color: #00D4AA; margin-top: 0; font-size: 18px;">What Carriers Typically Ask About</h3>

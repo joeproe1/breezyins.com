@@ -24,35 +24,38 @@ permalink: /privacy/
 
 # Privacy Policy
 
-<span class="effective-date">Effective Date: January 9, 2026</span>
+<span class="effective-date">Effective Date: April 23, 2026</span>
 
-At Breezy Risk Advisors, we take the confidentiality of your business information seriously. This Privacy Policy describes how we collect, use, and protect the information you share with us as we provide specialized risk advisory for cybersecurity firms and managed service providers.
+Breezy Risk Advisors is an independent risk advisory firm. We do not sell, place, or broker insurance. This Privacy Policy describes how we collect, use, and protect the information you share with us during the course of an insurance audit engagement.
 
 ## 1. Information We Collect
 
-To provide accurate coverage gap analysis and contract compliance reviews, we collect professional and commercial data, including:
+To conduct insurance audits and produce Risk Intelligence Reports, we collect professional and commercial data, including:
 
-- **Contact Information:** Name, email, and phone number.
-- **Company Data:** Tax IDs, financial statements, and payroll information.
-- **Risk Documentation:** Existing insurance policies (including Tech E&O and Cyber Insurance), claims history, and Master Service Agreements (MSAs).
-- **Sensitive Information:** We may collect proprietary details regarding your technology stack, intellectual property, and operational workflows to quantify your exact exposure in dollars.
+- **Contact Information:** Name, email, phone number, and job title.
+- **Insurance Documentation:** Existing insurance policies (cyber, fidelity bond, D&O, and related coverages), declarations pages, endorsements, and claims history.
+- **Operational Information:** Vendor agreements, third-party contracts, and details about your operations relevant to coverage analysis.
+- **Financial Context:** Revenue figures, asset size, or other financial data necessary to evaluate policy limits and coverage adequacy.
 
 ## 2. How We Use Your Information
 
 We use the data provided exclusively to:
 
-- Analyze your company's risk exposure and identify gaps in penetration testing or client breach coverage.
-- Negotiate insurance terms with third-party underwriters and carriers.
-- Provide ongoing risk management consulting and Risk Intelligence Reports.
-- Communicate updates regarding your coverage or industry-specific risks.
+- Analyze your insurance program and identify gaps between your policies and your actual risk exposure.
+- Produce Risk Intelligence Reports, including policy interaction analysis and coverage recommendations.
+- Communicate findings and follow-up information related to your engagement.
 
-## 3. Data Confidentiality & Sharing
+We do not use your information to solicit insurance quotes, negotiate with carriers, or place coverage on your behalf. Breezy is not a broker and does not act as an intermediary between you and insurance carriers.
 
-We do not sell your data. Because we act as an intermediary, your information is shared only with:
+## 3. Data Confidentiality and Sharing
 
-- **Insurance Carriers:** To obtain quotes and bind coverage.
+We do not sell your data. Your information is shared only with:
+
+- **Channel Partners:** If your engagement was referred by a compliance consultant or CPA firm, we may share report deliverables with that referring partner as part of the agreed engagement scope.
 - **Regulatory Bodies:** When required by law or licensing standards.
-- **Service Providers:** Secure platforms used for document storage or policy management.
+- **Service Providers:** Secure platforms used for document storage, communication, or report delivery.
+
+We do not share your policy documents, coverage details, or financial information with insurance carriers, brokers, or any third party for the purpose of soliciting quotes or placing coverage.
 
 ## 4. Data Security
 
@@ -60,7 +63,7 @@ We implement industry-standard technical and organizational measures to protect 
 
 ## 5. Your Rights and Choices
 
-You may request to review, update, or delete your professional information at any time. However, please note that certain data must be retained for legal and compliance purposes as dictated by insurance regulations.
+You may request to review, update, or delete your information at any time. Certain data may need to be retained for legal and compliance purposes as required by insurance regulations.
 
 ## 6. Changes to This Policy
 
@@ -70,7 +73,7 @@ We may update this policy to reflect changes in our practices or legal requireme
 
 If you have questions about how we handle your data, please contact us at:
 
-**Email:** contact@breezyrisk.com
+**Email:** joerg@breezyrisk.com
 **Address:** Breezy Risk Advisors, Lancaster, PA
 
 </section>

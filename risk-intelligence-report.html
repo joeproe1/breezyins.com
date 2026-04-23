@@ -35,7 +35,7 @@ permalink: /risk-intelligence-report/
   },
   "audience": {
     "@type": "Audience",
-    "audienceType": "Community Banks, Credit Unions, Managed Service Providers"
+    "audienceType": "Community Banks and Credit Unions"
   },
   "url": "https://breezyrisk.com/risk-intelligence-report/"
 }
@@ -265,29 +265,36 @@ permalink: /risk-intelligence-report/
   font-size: 16px;
 }
 
-/* What You Will Learn items */
-.rir-learn-list{
-  max-width: 880px;
+/* Report coverage grid (title left, description right) */
+.rir-coverage-grid{
+  max-width: 920px;
   margin: 0 auto;
-  display: grid;
-  gap: 0;
 }
-.rir-learn-item{
-  padding: 24px 0;
+.rir-coverage-row{
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 24px;
+  align-items: baseline;
+  padding: 18px 0;
   border-bottom: 1px solid var(--border);
 }
-.rir-learn-item:last-child{ border-bottom: none; }
-.rir-learn-item strong{
-  display: block;
+.rir-coverage-row:last-child{ border-bottom: none; }
+.rir-coverage-row strong{
   color: var(--primary);
-  font-size: 19px;
-  margin-bottom: 8px;
+  font-size: 17px;
+  white-space: nowrap;
 }
-.rir-learn-item p{
+.rir-coverage-row p{
   margin: 0;
   color: var(--text-secondary);
-  font-size: 16px;
-  line-height: 1.75;
+  font-size: 15px;
+  line-height: 1.7;
+}
+@media(max-width: 580px){
+  .rir-coverage-row{
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
 }
 
 .rir-steps{
@@ -520,34 +527,34 @@ permalink: /risk-intelligence-report/
       <p>The Risk Intelligence Report covers seven areas.</p>
     </div>
 
-    <div class="rir-learn-list">
-      <div class="rir-learn-item">
-        <strong>Cyber Liability Analysis</strong>
-        <p>Line-by-line review of your cyber policy against real incident scenarios: ransomware, data breach, funds transfer fraud, and regulatory proceedings.</p>
+    <div class="rir-coverage-grid">
+      <div class="rir-coverage-row">
+        <strong>Cyber</strong>
+        <p>Your cyber policy tested against ransomware, data breach, funds transfer fraud, and regulatory proceedings.</p>
       </div>
-      <div class="rir-learn-item">
-        <strong>Fidelity Bond Analysis</strong>
-        <p>Coverage testing for employee dishonesty, social engineering, and wire fraud. Identifies sublimits, co-payment conditions, and voluntary parting exclusions.</p>
+      <div class="rir-coverage-row">
+        <strong>Fidelity Bond</strong>
+        <p>Employee dishonesty, social engineering, and wire fraud. Sublimits, co-payment conditions, and voluntary parting exclusions.</p>
       </div>
-      <div class="rir-learn-item">
-        <strong>Directors and Officers (D&amp;O) Analysis</strong>
-        <p>Review of D&amp;O coverage for cyber-related board liability, regulatory investigations, and shareholder claims. Maps the cyber exclusion that most D&amp;O policies carry.</p>
+      <div class="rir-coverage-row">
+        <strong>D&amp;O</strong>
+        <p>Board liability after a cyber incident. Regulatory investigations, shareholder claims, and the cyber exclusion most D&amp;O policies carry.</p>
       </div>
-      <div class="rir-learn-item">
-        <strong>Policy Interaction Analysis</strong>
-        <p>The centerpiece of the report. Maps how all three policies respond to the same incident and identifies where carriers will point at each other. This is the analysis most brokers do not perform because they review each policy in isolation.</p>
+      <div class="rir-coverage-row">
+        <strong>Policy Interaction</strong>
+        <p>How these three policies respond to cyber incidents and where carriers point at each other. An analysis most brokers don't perform.</p>
       </div>
-      <div class="rir-learn-item">
-        <strong>Vendor Coverage Alignment</strong>
-        <p>Cross-references your vendor contracts against your insurance program. Identifies where vendor agreements require coverage your policies do not deliver.</p>
+      <div class="rir-coverage-row">
+        <strong>Vendor Coverage</strong>
+        <p>Where vendor agreements require coverage your policies do not deliver.</p>
       </div>
-      <div class="rir-learn-item">
-        <strong>Regulatory Response Readiness</strong>
-        <p>Tests whether your coverage supports the regulatory response requirements you face: 36-hour incident reporting, examiner documentation, and investigation defense costs.</p>
+      <div class="rir-coverage-row">
+        <strong>Regulatory Response</strong>
+        <p>36-hour incident reporting, examiner documentation, and investigation defense costs.</p>
       </div>
-      <div class="rir-learn-item">
-        <strong>Security Warranty Compliance</strong>
-        <p>Compares the security controls your policies require (MFA, EDR, patching cadence) against what your institution and vendors actually have in place. Warranty gaps give carriers grounds to deny claims.</p>
+      <div class="rir-coverage-row">
+        <strong>Security Warranties</strong>
+        <p>The controls your policies require (MFA, EDR, patching) versus what you actually have in place. Gaps give carriers grounds to deny claims.</p>
       </div>
     </div>
   </div>
@@ -588,6 +595,16 @@ permalink: /risk-intelligence-report/
       </div>
 
     </div>
+
+    <!-- Sample finding -->
+    <div style="max-width:680px;margin:56px auto 0;border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:10px;padding:28px 28px 24px;background:#fff;">
+      <div style="font-family:var(--font-mono);font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:14px;">Sample Finding</div>
+      <div style="font-size:20px;font-weight:800;color:var(--primary);margin-bottom:12px;">D&O Cyber Cover Exclusion</div>
+      <p style="font-size:15px;line-height:1.7;color:var(--text-secondary);margin:0 0 12px;"><strong style="color:var(--primary);">Gap:</strong> The D&O policy excludes any claim "arising out of, based upon, or attributable to" a cyber incident. If a data breach triggers an FDIC enforcement action or shareholder lawsuit, the board has zero D&O coverage. Brokers often miss this because they review each policy in isolation.</p>
+      <p style="font-size:15px;line-height:1.7;color:var(--text-secondary);margin:0 0 12px;"><strong style="color:#DC2626;">Impact:</strong> Directors and officers are personally exposed to regulatory actions and shareholder claims following a cyber incident. The policy they believe protects them will not respond. Estimated uninsured board liability: up to $1 million.</p>
+      <p style="font-size:15px;line-height:1.7;color:var(--text-secondary);margin:0;"><strong style="color:var(--primary);">Fix:</strong> Request removal of the cyber exclusion or negotiate a carve-back for regulatory proceedings and shareholder claims at renewal.</p>
+    </div>
+
   </div>
 </section>
 
@@ -607,7 +624,7 @@ permalink: /risk-intelligence-report/
       <div class="rir-step-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
       <div class="rir-step">
         <strong>2. Send your documents</strong>
-        <p>Your cyber policy, fidelity bond, D&amp;O coverage, and vendor agreements. I read each one against real incident scenarios.</p>
+        <p>Your cyber policy, fidelity bond, and D&amp;O coverage. I read each one against real incident scenarios.</p>
       </div>
       <div class="rir-step-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
       <div class="rir-step">
@@ -617,7 +634,7 @@ permalink: /risk-intelligence-report/
       <div class="rir-step-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
       <div class="rir-step">
         <strong>4. Fix what matters</strong>
-        <p>Take the findings to your broker. Or I can help you evaluate what to ask for.</p>
+        <p>Take the findings to your broker. I can help you evaluate what to ask for.</p>
       </div>
     </div>
   </div>
@@ -626,12 +643,10 @@ permalink: /risk-intelligence-report/
 <!-- FINAL CTA -->
 <section class="rir-final">
   <div class="rir-final-inner">
-    <h2>An Examination, a Board Review, or a Claim Will Test Your Coverage</h2>
-    <p>
-      Find out where you stand before one of them does.
-    </p>
+    <h2>A Claim Will Test Your Coverage</h2>
+    <p style="font-size:15px;color:rgba(255,255,255,.65);margin-bottom:28px;font-style:italic;">A $1B credit union in the Northeast discovered its broker had never offered the social engineering coverages available on its existing policy form.<br>Uninsured exposure: up to $1.5 million.</p>
     <a href="#" class="btn-accent" id="rir-request-btn">Request a Risk Intelligence Report &rarr;</a>
-    <div class="rir-final-foot">No obligation. I will follow up within one business day.</div>
+    <div class="rir-final-foot">Flat fee in the low four figures. No retainer, no hourly billing.</div>
   </div>
 </section>
 

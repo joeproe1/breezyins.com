@@ -30,7 +30,7 @@ This has already happened. In 2022, Travelers filed suit to rescind a cyber poli
 
 ## Two Standards, One Bank, No Cross-Check
 
-The bank passed its most recent IT examination. The bank examiner (OCC, FDIC, or state regulator, depending on the bank's charter) reviewed controls against the FFIEC IT Examination Handbook and the GLBA Safeguards Rule. MFA on primary systems, EDR on workstations, documented patching, encrypted backups tested quarterly. The examiner was satisfied.
+The bank passed its most recent IT examination. The bank examiner reviewed controls against the FFIEC IT Examination Handbook and the GLBA Safeguards Rule. MFA on primary systems, EDR on workstations, documented patching, encrypted backups tested quarterly. The examiner was satisfied.
 
 The carrier asked different questions. The application asked whether MFA was deployed on "all remote access points." Not "primary systems." Not "most." All. One legacy VPN turned the answer from true to false.
 

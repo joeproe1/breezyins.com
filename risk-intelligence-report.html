@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Risk Intelligence Report"
-description: "A plain-English review of your policies and contracts. See where coverage holds, where it fails, and what to fix before your next deal, audit, or claim forces the question."
+title: "Risk Intelligence Report for Community Banks"
+description: "An independent, line-by-line audit of your cyber, fidelity bond, and D&O policies. See where coverage holds, where it fails, and what to fix."
 permalink: /risk-intelligence-report/
 ---
 
@@ -42,6 +42,7 @@ permalink: /risk-intelligence-report/
 </script>
 
 <style>
+/* Hero */
 .rir-hero{
   padding: 96px 0 56px;
   background: linear-gradient(135deg, var(--bg-light) 0%, #ffffff 100%);
@@ -60,40 +61,48 @@ permalink: /risk-intelligence-report/
 }
 .rir-wrap{ max-width: 1100px; margin: 0 auto; }
 .rir-hero h1{
-  font-size: 52px;
+  font-size: 48px;
   line-height: 1.12;
   letter-spacing: -0.03em;
   color: var(--primary);
   font-weight: 800;
   margin: 14px 0 14px;
-  max-width: 980px;
+  max-width: 800px;
 }
 .rir-subhead{
   font-size: 18px;
   line-height: 1.7;
   color: var(--text-secondary);
-  max-width: 900px;
-  margin: 0 0 22px;
+  max-width: 720px;
+  margin: 0 0 28px;
 }
 .rir-actions{
   display:flex;
-  gap:14px;
+  gap:20px;
   flex-wrap:wrap;
   align-items:center;
   margin: 8px 0 10px;
-  justify-content: center;
 }
-.rir-secondary{
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  margin-top: 6px;
-  color: var(--text-secondary);
-  font-size: 14px;
-  text-decoration: none;
-  font-weight: 600;
+.rir-btn-primary{
+  display:inline-block;
+  padding:16px 36px;
+  background:#00D4AA;
+  color:#0A2540;
+  font-weight:700;
+  text-decoration:none;
+  border-radius:8px;
+  font-size:17px;
+  transition:all .3s cubic-bezier(.4,0,.2,1);
+  box-shadow:0 4px 20px rgba(0,212,170,.3);
+  cursor:pointer;
+  border:none;
 }
-.rir-secondary:hover{ color: var(--primary); text-decoration: underline; }
+.rir-btn-primary:hover{
+  background:#00f5c3;
+  transform:translateY(-2px);
+  box-shadow:0 8px 30px rgba(0,212,170,.4);
+}
+/* Sections */
 .rir-section{
   padding: 72px 0;
   background:#fff;
@@ -120,9 +129,44 @@ permalink: /risk-intelligence-report/
   font-size: 18px;
   line-height: 1.8;
 }
+
+/* Sample finding */
+.rir-finding{
+  max-width:680px;
+  margin:0 auto;
+  border:1px solid var(--border);
+  border-left:4px solid var(--accent);
+  border-radius:10px;
+  padding:28px 28px 24px;
+  background:#fff;
+}
+.rir-finding-label{
+  font-family:var(--font-mono);
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--text-secondary);
+  margin-bottom:14px;
+}
+.rir-finding-title{
+  font-size:20px;
+  font-weight:800;
+  color:var(--primary);
+  margin-bottom:12px;
+}
+.rir-finding p{
+  font-size:15px;
+  line-height:1.7;
+  color:var(--text-secondary);
+  margin:0 0 12px;
+}
+.rir-finding p:last-child{ margin-bottom:0; }
+
+/* Grid: map + deliverables */
 .rir-grid{
   display:grid;
-  grid-template-columns: 520px 1fr;
+  grid-template-columns: 1fr 520px;
   gap: 46px;
   align-items:center;
 }
@@ -147,97 +191,7 @@ permalink: /risk-intelligence-report/
   letter-spacing: .08em;
   border: none;
 }
-.rir-mock-header{
-  background: linear-gradient(135deg, #0A2540 0%, #1B4668 100%);
-  padding: 22px 20px;
-  border-bottom: 4px solid var(--accent);
-}
-.rir-mock-header-top{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:12px;
-}
-.rir-mock-logo{
-  font-family: var(--font-mono);
-  font-size: 24px;
-  font-weight: 800;
-  color:#fff;
-  margin:0;
-}
-.rir-mock-logo span{ color: var(--accent); }
-.rir-mock-firm{
-  color: rgba(255,255,255,.9);
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: .02em;
-  white-space: nowrap;
-}
-.rir-mock-title{
-  color:#fff;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: .10em;
-  text-transform: uppercase;
-  margin:10px 0 0;
-  text-align:center;
-}
-.rir-mock-body{
-  padding: 28px 22px;
-  background: #FAFAFA;
-}
-.rir-mock-block{
-  background:#fff;
-  border-radius: 10px;
-  border: 1px solid var(--border);
-  padding: 16px;
-  margin-bottom: 12px;
-}
-.rir-mock-label{
-  font-family: var(--font-mono);
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-  color: var(--text-secondary);
-  margin-bottom: 8px;
-}
-.rir-mock-kpi{
-  font-weight: 900;
-  color: var(--primary);
-  font-size: 14px;
-  line-height: 1.25;
-}
-.rir-mock-kpi span{
-  color:#DC2626;
-  font-size: 20px;
-}
-.rir-mock-list{
-  display:grid;
-  gap: 12px;
-}
-.rir-mock-item{
-  background:#fff;
-  border-radius: 10px;
-  border: 1px solid var(--border);
-  padding: 12px 14px;
-  border-left: 4px solid var(--accent);
-  color: var(--primary);
-  font-weight: 700;
-}
-.rir-mock-footer{
-  background:#0A2540;
-  border-top: 4px solid var(--accent);
-  padding: 12px;
-  text-align:center;
-  color: rgba(255,255,255,.72);
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing:.12em;
-}
-.rir-what{
-  padding-top: 0;
-}
+.rir-what{ padding-top: 0; }
 .rir-what h3{
   font-family: var(--font-mono);
   font-size: 14px;
@@ -265,38 +219,7 @@ permalink: /risk-intelligence-report/
   font-size: 16px;
 }
 
-/* Report coverage grid (title left, description right) */
-.rir-coverage-grid{
-  max-width: 920px;
-  margin: 0 auto;
-}
-.rir-coverage-row{
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 24px;
-  align-items: baseline;
-  padding: 18px 0;
-  border-bottom: 1px solid var(--border);
-}
-.rir-coverage-row:last-child{ border-bottom: none; }
-.rir-coverage-row strong{
-  color: var(--primary);
-  font-size: 17px;
-  white-space: nowrap;
-}
-.rir-coverage-row p{
-  margin: 0;
-  color: var(--text-secondary);
-  font-size: 15px;
-  line-height: 1.7;
-}
-@media(max-width: 580px){
-  .rir-coverage-row{
-    grid-template-columns: 1fr;
-    gap: 6px;
-  }
-}
-
+/* Steps */
 .rir-steps{
   display: grid;
   grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
@@ -334,6 +257,8 @@ permalink: /risk-intelligence-report/
   line-height: 1.7;
   margin: 0;
 }
+
+/* Final CTA */
 .rir-final{
   background:#fff;
   padding:48px 40px;
@@ -376,6 +301,8 @@ permalink: /risk-intelligence-report/
   font-size:17px;
   transition:all .3s cubic-bezier(.4,0,.2,1);
   box-shadow:0 4px 20px rgba(0,212,170,.3);
+  cursor:pointer;
+  border:none;
 }
 .rir-final-inner .btn-accent:hover{
   background:#00f5c3;
@@ -387,13 +314,12 @@ permalink: /risk-intelligence-report/
   font-size:13px;
   color:rgba(255,255,255,.65);
 }
+
+/* Responsive */
 @media(max-width: 968px){
-  .rir-hero h1{ font-size: 38px; }
+  .rir-hero h1{ font-size: 36px; }
   .rir-grid{ grid-template-columns: 1fr; }
-  .rir-verticals{ grid-template-columns: 1fr; }
-}
-@media(max-width: 580px){
-  .rir-steps{ grid-template-columns: 1fr; }
+  .rir-findings-grid{ grid-template-columns: 1fr !important; }
 }
 @media(max-width: 768px){
   .rir-hero{ padding: 86px 0 50px; }
@@ -403,6 +329,9 @@ permalink: /risk-intelligence-report/
   .rir-final-inner h2{ font-size: 28px; }
   .rir-steps{ grid-template-columns: 1fr 1fr; gap: 0; }
   .rir-step-arrow{ display: none; }
+}
+@media(max-width: 580px){
+  .rir-steps{ grid-template-columns: 1fr; }
 }
 
 /* Modal */
@@ -459,7 +388,7 @@ permalink: /risk-intelligence-report/
   color:var(--primary);
 }
 
-/* HubSpot form overrides inside modal */
+/* HubSpot form overrides */
 #rir-hubspot-form .hs-form { font-family: 'DM Sans', sans-serif; }
 #rir-hubspot-form .hs-form fieldset { max-width: 100% !important; }
 #rir-hubspot-form .hs-form label {
@@ -512,80 +441,62 @@ permalink: /risk-intelligence-report/
 <section class="rir-hero">
   <div class="container rir-wrap">
     <div style="font-family:var(--font-mono);font-size:13px;font-weight:600;letter-spacing:.10em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:24px;display:inline-block;padding:12px 20px;background:rgba(0,212,170,0.08);border:1px solid rgba(0,212,170,0.22);border-radius:12px;">Risk Intelligence Report</div>
-    <h1>Know Where You Stand</h1>
+    <h1>When You File a Claim, Your Three Carriers Will Not Agree on Who Pays</h1>
     <p class="rir-subhead">
-      Cyber insurance. Fidelity bond. D&amp;O. The Risk Intelligence Report reads all three together and shows you where coverage holds, where it fails, and what to fix.
+      The Risk Intelligence Report reads your cyber insurance, fidelity bond, and D&amp;O policy together and shows you where coverage holds, where it fails, and what to fix.
     </p>
+    <div class="rir-actions">
+      <a href="#" class="rir-btn-primary rir-open-modal">Request a Report &rarr;</a>
+    </div>
   </div>
 </section>
 
-<!-- WHAT THE REPORT COVERS (Bank RIR: 7 Sections) -->
+<!-- FINDINGS -->
 <section class="rir-section">
   <div class="container rir-wrap">
-    <div class="rir-center">
-      <h2>What the Report Covers</h2>
-      <p>The Risk Intelligence Report covers seven areas.</p>
+    <div class="rir-findings-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:28px;max-width:960px;margin:0 auto;">
+
+      <!-- Sample finding (left) -->
+      <div class="rir-finding">
+        <div class="rir-finding-label">Sample Finding</div>
+        <div class="rir-finding-title">D&O Cyber Cover Exclusion</div>
+        <p><strong style="color:var(--primary);">Gap:</strong> Most D&amp;O policies exclude claims "arising out of" a cyber incident. If a data breach triggers an FDIC enforcement action or shareholder lawsuit, the board has zero D&amp;O coverage. Brokers miss this because they review each policy in isolation.</p>
+        <p><strong style="color:var(--primary);">Impact:</strong> Up to $1 million in uninsured board liability. The policy your directors believe protects them will not respond.</p>
+        <p><strong style="color:var(--primary);">Fix:</strong> Request removal of the cyber exclusion, or negotiate an exception for regulatory proceedings and shareholder claims at renewal.</p>
+      </div>
+
+      <!-- Credit union example (right) -->
+      <div class="rir-finding" style="border-left-color:var(--accent);background:rgba(0,212,170,0.04);">
+        <div class="rir-finding-label">From a Recent Audit</div>
+        <div class="rir-finding-title">Broker Never Offered the Coverage</div>
+        <p>A $1B credit union in the Northeast discovered its broker had never offered the social engineering coverages available on its existing policy form.</p>
+        <p>The coverage was not declined. It was never presented.</p>
+        <p><strong style="color:var(--primary);">Uninsured exposure:</strong> up to $1.5 million.</p>
+      </div>
+
     </div>
 
-    <div class="rir-coverage-grid">
-      <div class="rir-coverage-row">
-        <strong>Cyber</strong>
-        <p>Your cyber policy tested against ransomware, data breach, funds transfer fraud, and regulatory proceedings.</p>
-      </div>
-      <div class="rir-coverage-row">
-        <strong>Fidelity Bond</strong>
-        <p>Employee dishonesty, social engineering, and wire fraud. Sublimits, co-payment conditions, and voluntary parting exclusions.</p>
-      </div>
-      <div class="rir-coverage-row">
-        <strong>D&amp;O</strong>
-        <p>Board liability after a cyber incident. Regulatory investigations, shareholder claims, and the cyber exclusion most D&amp;O policies carry.</p>
-      </div>
-      <div class="rir-coverage-row">
-        <strong>Policy Interaction</strong>
-        <p>How these three policies respond to cyber incidents and where carriers point at each other. An analysis most brokers don't perform.</p>
-      </div>
-      <div class="rir-coverage-row">
-        <strong>Vendor Coverage</strong>
-        <p>Where vendor agreements require coverage your policies do not deliver.</p>
-      </div>
-      <div class="rir-coverage-row">
-        <strong>Regulatory Response</strong>
-        <p>36-hour incident reporting, examiner documentation, and investigation defense costs.</p>
-      </div>
-      <div class="rir-coverage-row">
-        <strong>Security Warranties</strong>
-        <p>The controls your policies require (MFA, EDR, patching) versus what you actually have in place. Gaps give carriers grounds to deny claims.</p>
-      </div>
-    </div>
+    <p style="text-align:center;color:var(--text-secondary);font-size:15px;margin:28px 0 0;line-height:1.7;">Every Risk Intelligence Report identifies gaps like this, with dollar amounts and specific fixes.</p>
   </div>
 </section>
 
-<!-- SAMPLE + WHAT YOU GET -->
-<section id="sample" class="rir-section alt">
+<!-- WHAT YOU GET -->
+<section class="rir-section alt">
   <div class="container rir-wrap">
     <div class="rir-grid">
 
-      <!-- Policy Interaction Map sample (left) -->
-      <div>
-        <p style="font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#64748b;margin:0 0 8px 0;">Policy Interaction Map</p>
-        <div class="rir-mock" aria-label="Sample Policy Interaction Map from a Risk Intelligence Report">
-          <div class="rir-badge">SAMPLE</div>
-          <img src="{{ '/assets/images/Policy-Interaction-Map.png' | relative_url }}" alt="Policy Interaction Map showing how cyber, fidelity bond, and D&O policies respond to five common incidents: ransomware, wire fraud, vendor outage, data breach, and board liability" style="width:100%;display:block;" loading="lazy">
-        </div>
-      </div>
-
-      <!-- What you get (right) -->
+      <!-- Deliverables (left) -->
       <div class="rir-what">
-        <h3>What you get</h3>
+        <h3>What You Get</h3>
 
         <div class="rir-item">
           <strong>Policy Deep Dives</strong>
-          <p>Line-by-line review of each policy against real incident scenarios. Cyber, fidelity bond, and D&amp;O, tested against the claim scenarios your institution is most likely to face.</p>
+          <p>Line-by-line review of each policy against real incident scenarios. Covering cyber, fidelity bond, D&amp;O, policy interactions, vendor coverage, regulatory response, and security warranties.</p>
         </div>
 
         <div class="rir-item">
           <strong>Policy Interaction Map</strong>
-          <p>Five incidents, three policies. The map on the left shows which policy responds to each scenario and where carriers will point at each other.</p>
+          <p>Five incidents, three policies. Which one responds, which one excludes, and where carriers point at each other.</p>
         </div>
 
         <div class="rir-item">
@@ -594,48 +505,15 @@ permalink: /risk-intelligence-report/
         </div>
       </div>
 
-    </div>
-
-    <!-- Sample finding -->
-    <div style="max-width:680px;margin:56px auto 0;border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:10px;padding:28px 28px 24px;background:#fff;">
-      <div style="font-family:var(--font-mono);font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:14px;">Sample Finding</div>
-      <div style="font-size:20px;font-weight:800;color:var(--primary);margin-bottom:12px;">D&O Cyber Cover Exclusion</div>
-      <p style="font-size:15px;line-height:1.7;color:var(--text-secondary);margin:0 0 12px;"><strong style="color:var(--primary);">Gap:</strong> The D&O policy excludes any claim "arising out of, based upon, or attributable to" a cyber incident. If a data breach triggers an FDIC enforcement action or shareholder lawsuit, the board has zero D&O coverage. Brokers often miss this because they review each policy in isolation.</p>
-      <p style="font-size:15px;line-height:1.7;color:var(--text-secondary);margin:0 0 12px;"><strong style="color:#DC2626;">Impact:</strong> Directors and officers are personally exposed to regulatory actions and shareholder claims following a cyber incident. The policy they believe protects them will not respond. Estimated uninsured board liability: up to $1 million.</p>
-      <p style="font-size:15px;line-height:1.7;color:var(--text-secondary);margin:0;"><strong style="color:var(--primary);">Fix:</strong> Request removal of the cyber exclusion or negotiate a carve-back for regulatory proceedings and shareholder claims at renewal.</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- HOW IT WORKS -->
-<section class="rir-section alt">
-  <div class="container rir-wrap">
-    <div class="rir-center">
-      <h2>How It Works</h2>
-      <p>No long engagements, no complex onboarding. Four steps from first conversation to fixes in place.</p>
-    </div>
-
-    <div class="rir-steps">
-      <div class="rir-step">
-        <strong>1. Get in touch</strong>
-        <p>Describe your situation.<br>15 minutes is usually enough.</p>
+      <!-- Policy Interaction Map (right) -->
+      <div>
+        <p style="font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#64748b;margin:0 0 8px 0;">Policy Interaction Map</p>
+        <div class="rir-mock" aria-label="Sample Policy Interaction Map from a Risk Intelligence Report">
+          <div class="rir-badge">SAMPLE</div>
+          <img src="{{ '/assets/images/Policy-Interaction-Map.png' | relative_url }}" alt="Policy Interaction Map showing how cyber, fidelity bond, and D&O policies respond to five common incidents: ransomware, wire fraud, vendor outage, data breach, and board liability" style="width:100%;display:block;" loading="lazy">
+        </div>
       </div>
-      <div class="rir-step-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
-      <div class="rir-step">
-        <strong>2. Send your documents</strong>
-        <p>Your cyber policy, fidelity bond, and D&amp;O coverage. I read each one against real incident scenarios.</p>
-      </div>
-      <div class="rir-step-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
-      <div class="rir-step">
-        <strong>3. Get the findings</strong>
-        <p>Plain-English report.<br>Real numbers on every gap. 30-minute walkthrough.</p>
-      </div>
-      <div class="rir-step-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
-      <div class="rir-step">
-        <strong>4. Fix what matters</strong>
-        <p>Take the findings to your broker. I can help you evaluate what to ask for.</p>
-      </div>
+
     </div>
   </div>
 </section>
@@ -644,8 +522,7 @@ permalink: /risk-intelligence-report/
 <section class="rir-final">
   <div class="rir-final-inner">
     <h2>A Claim Will Test Your Coverage</h2>
-    <p style="font-size:15px;color:rgba(255,255,255,.65);margin-bottom:28px;font-style:italic;">A $1B credit union in the Northeast discovered its broker had never offered the social engineering coverages available on its existing policy form.<br>Uninsured exposure: up to $1.5 million.</p>
-    <a href="#" class="btn-accent" id="rir-request-btn">Request a Risk Intelligence Report &rarr;</a>
+    <a href="#" class="btn-accent rir-open-modal">Request a Risk Intelligence Report &rarr;</a>
     <div class="rir-final-foot">Flat fee in the low four figures. No retainer, no hourly billing.</div>
   </div>
 </section>
@@ -655,16 +532,16 @@ permalink: /risk-intelligence-report/
   <div class="rir-modal">
     <button class="rir-modal-close" id="rir-modal-close" aria-label="Close">&times;</button>
     <h2>Request a Risk Intelligence Report</h2>
-    <p>Tell me a bit about your firm.</p>
+    <p>Tell me a bit about your institution and what prompted you to look.</p>
     <div id="rir-hubspot-form"></div>
   </div>
 </div>
 
 <script>
 (function() {
-  var btn = document.getElementById('rir-request-btn');
   var modal = document.getElementById('rir-modal');
   var closeBtn = document.getElementById('rir-modal-close');
+  var triggers = document.querySelectorAll('.rir-open-modal');
   var formLoaded = false;
 
   function openModal(e) {
@@ -700,7 +577,9 @@ permalink: /risk-intelligence-report/
     document.body.style.overflow = '';
   }
 
-  btn.addEventListener('click', openModal);
+  for (var i = 0; i < triggers.length; i++) {
+    triggers[i].addEventListener('click', openModal);
+  }
   closeBtn.addEventListener('click', closeModal);
   modal.addEventListener('click', function(e) {
     if (e.target === modal) closeModal();

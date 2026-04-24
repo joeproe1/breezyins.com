@@ -18,74 +18,73 @@ The carrier assigns breach counsel and a forensics firm.
 Then the forensics report comes back, and the conversation changes.
 </div>
 
-The attacker gained access through a legacy VPN that did not have multi-factor authentication enabled. The bank's cyber insurance application, signed 14 months earlier, stated that MFA was deployed on all remote access points.
+The attacker gained access through a legacy VPN without multi-factor authentication. The bank's cyber application, signed 14 months earlier, said MFA was deployed on all remote access points.
 
 The VPN was scheduled for decommissioning. Its replacement was already running. But the old one was still active, still accepting single-factor logins.
 
-The carrier's claims team pulls the cyber insurance application. Nearly every cyber application today asks about MFA. The question is specific: is MFA enabled on all remote access, all email, all privileged accounts? The bank answered yes. The representation clause reads: "The statements in this application are true, accurate, and not misleading, and the Insurer, in issuing the Policy, is relying upon the truth thereof."
+The carrier pulls the application. The fine print at the bottom says every answer is a promise the carrier relied on when issuing the policy. One outdated VPN turned one answer from true to false.
 
-The carrier sends a reservation of rights letter. Then a rescission notice. The entire policy is void. Not just the VPN-related claim. The entire $5 million in coverage. Gone.
+The carrier sends a reservation of rights letter (legal for "we might not pay this"). Then a rescission notice. The entire policy is void. Not just the VPN-related claim. The entire $5 million in coverage. Gone.
 
-This has already happened. In 2022, Travelers filed suit to rescind a cyber policy after the insured misrepresented its MFA deployment on the application. The insured consented to rescission. The policy was voided ([Travelers v. International Control Services, C.D. Ill., 2022](https://www.insurancejournal.com/news/national/2022/07/12/675516.htm)).
+This has already happened. In 2022, Travelers filed suit to rescind a cyber policy after the insured misrepresented its MFA deployment. The insured consented to rescission. The policy was voided ([Travelers v. International Control Services, C.D. Ill., 2022](https://www.insurancejournal.com/news/national/2022/07/12/675516.htm)).
 
 ## Two Standards, One Bank, No Cross-Check
 
-The bank passed its most recent IT examination. The bank examiner reviewed controls against federal guidelines. MFA on primary systems, EDR on workstations, documented patching, encrypted backups tested quarterly. The examiner was satisfied.
+The bank passed its IT examination. The bank passed its insurance application. Nobody checked whether the answers matched.
 
-The carrier asked different questions. The application asked whether MFA was deployed on "all remote access points." Not "primary systems." Not "most." All. One legacy VPN turned the answer from true to false.
-
-<div style="border-left: 3px solid #DC2626; padding: 16px 20px; background: rgba(220,38,38,0.05); border-radius: 0 8px 8px 0; margin: 24px 0;">
-<strong>The gap:</strong> The examiner checks controls against regulatory guidance. The carrier checks controls against the application. These are not the same standard. A bank can satisfy one and violate the other without knowing it.
+<div style="background: #0A2540; border-radius: 12px; padding: 32px; margin: 32px 0; color: #fff;">
+<h3 style="color: #00D4AA; margin-top: 0; font-size: 18px;">Same Bank. Two Different Questions.</h3>
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 16px;">
+<div style="background: rgba(59,130,246,0.1); border-radius: 8px; padding: 20px;">
+<div style="color: #93C5FD; font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px;">The Examiner Asked</div>
+<div style="color: rgba(255,255,255,0.85); font-size: 15px; line-height: 1.6;">"Is MFA deployed on primary systems?"</div>
+<div style="color: rgba(255,255,255,0.5); font-size: 14px; margin-top: 12px;">The bank said yes. The examiner was satisfied.</div>
+</div>
+<div style="background: rgba(220,38,38,0.1); border-radius: 8px; padding: 20px;">
+<div style="color: #FCA5A5; font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px;">The Carrier Asked</div>
+<div style="color: rgba(255,255,255,0.85); font-size: 15px; line-height: 1.6;">"Is MFA deployed on <em>all</em> remote access points?"</div>
+<div style="color: rgba(255,255,255,0.5); font-size: 14px; margin-top: 12px;">One legacy VPN turned the answer from true to false.</div>
+</div>
+</div>
+<p style="margin-top: 16px; margin-bottom: 0; font-size: 14px; color: rgba(255,255,255,0.45); line-height: 1.5;">The examiner and the carrier never compare notes. The bank finds out when it files a claim.</p>
 </div>
 
 ## Rescission vs. Denial
 
-A **denial** means the carrier says this particular loss is not covered. An exclusion applies, or the claim falls outside the insuring agreements. The rest of the policy stays in force.
-
-**Rescission** is different. The carrier voids the policy from inception. It is treated as if the policy never existed. The carrier returns the premium and walks away from everything: not just this claim, but any claim under that policy period.
-
-Rescission requires a material misrepresentation in the application. The carrier does not need to prove the bank lied. An honest mistake, a control that lapsed after submission, a vendor-managed system that changed without the bank's knowledge, any of these can be enough.
+Most people assume a denied claim is the worst outcome. It is not.
 
 <div style="background: #0A2540; border-radius: 12px; padding: 32px; margin: 32px 0; color: #fff;">
-<h3 style="color: #00D4AA; margin-top: 0; font-size: 18px;">What Carriers Typically Ask About</h3>
-<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 16px;">
-<div style="background: rgba(59,130,246,0.1); border-radius: 8px; padding: 16px;">
-<div style="color: #93C5FD; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px;">Access Controls</div>
-<div style="color: rgba(255,255,255,0.8); font-size: 14px; line-height: 1.5;">MFA on all remote access, email, privileged accounts, VPN</div>
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+<div style="background: rgba(59,130,246,0.1); border-left: 4px solid #3B82F6; border-radius: 0 8px 8px 0; padding: 20px;">
+<div style="color: #93C5FD; font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px;">Claim Denial</div>
+<div style="color: rgba(255,255,255,0.85); font-size: 15px; line-height: 1.6;">This particular loss is not covered. An exclusion applies. The rest of the policy stays in force. Other claims can still be paid.</div>
 </div>
-<div style="background: rgba(139,92,246,0.1); border-radius: 8px; padding: 16px;">
-<div style="color: #C4B5FD; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px;">Endpoint Security</div>
-<div style="color: rgba(255,255,255,0.8); font-size: 14px; line-height: 1.5;">EDR on all endpoints, managed 24/7, updated within defined intervals</div>
-</div>
-<div style="background: rgba(245,158,11,0.1); border-radius: 8px; padding: 16px;">
-<div style="color: #FCD34D; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px;">Patch Management</div>
-<div style="color: rgba(255,255,255,0.8); font-size: 14px; line-height: 1.5;">Critical patches applied within 30 days, vulnerability scanning on a defined schedule</div>
-</div>
-<div style="background: rgba(0,212,170,0.1); border-radius: 8px; padding: 16px;">
-<div style="color: #00D4AA; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px;">Backup & Recovery</div>
-<div style="color: rgba(255,255,255,0.8); font-size: 14px; line-height: 1.5;">Encrypted backups, tested quarterly, air-gapped or immutable, documented recovery plan</div>
+<div style="background: rgba(220,38,38,0.1); border-left: 4px solid #DC2626; border-radius: 0 8px 8px 0; padding: 20px;">
+<div style="color: #FCA5A5; font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px;">Rescission</div>
+<div style="color: rgba(255,255,255,0.85); font-size: 15px; line-height: 1.6;">The policy never existed. The carrier returns the premium and walks away from everything. Not just this claim. Every claim under that policy period. It is the worst refund you will ever receive.</div>
 </div>
 </div>
-<p style="margin-top: 16px; font-size: 14px; color: rgba(255,255,255,0.5); line-height: 1.5;">Every "yes" on the application is a coverage condition. If the answer changes during the policy period, the bank needs to disclose it.</p>
 </div>
 
-## Banks Face Double Exposure
+The carrier does not need to prove the bank lied. An honest mistake, a control that lapsed, a vendor-managed system that changed without the bank's knowledge. Any of these can be enough.
 
-When a carrier rescinds a bank's cyber policy, two things happen at once.
+## Banks Get Hit Twice
 
-First, the bank loses coverage for the incident. Whatever the ransomware costs to clean up, the bank pays out of pocket.
+When a carrier rescinds a bank's cyber policy, the bank does not just lose coverage. It gains a regulatory problem.
 
-Second, the regulator has a finding. The bank told its examiner it had adequate cyber insurance. Now the policy is rescinded and the bank is uninsured. The examiner will ask how a material misrepresentation ended up on the insurance application, and why the bank's internal audit process did not catch it.
+The incident costs money. The rescission costs insurance. And the examiner who was told the bank had adequate cyber coverage now wants to know how a false statement ended up on the application, and why nobody caught it.
 
-Other businesses face the financial hit. Banks face the financial hit and the regulatory one.
+<div style="border-left: 3px solid #DC2626; padding: 16px 20px; background: rgba(220,38,38,0.05); border-radius: 0 8px 8px 0; margin: 24px 0;">
+<strong>Other businesses face the financial hit. Banks face the financial hit and the regulatory one.</strong>
+</div>
 
 ## The No-Rescission Clause
 
-There is a fix. It is called a no-rescission clause (sometimes called a severability endorsement). It limits the carrier's ability to void the entire policy based on an application misrepresentation.
+There is a fix. A no-rescission clause (sometimes called a severability endorsement) limits the carrier's ability to void the entire policy based on an application error.
 
 With this clause, the carrier can still deny coverage related to the specific misrepresentation. But it cannot void the entire policy. The remaining coverages stay in force.
 
-Without it, one inaccurate answer on a 15-page application can nullify $5 million in coverage at the moment the bank needs it most.
+Without it, one inaccurate answer on a 15-page application can erase $5 million in coverage at the moment the bank needs it most.
 
 In the bank cyber policies I have reviewed to date, none included a no-rescission clause. Some carriers offer it as standard on their commercial forms. It is worth asking for at renewal.
 
@@ -94,7 +93,7 @@ In the bank cyber policies I have reviewed to date, none included a no-rescissio
 <div style="background: #f8faf9; border-radius: 10px; padding: 28px 32px; margin: 24px 0;">
 <div style="display: flex; gap: 16px; margin-bottom: 20px;">
 <div style="min-width: 32px; height: 32px; background: #00D4AA; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #0A2540; font-size: 16px;">1</div>
-<div><strong>Pull your cyber application.</strong> Compare every "yes" to what your IT environment looks like today. If anything changed, disclose it to the carrier in writing.</div>
+<div><strong>Pull your cyber application.</strong> Compare every "yes" to what your IT environment looks like today. If anything changed, tell the carrier in writing.</div>
 </div>
 <div style="display: flex; gap: 16px; margin-bottom: 20px;">
 <div style="min-width: 32px; height: 32px; background: #00D4AA; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #0A2540; font-size: 16px;">2</div>
@@ -106,10 +105,12 @@ In the bank cyber policies I have reviewed to date, none included a no-rescissio
 </div>
 <div style="display: flex; gap: 16px;">
 <div style="min-width: 32px; height: 32px; background: #00D4AA; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #0A2540; font-size: 16px;">4</div>
-<div><strong>Watch for vendor changes.</strong> If a vendor changes a control your application warranted, you have an inadvertent misrepresentation. Build a notification requirement into your vendor agreements.</div>
+<div><strong>Watch for vendor changes.</strong> If a vendor changes a control your application warranted, you have an accidental misrepresentation on file. Build a notification requirement into your vendor agreements.</div>
 </div>
 </div>
 
-Your bank probably spends more time reviewing the cyber insurance premium than the application behind it. The premium is the cost of coverage. The application is the coverage itself.
+<div style="border-left: 4px solid #00D4AA; padding: 24px 28px; background: rgba(0, 212, 170, 0.06); border-radius: 0 8px 8px 0; margin: 40px 0;">
+<div style="font-size: 20px; font-weight: 600; line-height: 1.5; color: #0A2540;">The premium is the cost of coverage. The application is the coverage itself.</div>
+</div>
 
-If nobody has compared your cyber application to your current IT environment, [get in touch]({{ '/contact/' | relative_url }}).
+Your bank probably spends more time reviewing the premium than the application behind it. If nobody has compared your cyber application to your current IT environment, [get in touch]({{ '/contact/' | relative_url }}).

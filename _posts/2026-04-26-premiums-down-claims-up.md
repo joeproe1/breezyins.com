@@ -10,13 +10,13 @@ image: /assets/images/Blog-Premiums-Down-Claims-Up.png
 permalink: /insights/premiums-down-claims-up/
 ---
 
-According to the latest NAIC market data, US cyber insurance premiums fell 7% to $9.1 billion — the first decline on record. Down from $9.8 billion the year before. In the same period, claims rose nearly 40%, with close to 50,000 reported.
+According to the latest NAIC market data, US cyber insurance premiums fell 7% to $9.1 billion, the first decline on record. Down from $9.8 billion the year before. In the same period, claims rose nearly 40%, with close to 50,000 reported.
 
 Translated: the market is softening on price while loss exposure is getting worse. That is a dangerous combination for anyone buying coverage based on price.
 
-## What This Means for Community Banks at Renewal
+## What This Means for Community Banks
 
-A 10% to 15% premium reduction year over year is not necessarily a win. It can mean the carrier is competing harder for business. It can also mean the carrier is quietly tightening exclusions, lowering sublimits, or shifting more risk back to the insured to make the price work. Most community banks read the premium line. Few compare the new form against last year's.
+A 10% to 15% premium reduction year over year is not necessarily a win. It can mean the carrier is competing harder for business. It can also mean the carrier is quietly tightening exclusions, lowering sublimits, or shifting more risk back to you to make the price work. Most community banks read the premium line. Few compare the new form against last year's.
 
 The claims data tells a different story than the premium data. When premiums and claims move in opposite directions, the gap between expected coverage and actual coverage is widening. Banks that bought based on price three years ago are starting to discover this in claim notices.
 

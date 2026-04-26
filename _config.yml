@@ -24,6 +24,7 @@ plugins:
 # SEO tag defaults
 twitter:
   card: summary_large_image
+  creator: false
 
 # Feed settings
 feed:

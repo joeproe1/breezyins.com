@@ -30,48 +30,55 @@ sitemap: false
 
         .circle {
             position: absolute;
-            width: 450px;
-            height: 450px;
+            width: 500px;
+            height: 500px;
             border-radius: 50%;
-            background: #00D4AA;
-            opacity: 0.10;
-            right: -160px;
+            background: rgba(255, 255, 255, 0.04);
+            right: -100px;
             top: 50%;
             transform: translateY(-50%);
         }
 
         .circle-ring {
             position: absolute;
-            width: 420px;
-            height: 420px;
+            width: 460px;
+            height: 460px;
             border-radius: 50%;
-            border: 2px solid #00D4AA;
-            opacity: 0.30;
-            right: -140px;
+            border: 1.5px solid rgba(255, 255, 255, 0.08);
+            right: -80px;
             top: 50%;
             transform: translateY(-50%);
         }
 
         .circle-ring-outer {
             position: absolute;
-            width: 520px;
-            height: 520px;
+            width: 560px;
+            height: 560px;
             border-radius: 50%;
-            border: 1.5px solid #00D4AA;
-            opacity: 0.18;
-            right: -190px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            right: -130px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .circle-ring-outermost {
+            position: absolute;
+            width: 620px;
+            height: 620px;
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            right: -160px;
             top: 50%;
             transform: translateY(-50%);
         }
 
         .accent-line {
             position: absolute;
-            bottom: 100px;
+            bottom: 80px;
             left: 0;
             right: 0;
-            height: 2px;
+            height: 3px;
             background: #00D4AA;
-            opacity: 0.40;
         }
 
         .content {
@@ -86,37 +93,39 @@ sitemap: false
             justify-content: center;
         }
 
-        .category {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 24px;
-            font-weight: 600;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            color: #3B82F6;
-            margin-bottom: 24px;
-        }
-
         .title {
             font-family: 'DM Sans', sans-serif;
-            font-size: 64px;
+            font-size: 76px;
             font-weight: 700;
             color: #FFFFFF;
             line-height: 1.15;
             margin-bottom: 20px;
-            max-width: 720px;
+            max-width: 800px;
+        }
+
+        .arrow-down {
+            color: #F87171;
+            font-size: 52px;
+            margin-right: 8px;
+        }
+
+        .arrow-up {
+            color: #00D4AA;
+            font-size: 52px;
+            margin-right: 8px;
         }
 
         .subtitle {
             font-family: 'DM Sans', sans-serif;
-            font-size: 32px;
+            font-size: 30px;
             font-weight: 400;
-            color: rgba(255, 255, 255, 0.7);
+            color: rgba(255, 255, 255, 0.55);
             max-width: 600px;
         }
 
         .logo {
             position: absolute;
-            bottom: 40px;
+            bottom: 28px;
             left: 80px;
             font-family: 'JetBrains Mono', monospace;
             font-size: 26px;
@@ -135,11 +144,11 @@ sitemap: false
     <div class="circle"></div>
     <div class="circle-ring"></div>
     <div class="circle-ring-outer"></div>
+    <div class="circle-ring-outermost"></div>
     <div class="accent-line"></div>
 
     <div class="content">
-        <div class="category">Community Banks</div>
-        <div class="title">Premiums <span style="color: #F87171;">&#x25BC;</span> Down, Claims <span style="color: #00D4AA;">&#x25B2;</span> Up</div>
+        <div class="title"><span class="arrow-down">&#x25BC;</span> Premiums Down,<br><span class="arrow-up">&#x25B2;</span> Claims Up</div>
         <div class="subtitle">The market is softening. Your coverage might be too.</div>
     </div>
 

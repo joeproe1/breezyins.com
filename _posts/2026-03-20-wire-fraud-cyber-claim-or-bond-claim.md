@@ -73,4 +73,6 @@ If your bank has not reviewed how its policies respond to AI-generated fraud, ex
 
 The attack method changed. Most bank policies have not.
 
-If your bank still relies on callback verification as its primary wire fraud control, [get in touch]({{ '/contact/' | relative_url }}).
+For a detailed breakdown of how wire fraud falls between three policies at a community bank, see [The Wire Nobody Covers]({{ '/insights/the-wire-nobody-covers/' | relative_url }}).
+
+If your bank still relies on callback verification as its primary wire fraud control, a [Risk Intelligence Report]({{ '/risk-intelligence-report/' | relative_url }}) will show you whether your policies respond to AI-generated fraud. [Get in touch]({{ '/contact/' | relative_url }}).

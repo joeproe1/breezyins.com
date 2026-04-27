@@ -100,4 +100,6 @@ Three things to check now:
 
 You cannot fix what you have not checked.
 
-If your bank has not had someone review how your cyber policy, fidelity bond, and D&O interact on wire fraud, [get in touch]({{ '/contact/' | relative_url }}).
+Wire fraud is one of five incident types where community bank policies consistently break down. I map all five in [Five Common Cyber Incidents, Three Policies, and the Gaps Between Them]({{ '/insights/five-incidents-three-policies/' | relative_url }}).
+
+If your bank has not had someone review how your cyber policy, fidelity bond, and D&O interact on wire fraud, a [Risk Intelligence Report]({{ '/risk-intelligence-report/' | relative_url }}) will show you exactly where you stand. [Get in touch]({{ '/contact/' | relative_url }}).

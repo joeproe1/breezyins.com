@@ -24,8 +24,8 @@ The claims data tells a different story than the premium data. When premiums and
 <div style="font-size: 20px; font-weight: 600; line-height: 1.5; color: #0A2540;">The savings the broker is showing you on premium may be the cost the carrier is shifting to you on coverage.</div>
 </div>
 
-What I am telling community banks: don't let a lower premium close the conversation. Compare the current form against last year's, line by line. Look at what changed in the exclusions, sublimits, and trigger language.
+What I am telling community banks: don't let a lower premium close the conversation. Compare the current form against last year's, line by line. Look at what changed in the exclusions, sublimits, and trigger language. For a deeper look at what community bank cyber policies typically cover and miss, see [Cyber Insurance for Community Banks]({{ '/insights/cyber-insurance-for-community-banks/' | relative_url }}).
 
-If you want an independent read on what your current policy actually covers, [get in touch]({{ '/contact/' | relative_url }}).
+If you want an independent read on what your current policy actually covers, a [Risk Intelligence Report]({{ '/risk-intelligence-report/' | relative_url }}) will show you exactly where you stand. [Get in touch]({{ '/contact/' | relative_url }}).
 
 <p style="font-size: 13px; color: #94a3b8; margin-top: 48px;">Data: <a href="https://content.naic.org/sites/default/files/inline-files/2025_Cybersecurity_Insurance%20Report.pdf">NAIC 2025 Cybersecurity Insurance Report</a> (Nov 2025).</p>

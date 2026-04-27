@@ -111,4 +111,6 @@ Four things to check now:
 
 You cannot close a gap you have not checked.
 
-If your board has not reviewed how your D&O and cyber policies interact after a breach, [get in touch]({{ '/contact/' | relative_url }}).
+Board liability is one of five incident types where coverage breaks down across all three policies. I map the full picture in [Five Common Cyber Incidents, Three Policies, and the Gaps Between Them]({{ '/insights/five-incidents-three-policies/' | relative_url }}).
+
+If your board has not reviewed how your D&O and cyber policies interact after a breach, a [Risk Intelligence Report]({{ '/risk-intelligence-report/' | relative_url }}) will show you where the gap is. [Get in touch]({{ '/contact/' | relative_url }}).

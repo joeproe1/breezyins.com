@@ -28,9 +28,6 @@ permalink: /insights/
 .post-card .post-meta .divider { color: var(--border); }
 .post-card .read-more { display: inline-flex; align-items: center; gap: 6px; color: var(--accent); font-weight: 700; font-size: 15px; text-decoration: none; margin-top: 16px; }
 .post-card .read-more:hover { text-decoration: underline; }
-.post-card-image-link { display: block; overflow: hidden; border-radius: 10px 10px 0 0; }
-.post-card-image { width: 100%; height: auto; display: block; transition: transform 0.3s ease; }
-.post-card:hover .post-card-image { transform: scale(1.03); }
 .insights-cta { text-align: center; max-width: 600px; margin: 56px auto 0; padding: 40px 36px; background: var(--primary); border-radius: 14px; }
 .insights-cta h3 { color: #fff; font-size: 22px; font-weight: 700; margin: 0 0 10px; }
 .insights-cta p { color: rgba(255,255,255,0.8); font-size: 16px; margin: 0 0 24px; line-height: 1.6; }
@@ -56,16 +53,10 @@ permalink: /insights/
             {% for post in sorted_posts %}
             {% unless post.archived %}
             <div class="post-card">
-                {% if post.image %}
-                <a href="{{ post.url | relative_url }}" class="post-card-image-link">
-                    <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="post-card-image" loading="lazy">
-                </a>
-                {% elsif post.category %}
-                <div class="post-card-accent post-card-accent--{{ post.category | slugify }}"></div>
-                {% endif %}
+                <div class="post-card-accent post-card-accent--{{ post.category | default: 'community-banks' | slugify }}"></div>
                 <div class="post-card-body">
-                    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-                    <p class="post-excerpt">{{ post.description | default: post.excerpt | strip_html | truncate: 160 }}</p>
+                    <h2><a href="{{ post.url | relative_url }}">{{ post.card_title | default: post.title }}</a></h2>
+                    <p class="post-excerpt">{{ post.description | default: post.excerpt | strip_html | truncate: 100 }}</p>
                     <div class="post-meta">
                         <span>{{ post.date | date: "%B %-d, %Y" }}</span>
                         {% if post.read_time %}

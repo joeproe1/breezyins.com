@@ -2,3 +2,20 @@ User-agent: *
 Allow: /
 
 Sitemap: https://breezyrisk.com/sitemap.xml
+
+# Block AI crawlers from archived MSP content
+User-agent: GPTBot
+Disallow: /msp-insurance-assessment/
+Disallow: /blind-spot-report/
+Disallow: /coverage-gaps-framework/
+Disallow: /coverage-gaps-liability-boundary/
+Disallow: /coverage-gaps-limits-vs-contracts/
+Disallow: /coverage-gaps-services-mismatch/
+
+User-agent: ChatGPT-User
+Disallow: /msp-insurance-assessment/
+Disallow: /blind-spot-report/
+Disallow: /coverage-gaps-framework/
+Disallow: /coverage-gaps-liability-boundary/
+Disallow: /coverage-gaps-limits-vs-contracts/
+Disallow: /coverage-gaps-services-mismatch/

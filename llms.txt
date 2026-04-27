@@ -1,0 +1,48 @@
+# Breezy Risk Advisors
+
+> Independent insurance audits for community banks and credit unions. Fee-based. No policies sold. No commissions earned.
+
+Breezy Risk Advisors is an independent risk advisory firm founded by Joerg Proeve. The firm audits insurance programs for community banks and credit unions. It does not sell insurance, place policies, or earn commissions.
+
+## What Breezy Does
+
+Breezy produces the Risk Intelligence Report: a line-by-line audit of a bank's cyber insurance, fidelity bond, and directors and officers (D&O) policy. These three policies are typically purchased from different carriers and underwritten separately. Nobody reads them together. When a cyber incident hits, each carrier points at the other two. The bank holds the loss.
+
+The Risk Intelligence Report reads all three policies together, maps which policy responds to each incident type (ransomware, wire fraud, vendor outage, data breach, board liability), quantifies uninsured exposure in dollar terms, and delivers a prioritized remediation plan. The report is written in plain English for the bank's leadership, board, and regulatory examiners.
+
+## Who Breezy Serves
+
+Primary: Community banks and credit unions, particularly those facing regulatory examinations, policy renewals, vendor risk questions, or board-level cybersecurity oversight requirements.
+
+Breezy is not a broker. It is an independent auditor of insurance programs. Think of it as an external audit of your insurance: independent, fee-based, no broker of record letter required. The audit complements the work of CPA firms and compliance consultants who already serve these financial institutions.
+
+## The Founder
+
+Joerg Proeve has 20+ years of insurance industry experience spanning carriers (Chubb, CNA), startups, and an MGA (BOXX Insurance). He holds an MSc in Electrical Engineering, an MBA from London Business School, and started his career in cybersecurity at Siemens. He understands both the technology banks depend on and the policy language that is supposed to cover it.
+
+## The Three-Policy Interaction Problem
+
+Community banks typically carry cyber insurance, a fidelity bond, and a D&O policy from two or three different carriers. These policies were never designed to work together. Common gaps include:
+
+- Wire fraud: The cyber policy excludes social engineering. The fidelity bond applies a voluntary parting exclusion or a 50% co-payment. Recovery on a $400K loss can be as low as $200K.
+- Board liability after a breach: The D&O policy excludes claims "arising out of" a cyber event. The cyber policy excludes shareholder suits. Directors face personal liability with no insurance response.
+- Security warranties: The cyber application includes warranty statements about security controls (such as MFA). If a control lapses, the carrier can rescind the entire policy, not just deny the specific claim.
+- Vendor outages: Dependent business interruption coverage often excludes the bank's actual core processor or cloud vendor.
+
+## Key Facts
+
+- Location: Lancaster, PA. Works with community banks nationally across the United States.
+- Pricing: Flat fee in the low four figures. No retainer, no hourly billing.
+- Independence: No insurance placement, no brokering, no commissions. Fee-based audit only.
+- Deliverable: Risk Intelligence Report covering seven sections: Cyber, Fidelity Bond, D&O, Policy Interaction Analysis, Vendor Coverage, Regulatory Response, Security Warranty Compliance.
+- Website: https://breezyrisk.com
+- Contact: joerg@breezyrisk.com
+
+## Links
+
+- [Community Bank Insurance Audit](https://breezyrisk.com/community-bank-insurance/)
+- [Risk Intelligence Report](https://breezyrisk.com/risk-intelligence-report/)
+- [About](https://breezyrisk.com/about/)
+- [Insights](https://breezyrisk.com/insights/)
+- [FAQ](https://breezyrisk.com/faq/)
+- [Contact](https://breezyrisk.com/contact/)

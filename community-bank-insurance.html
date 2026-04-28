@@ -355,11 +355,19 @@ permalink: /community-bank-insurance/
 }
 
 /* ----- Section 5: Final CTA ----- */
+.bank-final-wrap {
+  padding: 20px 0 100px;
+  background: #fff;
+}
 .bank-final {
   background: var(--bank-dark);
-  padding: 72px 40px;
+  padding: 56px 48px;
+  max-width: 880px;
+  margin: 0 auto;
+  border-radius: 12px;
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
 .bank-final::before {
   content: '';
@@ -383,35 +391,35 @@ permalink: /community-bank-insurance/
   border: 1px solid rgba(126,174,232,0.16);
   pointer-events: none;
 }
-.bank-final__inner {
-  max-width: 880px;
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
-  z-index: 2;
-}
 .bank-final h2 {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 700;
   color: var(--bank-text-light);
-  margin: 0 0 16px;
+  margin: 0 0 14px;
   letter-spacing: -0.02em;
+  position: relative;
+  z-index: 2;
 }
 .bank-final p {
   font-size: 17px;
   color: var(--bank-accent);
-  margin: 0 0 32px;
+  margin: 0 0 28px;
   line-height: 1.6;
+  position: relative;
+  z-index: 2;
 }
 .bank-final__actions {
   display: flex;
   gap: 14px;
   justify-content: center;
   flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
 }
 @media (max-width: 768px) {
-  .bank-final h2 { font-size: 28px; }
-  .bank-final { padding: 56px 24px; }
+  .bank-final-wrap { padding: 0 20px 80px; }
+  .bank-final h2 { font-size: 26px; }
+  .bank-final { padding: 44px 28px; }
 }
 
 /* ----- Byline ----- */
@@ -702,8 +710,8 @@ permalink: /community-bank-insurance/
 <!-- ========================================
      SECTION 5: FINAL CTA
      ======================================== -->
-<section class="bank-final">
-  <div class="bank-final__inner">
+<section class="bank-final-wrap">
+  <div class="bank-final">
     <h2>Find Out Where Your Bank's Coverage Fails</h2>
     <p>One week from documents to walkthrough. Independent. Fee-based. Examiner-ready.</p>
     <div class="bank-final__actions">

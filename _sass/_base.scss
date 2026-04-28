@@ -100,6 +100,16 @@ img {
     height: auto;
 }
 
+// Responsive visibility utilities
+.desktop-only { }
+@media (max-width: $bp-tablet) {
+    .desktop-only { display: none !important; }
+}
+.mobile-only { display: none !important; }
+@media (max-width: $bp-tablet) {
+    .mobile-only { display: block !important; }
+}
+
 ul, ol {
     margin-bottom: 18px;
     padding-left: 24px;

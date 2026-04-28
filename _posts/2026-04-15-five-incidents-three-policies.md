@@ -49,7 +49,7 @@ After a significant cyber event, the question shifts from "what happened" to "wh
 
 Look at the policy interaction map as a whole. The rows with the most red are the ones where coverage breaks down: wire transfer fraud, regulatory investigations, board liability after a breach. These are not outliers. They are the incidents that land on a community bank CFO's desk.
 
-Most banks that carry all three policies assume they are covered. But nobody has read the policies together and asked: for this specific incident, which carrier pays? Until someone does that work, each carrier has a reason to say no, and the bank holds the loss.
+Most banks that carry all three policies assume they are covered. But nobody has read the policies together and asked: for this specific incident, which carrier pays? Until someone does that work, each carrier has a reason to say no, and the bank holds the loss. For a closer look at how each of these failures plays out, see [six ways coverage fails at claim time]({{ '/coverage-gaps/' | relative_url }}).
 
 This is the analysis at the center of every [Risk Intelligence Report]({{ '/risk-intelligence-report/' | relative_url }}). I read your specific policies, map them against these scenarios with your actual limits and exclusions, and show you where the seams are before a claim finds them.
 

@@ -24,7 +24,7 @@ permalink: /privacy/
 
 # Privacy Policy
 
-<span class="effective-date">Effective Date: April 23, 2026</span>
+<span class="effective-date">Effective Date: April 30, 2026</span>
 
 Breezy Risk Advisors is an independent risk advisory firm. We do not sell, place, or broker insurance. This Privacy Policy describes how we collect, use, and protect the information you share with us during the course of an insurance audit engagement.
 
@@ -61,15 +61,21 @@ We do not share your policy documents, coverage details, or financial informatio
 
 We implement industry-standard technical and organizational measures to protect your sensitive documents. This includes encrypted file transfers and secure cloud storage to safeguard the data used in your Risk Intelligence Reports.
 
-## 5. Your Rights and Choices
+## 5. Website Analytics
+
+This website uses Google Analytics to collect anonymous usage data, including pages visited, time on site, and general geographic location. This data helps us understand how visitors use the site and is not linked to any individual. Google Analytics may set cookies on your browser. No personally identifiable information is collected through website analytics. You can opt out by installing the [Google Analytics opt-out browser add-on](https://tools.google.com/dlpage/gaoptout).
+
+We do not use advertising trackers, retargeting pixels, or third-party marketing tools on this website.
+
+## 6. Your Rights and Choices
 
 You may request to review, update, or delete your information at any time. Certain data may need to be retained for legal and compliance purposes as required by insurance regulations.
 
-## 6. Changes to This Policy
+## 7. Changes to This Policy
 
 We may update this policy to reflect changes in our practices or legal requirements. We will notify you of any significant changes by updating the "Effective Date" at the top of this page.
 
-## 7. Contact Us
+## 8. Contact Us
 
 If you have questions about how we handle your data, please contact us at:
 

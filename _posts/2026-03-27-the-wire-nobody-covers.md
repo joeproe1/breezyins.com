@@ -23,11 +23,11 @@ On paper, this community bank is well protected. It carries a cyber policy, a fi
 
 The bank scrambles. It contacts law enforcement, flags the receiving account, and tries to claw the money back. Most of it is already gone. The bank calls its broker, who starts working the claim. Three policies, three carriers, three separate claims processes. This is not what most brokers deal with on a typical Monday.
 
-**The cyber carrier responds first.** Social engineering coverage was not included on the policy. The carrier does not offer eCrime coverage for financial institutions. Most do not. The cyber policy has no path to recovery.
+**The cyber carrier responds first.** The cyber policy did not include wire fraud coverage. Most carriers do not offer it for financial institutions. The cyber policy has no path to recovery.
 
-**The fidelity bond carrier responds next.** The bond has what is called a voluntary parting exclusion. In plain English: if the employee had authority to send the wire and chose to send it, the loss is excluded, even if he was deceived. The lending officer was not forced to send that wire. He was tricked, but he acted on his own authority using the bank's normal wire process. Under the bond language, that makes it voluntary.
+**The fidelity bond responds.** However, the bond has what is called a voluntary parting exclusion. In plain English: if the employee had authority to send the wire and chose to send it, the loss is excluded, even if he was deceived. The lending officer was not forced to send that wire. He was tricked, but he acted on his own authority using the bank's normal wire process. Under the bond language, that makes it voluntary.
 
-The bond does have a funds transfer clause that covers this type of loss, but it comes with a 50 percent co-payment. On a $400,000 wire, the bond pays $200,000. The bank absorbs the other $200,000.
+Thank God, the bond does have a funds transfer clause that covers this type of loss. The flipside: it comes with a 50 percent co-payment. On a $400,000 wire, the bond only pays $200,000. The bank absorbs the other $200,000.
 
 **The third policy, D&O, is not triggered directly.** No shareholder has filed a claim. No regulator has opened an investigation. Not yet. But the board now has to explain to examiners why a $400,000 fraud resulted in a $200,000 unrecovered loss, and why the bank's insurance program left the most common fraud scenario only half covered.
 

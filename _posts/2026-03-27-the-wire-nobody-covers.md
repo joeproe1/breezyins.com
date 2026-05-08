@@ -23,7 +23,7 @@ On paper, this community bank is well protected. It carries a cyber policy, a fi
 
 The bank scrambles. It contacts law enforcement, flags the receiving account, and tries to claw the money back. Most of it is already gone. The bank calls its broker, who starts working the claim. Three policies, three carriers, three separate claims processes. This is not what most brokers deal with on a typical Monday.
 
-**The cyber carrier responds first.** Social engineering coverage was not included on the policy. The option was available but never purchased. Why not? Because everyone assumed the fidelity bond covered fraud. The cyber policy has no path to recovery.
+**The cyber carrier responds first.** Social engineering coverage was not included on the policy. The carrier does not offer eCrime coverage for financial institutions. Most do not. The cyber policy has no path to recovery.
 
 **The fidelity bond carrier responds next.** The bond has what is called a voluntary parting exclusion. In plain English: if the employee had authority to send the wire and chose to send it, the loss is excluded, even if he was deceived. The lending officer was not forced to send that wire. He was tricked, but he acted on his own authority using the bank's normal wire process. Under the bond language, that makes it voluntary.
 
@@ -37,7 +37,7 @@ The bond does have a funds transfer clause that covers this type of loss, but it
 <div style="display: flex; flex-wrap: wrap; gap: 16px;">
 <div style="flex: 1; min-width: 180px; background: rgba(59,130,246,0.1); border-left: 4px solid #3B82F6; border-radius: 8px; padding: 20px; display: flex; flex-direction: column;">
 <div style="color: #93C5FD; font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px;">Cyber Policy</div>
-<div style="color: rgba(255,255,255,0.8); font-size: 15px; line-height: 1.55;">Social engineering coverage not purchased. No response.</div>
+<div style="color: rgba(255,255,255,0.8); font-size: 15px; line-height: 1.55;">Social engineering coverage not offered for financial institutions. No response.</div>
 <div style="margin-top: auto; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.12); display: flex; align-items: baseline; gap: 8px;"><div style="font-size: 12px; color: rgba(255,255,255,0.45); text-transform: uppercase; letter-spacing: 0.05em;">Recovery</div><div style="font-size: 20px; font-weight: 700; color: #93C5FD;">$0</div></div>
 </div>
 <div style="flex: 1; min-width: 180px; background: rgba(245,158,11,0.1); border-left: 4px solid #F59E0B; border-radius: 8px; padding: 20px; display: flex; flex-direction: column;">
@@ -80,22 +80,22 @@ These cases involve general businesses, not banks. The legal principles apply th
 
 ## The Fix
 
-The community bank in this scenario added social engineering coverage to its cyber policy and negotiated a higher limit on the fidelity bond's funds transfer clause at the next renewal. Coverage it could have had all along.
+The bond is the primary wire fraud policy for banks. Most cyber carriers do not offer social engineering or eCrime coverage for financial institutions. That is not a broker miss. It is an industry-wide appetite issue. The fix starts with the bond.
 
 Three things to check now:
 
 <div style="background: #f8faf9; border-radius: 10px; padding: 28px 32px; margin: 24px 0;">
 <div style="display: flex; gap: 16px; margin-bottom: 20px;">
 <div style="min-width: 32px; height: 32px; background: #00D4AA; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #0A2540; font-size: 16px;">1</div>
-<div><strong>If you do not have social engineering coverage on your cyber policy, add it.</strong> This is the most common gap I find when reviewing community bank cyber policies. The option is usually available on the form. It just was not selected.</div>
+<div><strong>Check the social engineering limit on your fidelity bond.</strong> If it is $100,000 or $250,000, that is too little for any community bank handling wire transfers. The market is moving toward $1 million. Push for it at your next renewal.</div>
 </div>
 <div style="display: flex; gap: 16px; margin-bottom: 20px;">
 <div style="min-width: 32px; height: 32px; background: #00D4AA; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #0A2540; font-size: 16px;">2</div>
-<div><strong>Check the social engineering limit on your fidelity bond.</strong> If it is $100,000 or $250,000, that is too little for any community bank handling wire transfers. Make sure it matches your Computer Fraud limit, or get as close as you can.</div>
+<div><strong>Eliminate or reduce the co-payment.</strong> A 50 percent co-payment on a funds transfer clause means the bank absorbs half of every loss, even when the coverage responds. On a $400,000 wire fraud, that is $200,000 out of the bank's pocket. The co-payment can often be negotiated down or removed at renewal.</div>
 </div>
 <div style="display: flex; gap: 16px;">
 <div style="min-width: 32px; height: 32px; background: #00D4AA; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #0A2540; font-size: 16px;">3</div>
-<div><strong>Eliminate or reduce the co-payment.</strong> A 50 percent co-payment on a funds transfer clause means the bank absorbs half of every loss, even when the coverage responds. On a $400,000 wire fraud, that is $200,000 out of the bank's pocket. The co-payment can often be negotiated down or removed at renewal.</div>
+<div><strong>If your cyber form offers social engineering or eCrime coverage, add it.</strong> Some cyber policies do include this option for financial institutions. If yours does and it was not selected, that is worth fixing. But do not assume your cyber policy can carry this risk. For most banks, the bond is the policy that pays on wire fraud.</div>
 </div>
 </div>
 

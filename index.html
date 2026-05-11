@@ -7,28 +7,64 @@ description: "I don't sell insurance. I audit it. Independent Risk Intelligence 
 <!-- Hero Section -->
 <section class="hero">
   <div class="container">
-    <div class="hero-content" style="text-align:left">
+    <div class="hero-split">
 
-      <div class="hero-breadcrumb">Independent Insurance Audit</div>
+      <div class="hero-text">
+        <div class="hero-breadcrumb">Independent Insurance Audit</div>
 
-      <h1>When a Cyber Incident Hits Your Bank, Three Policies Respond.</h1>
+        <h1>Your Bank Audits Everything. Except Its Insurance.</h1>
 
-      <p class="hero-tagline">Cyber insurance. Fidelity bond. D&amp;O. Nobody reads them together.</p>
+        <p class="hero-tagline">I read the policies line by line. One report. Plain English.</p>
 
-      <p class="hero-subtext desktop-only">
-        Each policy was sold separately. Each assumes the others cover what it excludes. When you file a claim, they might point at each other. I read all three together and deliver a plain-English report showing where coverage fails and what it costs to fix. Independent, fee-based, examiner-ready.
-      </p>
+        <div class="hero-chips">
+          <span class="hero-chip">20+ years across insurance</span>
+          <span class="hero-chip">Cybersecurity background</span>
+          <span class="hero-chip">No broker conflict</span>
+        </div>
 
-      <div class="hero-chips">
-        <span class="hero-chip">20+ years across insurance</span>
-        <span class="hero-chip">Cybersecurity background</span>
-        <span class="hero-chip">No broker conflict</span>
+        <div class="hero-cta">
+          <a href="{{ '/risk-intelligence-report/' | relative_url }}" class="btn-text" style="color:var(--brand-primary); font-weight:600; text-decoration:none; font-size:18px;">
+            See What the Report Covers &rarr;
+          </a>
+        </div>
       </div>
 
-      <div class="hero-cta">
-        <a href="{{ '/risk-intelligence-report/' | relative_url }}" class="btn-text" style="color:var(--brand-primary); font-weight:600; text-decoration:none; font-size:18px;">
-          See What the Report Covers &rarr;
-        </a>
+      <div class="hero-visual">
+        <svg class="hero-diagram" viewBox="0 0 420 380" xmlns="http://www.w3.org/2000/svg" aria-label="Diagram showing three insurance policies pointing blame at each other, with a coverage gap in the center">
+          <defs>
+            <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+              <polygon points="0 0, 8 3, 0 6" fill="#94a3b8"/>
+            </marker>
+          </defs>
+
+          <!-- Arrows forming the blame circle -->
+          <path d="M 280 80 Q 340 170 330 240" fill="none" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)" opacity="0.7"/>
+          <path d="M 290 280 L 140 280" fill="none" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)" opacity="0.7"/>
+          <path d="M 100 240 Q 80 170 140 80" fill="none" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)" opacity="0.7"/>
+
+          <!-- Denial labels on arrows -->
+          <text x="330" y="155" text-anchor="start" font-family="DM Sans, sans-serif" font-size="11" fill="#94a3b8" font-style="italic">"Not ours"</text>
+          <text x="210" y="310" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="11" fill="#94a3b8" font-style="italic">"Excluded"</text>
+          <text x="60" y="155" text-anchor="end" font-family="DM Sans, sans-serif" font-size="11" fill="#94a3b8" font-style="italic">"Not covered"</text>
+
+          <!-- Three policy nodes -->
+          <rect x="140" y="30" width="140" height="56" rx="10" fill="#0A2540"/>
+          <text x="210" y="55" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="14" font-weight="700" fill="white">Cyber Insurance</text>
+          <text x="210" y="72" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="11" fill="rgba(255,255,255,0.55)">Policy 1</text>
+
+          <rect x="10" y="250" width="130" height="56" rx="10" fill="#0A2540"/>
+          <text x="75" y="275" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="14" font-weight="700" fill="white">Fidelity Bond</text>
+          <text x="75" y="292" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="11" fill="rgba(255,255,255,0.55)">Policy 2</text>
+
+          <rect x="280" y="250" width="130" height="56" rx="10" fill="#0A2540"/>
+          <text x="345" y="275" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="14" font-weight="700" fill="white">D&amp;O Policy</text>
+          <text x="345" y="292" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="11" fill="rgba(255,255,255,0.55)">Policy 3</text>
+
+          <!-- Center gap callout -->
+          <circle cx="210" cy="195" r="42" fill="rgba(217,119,6,0.06)" stroke="#D97706" stroke-width="2" stroke-dasharray="5,4"/>
+          <text x="210" y="190" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#D97706" letter-spacing="0.05em">NOBODY</text>
+          <text x="210" y="208" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#D97706" letter-spacing="0.05em">PAYS</text>
+        </svg>
       </div>
 
     </div>
@@ -134,7 +170,7 @@ description: "I don't sell insurance. I audit it. Independent Risk Intelligence 
 <section class="problem-section" id="situations">
   <div class="container">
     <div class="section-header">
-      <h2>Where Coverage Fails</h2>
+      <h2>"We Thought That Was Covered."</h2>
     </div>
 
     <div class="problem-grid">

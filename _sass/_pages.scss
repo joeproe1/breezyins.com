@@ -568,6 +568,35 @@
     }
 }
 
+// Split hero layout (text left, visual right)
+.hero-split {
+    display: grid;
+    grid-template-columns: 57% 43%;
+    gap: 48px;
+    align-items: center;
+}
+
+.hero-text {
+    h1 {
+        font-size: 44px;
+        line-height: 1.2;
+        letter-spacing: -0.03em;
+    }
+}
+
+.hero-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-diagram {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+}
+
+// Legacy full-width hero (other pages)
 .hero-content {
     h1 {
         font-size: 52px;
@@ -1516,8 +1545,19 @@
         grid-template-columns: 1fr;
     }
 
-    .hero-content h1 {
+    .hero-content h1,
+    .hero-text h1 {
         font-size: 38px;
+    }
+
+    .hero-split {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero-visual {
+        max-width: 360px;
+        margin: 0 auto;
     }
 
     .problem-section,
@@ -1544,10 +1584,11 @@
 
 @media (max-width: $bp-tablet) {
     .hero {
-        padding: 140px 0 80px;
+        padding: 140px 0 60px;
     }
 
-    .hero-content h1 {
+    .hero-content h1,
+    .hero-text h1 {
         font-size: 32px;
     }
 
@@ -1559,6 +1600,10 @@
     .hero-chip {
         font-size: 11px;
         padding: 6px 12px;
+    }
+
+    .hero-visual {
+        max-width: 300px;
     }
 
     .walkaway-list li {

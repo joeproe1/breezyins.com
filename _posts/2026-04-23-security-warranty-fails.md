@@ -4,7 +4,7 @@ title: "What Happens When Your Security Warranty Fails"
 description: "A community bank passes its IT audit, satisfies the examiner, and still has a cyber claim denied. The security warranty in the policy application is a coverage condition most banks never check."
 date: 2026-04-23
 author: Joerg Proeve
-category: Community Banks
+category: Policy Deep-Dive
 read_time: "5 min read"
 image: /assets/images/Blog-Security-Warranty-Fails.png
 permalink: /insights/security-warranty-fails/

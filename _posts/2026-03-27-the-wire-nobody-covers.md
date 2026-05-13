@@ -5,7 +5,7 @@ card_title: "The Wire Nobody Covers"
 description: "A community bank wires $400,000 based on a fraudulent email. The cyber policy does not cover it. The fidelity bond says the employee acted voluntarily. The bank recovers less than half."
 date: 2026-03-27
 author: Joerg Proeve
-category: Community Banks
+category: Case Study
 read_time: "5 min read"
 image: /assets/images/Blog-Wire-Nobody-Covers.png
 permalink: /insights/the-wire-nobody-covers/

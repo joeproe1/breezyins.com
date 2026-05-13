@@ -4,7 +4,7 @@ title: "What Your Bank Examiner Expects From Your Cyber Insurance"
 description: "Bank examiners are asking harder questions about cyber coverage. Having a policy is not enough. Here is what they want to see and how to prepare."
 date: 2026-03-01
 author: Joerg Proeve
-category: Community Banks
+category: Policy Deep-Dive
 read_time: "4 min read"
 image: /assets/images/Blog-Examiner-Cyber-Insurance.png
 permalink: /insights/what-your-examiner-expects-from-cyber-insurance/

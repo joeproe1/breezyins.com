@@ -4,7 +4,7 @@ title: "When AI Clones Your CFO's Voice"
 description: "AI voice cloning just broke callback verification. Most social engineering coverage was written for email scams. A deepfake phone call may not be covered at all."
 date: 2026-03-20
 author: Joerg Proeve
-category: Community Banks
+category: Case Study
 read_time: "4 min read"
 image: /assets/images/Blog-Wire-Fraud-Bank.png
 permalink: /insights/when-ai-clones-your-cfos-voice/

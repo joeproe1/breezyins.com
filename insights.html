@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Insurance Audit Insights for Community Banks"
-description: "Coverage gap analysis, policy interaction reviews, and risk management articles for community banks and credit unions."
+description: "Case studies, policy deep-dives, and industry trends for community banks and credit unions."
 permalink: /insights/
 ---
 
@@ -18,8 +18,14 @@ permalink: /insights/
 .post-card-accent--policy-deep-dive { background: linear-gradient(90deg, #3B82F6, #0A2540); }
 .post-card-accent--case-study { background: linear-gradient(90deg, #F59E0B, #0A2540); }
 .post-card-accent--community-banks { background: linear-gradient(90deg, #8B5CF6, #0A2540); }
+.post-card-accent--industry-trends { background: linear-gradient(90deg, #00D4AA, #0A2540); }
 .post-card-body { padding: 24px 32px 32px; display: flex; flex-direction: column; flex: 1; }
-.post-card .post-category { font-family: var(--font-mono); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent); margin-bottom: 12px; }
+.post-card .post-category { font-family: var(--font-mono); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px; }
+.post-card .post-category--coverage-gaps { color: #00D4AA; }
+.post-card .post-category--policy-deep-dive { color: #3B82F6; }
+.post-card .post-category--case-study { color: #F59E0B; }
+.post-card .post-category--community-banks { color: #8B5CF6; }
+.post-card .post-category--industry-trends { color: #00D4AA; }
 .post-card h2 { font-size: 22px; font-weight: 800; color: var(--primary); margin: 0 0 12px; line-height: 1.3; letter-spacing: -0.01em; }
 .post-card h2 a { color: inherit; text-decoration: none; }
 .post-card h2 a:hover { color: var(--accent); }
@@ -28,16 +34,14 @@ permalink: /insights/
 .post-card .post-meta .divider { color: var(--border); }
 .post-card .read-more { display: inline-flex; align-items: center; gap: 6px; color: var(--accent); font-weight: 700; font-size: 15px; text-decoration: none; margin-top: 16px; }
 .post-card .read-more:hover { text-decoration: underline; }
-.insights-cta { text-align: center; max-width: 600px; margin: 56px auto 0; padding: 40px 36px; background: var(--primary); border-radius: 14px; }
-.insights-cta h3 { color: #fff; font-size: 22px; font-weight: 700; margin: 0 0 10px; }
-.insights-cta p { color: rgba(255,255,255,0.8); font-size: 16px; margin: 0 0 24px; line-height: 1.6; }
-.insights-cta .btn-primary { display: inline-block; padding: 16px 32px; font-size: 17px; font-weight: 700; background: var(--accent); color: var(--primary); border-radius: 8px; text-decoration: none; transition: background 0.25s, transform 0.15s; box-shadow: 0 4px 20px rgba(0, 212, 170, 0.3); }
-.insights-cta .btn-primary:hover { background: #00f5c3; transform: translateY(-2px); }
+.insights-footer-cta { text-align: center; margin: 48px auto 0; font-size: 16px; color: var(--text-secondary); }
+.insights-footer-cta a { color: var(--accent); font-weight: 700; text-decoration: none; }
+.insights-footer-cta a:hover { text-decoration: underline; }
 @media (max-width: 768px) {
     .insights-section { padding-top: 100px; }
     .insights-header h1 { font-size: 34px; }
     .blog-grid { grid-template-columns: 1fr; }
-    .insights-cta { margin: 40px 0 0; padding: 28px 20px; }
+    .insights-footer-cta { margin: 32px 0 0; }
 }
 </style>
 
@@ -45,7 +49,7 @@ permalink: /insights/
     <div class="container">
         <div class="insights-header">
             <h1>Insights</h1>
-            <p>Coverage gap analysis, policy interaction reviews, and risk management for community banks and credit unions.</p>
+            <p>Case studies, policy deep-dives, and industry trends for community banks and credit unions.</p>
         </div>
 
         <div class="blog-grid">
@@ -55,8 +59,9 @@ permalink: /insights/
             <div class="post-card">
                 <div class="post-card-accent post-card-accent--{{ post.category | default: 'community-banks' | slugify }}"></div>
                 <div class="post-card-body">
+                    <span class="post-category post-category--{{ post.category | default: 'community-banks' | slugify }}">{{ post.category }}</span>
                     <h2><a href="{{ post.url | relative_url }}">{{ post.card_title | default: post.title }}</a></h2>
-                    <p class="post-excerpt">{{ post.description | default: post.excerpt | strip_html | truncate: 100 }}</p>
+                    <p class="post-excerpt">{{ post.description | default: post.excerpt | strip_html | truncatewords: 18 }}</p>
                     <div class="post-meta">
                         <span>{{ post.date | date: "%B %-d, %Y" }}</span>
                         {% if post.read_time %}
@@ -71,9 +76,9 @@ permalink: /insights/
             {% endfor %}
         </div>
 
+        <div class="insights-footer-cta">
+            Have a coverage question? <a href="{{ '/contact/' | relative_url }}">Get in Touch &rarr;</a>
+        </div>
+
     </div>
 </section>
-
-{% include cta-banner.html title="Find Out What Your Coverage Looks Like Before an Examiner Asks" subtitle="Your next examination, your next board review, your next policy renewal. Any of those can expose a coverage problem you did not know you had." %}
-
-

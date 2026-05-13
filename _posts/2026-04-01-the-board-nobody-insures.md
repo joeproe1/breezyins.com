@@ -4,7 +4,7 @@ title: "The Board Nobody Insures"
 description: "A data breach hits a community bank. The D&O policy excludes cyber claims. The cyber policy excludes shareholder suits. Directors face personal liability with no insurance response."
 date: 2026-04-01
 author: Joerg Proeve
-category: Community Banks
+category: Case Study
 read_time: "5 min read"
 image: /assets/images/Blog-Board-Nobody-Insures.png
 permalink: /insights/the-board-nobody-insures/

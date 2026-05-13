@@ -12,7 +12,7 @@ permalink: /insights/the-counterparty-question/
 
 *An audit perspective for community bank boards, CFOs, and the examiners who eventually have to look at this.*
 
-A new insurance unicorn. Total funding raised in under 18 months: over $260 million. Valuation at the most recent round: $1.3 billion. The company writes cyber, tech errors and omissions, directors and officers, even a new product line called AI liability. It quotes and binds policies in minutes. It calls itself an AI-native, full-stack insurance carrier.
+A new insurance unicorn. Total funding raised in under 18 months: over $260 million. Valuation at the most recent round: $1.3 billion. The company writes cyber, tech errors and omissions, directors and officers, even a new product line called AI liability. It quotes and binds policies in minutes. It calls itself an AI-native, full-stack insurance carrier. The questions that follow apply to any carrier in this category.
 
 The investor narrative is growth and customer count. It does not feature loss ratios. It cannot, because the company has not been writing policies long enough to know.
 
@@ -22,7 +22,7 @@ For a community bank evaluating cyber insurance, the press release reads like go
 <div style="font-size: 20px; font-weight: 600; line-height: 1.5; color: #0A2540;">Who pays the claim?</div>
 </div>
 
-This essay is a brief on that question. It draws on 20 years experience on the carrier side and the audit work I do now for community banks.
+This essay is a brief on that question. It draws on more than a decade on the carrier and MGA side of insurance and the audit work I do now for community banks.
 
 ## What "full-stack AI carrier" means
 
@@ -31,6 +31,8 @@ The phrase has been used so often it sounds self-explanatory. It is not.
 A full-stack insurtech of this generation is typically three legal entities stacked together. There is a producer, a licensed agency or brokerage that sells the policy to the customer. There is a carrier, a licensed insurance company that issues the policy and is named on the declarations page. And there is a claims operation, often a third-party administrator, that handles claims after a loss.
 
 In the AI-native model, all three entities are affiliates of the same parent company. The pitch is that owning the entire stack removes friction, accelerates decisions, and lets the company control the customer experience end to end. That is true. It also means the financial strength behind the policy depends on a single carrier entity and whatever reinsurance program backs it, neither of which has been tested by a meaningful loss.
+
+To be clear, established carriers are also not immune to failure, and some new entrants may have strong reinsurance programs with top-tier reinsurers. But an untested program is a different risk than a proven one.
 
 Some full-stack insurtechs acquire dormant shell carriers to get licensed quickly. Others build their own carrier entities from scratch, which takes longer and requires more capital but gives them a clean start. Either path produces the same result: a carrier entity with no meaningful loss history on the lines it is now writing. The brand is new. The technology is new. The claims track record is blank.
 
@@ -50,7 +52,7 @@ Long-tail means the gap between when the premium is collected and when the ultim
 
 For an established carrier with 20 or 30 years of loss data on a given class, this is manageable. The actuarial team builds reserves into the financials. The reinsurance treaties are structured to absorb shock losses. The capital is sized to a realistic worst case.
 
-For a carrier writing the same classes for the first time, with an AI underwriting model that has never seen a full market cycle of losses, the reserving assumptions are unavoidably speculative. The capital required to hold the risk net is far larger than the equity these companies raise. Which means the risk is not really being held on the carrier's own balance sheet. It is being ceded to reinsurance.
+For a carrier writing the same classes for the first time, with an AI underwriting model that has never seen a full market cycle of losses, the reserving assumptions are unavoidably speculative. The difference is that AI-native carriers are entering multiple long-tail lines simultaneously, at scale, with no loss history on any of them. The capital required to hold the risk net is far larger than the equity these companies raise. Which means the risk is not really being held on the carrier's own balance sheet. It is being ceded to reinsurance.
 
 Reinsurance cession is normal. Established carriers do it too, and for good reason. The difference is the quality and structure of the program. An established carrier with a 20-year relationship with rated reinsurers and a demonstrated ability to collect on recoveries is in a different position than an 18-month-old carrier whose reinsurance program has never been tested by a meaningful loss event. A cyber policy with $5 million in limits looks like $5 million in protection when it is sold. If the carrier fails, the realized protection can be a fraction of that.
 
@@ -71,15 +73,15 @@ A community bank insurance audit that does not address counterparty risk is inco
 <div style="background: #f8faf9; border-radius: 10px; padding: 28px 32px; margin: 24px 0;">
 <div style="display: flex; gap: 16px; margin-bottom: 20px;">
 <div style="min-width: 32px; height: 32px; background: #00D4AA; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #0A2540; font-size: 16px;">1</div>
-<div><strong>Is the issuing carrier AM Best rated, and what is the rating?</strong> A- or better is investment-grade. Anything below or unrated needs a documented board response.</div>
+<div><strong>Is the issuing carrier rated by AM Best?</strong> A- or better is investment-grade. Anything below or unrated needs a documented board response.</div>
 </div>
 <div style="display: flex; gap: 16px; margin-bottom: 20px;">
 <div style="min-width: 32px; height: 32px; background: #00D4AA; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #0A2540; font-size: 16px;">2</div>
-<div><strong>What is the surplus of the issuing entity compared to the aggregate limits it has written?</strong> A small carrier writing high-limit programs is, by definition, dependent on reinsurance.</div>
+<div><strong>What is the surplus, the carrier's net assets available to pay claims, of the issuing entity compared to the aggregate limits it has written?</strong> A small carrier writing high-limit programs is, by definition, dependent on reinsurance.</div>
 </div>
 <div style="display: flex; gap: 16px; margin-bottom: 20px;">
 <div style="min-width: 32px; height: 32px; background: #00D4AA; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #0A2540; font-size: 16px;">3</div>
-<div><strong>What percentage of the risk is retained by the carrier, and what percentage is ceded to reinsurance?</strong> If the broker cannot answer, that is itself the answer.</div>
+<div><strong>What percentage of the risk is retained by the carrier, and what percentage is transferred to reinsurers?</strong> If the broker cannot answer, that is itself the answer.</div>
 </div>
 <div style="display: flex; gap: 16px; margin-bottom: 20px;">
 <div style="min-width: 32px; height: 32px; background: #00D4AA; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #0A2540; font-size: 16px;">4</div>
@@ -87,7 +89,7 @@ A community bank insurance audit that does not address counterparty risk is inco
 </div>
 <div style="display: flex; gap: 16px; margin-bottom: 20px;">
 <div style="min-width: 32px; height: 32px; background: #00D4AA; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #0A2540; font-size: 16px;">5</div>
-<div><strong>Is the issuing entity admitted in your state?</strong> If not, the state guaranty fund does not back the policy if the carrier fails.</div>
+<div><strong>Is the issuing entity admitted in your state?</strong> Admitted carriers participate in the state guaranty fund, which pays claims if the carrier goes insolvent.</div>
 </div>
 <div style="display: flex; gap: 16px; margin-bottom: 20px;">
 <div style="min-width: 32px; height: 32px; background: #00D4AA; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #0A2540; font-size: 16px;">6</div>
@@ -100,6 +102,8 @@ A community bank insurance audit that does not address counterparty risk is inco
 </div>
 
 These seven questions are not exotic. They are the questions any sophisticated commercial insurance buyer should be asking. The reason most community banks are not asking them is that no one has framed cyber insurance procurement as a counterparty risk decision yet.
+
+*The seven questions above are the audit. What follows is the perspective behind it.*
 
 ## A note for the insurance industry
 
@@ -117,4 +121,4 @@ Community bank boards do not need to take a position on which model is correct. 
 
 -----
 
-*If your community bank's cyber insurance has not been audited against the seven questions above, [get in touch]({{ '/contact/' | relative_url }}).*
+*If your community bank's cyber insurance has not been audited against the seven questions above, this is the work we do at [Breezy Risk Advisors]({{ '/contact/' | relative_url }}).*

@@ -1,0 +1,148 @@
+---
+layout: null
+sitemap: false
+---
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Header - The Counterparty Question</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0E3054;
+            overflow: hidden;
+        }
+
+        .header-image {
+            width: 100vw;
+            height: 100vh;
+            background: #0E3054;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .circle {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.04);
+            right: -100px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .circle-ring {
+            position: absolute;
+            width: 460px;
+            height: 460px;
+            border-radius: 50%;
+            border: 1.5px solid rgba(255, 255, 255, 0.08);
+            right: -80px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .circle-ring-outer {
+            position: absolute;
+            width: 560px;
+            height: 560px;
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            right: -130px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .circle-ring-outermost {
+            position: absolute;
+            width: 620px;
+            height: 620px;
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            right: -160px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .accent-line {
+            position: absolute;
+            bottom: 80px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: #00D4AA;
+        }
+
+        .content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 72px 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .title {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 72px;
+            font-weight: 700;
+            color: #FFFFFF;
+            line-height: 1.15;
+            margin-bottom: 20px;
+            max-width: 850px;
+        }
+
+        .subtitle {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 28px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.55);
+            max-width: 700px;
+            line-height: 1.4;
+        }
+
+        .logo {
+            position: absolute;
+            bottom: 28px;
+            left: 80px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 26px;
+            font-weight: 700;
+            color: #FFFFFF;
+        }
+
+        .logo .teal {
+            color: #00D4AA;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header-image">
+    <div class="circle"></div>
+    <div class="circle-ring"></div>
+    <div class="circle-ring-outer"></div>
+    <div class="circle-ring-outermost"></div>
+    <div class="accent-line"></div>
+
+    <div class="content">
+        <div class="title">The Counterparty<br>Question</div>
+        <div class="subtitle">What community bank boards should ask before buying cyber coverage from an AI-native carrier.</div>
+    </div>
+
+    <div class="logo">BREEZY<span class="teal">.risk</span></div>
+</div>
+
+</body>
+</html>

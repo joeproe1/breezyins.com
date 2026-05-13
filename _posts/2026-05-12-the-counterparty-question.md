@@ -12,7 +12,7 @@ permalink: /insights/the-counterparty-question/
 
 *An audit perspective for community bank boards, CFOs, and the examiners who eventually have to look at this.*
 
-A new insurance unicorn. Total funding raised in under 18 months: over $260 million. Valuation at the most recent round: $1.3 billion. The company writes cyber, tech errors and omissions, directors and officers, even a new product line called AI liability. It quotes and binds policies in minutes. It calls itself an AI-native, full-stack insurance carrier. The questions that follow apply to any carrier in this category.
+A new insurance unicorn. Total funding raised in under 18 months: over $260 million. Valuation at the most recent round: $1.3 billion. The company writes cyber, tech errors and omissions, directors and officers, even a new product line called AI liability. It quotes and binds policies in minutes. It calls itself an AI-native, full-stack insurance carrier.
 
 The investor narrative is growth and customer count. It does not feature loss ratios. It cannot, because the company has not been writing policies long enough to know.
 
@@ -38,7 +38,7 @@ Some full-stack insurtechs acquire dormant shell carriers to get licensed quickl
 
 Most of the first generation of insurtechs, the companies that raised billions between 2015 and 2021 to sell auto, renters, and homeowners insurance, have lost 80 to 95% of their market value. The loss curves caught up. And those were short-tail lines, where claims resolve in months, not years.
 
-This new generation is writing long-tail commercial lines. The actuarial math is slower and less forgiving.
+This new generation is writing long-tail commercial lines. The actuarial math is slower and less forgiving. The questions that follow apply to any carrier built on this model.
 
 ## The economics that do not show up in year one
 

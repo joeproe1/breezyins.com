@@ -58,7 +58,7 @@ Reinsurance cession is normal. Established carriers do it too, and for good reas
 
 A startup that loses its cyber coverage in a carrier failure has a bad day. A community bank that loses its cyber coverage in a carrier failure has a regulatory event.
 
-Federal financial institution examiners are looking more closely at vendor and counterparty risk every cycle. The cyber insurance carrier is a vendor. The expectations under FFIEC interagency guidance on vendor management include initial due diligence and ongoing monitoring of the financial condition of critical third parties. A cyber insurer is, by definition, a critical third party. The bank cannot transfer the regulatory consequences of an inadequate cyber insurance program to the insurer. The bank carries them.
+Federal examiners are looking more closely at vendor and counterparty risk every cycle. Your cyber insurance carrier is your vendor. That means the bank is expected to run due diligence on the carrier's financial condition, not just accept the broker's recommendation. If the carrier turns out to be inadequate, the bank owns the regulatory consequences.
 
 There is also a reputational dimension. A community bank that suffers a covered cyber loss and discovers, in the middle of incident response, that its insurance carrier is an 18-month-old startup whose claims operation has never processed a loss of this size, has problems beyond the dollar amount. Customers, depositors, and the local press will all reach the same conclusion: the bank chose poorly. The bank's board, not the broker, owns that conclusion.
 

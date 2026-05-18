@@ -1,5 +1,6 @@
 ---
 layout: post
+archived: true
 title: "The Help Desk Coverage Gap Most MSPs Miss"
 description: "Your Tech E&O policy probably excludes help desk services. Learn why password resets and technical support aren't covered, and what you need instead."
 date: 2026-01-22

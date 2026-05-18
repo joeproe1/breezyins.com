@@ -1,5 +1,6 @@
 ---
 layout: post
+archived: true
 title: "Your Tech E&O Policy Probably Excludes the Services You Actually Provide"
 description: "Standard Tech E&O policies exclude penetration testing, vulnerability assessments, and managed security. Here's the policy language that creates these gaps."
 date: 2026-01-02

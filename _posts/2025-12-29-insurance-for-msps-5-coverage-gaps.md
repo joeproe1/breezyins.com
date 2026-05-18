@@ -1,5 +1,6 @@
 ---
 layout: post
+archived: true
 title: "Insurance for MSPs: 5 Coverage Gaps"
 description: "The 5 most common coverage gaps in MSP insurance policies. Real scenarios showing where Tech E&O and cyber liability fail."
 date: 2025-12-29

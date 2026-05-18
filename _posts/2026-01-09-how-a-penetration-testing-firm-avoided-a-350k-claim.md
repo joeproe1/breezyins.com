@@ -1,5 +1,6 @@
 ---
 layout: post
+archived: true
 title: "How a Penetration Testing Firm Avoided a Devastating $350K Claim"
 description: "A real-world case study of how one pentesting firm's insurance gap nearly cost them everything, and what they did to fix it."
 date: 2026-01-09

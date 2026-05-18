@@ -1,5 +1,6 @@
 ---
 layout: post
+archived: true
 title: "Why MSPs Need Specialized Insurance"
 description: "Standard policies fail MSPs in four critical ways. Learn why cyber liability isn't enough and what coverage gaps put your business at risk."
 date: 2025-12-15

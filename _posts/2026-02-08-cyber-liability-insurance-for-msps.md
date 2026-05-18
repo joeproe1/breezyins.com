@@ -1,5 +1,6 @@
 ---
 layout: post
+archived: true
 title: "Cyber Liability Insurance for MSPs: What It Covers, What It Doesn't, and What to Check"
 description: "Most MSPs have a cyber liability policy. Few understand what it actually covers. Here's what cyber insurance does, where it stops, and 5 things to check right now."
 date: 2026-02-08

@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "Insurance Audit Insights for Community Banks"
-description: "Case studies, policy deep-dives, and industry trends for community banks and credit unions."
-permalink: /insights/
+title: "All Insights"
+description: "All articles on insurance audits, policy deep-dives, and industry trends for community banks and credit unions."
+permalink: /insights/all/
 ---
 
 <style>
@@ -36,7 +36,6 @@ permalink: /insights/
 .post-card .read-more:hover { text-decoration: underline; }
 .insights-footer-cta { text-align: center; margin: 48px auto 0; font-size: 16px; color: var(--text-secondary); }
 .insights-footer-cta a { color: var(--accent); font-weight: 700; text-decoration: none; }
-.insights-view-all { text-align: center; margin: 40px 0 0; }
 .insights-footer-cta a:hover { text-decoration: underline; }
 @media (max-width: 768px) {
     .insights-section { padding-top: 100px; }
@@ -49,13 +48,13 @@ permalink: /insights/
 <section class="insights-section">
     <div class="container">
         <div class="insights-header">
-            <h1>Insights</h1>
+            <h1>All Insights</h1>
             <p>Case studies, policy deep-dives, and industry trends for community banks and credit unions.</p>
         </div>
 
         <div class="blog-grid">
             {% assign visible_posts = site.posts | where_exp: "post", "post.archived != true" | sort: 'date' | reverse %}
-            {% for post in visible_posts limit: 6 %}
+            {% for post in visible_posts %}
             <div class="post-card">
                 <div class="post-card-accent post-card-accent--{{ post.category | default: 'community-banks' | slugify }}"></div>
                 <div class="post-card-body">
@@ -73,10 +72,6 @@ permalink: /insights/
                 </div>
             </div>
             {% endfor %}
-        </div>
-
-        <div class="insights-view-all">
-            <a href="{{ '/insights/all/' | relative_url }}" class="btn btn-secondary">View All Articles</a>
         </div>
 
         <div class="insights-footer-cta">

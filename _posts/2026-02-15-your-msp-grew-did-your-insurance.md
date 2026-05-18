@@ -1,5 +1,6 @@
 ---
 layout: post
+archived: true
 title: "Your MSP Grew. Did Your Insurance?"
 description: "When MSPs add service lines, acquire firms, or sign enterprise contracts, their insurance often stays frozen in place. Here's what breaks and how to catch it before a claim does."
 date: 2026-02-15

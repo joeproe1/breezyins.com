@@ -1,5 +1,6 @@
 ---
 layout: post
+archived: true
 title: "Cyber Liability vs. Tech E&O for MSPs: What Each Covers and Where Claims Fall Through"
 description: "MSPs need both cyber liability and Tech E&O. But the handoff between them is where most coverage failures happen. Here's how to close the gap."
 date: 2026-02-19

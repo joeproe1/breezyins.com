@@ -45,7 +45,7 @@ Traditional business interruption coverage requires a "covered peril," typically
 Contingent business interruption extensions do exist. They extend coverage to disruptions at named suppliers or customers. But most still require physical damage at the supplier's location. A ransomware attack, an export ban, a sanctions listing, a rare earth supply restriction, a shipping chokepoint closure: none of these are physical damage. But they are the actual exposures driving supply chain disruption in the semiconductor industry, and they fall outside what traditional business interruption was built to cover.
 
 <div style="border-left: 4px solid #00D4AA; padding: 24px 28px; background: rgba(0, 212, 170, 0.06); border-radius: 0 8px 8px 0; margin: 40px 0;">
-<div style="font-size: 20px; font-weight: 600; line-height: 1.5; color: #0A2540;">Our insurance architecture was built for fires and hurricanes. Actual risk exposures are ransomware, rare earth export bans, and single-source dependencies. The mismatch is structural, not a product configuration problem.</div>
+<div style="font-size: 20px; font-weight: 600; line-height: 1.5; color: #0A2540;">Our insurance architecture was built for fires and hurricanes.<br><br>Actual risk exposures are ransomware, rare earth export bans, and single-source dependencies. The mismatch is structural, not a product configuration problem.</div>
 </div>
 
 This isn't a theoretical gap. Lloyd's and Willis Towers Watson published a report in 2023, ["Loose Connections,"](https://assets.lloyds.com/media/b8c2cc60-24d7-45d2-b92b-782c161dd7c4/LloydsFutureset_LooseConnections_ExecutiveSummary_PartOne.pdf) that surveyed the semiconductor supply chain specifically. 52% of semiconductor companies considered supply chain insurance "mission critical." 81% cited lack of access to insurance solutions as a top challenge. The demand exists. The products don't.
@@ -75,7 +75,7 @@ Two alternatives to parametric deserve a direct hearing.
 <div style="background: #f8faf9; border-radius: 10px; padding: 28px 32px; margin: 24px 0;">
 <div style="display: flex; gap: 16px; margin-bottom: 20px;">
 <div style="min-width: 32px; height: 32px; background: #00D4AA; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #0A2540; font-size: 16px;">1</div>
-<div><strong>Broader indemnity design.</strong> Expand contingent business interruption endorsements to cover non-physical upstream disruption: cyberattacks at named suppliers, regulatory actions, production halts regardless of cause. Loss-matched, so no basis risk. The barrier is adjustment complexity. When one supplier disruption cascades through multiple downstream companies, proving each company's attributable loss becomes a multi-party exercise that could take years. That difficulty explains why no one has built this product.</div>
+<div><strong>Broader indemnity design.</strong> Expand contingent business interruption endorsements to cover non-physical upstream disruption: cyberattacks at named suppliers, regulatory actions, production halts regardless of cause. Loss-matched, so no basis risk.<br><br>The barrier is adjustment complexity. When one supplier disruption cascades through multiple downstream companies, proving each company's attributable loss becomes a multi-party exercise that could take years. That difficulty explains why no one has built this product.</div>
 </div>
 <div style="display: flex; gap: 16px;">
 <div style="min-width: 32px; height: 32px; background: #00D4AA; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #0A2540; font-size: 16px;">2</div>
@@ -83,7 +83,7 @@ Two alternatives to parametric deserve a direct hearing.
 </div>
 </div>
 
-Both of these alternatives are viable. Neither is a complete answer. The point is that parametric isn't the only tool in the room, and each tool covers a different slice of the problem.
+Both are viable. Neither is a complete answer. The point I want to make is that parametric isn't the only available tool, and each tool covers a different slice of the problem.
 
 ## Where the alternatives fall short
 
@@ -108,7 +108,7 @@ If the question is whether parametric insurance solves supply chain business int
 It starts with the baseline.
 
 <div style="border-left: 4px solid #00D4AA; padding: 24px 28px; background: rgba(0, 212, 170, 0.06); border-radius: 0 8px 8px 0; margin: 40px 0;">
-<div style="font-size: 20px; font-weight: 600; line-height: 1.5; color: #0A2540;">Downstream insurance coverage for semiconductor supply chain disruption is zero. Not parametric vs. a better indemnity product. Parametric vs. nothing.</div>
+<div style="font-size: 20px; font-weight: 600; line-height: 1.5; color: #0A2540;">Currently, downstream insurance coverage for semiconductor supply chain disruption is zero. The question is not "parametric vs. a better indemnity product", it's "parametric vs. nothing".</div>
 </div>
 
 $100 million in parametric payout on a $250 million loss is 40% coverage with 60% basis risk. That isn't good. But $100 million is $100 million more than the downstream companies received from their insurance programs. On an absolute basis, the product has problems. Against the actual alternative, it has value.
@@ -142,7 +142,7 @@ The trigger must solve the attribution problem. When a downstream company's reve
 
 The product must be layered with indemnity, not sold as standalone coverage. Parametric covers the immediate cash need while traditional business interruption or an expanded contingent business interruption endorsement works through the adjustment process. The coordination problem I described in "Fast Money, Slow Trust" must be solved at the product design stage, not discovered at claim time.
 
-And the semiconductor supply chain is the right place to prove it. Fewer than 20 major upstream suppliers. Almost all are US-listed public companies with SEC filing obligations. The dependency graph is bounded and knowable. Geographic concentration in identifiable clusters. Critical material dependencies that are well-documented. If a public-data parametric trigger can work anywhere, it can work here.
+And the semiconductor supply chain is the right place to prove it. Fewer than 20 major upstream suppliers. Almost all are US-listed public companies with SEC filing obligations. The dependency graph is bounded and knowable. Geographic concentration in identifiable clusters. Critical material dependencies that are well-documented. If a public-data parametric trigger can be validated anywhere, this supply chain is the place to start.
 
 ## Starting from the problem
 

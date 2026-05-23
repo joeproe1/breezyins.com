@@ -26,6 +26,7 @@ permalink: /insights/
 .post-card .post-category--case-study { color: #F59E0B; }
 .post-card .post-category--community-banks { color: #8B5CF6; }
 .post-card .post-category--industry-trends { color: #00D4AA; }
+.post-card .post-series { font-size: 11px; color: var(--text-secondary); font-style: italic; margin-bottom: 4px; display: block; }
 .post-card h2 { font-size: 22px; font-weight: 800; color: var(--primary); margin: 0 0 12px; line-height: 1.3; letter-spacing: -0.01em; }
 .post-card h2 a { color: inherit; text-decoration: none; }
 .post-card h2 a:hover { color: var(--accent); }
@@ -60,6 +61,7 @@ permalink: /insights/
                 <div class="post-card-accent post-card-accent--{{ post.category | default: 'community-banks' | slugify }}"></div>
                 <div class="post-card-body">
                     <span class="post-category post-category--{{ post.category | default: 'community-banks' | slugify }}">{{ post.category }}</span>
+                    {% if post.series_label %}<span class="post-series">{{ post.series_label }}</span>{% endif %}
                     <h2><a href="{{ post.url | relative_url }}">{{ post.card_title | default: post.title }}</a></h2>
                     <p class="post-excerpt">{{ post.description | default: post.excerpt | strip_html | truncatewords: 18 }}</p>
                     <div class="post-meta">
@@ -80,7 +82,7 @@ permalink: /insights/
         </div>
 
         <div class="insights-footer-cta">
-            Have a coverage question? <a href="{{ '/contact/' | relative_url }}">Get in Touch &rarr;</a>
+            Want to continue the conversation? <a href="{{ '/contact/' | relative_url }}">Get in Touch &rarr;</a>
         </div>
 
     </div>

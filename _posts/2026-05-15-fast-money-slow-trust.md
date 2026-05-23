@@ -9,6 +9,7 @@ category: Industry Trends
 read_time: "6 min read"
 image: /assets/images/Blog-Fast-Money-Slow-Trust.png
 permalink: /insights/fast-money-slow-trust/
+series_label: "Parametric Series · Part 1 of 3"
 ---
 
 *A practitioner's perspective on a market growing faster than confidence.*

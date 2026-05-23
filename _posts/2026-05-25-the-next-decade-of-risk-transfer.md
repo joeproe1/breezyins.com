@@ -9,6 +9,7 @@ category: Industry Trends
 read_time: "7 min read"
 image: /assets/images/Blog-Next-Decade-Risk-Transfer.png
 permalink: /insights/the-next-decade-of-risk-transfer/
+series_label: "Parametric Series · Part 3 of 3"
 ---
 
 *The third in a series on parametric insurance. The first post, [Fast Money, Slow Trust](/insights/fast-money-slow-trust/), examined basis risk, trigger design, and the coordination problem. The second post, [The Supply Chain Problem](/insights/the-supply-chain-problem/), tested parametric against a real $450 million semiconductor loss. This one looks forward.*

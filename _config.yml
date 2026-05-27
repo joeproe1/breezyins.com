@@ -13,6 +13,7 @@ linkedin: "https://www.linkedin.com/in/joergproeve/"
 # Build settings
 markdown: kramdown
 permalink: /insights/:title/
+future: false  # Jekyll default; posts with dates after build time are excluded
 
 # Plugins (all GitHub Pages whitelisted)
 plugins:

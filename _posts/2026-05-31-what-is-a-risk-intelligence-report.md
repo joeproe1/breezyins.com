@@ -65,7 +65,7 @@ A Risk Intelligence Report covers these seven areas.
 </div>
 <div style="display: flex; gap: 16px; align-items: baseline; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.12);" class="report-area">
 <div style="min-width: 28px; color: rgba(255,255,255,0.4); font-weight: 700; font-size: 15px;" class="report-area-num">5.</div>
-<div style="min-width: 220px; color: #93C5FD; font-weight: 700; font-size: 16px;" class="report-area-label">Vendor Coverage Alignment</div>
+<div style="min-width: 220px; color: #93C5FD; font-weight: 700; font-size: 16px;" class="report-area-label">Vendor Coverage</div>
 <div style="color: rgba(255,255,255,0.85); font-size: 15px; line-height: 1.6;">Maps your critical vendors against your policy's dependent business interruption terms.</div>
 </div>
 <div style="display: flex; gap: 16px; align-items: baseline; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.12);" class="report-area">
@@ -119,10 +119,10 @@ In the banks I have reviewed, I often find these coverage gaps: social engineeri
 
 ## Where To Start
 
-If this appeals to you, and you want to get your insurance program audited, here is how it goes: Send me your policy documents. I review them against realistic claim scenarios and deliver the report with a walkthrough call. No broker of record letter and no commitment to move your insurance.
+If you want your insurance program audited, here is how it goes: Send me your policy documents. I review them against realistic claim scenarios and deliver the report with a walkthrough call. No broker of record letter and no commitment to move your insurance.
 
 <div style="border-left: 3px solid #F59E0B; padding: 16px 20px; background: rgba(245,158,11,0.05); border-radius: 0 8px 8px 0; margin: 24px 0; font-size: 18px; font-weight: 600; color: #333;">
 A Risk Intelligence Report costs less than a penetration test or SOC 2 audit. Fixed fee, no retainer, no hourly billing.
 </div>
 
-If your insurance program has not been independently reviewed, a Risk Intelligence Report will show you where the gaps are. [Get in touch]({{ '/contact/' | relative_url }}).
+Ready to start? [Get in touch]({{ '/contact/' | relative_url }}).

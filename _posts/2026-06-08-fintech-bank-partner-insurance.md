@@ -3,7 +3,7 @@ layout: post
 title: "What Your Bank Partner Actually Requires (And Whether Your Insurance Delivers)"
 card_title: "Bank Partner Insurance Requirements"
 description: "Bank partners mandate specific insurance before go-live. Most FinTechs check the box without checking the policy language. Here is what to verify."
-date: 2026-06-02
+date: 2026-06-08
 author: Joerg Proeve
 category: FinTech
 read_time: "5 min read"

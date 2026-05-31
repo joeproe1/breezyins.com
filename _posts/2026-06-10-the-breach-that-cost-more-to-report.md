@@ -3,7 +3,7 @@ layout: post
 title: "The Breach That Cost More to Report Than to Fix"
 card_title: "The Breach That Cost More to Report"
 description: "A community bank discovers unauthorized access to 35,000 customer records. The technical fix takes a week. The notification costs consume the entire cyber policy. Here is the math most banks never run before renewal."
-date: 2026-06-02
+date: 2026-06-10
 author: Joerg Proeve
 category: Case Study
 read_time: "4 min read"

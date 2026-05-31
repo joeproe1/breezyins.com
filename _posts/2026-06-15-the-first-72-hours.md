@@ -3,7 +3,7 @@ layout: post
 title: "The First 72 Hours: What Your Cyber Policy Actually Pays For During an Incident"
 card_title: "The First 72 Hours"
 description: "Incident response coverage is listed on every cyber policy. But panel requirements, pre-approval conditions, waiting periods, and rate caps determine whether the bank can actually use it when systems go down at 2 AM on a Saturday."
-date: 2026-06-09
+date: 2026-06-15
 author: Joerg Proeve
 category: Policy Deep-Dive
 read_time: "4 min read"

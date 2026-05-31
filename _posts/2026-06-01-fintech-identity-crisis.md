@@ -3,7 +3,7 @@ layout: post
 title: "The FinTech Identity Crisis Nobody Is Solving"
 card_title: "The FinTech Identity Crisis"
 description: "FinTechs carry up to 8 insurance policies from different carriers, purchased at different times, for different stakeholders. Nobody reads them together. That is the problem."
-date: 2026-05-30
+date: 2026-06-01
 author: Joerg Proeve
 category: FinTech
 read_time: "6 min read"

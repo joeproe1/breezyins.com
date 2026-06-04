@@ -5,11 +5,10 @@ card_title: "The Next Decade of Risk Transfer"
 description: "The gap between how risks behave and how insurance responds is widening. Speed, correlation, and traceability are outpacing traditional models. Where does parametric fit in the next decade of risk transfer?"
 date: 2026-05-25
 author: Joerg Proeve
-category: Industry Trends
+category: Parametric
 read_time: "7 min read"
 image: /assets/images/Blog-Next-Decade-Risk-Transfer.png
 permalink: /insights/the-next-decade-of-risk-transfer/
-series_label: "Parametric Series · Part 3 of 3"
 ---
 
 *The third in a series on parametric insurance. The first post, [Fast Money, Slow Trust](/insights/fast-money-slow-trust/), examined basis risk, trigger design, and the coordination problem. The second post, [The Supply Chain Problem](/insights/the-supply-chain-problem/), tested parametric against a real $450 million semiconductor loss. This one looks forward.*

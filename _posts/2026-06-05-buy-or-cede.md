@@ -3,7 +3,7 @@ layout: post
 title: "Buy or Cede: What Two Mega-Deals Reveal About Cyber Underwriting"
 card_title: "Buy or Cede"
 description: "Zurich paid $10.9 billion for Beazley. Allianz handed its entire cyber book to Coalition. Two opposite strategies driven by the same admission: we cannot build this internally."
-date: 2026-06-03
+date: 2026-06-05
 author: Joerg Proeve
 category: Industry Trends
 read_time: "6 min read"

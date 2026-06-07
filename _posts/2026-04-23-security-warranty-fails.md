@@ -109,10 +109,6 @@ In the bank cyber policies I have reviewed to date, none included a no-rescissio
 </div>
 </div>
 
-<div style="border-left: 4px solid #00D4AA; padding: 24px 28px; background: rgba(0, 212, 170, 0.06); border-radius: 0 8px 8px 0; margin: 40px 0;">
-<div style="font-size: 20px; font-weight: 600; line-height: 1.5; color: #0A2540;">The premium is the cost of coverage. The application is the coverage itself.</div>
-</div>
-
 Security warranties are one of the first things examiners will question after a breach. For more on what they expect, see [What Your Bank Examiner Expects From Your Cyber Insurance]({{ '/insights/what-your-examiner-expects-from-cyber-insurance/' | relative_url }}).
 
 Your bank probably spends more time reviewing the premium than the application behind it. If nobody has compared your cyber application to your current IT environment, a [Risk Intelligence Report]({{ '/risk-intelligence-report/' | relative_url }}) will catch the gap before a claim does. [Get in touch]({{ '/contact/' | relative_url }}).

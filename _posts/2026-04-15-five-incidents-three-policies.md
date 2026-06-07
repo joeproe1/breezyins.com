@@ -51,6 +51,4 @@ Look at the policy interaction map as a whole. The rows with the most red are th
 
 Most banks that carry all three policies assume they are covered. But nobody has read the policies together and asked: for this specific incident, which carrier pays? Until someone does that work, each carrier has a reason to say no, and the bank holds the loss. For a closer look at how each of these failures plays out, see [six ways coverage fails at claim time]({{ '/coverage-gaps/' | relative_url }}).
 
-This is the analysis at the center of every [Risk Intelligence Report]({{ '/risk-intelligence-report/' | relative_url }}). I read your specific policies, map them against these scenarios with your actual limits and exclusions, and show you where the seams are before a claim finds them.
-
-If your bank has not had someone do this work, [get in touch]({{ '/contact/' | relative_url }}).
+This is the analysis at the center of every [Risk Intelligence Report]({{ '/risk-intelligence-report/' | relative_url }}). I read your specific policies, map them against these scenarios with your actual limits and exclusions, and show you where the seams are before a claim finds them. If your bank has not had someone do this work, [get in touch]({{ '/contact/' | relative_url }}).

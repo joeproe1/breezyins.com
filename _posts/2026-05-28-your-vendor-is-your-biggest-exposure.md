@@ -81,4 +81,4 @@ Dependent business interruption coverage isn't straightforward. It includes cond
 </div>
 </div>
 
-Vendor coverage is one of eight categories in my [Risk Intelligence Report]({{ '/risk-intelligence-report/' | relative_url }}). It maps every critical vendor against the cyber policy's dependent BI terms and the bond's vendor definitions to determine whether a real outage scenario would be covered, sublimited, or excluded entirely. [Get in touch]({{ '/contact/' | relative_url }}).
+Vendor coverage is one of the areas I review in a [Risk Intelligence Report]({{ '/risk-intelligence-report/' | relative_url }}). If you want to know whether a real vendor outage would be covered, sublimited, or excluded under your current program, [get in touch]({{ '/contact/' | relative_url }}).

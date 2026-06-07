@@ -109,3 +109,7 @@ Any buyer evaluating a parametric insurance product should answer five questions
 </div>
 
 The parametric insurance market is growing faster than the honest conversation about its limitations. That shouldn't be a reason to avoid parametric products, they solve real problems that indemnity insurance can't. But it's a reason to know what you're buying, understand its limitations, evaluate the trigger, and coordinate with your existing insurance program. Ask the questions that conference panels skip.
+
+-----
+
+*I'm always happy to continue this conversation. [Get in touch]({{ '/contact/' | relative_url }}).*

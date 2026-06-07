@@ -92,8 +92,4 @@ Knowing where the bond stops and the cyber policy starts matters because the two
 </div>
 </div>
 
-<div style="border-left: 4px solid #00D4AA; padding: 24px 28px; background: rgba(0, 212, 170, 0.06); border-radius: 0 8px 8px 0; margin: 40px 0;">
-<div style="font-size: 20px; font-weight: 600; line-height: 1.5; color: #0A2540;">Many banks think the bond covers fraud. It does, but only when the conditions are met: the right sublimit, the right verification procedure, the right type of access. Miss one condition, and the coverage doesn't pay.</div>
-</div>
-
 If you haven't read your bond's social engineering endorsement, checked the sublimit against your wire transfer volume, or verified whether the authorized access exclusion applies to your operations, a [Risk Intelligence Report]({{ '/risk-intelligence-report/' | relative_url }}) will surface those gaps before a claim does. [Get in touch]({{ '/contact/' | relative_url }}).

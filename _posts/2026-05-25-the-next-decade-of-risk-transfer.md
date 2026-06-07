@@ -111,3 +111,7 @@ Get there and parametric stops being a niche product and becomes the layer that 
 Miss it, and parametric stays what it's been for ten years: a good idea with good marketing and not much premium. The gap keeps growing. And the exposures sitting outside the system, the $450 million losses that traditional insurance covers at zero, keep getting bigger and more frequent.
 
 The direction is already set. The only open question is whether the industry can move fast enough to close the gap before it's too wide to close at all.
+
+-----
+
+*I'm happy to talk through any of this. [Get in touch]({{ '/contact/' | relative_url }}).*

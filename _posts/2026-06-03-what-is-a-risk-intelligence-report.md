@@ -122,7 +122,5 @@ In the banks I have reviewed, I often find these coverage gaps: social engineeri
 If you want your insurance program audited, here is how it goes: Send me your policy documents. I review them against realistic claim scenarios and deliver the report with a walkthrough call. No broker of record letter and no commitment to move your insurance.
 
 <div style="border-left: 3px solid #F59E0B; padding: 16px 20px; background: rgba(245,158,11,0.05); border-radius: 0 8px 8px 0; margin: 24px 0; font-size: 18px; font-weight: 600; color: #333;">
-A Risk Intelligence Report costs less than a penetration test or SOC 2 audit. Fixed fee, no retainer, no hourly billing.
+A Risk Intelligence Report costs less than a penetration test or SOC 2 audit. Fixed fee, no retainer, no hourly billing. Ready to start? <a href="{{ '/contact/' | relative_url }}" style="color: #333;">Get in touch</a>.
 </div>
-
-Ready to start? [Get in touch]({{ '/contact/' | relative_url }}).

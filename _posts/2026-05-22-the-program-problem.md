@@ -160,10 +160,6 @@ Before your next renewal, ask your broker these questions:
 
 If your broker can't answer these without checking, that's not a criticism of the broker. It's evidence that nobody has read the standard forms.
 
-<div style="border-left: 4px solid #00D4AA; padding: 24px 28px; background: rgba(0, 212, 170, 0.06); border-radius: 0 8px 8px 0; margin: 40px 0;">
-<div style="font-size: 20px; font-weight: 600; line-height: 1.5; color: #0A2540;">The program isn't the problem. The assumption that the program covers everything is the problem.</div>
-</div>
-
 For more on how wire fraud specifically falls between the bond and cyber policy, see [The Wire Nobody Covers]({{ '/insights/the-wire-nobody-covers/' | relative_url }}). For the fidelity bond conditions that most banks have never checked, see [What Your Fidelity Bond Won't Pay]({{ '/insights/what-your-fidelity-bond-wont-pay/' | relative_url }}).
 
-A [Risk Intelligence Report]({{ '/risk-intelligence-report/' | relative_url }}) audits your program's standard forms against your bank's operations and regulatory requirements. It identifies the gaps, scores their severity, and tells you which ones to fix first. [Get in touch]({{ '/contact/' | relative_url }}).
+If your bank is on a program, someone should be reading the standard forms against your actual operations. That is what a [Risk Intelligence Report]({{ '/risk-intelligence-report/' | relative_url }}) does. [Get in touch]({{ '/contact/' | relative_url }}) if you want to know what your program covers and what it doesn't.

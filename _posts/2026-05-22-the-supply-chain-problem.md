@@ -152,3 +152,7 @@ The insurance industry's instinct when it sees an uninsured risk is to reach for
 For supply chain business interruption, the honest answer is that no single tool solves the whole problem. Broader indemnity design, contingent capital, and parametric triggers each cover different slices. The value is in knowing which slice is which, and in being honest about which slices remain uncovered.
 
 The semiconductor supply chain has a $450 million proof point that the current approach — which is no approach at all — doesn't work. What replaces it should start from the problem, not from whichever product happens to be raising capital.
+
+-----
+
+*If this research direction interests you, [get in touch]({{ '/contact/' | relative_url }}).*

@@ -88,13 +88,5 @@ layout: default
         {% include author-bio.html %}
 
         {% include share-buttons.html %}
-
-        <footer class="post-footer">
-            {% if page.category == "Industry Trends" or page.category == "Parametric" %}
-                {% include cta-banner.html title="Want to continue this conversation?" subtitle="I'm always happy to talk through these topics." %}
-            {% else %}
-                {% include cta-banner.html %}
-            {% endif %}
-        </footer>
     </div>
 </article>

@@ -20,10 +20,6 @@ A 10% to 15% premium reduction year over year is not necessarily a win. It can m
 
 The claims data tells a different story than the premium data. When premiums and claims move in opposite directions, the gap between expected coverage and actual coverage is widening. Banks that bought based on price three years ago are starting to discover this in claim notices.
 
-<div style="border-left: 4px solid #00D4AA; padding: 24px 28px; background: rgba(0, 212, 170, 0.06); border-radius: 0 8px 8px 0; margin: 40px 0;">
-<div style="font-size: 20px; font-weight: 600; line-height: 1.5; color: #0A2540;">The savings the broker is showing you on premium may be the cost the carrier is shifting to you on coverage.</div>
-</div>
-
 What I am telling community banks: don't let a lower premium close the conversation. Compare the current form against last year's, line by line. Look at what changed in the exclusions, sublimits, and trigger language. For a deeper look at what community bank cyber policies typically cover and miss, see [Cyber Insurance for Community Banks]({{ '/insights/cyber-insurance-for-community-banks/' | relative_url }}).
 
 If you want an independent read on what your current policy actually covers, a [Risk Intelligence Report]({{ '/risk-intelligence-report/' | relative_url }}) will show you exactly where you stand. [Get in touch]({{ '/contact/' | relative_url }}).

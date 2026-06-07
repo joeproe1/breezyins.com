@@ -126,8 +126,4 @@ If you run a FinTech or manage its insurance program, you should be able to answ
 </div>
 </div>
 
-<div style="border-left: 4px solid #00D4AA; padding: 24px 28px; background: rgba(0, 212, 170, 0.06); border-radius: 0 8px 8px 0; margin: 40px 0;">
-<div style="font-size: 20px; font-weight: 600; line-height: 1.5; color: #0A2540;">Insurance platforms can sell you a policy in five minutes. They don't have anyone who reads all your policies together and tells you where the program might break.</div>
-</div>
-
-A [Risk Intelligence Report]({{ '/risk-intelligence-report/' | relative_url }}) audits your entire insurance program against your operations, your bank partner contracts, your regulatory requirements, and your investor mandates. It maps where the policies work together and where they do not. [Get in touch]({{ '/contact/' | relative_url }}).
+If nobody has read your policies together against your bank partner agreements and regulatory requirements, that's the gap I fill. [Get in touch]({{ '/contact/' | relative_url }}) and I'll tell you whether your program holds up.

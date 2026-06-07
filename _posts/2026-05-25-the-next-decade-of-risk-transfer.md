@@ -114,4 +114,4 @@ The direction is already set. The only open question is whether the industry can
 
 -----
 
-*I'm happy to talk through any of this. [Get in touch]({{ '/contact/' | relative_url }}).*
+*I write about where risk transfer is headed and how the pieces fit together. If this is relevant to what you're working on, [get in touch]({{ '/contact/' | relative_url }}).*

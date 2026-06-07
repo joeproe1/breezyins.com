@@ -155,4 +155,4 @@ The semiconductor supply chain has a $450 million proof point that the current a
 
 -----
 
-*If this research direction interests you, [get in touch]({{ '/contact/' | relative_url }}).*
+*I'm working through how parametric triggers and traditional indemnity can be layered for supply chain risk. If you're thinking about the same problem, [get in touch]({{ '/contact/' | relative_url }}).*

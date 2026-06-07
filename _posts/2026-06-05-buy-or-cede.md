@@ -95,4 +95,4 @@ Most of the conversation about Zurich-Beazley and Allianz-Coalition is focused o
 
 -----
 
-*If your community bank has not had an independent review of who is actually standing behind your cyber, fidelity, and D&O policies, [get in touch]({{ '/contact/' | relative_url }}).*
+*Who stands behind your policy matters at claim time. If you want to understand how that applies to your insurance program, [get in touch]({{ '/contact/' | relative_url }}).*

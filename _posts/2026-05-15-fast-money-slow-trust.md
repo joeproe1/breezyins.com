@@ -112,4 +112,4 @@ The parametric insurance market is growing faster than the honest conversation a
 
 -----
 
-*I'm always happy to continue this conversation. [Get in touch]({{ '/contact/' | relative_url }}).*
+*Parametric has real potential, but only if the coordination problems get solved before the capital moves on. If you're working on that, [get in touch]({{ '/contact/' | relative_url }}).*

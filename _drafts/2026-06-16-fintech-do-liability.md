@@ -3,7 +3,7 @@ layout: post
 title: "Directors and Officers Liability for FinTech Founders: Why Your D&O Policy Might Not Protect You"
 card_title: "FinTech D&O Liability"
 description: "FinTech founders face personal liability from regulators, not just investors. Standard D&O policies were not built for the regulatory exposure FinTechs create. Here is where the gaps are."
-date: 2026-06-09
+date: 2026-06-16
 author: Joerg Proeve
 category: FinTech
 read_time: "6 min read"

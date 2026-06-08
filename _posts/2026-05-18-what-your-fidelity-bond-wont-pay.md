@@ -6,6 +6,7 @@ description: "Community banks assume the bond covers fraud. It does, with condit
 date: 2026-05-18
 author: Joerg Proeve
 category: Policy Deep-Dive
+image: /assets/images/Blog-Fidelity-Bond.png
 read_time: "4 min read"
 permalink: /insights/fidelity-bond/
 ---

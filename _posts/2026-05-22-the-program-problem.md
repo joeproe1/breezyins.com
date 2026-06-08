@@ -6,6 +6,7 @@ description: "Most community banks buy insurance through association-endorsed pr
 date: 2026-05-22
 author: Joerg Proeve
 category: Policy Deep-Dive
+image: /assets/images/Blog-Program-Problem.png
 read_time: "6 min read"
 permalink: /insights/the-program-problem/
 ---

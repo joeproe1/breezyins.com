@@ -6,6 +6,7 @@ description: "Your bank audits its financials, its IT controls, its vendor compl
 date: 2026-06-03
 author: Joerg Proeve
 category: Policy Deep-Dive
+image: /assets/images/Blog-What-Is-RIR.png
 read_time: "5 min read"
 permalink: /insights/what-is-a-risk-intelligence-report/
 ---

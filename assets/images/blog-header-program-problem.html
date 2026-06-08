@@ -6,72 +6,79 @@ sitemap: false
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>OG Default - Breezy Risk</title>
+    <title>Blog Header - The Program Problem</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             margin: 0;
             padding: 0;
-            background: #0A2540;
+            background: #0E3054;
             overflow: hidden;
         }
 
         .header-image {
             width: 100vw;
             height: 100vh;
-            background: #0A2540;
+            background: #0E3054;
             position: relative;
             overflow: hidden;
         }
 
         .circle {
             position: absolute;
-            width: 450px;
-            height: 450px;
+            width: 500px;
+            height: 500px;
             border-radius: 50%;
-            background: #00D4AA;
-            opacity: 0.04;
-            right: -160px;
+            background: rgba(255, 255, 255, 0.04);
+            right: -100px;
             top: 50%;
             transform: translateY(-50%);
         }
 
         .circle-ring {
             position: absolute;
-            width: 420px;
-            height: 420px;
+            width: 460px;
+            height: 460px;
             border-radius: 50%;
-            border: 1.5px solid #00D4AA;
-            opacity: 0.15;
-            right: -140px;
+            border: 1.5px solid rgba(255, 255, 255, 0.08);
+            right: -80px;
             top: 50%;
             transform: translateY(-50%);
         }
 
         .circle-ring-outer {
             position: absolute;
-            width: 520px;
-            height: 520px;
+            width: 560px;
+            height: 560px;
             border-radius: 50%;
-            border: 1px solid #00D4AA;
-            opacity: 0.08;
-            right: -190px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            right: -130px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .circle-ring-outermost {
+            position: absolute;
+            width: 620px;
+            height: 620px;
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            right: -160px;
             top: 50%;
             transform: translateY(-50%);
         }
 
         .accent-line {
             position: absolute;
-            bottom: 100px;
+            bottom: 80px;
             left: 0;
             right: 0;
-            height: 2px;
+            height: 3px;
             background: #00D4AA;
-            opacity: 0.25;
         }
 
         .content {
@@ -86,45 +93,47 @@ sitemap: false
             justify-content: center;
         }
 
-        .logo-large {
+        .category {
             font-family: 'JetBrains Mono', monospace;
-            font-size: 64px;
-            font-weight: 800;
-            color: #FFFFFF;
-            margin-bottom: 12px;
-        }
-
-        .logo-large .teal {
+            font-size: 18px;
+            font-weight: 700;
             color: #00D4AA;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 16px;
         }
 
-        .company-name {
+        .title {
             font-family: 'DM Sans', sans-serif;
-            font-size: 24px;
-            font-weight: 500;
-            color: rgba(255, 255, 255, 0.55);
-            letter-spacing: 0.04em;
-            margin-bottom: 32px;
-        }
-
-        .tagline {
-            font-family: 'DM Sans', sans-serif;
-            font-size: 28px;
+            font-size: 72px;
             font-weight: 700;
             color: #FFFFFF;
-            max-width: 600px;
-            line-height: 1.3;
+            line-height: 1.15;
+            margin-bottom: 20px;
+            max-width: 850px;
         }
 
-        .url {
+        .subtitle {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 28px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.55);
+            max-width: 700px;
+            line-height: 1.4;
+        }
+
+        .logo {
             position: absolute;
-            bottom: 40px;
+            bottom: 28px;
             left: 80px;
             font-family: 'JetBrains Mono', monospace;
-            font-size: 15px;
-            font-weight: 600;
-            color: rgba(255, 255, 255, 0.4);
-            letter-spacing: 0.02em;
+            font-size: 26px;
+            font-weight: 700;
+            color: #FFFFFF;
+        }
+
+        .logo .teal {
+            color: #00D4AA;
         }
     </style>
 </head>
@@ -134,15 +143,16 @@ sitemap: false
     <div class="circle"></div>
     <div class="circle-ring"></div>
     <div class="circle-ring-outer"></div>
+    <div class="circle-ring-outermost"></div>
     <div class="accent-line"></div>
 
     <div class="content">
-        <div class="logo-large">BREEZY<span class="teal">.risk</span></div>
-        <div class="company-name">Breezy Risk</div>
-        <div class="tagline">Independent Insurance Coverage Gap Analysis</div>
+        <div class="category">Policy Deep-Dive</div>
+        <div class="title">The Program Problem</div>
+        <div class="subtitle">Why bundled bank insurance leaves gaps nobody checks.</div>
     </div>
 
-    <div class="url">breezyrisk.com</div>
+    <div class="logo">BREEZY<span class="teal">.risk</span></div>
 </div>
 
 </body>

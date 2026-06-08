@@ -6,6 +6,7 @@ description: "FinTechs carry up to 8 insurance policies from different carriers,
 date: 2026-06-01
 author: Joerg Proeve
 category: FinTech
+image: /assets/images/Blog-FinTech-Identity-Crisis.png
 read_time: "6 min read"
 permalink: /insights/fintech-identity-crisis/
 ---

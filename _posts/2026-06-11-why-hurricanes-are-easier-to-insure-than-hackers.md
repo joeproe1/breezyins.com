@@ -6,7 +6,7 @@ description: "Cyber catastrophe bonds have crossed $1.2 billion. The capital mar
 date: 2026-06-11
 author: Joerg Proeve
 category: Industry Trends
-read_time: "5 min read"
+read_time: "4 min read"
 image: /assets/images/Blog-Hurricanes-vs-Hackers.png
 permalink: /insights/hurricanes-vs-hackers/
 ---
@@ -55,7 +55,7 @@ When I wrote about the Zurich-Beazley deal in "[Buy or Cede]({{ '/insights/buy-o
 
 In May this year, Allianz transferred its entire standalone cyber book to Coalition, a specialist MGA, under a ten-year exclusive agreement. Coalition has not issued a single cat bond.
 
-The asymmetry between the two deals is even deeper than it first appeared. Zurich bought the full stack including the capital markets exit. Allianz outsourced underwriting but kept the balance sheet.
+Zurich bought the full stack including the capital markets exit. Allianz outsourced underwriting but kept the balance sheet.
 
 ## The Trigger Problem
 
@@ -83,41 +83,19 @@ And, no cyber cat bond has ever been triggered. CrowdStrike in July 2024 crashed
 
 ## The Threat Multiplier
 
-The cyber risk is growing faster than the market's ability to model it. Three forces are compounding.
-
-Credential phishing attacks are surging, driven by AI-generated content. Deepfake fraud caused over $1 billion in direct losses in the US in 2025, triple the prior year. Munich Re's assessment is that AI will affect the frequency of attacks more than severity. CyberCube warned of an AI "reality check" for cyber insurance, as attack surfaces expand faster than defenses can keep pace. When frequency rises faster than pricing can adjust, the models fall behind.
-
-The quantum timeline has compressed. The computing power needed to break today's encryption has dropped by orders of magnitude in just a few years, driven by algorithmic advances, not hardware breakthroughs. Nation-states are already collecting encrypted data, waiting for quantum capability to decrypt it. NIST plans to retire the encryption standards that protect most of today's internet traffic by 2035.
-
-Nation-state activity adds a dimension that property catastrophe modeling never had to account for. Lloyd's war exclusion now requires standalone cyber policies to exclude state-backed operations, but attribution remains unresolved. The Merck NotPetya dispute took seven years to settle.
-
-These forces compound. AI accelerates the identification of targets. Quantum threatens to break the encryption that protects them. Nation-states combine both capabilities at scale with no profit motive constraining their appetite for disruption.
+The risk is growing faster than the market's ability to model it. AI-generated deepfake fraud caused over $1 billion in US losses in 2025, triple the prior year, and Munich Re expects AI to increase attack frequency more than severity. When frequency rises faster than pricing can adjust, the models fall behind. NIST plans to retire current encryption standards by 2035 as the quantum timeline compresses, and nation-states are already collecting encrypted data for future decryption. Lloyd's war exclusion now requires standalone cyber policies to exclude state-backed operations, but attribution remains unresolved. The Merck NotPetya dispute took seven years to settle.
 
 ## What the Pricing Tells Us
 
 When the first cyber cat bonds came to market, investors charged a steep premium for the novelty of an untested asset class. That premium has eroded 36% from 2024 to 2025, according to Gallagher Securities. Beazley's *PoleStar Re 2026-1* priced at 6.8 times expected loss, down from 10.7 times on the 2024 deals. Investors are getting more comfortable with the risk.
 
-But "more comfortable" is relative. Cyber cat bonds still trade at roughly 2.7 times the broader cat bond market average. The structural reasons for that premium have not changed.
-
-Cat bonds are more expensive than traditional reinsurance for most layers. But they offer several advantages that reinsurance cannot match: zero counterparty risk through full collateralization, multi-year price lock versus annual renewal, and capacity for tail risk that traditional reinsurers will not write. In practice, cyber cat bonds sit at the top of the reinsurance tower. They are complementary, not competitive.
-
-Man Group, a significant ILS investor, has called cyber the "third peak peril" alongside US wind and Japanese earthquake. The framing is aspirational but directionally significant. Global cyber premiums stand at around $15 billion. The Geneva Association estimates the protection gap at 90%. Munich Re projects cyber premiums to more than double by 2030. Traditional reinsurance cannot close that gap alone.
-
-## Why Only Four Sponsors
-
-The cedant list is short. Issuing a cyber cat bond requires a portfolio large enough to justify attachment points above $500 million, sophisticated internal modeling, and willingness to open the book to third-party scrutiny. Most carriers write cyber as one line among many. Only a handful have the concentration to make a standalone cat bond economically efficient.
-
-Traditional reinsurance remains the main headwind. Cyber reinsurance rates have declined for three consecutive years. When traditional reinsurance is abundant and cheaper, the cat bond loses its economic rationale for all but the most committed sponsors.
-
-The catalyst will be one of three things: a hardening reinsurance market that makes cat bond economics competitive, a systemic event that tests and validates the structures, or continued pricing compression that brings new cedants into the market.
+But "more comfortable" is relative. Cyber cat bonds still trade at roughly 2.7 times the broader cat bond market average. The structural reasons for that premium have not changed. Only four sponsors have issued 144A cyber cat bonds. The economics require a portfolio large enough to justify $500 million-plus attachment points, and three consecutive years of declining cyber reinsurance rates have undercut the case for new entrants.
 
 ## Why This Matters Beyond the Capital Markets
 
 More capital absorbing cyber tail risk is good for every institution that holds a cyber policy. More capacity means more competition, better terms, broader coverage.
 
 But only if the structure holds when tested. The community banks I audit carry policies that sit at the end of a chain: carrier, reinsurer, capital markets. If any link in that chain reprices after a systemic event, the policyholder feels it at renewal.
-
-I have been in the corporate strategy seat at a global carrier, run technology strategy at another carrier, built and run the operations at a cyber insurance MGA, and now audit the programs these carriers and MGAs produce. The capital markets pipeline is the newest part of the cyber insurance story. It is also the part with the least history and the most uncertainty.
 
 <div style="border-left: 4px solid #00D4AA; padding: 24px 28px; background: rgba(0, 212, 170, 0.06); border-radius: 0 8px 8px 0; margin: 40px 0;">
 <div style="font-size: 20px; font-weight: 600; line-height: 1.5; color: #0A2540;">No cyber cat bond has ever paid a claim. When one does, everything about this market gets recalibrated.</div>

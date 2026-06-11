@@ -3,7 +3,7 @@ layout: post
 title: "I Audited Five Community Banks and Credit Unions. They All Had Similar Gaps."
 card_title: "Five Audits, Similar Gaps"
 description: "Five community banks and credit unions. Different carriers. Different program structures. Similar coverage failures appeared in every audit. The gaps are structural, built into how bank insurance programs work."
-date: 2026-06-16
+date: 2026-06-11
 author: Joerg Proeve
 category: Case Study
 read_time: "7 min read"

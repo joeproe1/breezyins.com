@@ -3,7 +3,7 @@ layout: post
 title: "Why Hurricanes Are Easier to Insure Than Hackers"
 card_title: "Hurricanes vs. Hackers"
 description: "Cyber catastrophe bonds have crossed $1.2 billion. The capital markets are betting on a risk they cannot fully model."
-date: 2026-06-15
+date: 2026-06-11
 author: Joerg Proeve
 category: Industry Trends
 read_time: "5 min read"

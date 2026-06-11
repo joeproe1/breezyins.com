@@ -3,7 +3,7 @@ layout: post
 title: "I Audited Five Community Banks and Credit Unions. They All Had Similar Gaps."
 card_title: "Five Audits, Similar Gaps"
 description: "Five community banks and credit unions. Different carriers. Different program structures. Similar coverage failures appeared in every audit. The gaps are structural, built into how bank insurance programs work."
-date: 2026-06-11
+date: 2026-06-17
 author: Joerg Proeve
 category: Case Study
 read_time: "7 min read"
@@ -13,63 +13,11 @@ permalink: /insights/five-audits-same-gaps/
 
 Over the past months, I read the insurance policies at five community banks and credit unions. I read the actual policy forms, endorsements, and amendments across their cyber, fidelity bond, and directors and officers (D&O) programs.
 
-The five financial institutions had little in common. Asset sizes ranged from $250 million to nearly $1.5 billion. The group included mutual savings banks, a credit union, and a publicly traded institution. They used different carriers and different program structures. Annual premiums ranged from $30,000 to $150,000.
+The five financial institutions had little in common. Asset sizes ranged from under $500 million to over $1 billion. The group included a mix of community banks and credit unions. They used different carriers and different program structures. Annual premiums varied significantly across the group.
 
 The gaps were similar.
 
 Five structural problems appeared in every program, regardless of carrier, program type, or bank size. That pattern changes the conversation. One bank with a gap is a broker discussion. Five banks with five different programs and similar gaps is an industry problem.
-
-## Five Banks, Five Programs
-
-<style>
-@media (max-width: 600px) {
-  .bank-bar { flex-wrap: wrap !important; }
-  .bank-bar .bank-type { min-width: 0 !important; margin-left: 0 !important; width: auto; margin-top: 4px; }
-  .bank-bar .bank-aum { min-width: 0 !important; margin-left: 12px !important; margin-top: 4px; }
-  .bank-bar .bank-program { margin-left: 0 !important; width: 100%; margin-top: 2px; }
-}
-</style>
-
-<div style="background: #0A2540; border-radius: 12px; padding: 24px 32px; margin: 32px 0; color: #fff; display: flex; flex-direction: column; gap: 8px;">
-
-<div class="bank-bar" style="display: flex; align-items: center; background: rgba(59,130,246,0.08); border-radius: 8px; padding: 14px 20px;">
-<div style="color: #93C5FD; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; min-width: 70px;">Bank A</div>
-<div class="bank-type" style="color: #fff; font-size: 15px; min-width: 180px; margin-left: 20px;">Mutual savings bank</div>
-<div class="bank-aum" style="color: rgba(255,255,255,0.6); font-size: 14px; min-width: 80px; margin-left: 20px;">$250M</div>
-<div class="bank-program" style="color: #00D4AA; font-size: 15px; margin-left: auto;">Single-carrier bundle</div>
-</div>
-
-<div class="bank-bar" style="display: flex; align-items: center; background: rgba(59,130,246,0.08); border-radius: 8px; padding: 14px 20px;">
-<div style="color: #93C5FD; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; min-width: 70px;">Bank B</div>
-<div class="bank-type" style="color: #fff; font-size: 15px; min-width: 180px; margin-left: 20px;">Federal credit union</div>
-<div class="bank-aum" style="color: rgba(255,255,255,0.6); font-size: 14px; min-width: 80px; margin-left: 20px;">$400M</div>
-<div class="bank-program" style="color: #00D4AA; font-size: 15px; margin-left: auto;">Coordinated program</div>
-</div>
-
-<div class="bank-bar" style="display: flex; align-items: center; background: rgba(59,130,246,0.08); border-radius: 8px; padding: 14px 20px;">
-<div style="color: #93C5FD; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; min-width: 70px;">Bank C</div>
-<div class="bank-type" style="color: #fff; font-size: 15px; min-width: 180px; margin-left: 20px;">Mutual savings bank</div>
-<div class="bank-aum" style="color: rgba(255,255,255,0.6); font-size: 14px; min-width: 80px; margin-left: 20px;">$600M</div>
-<div class="bank-program" style="color: #00D4AA; font-size: 15px; margin-left: auto;">Multi-carrier program</div>
-</div>
-
-<div class="bank-bar" style="display: flex; align-items: center; background: rgba(59,130,246,0.08); border-radius: 8px; padding: 14px 20px;">
-<div style="color: #93C5FD; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; min-width: 70px;">Bank D</div>
-<div class="bank-type" style="color: #fff; font-size: 15px; min-width: 180px; margin-left: 20px;">Publicly traded bank</div>
-<div class="bank-aum" style="color: rgba(255,255,255,0.6); font-size: 14px; min-width: 80px; margin-left: 20px;">$1.4B</div>
-<div class="bank-program" style="color: #00D4AA; font-size: 15px; margin-left: auto;">Single-carrier bundle</div>
-</div>
-
-<div class="bank-bar" style="display: flex; align-items: center; background: rgba(59,130,246,0.08); border-radius: 8px; padding: 14px 20px;">
-<div style="color: #93C5FD; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; min-width: 70px;">Bank E</div>
-<div class="bank-type" style="color: #fff; font-size: 15px; min-width: 180px; margin-left: 20px;">Mutual savings bank</div>
-<div class="bank-aum" style="color: rgba(255,255,255,0.6); font-size: 14px; min-width: 80px; margin-left: 20px;">$350M</div>
-<div class="bank-program" style="color: #00D4AA; font-size: 15px; margin-left: auto;">Single-carrier bundle</div>
-</div>
-
-</div>
-
-Different banks. Different carriers. Different program structures. Different price points. The results were similar.
 
 ## Gap 1: Every D&O Policy Had a Cyber Exclusion
 
@@ -93,17 +41,13 @@ The structural problem is where the coverage sits. Cyber carriers generally don'
 
 At one bank, the bond imposed a 50 percent co-payment on all funds transfer claims. On a $2 million wire fraud, the bank would retain more than $1 million. This was the program with the highest annual premium of the five.
 
-<div style="border-left: 3px solid #F59E0B; padding: 16px 20px; background: rgba(245,158,11,0.05); border-radius: 0 8px 8px 0; margin: 24px 0; font-size: 18px; font-weight: 600; color: #333;">
-The most expensive program in the group had the most punitive cost-sharing on the most common loss.
-</div>
-
 ## Gap 3: Recovery Depends on How Forensics Classifies the Attack
 
 Every fidelity bond had multiple fraud coverages with different limits and different definitions. Computer Systems Fraud might carry a $5 million limit. Social Engineering might carry $250,000. The definitions don't overlap. They were written that way on purpose.
 
 The result is what I call a classification swing. The same wire fraud, same dollar loss, same attacker, could recover the full $5 million or just $250,000 depending on whether forensics determines the bank's system was compromised or an employee was deceived. Across the five banks, these swings ranged from $4.25 million to $4.75 million.
 
-This is how fidelity bonds are engineered. Multiple fraud coverages with definitions that don't overlap and different limits. But nobody maps the swing for the bank before a claim happens. The bank sees its headline limit and assumes that is what it will recover. In all five audits, this was the first time the bank had seen how classification affects payout.
+This is how fidelity bonds are engineered. Multiple fraud coverages with definitions that don't overlap and different limits. But nobody maps the swing for the bank before a claim happens. The bank sees its headline limit and assumes that is what it will recover. The banks had not previously seen how threat vector classification can affect payout.
 
 <div style="border-left: 3px solid #F59E0B; padding: 16px 20px; background: rgba(245,158,11,0.05); border-radius: 0 8px 8px 0; margin: 24px 0; font-size: 18px; font-weight: 600; color: #333;">
 A $5 million bond can only pay $250,000 if the attack is classified as social engineering instead of computer fraud. Headline limits are not recovery limits.
@@ -113,7 +57,7 @@ A $5 million bond can only pay $250,000 if the attack is classified as social en
 
 Every bank in this group runs on a core banking platform. When that platform goes down, the bank can't process transactions, access accounts, or serve customers. The August 2025 breach that affected more than 700 financial institutions through a single vendor made this the examiner's number one concern.
 
-Coverage for vendor outages ranged from $100,000 to zero. One bank hadn't purchased the coverage at all, even though it was available in the policy form. Nobody told them it existed as an option. A five-day outage at that bank's core vendor would cost an estimated $500,000, with no insurance recovery.
+Coverage for vendor outages ranged from $100,000 to zero. One bank hadn't purchased the coverage at all, even though it was available in the policy form. It had never come up in the renewal process. A five-day outage at that bank's core vendor would cost an estimated $500,000, with no insurance recovery.
 
 Examiners are now asking about vendor risk management. They want to see that the bank has assessed its critical vendor dependencies and has a plan if a vendor fails. The insurance that's supposed to backstop that risk doesn't come close.
 

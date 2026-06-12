@@ -145,4 +145,4 @@ Thirty minutes. If you get through all five, you will know more about your cyber
 
 5. **Ask about deepfake coverage.** Does your social engineering coverage include AI-generated voice and video, or just written communications?
 
-If any of these raises a question you cannot answer, bring it to your next broker conversation. A [Risk Intelligence Report]({{ '/risk-intelligence-report/' | relative_url }}) does this work systematically: sublimits, warranties, vendor coverage, policy interactions, and deepfake exposure, read against your bank's actual operations and mapped into a Board-ready summary.
+If any of these raises a question you cannot answer, bring it to your next broker conversation. Or if you would rather have someone who reads these for a living walk through it with you, [get in touch]({{ '/contact/' | relative_url }}).

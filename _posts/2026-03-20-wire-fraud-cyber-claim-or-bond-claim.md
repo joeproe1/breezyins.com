@@ -75,4 +75,4 @@ The attack method changed. Most bank policies have not.
 
 For a detailed breakdown of how wire fraud falls between three policies at a community bank, see [The Wire Nobody Covers]({{ '/insights/the-wire-nobody-covers/' | relative_url }}).
 
-This is the kind of question a [Risk Intelligence Report]({{ '/risk-intelligence-report/' | relative_url }}) answers: whether your social engineering coverage was written for email-based fraud or whether it extends to AI-generated voice impersonation, checked against your fidelity bond and cyber policy language side by side.
+If your bank still relies on callback verification as its primary wire fraud control, [get in touch]({{ '/contact/' | relative_url }}) and a [Risk Intelligence Report]({{ '/risk-intelligence-report/' | relative_url }}) will show you whether your policies respond to AI-generated fraud.

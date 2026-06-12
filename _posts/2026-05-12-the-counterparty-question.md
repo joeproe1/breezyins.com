@@ -121,4 +121,4 @@ Community bank boards do not need to take a position on which model is correct. 
 
 -----
 
-*A [Risk Intelligence Report]({{ '/risk-intelligence-report/' | relative_url }}) applies these seven questions to your specific carrier, reinsurance structure, and policy language, so your board can see the counterparty picture before the next renewal.*
+*If your community bank's cyber insurance has not been audited against the seven questions above, [get in touch]({{ '/contact/' | relative_url }}). This is the work I do at Breezy Risk.*

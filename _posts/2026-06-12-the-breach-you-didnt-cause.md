@@ -79,4 +79,4 @@ A vendor breach creates the same D&O exposure as a breach at the bank itself. Th
 
 For the full picture of how cyber, D&O, and fidelity bond policies interact across five common cyber incidents, see [Five Common Cyber Incidents, Three Policies, and the Gaps Between Them]({{ '/insights/five-incidents-three-policies/' | relative_url }}).
 
-A [Risk Intelligence Report]({{ '/risk-intelligence-report/' | relative_url }}) tests exactly this scenario: a breach that originates outside your bank, traced through your cyber policy's vendor coverage, your D&O's cyber exclusion language, and your board governance documentation, so the exposure path is mapped before a sub-vendor incident creates it.
+If your board hasn't reviewed how your D&O policy responds after a vendor breach, [get in touch]({{ '/contact/' | relative_url }}) and I will show you where your coverage gap might be.

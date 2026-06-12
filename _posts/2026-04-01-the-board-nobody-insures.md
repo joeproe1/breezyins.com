@@ -113,4 +113,4 @@ You cannot close a gap you have not checked.
 
 Board liability is one of five incident types where coverage breaks down across all three policies. I map the full picture in [Five Common Cyber Incidents, Three Policies, and the Gaps Between Them]({{ '/insights/five-incidents-three-policies/' | relative_url }}).
 
-A [Risk Intelligence Report]({{ '/risk-intelligence-report/' | relative_url }}) maps exactly this interaction: your D&O exclusions read against your cyber policy's coverage grants, tested against a breach scenario with your actual policy language, so the gap between the two is documented before a claim finds it.
+If your board has not reviewed how your D&O and cyber policies interact after a breach, [get in touch]({{ '/contact/' | relative_url }}) and a [Risk Intelligence Report]({{ '/risk-intelligence-report/' | relative_url }}) will show you where the gap is.

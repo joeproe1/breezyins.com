@@ -151,4 +151,4 @@ What doesn't work: carrying separate policies from different carriers and hoping
 
 </div>
 
-This is what the [Risk Intelligence Report]({{ '/risk-intelligence-report/' | relative_url }}) is built around: reading your cyber and E&O policies together, checking the exclusions in each against the coverage grants in the other, and showing you exactly where a claim that crosses the line between them would land.
+My [Risk Intelligence Report]({{ '/risk-intelligence-report/' | relative_url }}) reviews your insurance policies in detail and flags exactly where the coverage gaps are. If you have questions about your insurance, [get in touch]({{ '/contact/' | relative_url }}) with me.

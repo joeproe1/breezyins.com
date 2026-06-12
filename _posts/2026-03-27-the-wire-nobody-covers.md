@@ -103,4 +103,4 @@ You cannot fix what you have not checked.
 
 Wire fraud is one of five incident types where community bank policies consistently break down. I map all five in [Five Common Cyber Incidents, Three Policies, and the Gaps Between Them]({{ '/insights/five-incidents-three-policies/' | relative_url }}).
 
-A [Risk Intelligence Report]({{ '/risk-intelligence-report/' | relative_url }}) traces wire fraud through all three policies: the fidelity bond's voluntary parting language, the cyber policy's social engineering sublimit, and the D&O's regulatory defense coverage, mapped against your bank's specific forms so the seams between carriers are visible before a loss finds them.
+If your bank has not had someone review how your cyber policy, fidelity bond, and D&O interact on wire fraud, [get in touch]({{ '/contact/' | relative_url }}) and a [Risk Intelligence Report]({{ '/risk-intelligence-report/' | relative_url }}) will show you exactly where you stand.

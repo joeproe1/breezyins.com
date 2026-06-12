@@ -9,6 +9,7 @@ category: Parametric
 read_time: "7 min read"
 image: /assets/images/Blog-Supply-Chain-Problem.png
 permalink: /insights/the-supply-chain-problem/
+archived: true
 ---
 
 *Is parametric the right tool for supply chain business interruption, or a hammer looking for a nail?*

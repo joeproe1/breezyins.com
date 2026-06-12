@@ -9,6 +9,7 @@ category: Parametric
 read_time: "6 min read"
 image: /assets/images/Blog-Fast-Money-Slow-Trust.png
 permalink: /insights/fast-money-slow-trust/
+archived: true
 ---
 
 *A practitioner's perspective on a market growing faster than confidence.*

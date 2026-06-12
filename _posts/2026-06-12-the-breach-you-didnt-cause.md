@@ -2,7 +2,7 @@
 layout: post
 title: "The Breach You Didn't Cause"
 description: "A vendor's sub-vendor gets breached. The bank's systems are untouched. But when regulators investigate the board's vendor oversight, the D&O cyber exclusion blocks the defense costs. Directors face personal exposure for an incident that started two links down the supply chain."
-date: 2026-06-15
+date: 2026-06-12
 author: Joerg Proeve
 category: Case Study
 read_time: "3 min read"

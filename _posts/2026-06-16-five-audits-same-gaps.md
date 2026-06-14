@@ -67,7 +67,7 @@ For more on this gap, see [The Vendor You Cannot Replace]({{ '/insights/the-vend
 
 Fidelity bonds reimburse stolen funds. Cyber policies pay for breach response: forensics, legal counsel, notification. Wire fraud isn't a data breach. No records are compromised. No notification is required.
 
-So, after a wire fraud loss, the bond may reimburse part of the stolen funds, but the cost of investigating what happened, engaging outside counsel, and reporting to the board and regulators falls on the bank. Neither the bond nor the cyber policy covers it.
+So, after a wire fraud loss, the bond may reimburse part of the stolen funds, but the cost of investigating what happened, engaging outside counsel, and reporting to the board and regulators falls on the bank. Neither the fidelity bond nor the cyber policy covers the response.
 
 ## What the Pattern Means
 

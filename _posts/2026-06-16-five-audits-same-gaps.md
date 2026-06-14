@@ -19,7 +19,7 @@ However, the gaps were similar.
 
 Very similar structural problems appeared in every program, regardless of bank size or carrier. That pattern changes the conversation. One bank with a gap is a broker discussion. Five banks with five different programs yet similar gaps, that is an industry problem.
 
-## Gap 1: Every D&O Policy Had a Cyber Exclusion
+<h2 style="display: flex; align-items: center; gap: 14px;"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 0;" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><line x1="9" y1="9" x2="15" y2="15"/><line x1="15" y1="9" x2="9" y2="15"/></svg><span>Gap 1: Every D&O Policy Had a Cyber Exclusion</span></h2>
 
 Every D&O policy excluded claims arising from a cyber event, with varying severity. One carrier excluded anything "arising out of or in any way involving" a data breach. That language blocks all D&O claims after a cyber incident, including regulatory investigations into whether the board met its oversight obligations. Another carrier narrowed the cyber exclusion and added an exception for certain privacy claims. That proves that tighter language is available. The default across all five programs, however, was broad cyber exclusion.
 
@@ -33,7 +33,7 @@ After a breach, examiners will investigate whether directors met their duty of c
 The policy that protects directors excludes cyber. The policy that covers cyber incidents doesn't protect directors. After a breach, neither one covers the investigation of the board.
 </div>
 
-## Gap 2: Wire Fraud Coverage Was Inadequate
+<h2 style="display: flex; align-items: center; gap: 14px;"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 0;" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>Gap 2: Wire Fraud Coverage Was Inadequate</span></h2>
 
 Social engineering limits across all programs ranged from $100,000 to $500,000. Every bank in this group moves multiples of that amount in wire transfers daily.
 
@@ -41,7 +41,7 @@ The deeper problem is where this coverage sits. Cyber carriers generally don't o
 
 At one bank, the bond imposed a 50% co-payment on all funds transfer claims. On a $2 million wire fraud claim, the bank would pay more than $1 million out of pocket.
 
-## Gap 3: Recovery Depends on How Forensics Classifies the Attack
+<h2 style="display: flex; align-items: center; gap: 14px;"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 0;" aria-hidden="true"><line x1="12" y1="3" x2="12" y2="21"/><line x1="4" y1="7" x2="20" y2="7"/><polyline points="4 7 2 13 7 13"/><polyline points="20 7 17 13 22 13"/></svg><span>Gap 3: Recovery Depends on How Forensics Classifies the Attack</span></h2>
 
 Every fidelity bond had multiple fraud coverages with different limits and definitions. "Computer Systems Fraud" might carry a $5 million limit. "Social Engineering" might carry only $250,000. These definitions don't overlap. That separation is intentional.
 
@@ -53,7 +53,7 @@ This is how fidelity bonds are designed. Multiple fraud coverages with non-overl
 A $5 million bond might only pay $250,000 if the attack is classified as "Social Engineering" instead of "Computer Fraud".<br>Headline limits are not recovery limits.
 </div>
 
-## Gap 4: Vendor Coverage Did Not Match Vendor Dependence
+<h2 style="display: flex; align-items: center; gap: 14px;"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 0;" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg><span>Gap 4: Vendor Coverage Did Not Match Vendor Dependence</span></h2>
 
 Every bank in this group depends on a core banking platform vendor. When that platform goes down, the bank can't process transactions, access accounts, or serve customers. An August 2025 data breach that affected more than 700 financial institutions through a single vendor made this the examiner's number one concern.
 
@@ -63,7 +63,7 @@ Examiners are now asking about vendor risk management. They want to see that the
 
 For more on this gap, see [The Vendor You Cannot Replace]({{ '/insights/the-vendor-you-cannot-replace/' | relative_url }}).
 
-## Gap 5: Nobody Covers the Response to Wire Fraud
+<h2 style="display: flex; align-items: center; gap: 14px;"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 0;" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg><span>Gap 5: Nobody Covers the Response to Wire Fraud</span></h2>
 
 Fidelity bonds reimburse stolen funds. Cyber policies pay for breach response: forensics, legal counsel, notification. Wire fraud isn't a data breach. No records are compromised. No notification is required.
 

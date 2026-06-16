@@ -1743,4 +1743,8 @@
         align-items: flex-start;
         gap: 12px;
     }
+
+    .stats-comparison {
+        grid-template-columns: 1fr !important;
+    }
 }

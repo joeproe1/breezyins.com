@@ -21,7 +21,11 @@ layout: default
   },
   "datePublished": "{{ page.date | date_to_xmlschema }}",
   "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
-  {% if page.image %}"image": "{{ page.image | absolute_url }}",{% endif %}
+  {% if page.image %}"image": {
+    "@type": "ImageObject",
+    "url": "{{ page.image | absolute_url }}"{% if page.image_alt %},
+    "description": {{ page.image_alt | jsonify }}{% endif %}
+  },{% endif %}
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "{{ page.url | absolute_url }}"

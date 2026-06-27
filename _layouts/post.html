@@ -58,6 +58,26 @@ layout: default
   ]
 }
 </script>
+{% if page.faq %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for item in page.faq %}
+    {
+      "@type": "Question",
+      "name": {{ item.question | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ item.answer | jsonify }}
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endif %}
 <article itemscope itemtype="https://schema.org/Article">
     <div class="post-hero{% if page.category == 'Community Banks' %} post-hero--banks{% endif %}">
         <div class="container">

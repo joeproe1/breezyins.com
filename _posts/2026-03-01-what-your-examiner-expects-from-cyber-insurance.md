@@ -8,8 +8,15 @@ category: Policy Deep-Dive
 read_time: "4 min read"
 image: /assets/images/Blog-Examiner-Cyber-Insurance.png
 image_alt: "Bank examiner reviewing cyber insurance adequacy documentation during a community bank examination"
-last_modified_at: 2026-06-26
+last_modified_at: 2026-06-27
 permalink: /insights/what-your-examiner-expects-from-cyber-insurance/
+faq:
+  - question: "What do bank examiners look for in cyber insurance?"
+    answer: "Examiners want to see four things: board-level review of coverage (not just premium approval), limits that align with the bank's risk profile and are documented against the bank's own risk assessment, security warranty compliance showing the bank meets every control the carrier requires, and an understanding of how the cyber policy, D&O policy, and fidelity bond interact during an incident."
+  - question: "What is a security warranty in a cyber insurance policy?"
+    answer: "A security warranty is a contractual requirement in the cyber policy application. The carrier requires specific controls as conditions of coverage: multi-factor authentication on all remote access, endpoint detection and response, a defined patching cadence, and encrypted tested backups. If the bank's IT environment does not match these requirements when a claim is filed, the carrier can deny the claim or rescind the entire policy."
+  - question: "How should a community bank prepare for a cyber insurance examination?"
+    answer: "Three steps: match your carrier's security warranty requirements against your most recent IT audit findings to close gaps before a claim. Create a one-page coverage summary for the board showing what the policy covers, key sublimits, and major exclusions. Map your three policies (cyber, D&O, fidelity bond) against your most likely incidents to document which policy responds to which scenario."
 ---
 
 The exam question has changed. It used to be: "Do you have cyber insurance?" Most banks could answer that one. Check the box, show the declarations page, move on.

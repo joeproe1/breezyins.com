@@ -8,8 +8,15 @@ category: Policy Deep-Dive
 read_time: "5 min read"
 image: /assets/images/Blog-Security-Warranty-Fails.png
 image_alt: "Community bank cyber claim denied after security warranty failure in the policy application"
-last_modified_at: 2026-04-23
+last_modified_at: 2026-06-27
 permalink: /insights/security-warranty-fails/
+faq:
+  - question: "What happens when a community bank's security warranty fails?"
+    answer: "If the bank's IT environment does not match what was stated on the cyber policy application, the carrier can deny the claim or rescind the entire policy. Rescission means the policy is treated as if it never existed. The carrier returns the premium and walks away from all claims under that policy period. A single outdated VPN without MFA can turn one application answer from true to false and erase the full policy limit."
+  - question: "What is the difference between a claim denial and policy rescission?"
+    answer: "A claim denial means this particular loss is not covered, but the rest of the policy stays in force and other claims can still be paid. Rescission means the policy never existed. The carrier returns the premium and walks away from everything, not just the current claim but every claim under that policy period. For banks, rescission also creates a regulatory problem when the examiner who was told the bank had adequate coverage discovers a false statement on the application."
+  - question: "What is a no-rescission clause in a cyber insurance policy?"
+    answer: "A no-rescission clause (sometimes called a severability endorsement) limits the carrier's ability to void the entire policy based on an application error. With this clause, the carrier can still deny coverage related to the specific misrepresentation, but cannot void the entire policy. Without it, one inaccurate answer on the application can erase the full policy limit when the bank needs it most. Some carriers offer it as standard on commercial forms."
 ---
 
 A community bank with $600 million in assets gets hit with ransomware. The IT team responds quickly. Backups are intact. The bank notifies its regulator within 36 hours. The board is briefed. The bank files a claim under its cyber policy: $5 million limit, reputable carrier.

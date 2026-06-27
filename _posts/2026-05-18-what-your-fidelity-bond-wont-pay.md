@@ -9,8 +9,15 @@ category: Policy Deep-Dive
 image: /assets/images/Blog-Fidelity-Bond.png
 image_alt: "Fidelity bond coverage gaps at community banks including co-payment traps and verification requirements"
 read_time: "4 min read"
-last_modified_at: 2026-05-18
+last_modified_at: 2026-06-27
 permalink: /insights/fidelity-bond/
+faq:
+  - question: "What does a fidelity bond not cover at a community bank?"
+    answer: "A fidelity bond is not a blanket fraud policy. It is a collection of narrow insuring agreements, each with its own sublimit, conditions, and exclusions. Common gaps include social engineering sublimits that cap wire fraud recovery at $100,000 to $250,000, verification requirements that can void coverage entirely if a callback step is missed, and authorized access exclusions that deny claims when the employee who initiated the transfer had legitimate credentials."
+  - question: "Does a fidelity bond cover wire fraud at a community bank?"
+    answer: "It depends on the bond's social engineering endorsement. Most bonds sublimit wire fraud coverage well below the bank's typical transfer volume. A $500,000 wire fraud loss with a $250,000 sublimit means the bank absorbs the difference. If the bond also applies a co-payment, the bank's share grows further. And if the bond treats callback verification as a mandatory requirement rather than a best practice, a single missed verification step can void the claim entirely."
+  - question: "What is a verification trap in a fidelity bond?"
+    answer: "Most fidelity bonds require the bank to verify transfer requests through a separate communication channel before sending funds. The critical question is how the bond treats a verification failure. If verification is framed as a best practice, a missed callback reduces coverage. If it is framed as a mandatory requirement, a missed callback voids the claim entirely. One phrase in the bond determines which outcome the bank gets."
 ---
 
 Every community bank has a fidelity bond. Most boards treat it as a checkbox: we have it, it covers fraud, next agenda item.

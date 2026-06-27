@@ -11,6 +11,17 @@ image: /assets/images/Blog-Five-Audits-Same-Gaps.png
 image_alt: "Five community bank insurance audits revealing similar coverage gaps across different carriers and program structures"
 last_modified_at: 2026-06-26
 permalink: /insights/five-audits-same-gaps/
+faq:
+  - question: "What are the most common insurance gaps at community banks?"
+    answer: "Based on audits of five community banks and credit unions across different carriers and program structures, the most common gaps are: D&O cyber exclusions that leave board members uninsured after a breach, wire fraud sublimits as low as $100,000 to $500,000, fidelity bond classification swings where recovery can vary by millions depending on how forensics classifies the attack, vendor outage coverage that does not match actual vendor dependence, and no coverage for the cost of responding to wire fraud incidents."
+  - question: "Does a D&O policy protect bank directors after a cyber breach?"
+    answer: "In most community bank programs, the D&O policy excludes claims arising from a cyber event. The intent is to push those claims to the cyber policy, but the cyber policy covers breach response costs, not claims against individual board members for oversight failures. After a breach, directors can face personal liability with neither policy responding. This gap appeared in every bank audited."
+  - question: "Is wire fraud covered by cyber insurance or the fidelity bond?"
+    answer: "Wire fraud coverage sits primarily on the fidelity bond, not the cyber policy. However, fidelity bonds often impose conditions that reduce the payout: co-payments where the bank absorbs a percentage of every loss, sublimits that are a fraction of the bond's headline coverage, or verification steps the bank must prove it followed. Social engineering limits across audited programs ranged from $100,000 to $500,000, well below the wire transfer volumes these banks handle daily."
+  - question: "What is the Classification Swing in fidelity bond claims?"
+    answer: "The Classification Swing is the difference in recovery depending on how forensics classifies a wire fraud attack. Fidelity bonds have multiple fraud coverages with different limits and non-overlapping definitions. Computer Systems Fraud might carry a $5 million limit while Social Engineering carries only $250,000. For the same wire fraud loss, the bank could recover either amount depending entirely on the forensic classification. Across the banks audited, these swings ranged from $4.25 million to $4.75 million."
+  - question: "Does bank insurance cover vendor outages?"
+    answer: "Coverage for vendor outages across the audited banks ranged from $100,000 to zero. One bank had not purchased the coverage at all, even though it was available in the policy form. A five-day outage at a core banking vendor could cost an estimated $500,000 or more, with no insurance recovery. Examiners are now asking about vendor risk management, but the insurance that backstops vendor failures does not match actual vendor dependence at most banks."
 ---
 
 Over the past months, I audited the insurance policies at five community banks and credit unions. I read the actual policy forms, the endorsements and amendments across their cyber and D&O policies, and their fidelity bonds.

@@ -11,6 +11,17 @@ image_alt: "Risk Intelligence Report overview showing line-by-line policy analys
 read_time: "5 min read"
 last_modified_at: 2026-06-03
 permalink: /insights/what-is-a-risk-intelligence-report/
+faq:
+  - question: "What is a Risk Intelligence Report?"
+    answer: "A Risk Intelligence Report is a line-by-line analysis of your insurance policies against realistic claim scenarios. It reads your cyber policy, D&O policy, and fidelity bond together to identify where coverage responds, where it gets disputed, and where it fails. The report includes specific findings, policy-language citations, and dollar-range exposure estimates. It is designed for four audiences: the CFO, the board, the examiner, and the broker."
+  - question: "What does a Risk Intelligence Report cover?"
+    answer: "The report covers seven areas: cyber liability analysis, fidelity bond analysis, D&O analysis, a policy interaction map that tests all three policies against the same incident, vendor coverage alignment, regulatory response readiness, and security warranty compliance. The centerpiece is the policy interaction map, which shows how each policy responds to common incidents like data breaches, ransomware, wire fraud, and vendor outages."
+  - question: "Who uses a Risk Intelligence Report?"
+    answer: "The report is designed for four audiences. The CFO uses it as a single document that coordinates broker, board, and examiner conversations. The broker uses it as a renewal negotiation tool with specific fixes to take to market. The board uses it as independent oversight documentation. The examiner receives it as documented evidence that the institution has independently reviewed its insurance program."
+  - question: "How much does a Risk Intelligence Report cost?"
+    answer: "A Risk Intelligence Report is fixed-fee and project-based, typically costing less than a single penetration test or SOC 2 audit. No hourly billing, no retainer, no commitment beyond the engagement."
+  - question: "How do I get started with a Risk Intelligence Report?"
+    answer: "Send your current policy documents. Breezy Risk reviews them against realistic claim scenarios and delivers the report with a walkthrough call. No broker of record letter and no commitment to move your insurance."
 ---
 
 Your bank audits its financials every year. It audits its IT controls. It audits its vendor compliance. It probably runs a penetration test and may have a SOC 2 report.

@@ -9,8 +9,17 @@ category: Policy Deep-Dive
 read_time: "7 min read"
 image: /assets/images/Blog-Cyber-Insurance-Banks.png
 image_alt: "Community bank cyber insurance policy analysis showing coverage gaps in first-party and third-party sections"
-last_modified_at: 2026-06-26
+last_modified_at: 2026-06-27
 permalink: /insights/cyber-insurance-for-community-banks/
+faq:
+  - question: "What does cyber insurance cover for a community bank?"
+    answer: "A community bank cyber policy covers two sides: first-party losses (breach response, business interruption, ransomware, data restoration) and third-party liability (network security lawsuits, privacy claims, regulatory proceedings). The standard package works for most businesses, but community banks have blind spots around wire fraud, vendor outages, and policy interactions with D&O and fidelity bond coverage."
+  - question: "Does cyber insurance cover wire fraud at a community bank?"
+    answer: "Most cyber policies offer social engineering coverage only as an endorsement with sublimits typically between $100,000 and $250,000. For a bank that regularly processes wire transfers in the hundreds of thousands, the sublimit can be exhausted by a single incident. The fidelity bond may or may not respond depending on verification requirements and how the loss is categorized."
+  - question: "Does a community bank D&O policy cover board liability after a cyber breach?"
+    answer: "Many D&O policies now exclude claims arising from a cyber event, pushing everything to the cyber policy. But the cyber policy may not cover board liability claims either. This creates a gap where directors face personal exposure after a breach with no insurance response from either policy."
+  - question: "Does cyber insurance cover vendor outages at a community bank?"
+    answer: "Many cyber policies either exclude third-party outages entirely, sublimit them, or require a security failure at the vendor. A configuration error or operational failure at the vendor would not qualify. Check whether your policy covers dependent business interruption and whether the trigger requires a security event or covers any system outage."
 ---
 
 Your bank has a cyber insurance policy. It's on the books. The premium gets paid. The Board sees it listed in the risk management report.

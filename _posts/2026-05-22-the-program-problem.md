@@ -9,8 +9,15 @@ category: Policy Deep-Dive
 image: /assets/images/Blog-Program-Problem.png
 image_alt: "Structural gaps in association-endorsed bank insurance programs that persist because nobody audits them"
 read_time: "6 min read"
-last_modified_at: 2026-06-26
+last_modified_at: 2026-06-27
 permalink: /insights/the-program-problem/
+faq:
+  - question: "What is wrong with association-endorsed bank insurance programs?"
+    answer: "The programs have real strengths: single-carrier coordination, administrative simplicity, and association trust. But they also contain structural gaps in their standard forms that affect every bank on the program simultaneously. Common issues include D&O cyber exclusions that block board coverage after a breach, wire fraud coverage that sits only on the bond (not the cyber policy) without the bank knowing, and credential-based fraud that falls between both policies with zero coverage. Nobody audits these forms because the association endorsement creates comfort and the annual rebate discourages questions."
+  - question: "Why doesn't the broker catch gaps in bank insurance programs?"
+    answer: "When a broker places a bank on an association-endorsed program, the forms are standard. There is nothing to negotiate on the base form. The broker's value is in selecting which optional riders to add, not in line-by-line form review. Many banks are never told which riders exist, let alone which ones they skipped. If the broker cannot answer whether wire fraud sits on the cyber policy or the bond, or whether the D&O has a cyber exclusion, that is evidence that nobody has read the standard forms."
+  - question: "Should a community bank leave its insurance program?"
+    answer: "Not necessarily. The fix is understanding what the standard forms cover and closing the gaps that matter. Options in order of preference: add endorsements and riders available within the program that were not included at placement, supplement outside the program for gaps the form cannot cover (like a standalone D&O for cyber-related board claims), negotiate form language with the carrier, or switch programs as a last resort if structural gaps are unfixable."
 ---
 
 Ask the CFO of a community bank who handles their insurance and you'll often hear: "We're good. We're on the ABA program" or "We use Travelers through ICBA."

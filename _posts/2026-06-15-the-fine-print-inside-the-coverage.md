@@ -8,8 +8,15 @@ category: Policy Deep-Dive
 read_time: "5 min read"
 image: /assets/images/Blog-Fine-Print-Inside-Coverage.png
 image_alt: "Cyber policy sublimits and retentions reducing a 5 million dollar policy to under 500,000 in actual recovery for a community bank"
-last_modified_at: 2026-06-15
+last_modified_at: 2026-06-27
 permalink: /insights/the-fine-print-inside-the-coverage/
+faq:
+  - question: "How much does a $5 million cyber policy actually pay after a community bank data breach?"
+    answer: "After sublimits, retentions, defense costs, and carve-outs, the actual recovery on a multi-front breach may be a fraction of the stated limit. A 45,000-record breach can generate five simultaneous costs (breach response, federal and state regulatory defense, class action defense, and settlement) that all draw from the same aggregate pool. Sublimits on ransomware, social engineering, and regulatory defense further cap individual recoveries below the headline number."
+  - question: "What are sublimits in a community bank cyber insurance policy?"
+    answer: "Sublimits are individual caps on specific coverages inside the policy's overall aggregate limit. A $5 million policy may sublimit ransomware at $1 million, social engineering at $250,000, dependent business interruption at $1 million, and regulatory defense at $500,000. A single incident can trigger multiple sublimits simultaneously, and each cap reduces what the bank collects. The aggregate is the theoretical maximum. The sublimits define the actual maximum."
+  - question: "Are defense costs inside or outside the limit on a cyber policy?"
+    answer: "It depends on the policy. If defense costs are inside the aggregate, every dollar spent on lawyers reduces the money available for settlements and breach response. Defense alone can consume 40 percent of the aggregate in a multi-front incident. Policies with defense outside the limit cost 15 to 25 percent more in premium, but the math usually justifies it for community banks facing multiple regulatory investigations after a breach."
 ---
 
 A community bank carries a $5 million cyber liability policy. The board sees $5 million on the declarations page and feels protected.

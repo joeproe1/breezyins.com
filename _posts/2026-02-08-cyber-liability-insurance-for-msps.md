@@ -8,6 +8,8 @@ author: Joerg Proeve
 category: Policy Deep-Dive
 read_time: "8 min read"
 image: /assets/images/Blog-Cyber-Liability-MSP.png
+image_alt: "Cyber liability insurance coverage analysis for managed service providers showing what it covers and where it stops"
+last_modified_at: 2026-02-08
 permalink: /insights/cyber-liability-insurance-for-msps/
 redirect_from:
   - /cyber-liability-msp

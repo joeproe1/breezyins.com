@@ -7,7 +7,9 @@ date: 2026-06-03
 author: Joerg Proeve
 category: Policy Deep-Dive
 image: /assets/images/Blog-What-Is-RIR.png
+image_alt: "Risk Intelligence Report overview showing line-by-line policy analysis for community bank cyber, D&O, and fidelity bond coverage"
 read_time: "5 min read"
+last_modified_at: 2026-06-03
 permalink: /insights/what-is-a-risk-intelligence-report/
 ---
 

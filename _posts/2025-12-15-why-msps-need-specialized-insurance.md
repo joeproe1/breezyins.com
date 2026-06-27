@@ -8,6 +8,8 @@ author: Joerg Proeve
 category: Coverage Gaps
 read_time: "6 min read"
 image: /assets/images/Blog-Why-MSPs-Need-Specialized-Insurance.png
+image_alt: "Four critical ways standard insurance policies fail managed service providers"
+last_modified_at: 2025-12-15
 permalink: /msp-insurance/
 redirect_from:
   - /cybersecurity-consultant-insurance

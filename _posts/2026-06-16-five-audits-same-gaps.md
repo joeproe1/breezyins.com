@@ -9,6 +9,7 @@ category: Case Study
 read_time: "7 min read"
 image: /assets/images/Blog-Five-Audits-Same-Gaps.png
 image_alt: "Five community bank insurance audits revealing similar coverage gaps across different carriers and program structures"
+last_modified_at: 2026-06-26
 permalink: /insights/five-audits-same-gaps/
 ---
 

@@ -8,6 +8,8 @@ author: Joerg Proeve
 category: Policy Deep-Dive
 read_time: "7 min read"
 image: /assets/images/Blog-Cyber-vs-EO.png
+image_alt: "Comparison of cyber liability and Tech E&O coverage for MSPs showing where claims fall between the two policies"
+last_modified_at: 2026-02-19
 permalink: /insights/cyber-liability-vs-tech-eo-for-msps/
 redirect_from:
   - /cyber-vs-eo

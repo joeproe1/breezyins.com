@@ -7,6 +7,8 @@ author: Joerg Proeve
 category: Policy Deep-Dive
 read_time: "5 min read"
 image: /assets/images/Blog-Vendor-You-Cannot-Replace.png
+image_alt: "Core banking vendor outage scenario showing dependent business interruption sublimit exhaustion at a community bank"
+last_modified_at: 2026-06-26
 permalink: /insights/the-vendor-you-cannot-replace/
 ---
 

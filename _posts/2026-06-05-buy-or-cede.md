@@ -8,6 +8,8 @@ author: Joerg Proeve
 category: Industry Trends
 read_time: "6 min read"
 image: /assets/images/Blog-Buy-or-Cede.png
+image_alt: "Zurich Beazley acquisition versus Allianz Coalition cyber underwriting deal showing two opposite carrier strategies"
+last_modified_at: 2026-06-05
 permalink: /insights/buy-or-cede/
 ---
 

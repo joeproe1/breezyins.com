@@ -7,6 +7,8 @@ author: Joerg Proeve
 category: Policy Deep-Dive
 read_time: "4 min read"
 image: /assets/images/Blog-Examiner-Cyber-Insurance.png
+image_alt: "Bank examiner reviewing cyber insurance adequacy documentation during a community bank examination"
+last_modified_at: 2026-06-26
 permalink: /insights/what-your-examiner-expects-from-cyber-insurance/
 ---
 

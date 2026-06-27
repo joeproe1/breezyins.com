@@ -8,6 +8,8 @@ author: Joerg Proeve
 category: Case Study
 read_time: "6 min read"
 image: /assets/images/Blog-Case-Study-Pentesting.png
+image_alt: "Penetration testing firm case study showing how an insurance gap nearly caused a 350,000 dollar loss"
+last_modified_at: 2026-01-09
 permalink: /insights/how-a-penetration-testing-firm-avoided-a-350k-claim/
 redirect_from:
   - /penetration-testing-insurance-claim

@@ -7,7 +7,9 @@ date: 2026-05-22
 author: Joerg Proeve
 category: Policy Deep-Dive
 image: /assets/images/Blog-Program-Problem.png
+image_alt: "Structural gaps in association-endorsed bank insurance programs that persist because nobody audits them"
 read_time: "6 min read"
+last_modified_at: 2026-06-26
 permalink: /insights/the-program-problem/
 ---
 

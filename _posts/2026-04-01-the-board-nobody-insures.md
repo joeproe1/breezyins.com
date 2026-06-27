@@ -7,6 +7,8 @@ author: Joerg Proeve
 category: Case Study
 read_time: "5 min read"
 image: /assets/images/Blog-Board-Nobody-Insures.png
+image_alt: "Community bank board of directors facing personal liability after a data breach with D&O cyber exclusion blocking coverage"
+last_modified_at: 2026-04-01
 permalink: /insights/the-board-nobody-insures/
 ---
 

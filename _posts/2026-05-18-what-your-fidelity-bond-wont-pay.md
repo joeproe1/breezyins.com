@@ -7,7 +7,9 @@ date: 2026-05-18
 author: Joerg Proeve
 category: Policy Deep-Dive
 image: /assets/images/Blog-Fidelity-Bond.png
+image_alt: "Fidelity bond coverage gaps at community banks including co-payment traps and verification requirements"
 read_time: "4 min read"
+last_modified_at: 2026-05-18
 permalink: /insights/fidelity-bond/
 ---
 

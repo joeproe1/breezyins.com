@@ -7,6 +7,8 @@ author: Joerg Proeve
 category: Policy Deep-Dive
 read_time: "5 min read"
 image: /assets/images/Blog-Security-Warranty-Fails.png
+image_alt: "Community bank cyber claim denied after security warranty failure in the policy application"
+last_modified_at: 2026-04-23
 permalink: /insights/security-warranty-fails/
 ---
 

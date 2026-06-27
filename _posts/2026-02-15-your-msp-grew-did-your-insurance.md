@@ -8,6 +8,8 @@ author: Joerg Proeve
 category: Coverage Gaps
 read_time: "7 min read"
 image: /assets/images/Blog-MSP-Grew.png
+image_alt: "MSP growth outpacing insurance coverage as new service lines and acquisitions create coverage gaps"
+last_modified_at: 2026-02-15
 permalink: /insights/your-msp-grew-did-your-insurance/
 redirect_from:
   - /msp-insurance-audit

@@ -8,6 +8,8 @@ author: Joerg Proeve
 category: Parametric
 read_time: "7 min read"
 image: /assets/images/Blog-Supply-Chain-Problem.png
+image_alt: "Semiconductor supply chain ransomware loss of 450 million dollars with zero traditional insurance recovery"
+last_modified_at: 2026-05-22
 permalink: /insights/the-supply-chain-problem/
 archived: true
 ---

@@ -7,6 +7,8 @@ author: Joerg Proeve
 category: Case Study
 read_time: "4 min read"
 image: /assets/images/Blog-Wire-Fraud-Bank.png
+image_alt: "AI voice cloning attack targeting a community bank wire transfer with social engineering coverage gaps"
+last_modified_at: 2026-03-20
 permalink: /insights/when-ai-clones-your-cfos-voice/
 redirect_from:
   - /insights/wire-fraud-cyber-claim-or-bond-claim/

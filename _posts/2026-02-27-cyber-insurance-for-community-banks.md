@@ -8,6 +8,8 @@ author: Joerg Proeve
 category: Policy Deep-Dive
 read_time: "7 min read"
 image: /assets/images/Blog-Cyber-Insurance-Banks.png
+image_alt: "Community bank cyber insurance policy analysis showing coverage gaps in first-party and third-party sections"
+last_modified_at: 2026-06-26
 permalink: /insights/cyber-insurance-for-community-banks/
 ---
 

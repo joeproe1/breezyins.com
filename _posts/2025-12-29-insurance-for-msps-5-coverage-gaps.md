@@ -8,6 +8,8 @@ author: Joerg Proeve
 category: Coverage Gaps
 read_time: "8 min read"
 image: /assets/images/Blog-5-Coverage-Gaps.png
+image_alt: "Five most common coverage gaps in MSP insurance policies with real claim scenarios"
+last_modified_at: 2025-12-29
 permalink: /insights/msp-coverage-gaps/
 redirect_from:
   - /insurance-cybersecurity-consultants-coverage-gaps

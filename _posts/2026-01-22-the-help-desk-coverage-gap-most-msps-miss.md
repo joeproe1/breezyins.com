@@ -8,6 +8,8 @@ author: Joerg Proeve
 category: Coverage Gaps
 read_time: "7 min read"
 image: /assets/images/Blog-Help-Desk-Coverage-Gap.png
+image_alt: "Tech E&O policy excluding help desk services including password resets and technical support"
+last_modified_at: 2026-01-22
 permalink: /insights/the-help-desk-coverage-gap-most-msps-miss/
 redirect_from:
   - /tech-eo-help-desk-gap

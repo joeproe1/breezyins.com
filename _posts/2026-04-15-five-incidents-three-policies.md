@@ -8,6 +8,8 @@ author: Joerg Proeve
 category: Case Study
 read_time: "4 min read"
 image: /assets/images/Blog-Policy-Interaction-Map.png
+image_alt: "Policy interaction map showing how five cyber incidents trigger gaps between cyber, D&O, and fidelity bond policies"
+last_modified_at: 2026-06-26
 permalink: /insights/five-incidents-three-policies/
 ---
 

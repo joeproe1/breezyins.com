@@ -8,6 +8,8 @@ author: Joerg Proeve
 category: Parametric
 read_time: "6 min read"
 image: /assets/images/Blog-Fast-Money-Slow-Trust.png
+image_alt: "Parametric insurance market growth outpacing confidence in basis risk and trigger design"
+last_modified_at: 2026-05-15
 permalink: /insights/fast-money-slow-trust/
 archived: true
 ---

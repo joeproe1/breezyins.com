@@ -8,6 +8,8 @@ author: Joerg Proeve
 category: Policy Deep-Dive
 read_time: "9 min read"
 image: /assets/images/Blog-Tech-EO-Exclusions.png
+image_alt: "Tech E&O policy exclusions for penetration testing, vulnerability assessments, and managed security services"
+last_modified_at: 2026-01-02
 permalink: /insights/your-tech-eo-policy-probably-excludes-the-services-you-actually-provide/
 redirect_from:
   - /tech-eo-policy-exclusions

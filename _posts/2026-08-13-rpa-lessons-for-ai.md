@@ -17,7 +17,10 @@ A decade ago, at Chubb, I watched an RPA program run into roadblocks. Today, man
 
 Fast forward to today, almost all P&C carriers have started using AI, at least in some capacity. But only 10% managed to scale it beyond pilots.
 
-<img src="/assets/images/Blog-RPA-Lessons-AI-Inline.jpg" alt="Dusty boxes labeled RPA, Blockchain, Chatbots, and Big Data on a cobwebbed shelf, with a shiny new box labeled AI on the floor" style="width: 100%; border-radius: 10px; margin: 32px 0;" loading="lazy">
+<figure style="margin: 32px 0;">
+<img src="/assets/images/Blog-RPA-Lessons-AI-Inline.jpg" alt="Dusty boxes labeled RPA, Blockchain, Chatbots, and Big Data on a cobwebbed shelf, with a shiny new box labeled AI on the floor" style="width: 100%; border-radius: 10px;" loading="lazy">
+<figcaption style="font-size: 14px; color: #6B7B8D; text-align: center; margin-top: 10px; line-height: 1.5;">The technology changes. The shelf doesn't.</figcaption>
+</figure>
 
 ## The RPA parallel
 
@@ -70,5 +73,5 @@ Allianz partnered with Anthropic in January to deploy AI across the entire organ
 That dependency has a cost. Palantir's CEO Alex Karp argued in a recent white paper that enterprises using frontier AI models are ceding decision-making control to the AI labs. Applied to insurance: an underwriter's judgment about which risks to write and at what price is what makes a carrier valuable. If that judgment lives inside a vendor's model rather than inside the carrier's systems and people, then the carrier would become just a balance sheet with a brand.
 
 <div style="border-left: 4px solid #00D4AA; padding: 24px 28px; background: rgba(0, 212, 170, 0.06); border-radius: 0 8px 8px 0; margin: 40px 0;">
-<div style="font-size: 20px; font-weight: 600; line-height: 1.5; color: #0A2540;">Legacy architecture, fragmented data, shallow technical capacity, and a culture built around human judgment are structural issues the insurance industry has been deferring for twenty years. Until carriers address them properly, every new technology wave will land the same way: compelling demonstrations, scattered pilots, and far less transformation than the pitch decks promised.</div>
+<div style="font-size: 20px; font-weight: 400; line-height: 1.5; color: #0A2540;">Legacy architecture, fragmented data, shallow technical capacity, and a culture built around human judgment are structural issues the insurance industry has been deferring for twenty years. Until carriers address them properly, every new technology wave will land the same way: compelling demonstrations, scattered pilots, and far less transformation than the pitch decks promised.</div>
 </div>

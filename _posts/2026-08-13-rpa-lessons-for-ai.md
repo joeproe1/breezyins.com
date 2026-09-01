@@ -19,7 +19,7 @@ Fast forward to today, almost all P&C carriers have started using AI, at least i
 
 <figure style="margin: 32px 0;">
 <img src="/assets/images/Blog-RPA-Lessons-AI-Inline.jpg" alt="Dusty boxes labeled RPA, Blockchain, Chatbots, and Big Data on a cobwebbed shelf, with a shiny new box labeled AI on the floor" style="width: 100%; border-radius: 10px;" loading="lazy">
-<figcaption style="font-size: 14px; color: #6B7B8D; text-align: center; margin-top: 10px; line-height: 1.5;">The technology changes. The shelf doesn't.</figcaption>
+<figcaption style="font-size: 14px; color: #6B7B8D; text-align: center; margin-top: 10px; line-height: 1.5;">Too many promising technologies end up on the shelf.</figcaption>
 </figure>
 
 ## The RPA parallel

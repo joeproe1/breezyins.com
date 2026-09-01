@@ -17,6 +17,8 @@ permalink: /insights/mga-assembly-line/
 
 This is a structural shift in where value is created in insurance. Depending on where you sit, it looks different. I spent several years on the carrier side, in strategy, technology and operations. I built two MGAs. More recently, I work with commercial insurance buyers and see this assembled ecosystem from the policyholder's perspective.
 
+<img src="/assets/images/Blog-MGA-Assembly-Line-Exploded.png" alt="Exploded view of a mechanical assembly" style="width: 100%; border-radius: 10px; margin: 32px 0;" loading="lazy">
+
 ## What gets lost?
 
 What gets lost is accountability for the assembled product. An integrated carrier underwrites, prices, issues the policy, and pays the claim. The entity closest to the policyholder is the same one bearing the risk. Separate capital from distribution, and this alignment breaks. The MGA closest to the risk does not bear it. The reinsurer that bears it has no relationship with the policyholder. The fronting carrier on the declarations page may do neither. Each party owns its piece. Nobody owns the whole.

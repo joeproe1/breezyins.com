@@ -3,13 +3,13 @@ layout: post
 title: "What Gets Lost in the MGA Assembly Line"
 card_title: "The MGA Assembly Line"
 description: "12.5% of US P&C premium now flows through MGAs and programs. $125 billion. Carriers are receding, providing just paper and capital. Nobody owns the coordination."
-date: 2026-09-01
+date: 2026-08-20
 author: Joerg Proeve
 category: Industry Trends
 read_time: "7 min read"
 image: /assets/images/Blog-MGA-Assembly-Line.png
 image_alt: "MGA assembly line — how delegated underwriting fragments insurance accountability"
-last_modified_at: 2026-09-01
+last_modified_at: 2026-08-20
 permalink: /insights/mga-assembly-line/
 ---
 

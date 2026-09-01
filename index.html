@@ -1,7 +1,7 @@
 ---
 layout: home
-title: "Independent Community Bank Insurance Audits"
-description: "I don't place insurance. I audit it. Find where your cyber, D&O, and bond coverage fails before an examiner or a claim does."
+title: "Independent Insurance Advisory | Breezy Risk"
+description: "Independent insurance advisory. I audit cyber, D&O, and bond coverage for community banks, and advise carriers and MGAs on insurance technology strategy."
 ---
 
 <!-- WebPage Schema -->
@@ -108,18 +108,19 @@ description: "I don't place insurance. I audit it. Find where your cyber, D&O, a
   <a href="https://www.americanbanker.com/opinion/your-banks-cyber-insurance-policies-are-a-minefield-of-uncertainty" target="_blank" rel="noopener" class="partner-trust-pub">American Banker's<br>BankThink</a>
 </div>
 
-<!-- What You Receive -->
-<section id="what-you-receive" class="solution-section">
+<!-- Advisory bridge -->
+<section class="advisory-bridge">
   <div class="container">
-    <div class="section-header" style="margin-bottom: 0;">
-      <h2>What You Receive</h2>
-      <p>The <a href="{{ '/risk-intelligence-report/' | relative_url }}">Risk Intelligence Report</a> reads your cyber, D&amp;O, and bond policies together and tests them against real claim scenarios. Every finding in dollar terms, with the policy language to request at renewal.</p>
-      <p class="start-here"><span class="start-here-label">Start here</span> <a href="{{ '/assets/downloads/Breezy_Risk_Examiner_Checklist.pdf' | relative_url }}" download>Download the Examiner Checklist</a> &mdash; ten questions your board should be able to answer. If you can't, that's what the Report is for.</p>
+    <div class="advisory-bridge-inner">
+      <p class="advisory-bridge-text">I also advise carriers and MGAs on insurance technology strategy, emerging risk, and coverage design.</p>
+      <a href="{{ '/advisory/' | relative_url }}" class="advisory-bridge-link">Insurance Advisory &rarr;</a>
     </div>
   </div>
 </section>
 
-{% include cta-banner.html title="Find Out Where Your Coverage Fails" subtitle="One report. Plain English. Before your next claim, board review, or examination." button="Get in Touch" %}
+<div style="padding-top: 48px;">
+{% include cta-banner.html title="Want to Talk?" subtitle="Whether it's a coverage question, an insurance technology problem, or a conversation about working together — I'm happy to talk." button="Get in Touch" %}
+</div>
 
 <style>
 /* Proof cards */
@@ -227,26 +228,37 @@ description: "I don't place insurance. I audit it. Find where your cyber, D&O, a
   .partner-trust-link--no-border { padding: 0; }
 }
 
-/* Start-here checklist callout */
-.start-here {
-  margin-top: 28px;
-  font-size: 16px;
-  line-height: 1.7;
-  border-top: 1px solid var(--border);
-  padding-top: 24px;
+/* Advisory bridge */
+.advisory-bridge {
+  background: var(--bg-light, #F7F9FC);
+  padding: 40px 0 56px;
+  text-align: center;
+  border-top: 1px solid var(--border, #E5E7EB);
 }
-.start-here-label {
+.advisory-bridge-inner {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.advisory-bridge-text {
+  font-size: 18px;
+  color: var(--text-secondary);
+  margin: 0 0 16px;
+  line-height: 1.7;
+}
+.advisory-bridge-link {
   display: inline-block;
-  font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-  color: #00D4AA;
-  background: rgba(0, 212, 170, 0.1);
-  padding: 3px 10px;
-  border-radius: 4px;
-  margin-right: 8px;
-  vertical-align: middle;
+  color: #0A2540;
+  background: #fff;
+  border: 1px solid var(--border, #E5E7EB);
+  padding: 10px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.advisory-bridge-link:hover {
+  border-color: var(--accent, #00D4AA);
+  color: var(--accent, #00D4AA);
 }
 </style>

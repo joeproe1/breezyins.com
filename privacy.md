@@ -26,7 +26,7 @@ permalink: /privacy/
 
 <span class="effective-date">Effective Date: July 2026</span>
 
-Breezy Risk is an independent risk advisory firm. We do not sell, place, or broker insurance. This Privacy Policy describes how we collect, use, and protect the information you share with us during the course of an insurance audit engagement.
+Breezy Risk is an independent risk advisory practice. We do not sell, place, or broker insurance. This Privacy Policy describes how we collect, use, and protect the information you share with us during the course of an insurance audit engagement.
 
 ## 1. Information We Collect
 

@@ -1,0 +1,315 @@
+---
+layout: page
+title: "Insurance Advisory"
+description: "Carrier technology strategy, MGA operations, and AI and emerging risk analysis. Independent advisory from a practitioner who has built, run, and advised insurance operations."
+permalink: /advisory/
+image: /assets/images/breezy-og-default.png
+---
+
+<!-- BreadcrumbList Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ '/' | absolute_url }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Advisory",
+      "item": "{{ '/advisory/' | absolute_url }}"
+    }
+  ]
+}
+</script>
+
+<style>
+/* Dark hero banner */
+.advisory-hero {
+    background: #0A2540;
+    padding: 140px 0 56px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.advisory-hero::before {
+    content: '';
+    position: absolute;
+    top: -40%;
+    right: -15%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(0, 212, 170, 0.10) 0%, transparent 70%);
+    pointer-events: none;
+}
+.advisory-hero h1 {
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+}
+.advisory-hero .subtitle {
+    font-size: 18px;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.7;
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+/* What I Do section */
+.advisory-focus {
+    padding: 56px 0;
+    background: #fff;
+}
+.advisory-focus h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 28px;
+}
+.focus-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.focus-card {
+    background: var(--bg-light);
+    border: 1px solid var(--border);
+    border-left: 3px solid #00D4AA;
+    border-radius: 0 12px 12px 0;
+    padding: 28px 24px;
+    transition: all 0.2s;
+}
+.focus-card:hover {
+    border-left-color: #00D4AA;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    transform: translateY(-2px);
+}
+.focus-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 0 0 10px;
+}
+.focus-card p {
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+/* Background section */
+.advisory-background {
+    padding: 48px 0;
+    background: var(--bg-light);
+}
+.advisory-background .advisory-inner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.advisory-background h2 {
+    font-size: 28px;
+    margin-bottom: 24px;
+}
+.advisory-background p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+.advisory-background a:not(.btn) {
+    color: #00D4AA;
+    font-weight: 600;
+    text-decoration: none;
+}
+.advisory-background a:hover {
+    text-decoration: underline;
+}
+
+/* Recent writing section — dark band */
+.advisory-writing {
+    padding: 48px 0;
+    background: #0A2540;
+}
+.advisory-writing h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.writing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1080px;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+}
+.writing-card {
+    padding: 24px;
+    border-left: 3px solid #00D4AA;
+    background: rgba(255,255,255,0.10);
+    border-radius: 0 12px 12px 0;
+    transition: background 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+.writing-card:hover {
+    background: rgba(255,255,255,0.15);
+}
+.writing-more {
+    text-align: center;
+    margin-top: 24px;
+}
+.writing-more a {
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+}
+.writing-more a:hover {
+    color: #00D4AA;
+}
+.writing-card a {
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    line-height: 1.4;
+}
+.writing-card a:hover {
+    color: #00D4AA;
+}
+.writing-card .writing-desc {
+    font-size: 15px;
+    color: rgba(255,255,255,0.6);
+    margin: 10px 0 0;
+    line-height: 1.6;
+    flex: 1;
+}
+
+/* CTA block */
+.advisory-cta-section {
+    padding: 48px 0;
+    background: #fff;
+}
+.advisory-cta {
+    background: #0A2540;
+    padding: 40px 40px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 880px;
+    margin: 0 auto;
+}
+.advisory-cta h2 {
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 12px;
+}
+.advisory-cta p {
+    font-size: 16px;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 20px;
+    line-height: 1.6;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 968px) {
+    .advisory-hero { padding: 120px 0 56px; }
+    .advisory-hero h1 { font-size: 36px; }
+    .advisory-focus, .advisory-background, .advisory-cta-section { padding: 60px 0; }
+    .advisory-writing { padding: 56px 0; }
+    .advisory-cta { padding: 40px 24px; }
+    .advisory-cta h2 { font-size: 28px; }
+    .focus-grid, .writing-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 768px) {
+    .advisory-hero h1 { font-size: 32px; }
+    .advisory-hero { padding: 100px 0 48px; }
+    .advisory-focus h2, .advisory-background h2, .advisory-writing h2 { font-size: 24px; }
+    .advisory-cta h2 { font-size: 24px; }
+    .writing-card { padding: 20px; }
+}
+</style>
+
+<!-- Hero -->
+<section class="advisory-hero">
+    <div class="container">
+        <h1>Insurance Advisory</h1>
+        <p class="subtitle">I advise carriers, MGAs, and investors on insurance technology strategy and emerging risks, drawing on two decades of building and running insurance operations.</p>
+    </div>
+</section>
+
+<!-- What I Do -->
+<section class="advisory-focus">
+    <div class="container">
+        <h2>Focus Areas</h2>
+        <div class="focus-grid">
+            <div class="focus-card">
+                <h3>Carrier Technology Strategy</h3>
+                <p>I help carriers identify where technology investments create underwriting advantage and where they don't. I evaluate product, distribution, and claims technology decisions grounded in carrier operations, not vendor narratives.</p>
+            </div>
+            <div class="focus-card">
+                <h3>MGA Operations</h3>
+                <p>I advise on product design, underwriting operations, and capacity strategies for MGAs and program platforms. From formation through scale, I bring the perspective of building two MGAs from scratch.</p>
+            </div>
+            <div class="focus-card">
+                <h3>AI &amp; Emerging Risks</h3>
+                <p>How AI liability, autonomous systems, and other new technology risks create insurance exposure, and what carriers, MGAs, and insureds need to understand before the market hardens around them.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Background -->
+<section class="advisory-background">
+    <div class="container">
+        <div class="advisory-inner">
+            <h2>Background</h2>
+            <p>I advise insurers on technology strategy and emerging risk, and conduct independent insurance audits. My career spans corporate strategy at Chubb, technology strategy and innovation at CNA, and serving as COO of BOXX Insurance, a cyber MGA. I also co-founded a parametric insurance startup. MBA from London Business School.</p>
+            <p><a href="{{ '/about/' | relative_url }}">Full bio and credentials &rarr;</a></p>
+        </div>
+    </div>
+</section>
+
+<!-- Recent Writing -->
+<section class="advisory-writing">
+    <div class="container">
+        <h2>Recent Writing</h2>
+        <div class="writing-grid">
+            <div class="writing-card">
+                <a href="{{ '/insights/ai-liability-measurement-gap/' | relative_url }}">Insuring AI Liability Without Measuring the Risks</a>
+                <p class="writing-desc">The first cohort of AI liability writers is live. The measurement infrastructure underneath them is not.</p>
+            </div>
+            <div class="writing-card">
+                <a href="{{ '/insights/buy-or-cede/' | relative_url }}">Buy or Cede: What Two Mega-Deals Reveal About Cyber Underwriting</a>
+                <p class="writing-desc">Zurich paid $10.9B for Beazley. Allianz handed its cyber book to Coalition. Two opposite strategies, one admission.</p>
+            </div>
+            <div class="writing-card">
+                <a href="{{ '/insights/the-next-decade-of-risk-transfer/' | relative_url }}">The Next Decade of Risk Transfer</a>
+                <p class="writing-desc">Speed, correlation, and traceability are outpacing traditional models. Where parametric and new structures fit.</p>
+            </div>
+        </div>
+        <p class="writing-more"><a href="{{ '/insights/industry-trends/' | relative_url }}">All Industry Trends &rarr;</a></p>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="advisory-cta-section">
+    <div class="container">
+        <div class="advisory-cta">
+            <h2>Want to Talk?</h2>
+            <p>Whether it's a question about insurance technology, carrier strategy, or a specific coverage problem &mdash; I'm happy to talk.</p>
+            <a href="{{ '/contact/' | relative_url }}" class="btn btn-accent">Get in Touch &rarr;</a>
+        </div>
+    </div>
+</section>

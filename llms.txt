@@ -2,7 +2,7 @@
 
 > Independent insurance audits for community banks and credit unions. Fee-based. No policies sold. No commissions earned.
 
-Breezy Risk is an independent risk advisory firm founded by Joerg Proeve. The firm audits insurance programs for community banks and credit unions. It does not sell insurance, place policies, or earn commissions.
+Breezy Risk is an independent risk advisory practice founded by Joerg Proeve. The practice audits insurance programs for community banks and credit unions. It does not sell insurance, place policies, or earn commissions.
 
 ## What Breezy Risk Does
 
@@ -65,10 +65,9 @@ These articles answer common questions about community bank insurance coverage:
 
 ## Links
 
+- [Advisory](https://breezyrisk.com/advisory/)
 - [Risk Intelligence Report](https://breezyrisk.com/risk-intelligence-report/)
-- [Community Bank Insurance Audit](https://breezyrisk.com/cyber-insurance-audit/)
-- [Examiner Readiness](https://breezyrisk.com/examiner-readiness/)
-- [About](https://breezyrisk.com/about/)
 - [Insights](https://breezyrisk.com/insights/)
+- [About](https://breezyrisk.com/about/)
 - [FAQ](https://breezyrisk.com/faq/)
 - [Contact](https://breezyrisk.com/contact/)

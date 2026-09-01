@@ -18,6 +18,11 @@ AI liability claims are still sparse, but the risk exposures are concrete: an au
 
 These are different perils, different policy forms, different loss dynamics, and that's part of what makes measurement so hard. We're in the early innings of AI insurance. Some skeptics say you can't price it at all. I wouldn't go that far. But what are we actually trying to insure, and on what basis?
 
+<figure style="margin: 32px 0;">
+<img src="/assets/images/Blog-AI-Liability-Risk-Curve.jpg" alt="Severity-frequency risk curve that breaks down into scattered data points in the tail" style="width: 100%; border-radius: 10px;" loading="lazy">
+<figcaption style="font-size: 14px; color: #6B7B8D; text-align: center; margin-top: 10px; line-height: 1.5;">Where the data runs out, the curve becomes a guess.</figcaption>
+</figure>
+
 ## Who's writing AI liability today
 
 The market is small enough that you can name the entire first cohort.

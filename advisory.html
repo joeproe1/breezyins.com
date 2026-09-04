@@ -184,6 +184,15 @@ image: /assets/images/breezy-og-default.png
 .writing-more a:hover {
     color: #00D4AA;
 }
+.writing-date {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.4);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    display: block;
+    margin-bottom: 8px;
+}
 .writing-card a {
     font-size: 17px;
     font-weight: 600;
@@ -300,16 +309,19 @@ image: /assets/images/breezy-og-default.png
         <h2>Recent Writing</h2>
         <div class="writing-grid">
             <div class="writing-card">
+                <span class="writing-date">August 2026</span>
                 <a href="{{ '/insights/ai-liability-measurement-gap/' | relative_url }}">Insuring AI Liability Without Measuring the Risks</a>
                 <p class="writing-desc">The first cohort of AI liability writers is live. The measurement infrastructure underneath them is not.</p>
             </div>
             <div class="writing-card">
-                <a href="{{ '/insights/buy-or-cede/' | relative_url }}">Buy or Cede: What Two Mega-Deals Reveal About Cyber Underwriting</a>
-                <p class="writing-desc">Zurich paid $10.9B for Beazley. Allianz handed its cyber book to Coalition. Two opposite strategies, one admission.</p>
-            </div>
-            <div class="writing-card">
+                <span class="writing-date">August 2026</span>
                 <a href="{{ '/insights/mga-assembly-line/' | relative_url }}">What Gets Lost in the MGA Assembly Line</a>
                 <p class="writing-desc">$125 billion in premium flows through MGAs and programs. Nobody owns the coordination.</p>
+            </div>
+            <div class="writing-card">
+                <span class="writing-date">June 2026</span>
+                <a href="{{ '/insights/buy-or-cede/' | relative_url }}">Buy or Cede: What Two Mega-Deals Reveal About Cyber Underwriting</a>
+                <p class="writing-desc">Zurich paid $10.9B for Beazley. Allianz handed its cyber book to Coalition. Two opposite strategies, one admission.</p>
             </div>
         </div>
         <p class="writing-more"><a href="{{ '/insights/industry-trends/' | relative_url }}">All Industry Trends &rarr;</a></p>

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Privacy Policy"
-description: "Privacy policy for Breezy Risk. How we collect, use, and protect your information."
+description: "Privacy policy for Breezy Risk Advisors. How we collect, use, and protect your information."
 permalink: /privacy/
 ---
 
@@ -26,7 +26,7 @@ permalink: /privacy/
 
 <span class="effective-date">Effective Date: July 2026</span>
 
-Breezy Risk is an independent risk advisory practice. We do not sell, place, or broker insurance. This Privacy Policy describes how we collect, use, and protect the information you share with us during the course of an insurance audit engagement.
+Breezy Risk Advisors is an independent risk advisory practice. We do not sell, place, or broker insurance. This Privacy Policy describes how we collect, use, and protect the information you share with us during the course of an insurance audit engagement.
 
 ## 1. Information We Collect
 
@@ -45,7 +45,7 @@ We use the data provided exclusively to:
 - Produce Risk Intelligence Reports, including policy interaction analysis and coverage recommendations.
 - Communicate findings and follow-up information related to your engagement.
 
-We do not use your information to solicit insurance quotes, negotiate with carriers, or place coverage on your behalf. Breezy Risk is not a broker and does not act as an intermediary between you and insurance carriers.
+We do not use your information to solicit insurance quotes, negotiate with carriers, or place coverage on your behalf. Breezy Risk Advisors is not a broker and does not act as an intermediary between you and insurance carriers.
 
 ## 3. Data Confidentiality and Sharing
 

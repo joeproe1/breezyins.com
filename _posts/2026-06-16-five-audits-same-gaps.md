@@ -21,7 +21,7 @@ faq:
 
 Over the past months, I audited the insurance policies at five community banks and credit unions. I read the policy forms, endorsements, and amendments across their cyber and D&O policies, and their fidelity bonds. Different carriers. Different program structures.
 
-Each bank engaged Breezy Risk for a Risk Intelligence Report: a line-by-line review of its cyber liability policy, fidelity bond, and directors and officers policy, read together against the bank's operations, vendor contracts, and regulatory requirements. Not a checklist. Every finding comes from reading the policy forms themselves. Institutions and carriers are anonymized.
+Each bank engaged Breezy Risk Advisors for a Risk Intelligence Report: a line-by-line review of its cyber liability policy, fidelity bond, and directors and officers policy, read together against the bank's operations, vendor contracts, and regulatory requirements. Not a checklist. Every finding comes from reading the policy forms themselves. Institutions and carriers are anonymized.
 
 The coverage gaps across the banks were strikingly similar. Five structural problems appeared in every program. That pattern changes the conversation. One bank with a gap is a broker discussion. Five banks with five different programs and the same gaps is an industry problem.
 
@@ -217,9 +217,9 @@ The fix is not more insurance. It is reading the insurance you already have.
 
 ---
 
-## About Breezy Risk
+## About Breezy Risk Advisors
 
-Joerg Proeve is Founder & Principal of Breezy Risk. Corporate strategy and M&A integration at a global carrier, technology strategy and innovation at a national carrier, operations leadership at a cyber insurance MGA. He does not place policies. He audits them.
+Joerg Proeve is Founder & Principal of Breezy Risk Advisors. Corporate strategy and M&A integration at a global carrier, technology strategy and innovation at a national carrier, operations leadership at a cyber insurance MGA. He does not place policies. He audits them.
 
 <div style="border-left: 3px solid #00D4AA; padding: 16px 20px; background: rgba(0,212,170,0.05); border-radius: 0 8px 8px 0; margin: 24px 0; font-size: 18px; font-weight: 600; color: #333;">
 Ready to find out what your insurance will pay? <a href="{{ '/contact/' | relative_url }}" style="color: #00D4AA;">Get in touch</a>.

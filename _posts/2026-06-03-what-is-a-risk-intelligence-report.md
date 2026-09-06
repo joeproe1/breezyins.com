@@ -22,7 +22,7 @@ faq:
   - question: "How much does a Risk Intelligence Report cost?"
     answer: "A Risk Intelligence Report is fixed-fee and project-based, typically costing less than a single penetration test or SOC 2 audit. No hourly billing, no retainer, no commitment beyond the engagement."
   - question: "How do I get started with a Risk Intelligence Report?"
-    answer: "Send your current policy documents. Breezy Risk reviews them against realistic claim scenarios and delivers the report with a walkthrough call. No broker of record letter and no commitment to move your insurance."
+    answer: "Send your current policy documents. Breezy Risk Advisors reviews them against realistic claim scenarios and delivers the report with a walkthrough call. No broker of record letter and no commitment to move your insurance."
 ---
 
 Your bank audits its financials every year. It audits its IT controls. It audits its vendor compliance. It probably runs a penetration test and may have a SOC 2 report.

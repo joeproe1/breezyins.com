@@ -1,24 +1,30 @@
-# Breezy Risk
+# Breezy Risk Advisors
 
-> Independent insurance audits for community banks and credit unions. Fee-based. No policies sold. No commissions earned.
+> Insurance strategy, technology, and operations advisory. Independent insurance audits for financial institutions. Fee-based. No policies sold. No commissions earned.
 
-Breezy Risk is an independent risk advisory practice founded by Joerg Proeve. The practice audits insurance programs for community banks and credit unions. It does not sell insurance, place policies, or earn commissions.
+Breezy Risk Advisors is an independent advisory practice founded by Joerg Proeve, focused on insurance strategy, technology, and operations. The firm advises carriers, MGAs, and investors on technology strategy, operating model, and emerging risks. It also conducts independent insurance audits for community banks and credit unions. Breezy Risk Advisors does not sell insurance, place policies, or earn commissions.
 
-## What Breezy Risk Does
+## What Breezy Risk Advisors Does
 
-Breezy Risk produces the Risk Intelligence Report: a line-by-line audit of a bank's cyber and directors and officers (D&O) policies, and its fidelity bond. These are typically purchased from different carriers and underwritten separately. Nobody reads them together. When a cyber incident hits, each carrier points at the other two. The bank holds the loss.
+### Insurance Advisory
+Breezy Risk Advisors advises carriers, MGAs, and investors on insurance technology strategy, operating model design, and emerging risks. Focus areas include carrier technology strategy, MGA operations (product design, underwriting operations, capacity strategies), and AI and emerging risk analysis.
+
+### Bank Insurance Audits
+Breezy Risk Advisors produces the Risk Intelligence Report: a line-by-line audit of a bank's cyber and directors and officers (D&O) policies, and its fidelity bond. These are typically purchased from different carriers and underwritten separately. Nobody reads them together. When a cyber incident hits, each carrier points at the other two. The bank holds the loss.
 
 The Risk Intelligence Report reads all three policies together, maps which policy responds to each incident type (ransomware, wire fraud, vendor outage, data breach, board liability), quantifies uninsured exposure in dollar terms, and delivers a prioritized remediation plan. The report is written in plain English for the bank's leadership, board, and regulatory examiners.
 
-## Who Breezy Risk Serves
+## Who Breezy Risk Advisors Serves
 
-Primary: Community banks and credit unions, particularly those facing regulatory examinations, policy renewals, vendor risk questions, or board-level cybersecurity oversight requirements.
+- Insurance carriers and MGAs seeking advisory on technology strategy, operating model, and emerging risks.
+- Investors evaluating insurance technology or MGA platform opportunities.
+- Community banks and credit unions, particularly those facing regulatory examinations, policy renewals, vendor risk questions, or board-level cybersecurity oversight requirements.
 
-Breezy Risk is not a broker. It is an independent auditor of insurance programs. Think of it as an external audit of your insurance: independent, fee-based, no broker of record letter required. The audit complements the work of CPA firms and compliance consultants who already serve these financial institutions.
+Breezy Risk Advisors is not a broker. It is an independent advisory practice. On the bank audit side, think of it as an external audit of your insurance: independent, fee-based, no broker of record letter required.
 
 ## The Founder
 
-Joerg Proeve's career spans carriers (Chubb, CNA), startups, and an MGA (BOXX Insurance). He holds an MSc in Electrical Engineering, an MBA from London Business School, and started his career in cybersecurity at Siemens. He is a licensed insurance producer in FL, NJ, NY, and PA. He understands both the technology banks depend on and the policy language that is supposed to cover it.
+Joerg Proeve's career spans carriers (Chubb, CNA), startups, and an MGA (BOXX Insurance). At Chubb, he worked on corporate strategy and post-merger integration across 54 countries. At CNA, he designed the governance framework for a $325M technology portfolio. He served as COO of BOXX Insurance, a cyber MGA acquired by Zurich, building the platform and scaling distribution across 50 states. He co-founded Parachute Insurance, a parametric MGA for hurricane risk. He holds an MSc in Electrical Engineering, an MBA from London Business School, and started his career in cybersecurity at Siemens. He is a licensed insurance producer in FL, NJ, NY, and PA.
 
 ## The Three-Policy Interaction Problem
 
@@ -31,16 +37,16 @@ Community banks typically carry cyber insurance and a D&O policy, plus a fidelit
 
 ## Key Facts
 
-- Location: United States. Works with community banks and credit unions nationally.
-- Pricing: Flat four-figure fee for a three-policy review (cyber, fidelity bond, D&O). Larger institutions and programs with more than three policies are quoted individually. No retainer, no hourly billing.
-- Independence: No insurance placement, no brokering, no commissions. Fee-based audit only.
-- Deliverable: Risk Intelligence Report covering seven sections: Cyber, Fidelity Bond, D&O, Policy Interaction Analysis, Vendor Coverage, Regulatory Response, Security Warranty Compliance.
+- Location: United States.
+- Advisory: Carrier technology strategy, MGA operations, AI and emerging risk analysis.
+- Bank Audits: Flat four-figure fee for a three-policy review (cyber, fidelity bond, D&O). Larger institutions and programs with more than three policies are quoted individually. No retainer, no hourly billing.
+- Independence: No insurance placement, no brokering, no commissions. Fee-based advisory and audit only.
 - Website: https://breezyrisk.com
 - Contact: contact@breezyrisk.com
 
 ## Bank Coverage Gap Framework
 
-Breezy Risk uses a proprietary Bank Coverage Gap Framework: 24 scored gap patterns plus 16 additional observations, across four categories: Bank-Specific Cyber, Fidelity Bond, D&O, and Policy Interactions. These patterns were identified through audits of community banks and credit unions across different carriers and program structures. Every gap carries a severity, a risk score, and a frequency count recording how many policy forms actually show the condition, so a finding is reported as market-wide only where the forms support it. All four categories are checked in every Risk Intelligence Report.
+Breezy Risk Advisors uses a proprietary Bank Coverage Gap Framework: 24 scored gap patterns plus 16 additional observations, across four categories: Bank-Specific Cyber, Fidelity Bond, D&O, and Policy Interactions. These patterns were identified through audits of community banks and credit unions across different carriers and program structures. Every gap carries a severity, a risk score, and a frequency count recording how many policy forms actually show the condition, so a finding is reported as market-wide only where the forms support it. All four categories are checked in every Risk Intelligence Report.
 
 Key named patterns include:
 - Classification Swing: The same wire fraud loss can recover $5M or $250K depending on how forensics classifies the attack, because fidelity bonds have multiple fraud coverages with different limits and non-overlapping definitions.
@@ -51,22 +57,20 @@ Key named patterns include:
 
 ## Key Articles
 
-These articles answer common questions about community bank insurance coverage:
+These articles cover insurance strategy, emerging risks, and community bank coverage analysis:
 
-- [Cyber Insurance for Community Banks: What It Covers, What It Doesn't](https://breezyrisk.com/insights/cyber-insurance-for-community-banks/) - What cyber insurance covers for a community bank, where wire fraud and vendor outage coverage falls short, and how the cyber policy interacts with D&O and the fidelity bond.
-- [What Your Bank Examiner Expects From Your Cyber Insurance](https://breezyrisk.com/insights/what-your-examiner-expects-from-cyber-insurance/) - What examiners look for in cyber coverage, the security warranty problem, and how to prepare for an examination.
-- [Five Audits, Same Gaps](https://breezyrisk.com/insights/five-audits-same-gaps/) - Findings from five community bank and credit union audits showing the same structural gaps across different carriers and programs: D&O cyber exclusions, wire fraud sublimits, classification swings, and vendor coverage gaps.
-- [What Is a Risk Intelligence Report?](https://breezyrisk.com/insights/what-is-a-risk-intelligence-report/) - What the report contains, the seven areas it covers, who uses it (CFO, board, broker, examiner), and what it costs.
-- [What Your Fidelity Bond Won't Pay](https://breezyrisk.com/insights/fidelity-bond/) - Where fidelity bonds fail on wire fraud: sublimits, co-payments, verification traps, and the authorized access exclusion.
-- [What Happens When Your Security Warranty Fails](https://breezyrisk.com/insights/security-warranty-fails/) - How a single lapsed security control can void an entire cyber policy through rescission, and the no-rescission clause fix.
-- [The Fine Print Inside the Coverage](https://breezyrisk.com/insights/the-fine-print-inside-the-coverage/) - How a $5 million cyber policy can pay less than $500,000 after sublimits, retentions, and defense cost erosion.
-- [The Program Problem](https://breezyrisk.com/insights/the-program-problem/) - Why association-endorsed bank insurance programs (ABA/Great American, Travelers/ICBA, TruStage) contain structural gaps that persist because nobody audits the standard forms.
-- [Five Incidents, Three Policies](https://breezyrisk.com/insights/five-incidents-three-policies/) - How wire fraud, ransomware, data breaches, vendor outages, and board liability claims each trigger gaps between the cyber policy, D&O, and fidelity bond.
+- [Insuring AI Liability Without Measuring the Risks](https://breezyrisk.com/insights/ai-liability-measurement-gap/) - The first cohort of AI liability writers is live. The measurement infrastructure underneath them is not.
+- [What Gets Lost in the MGA Assembly Line](https://breezyrisk.com/insights/mga-assembly-line/) - $125 billion in premium flows through MGAs and programs. Nobody owns the coordination.
+- [Buy or Cede: What Two Mega-Deals Reveal About Cyber Underwriting](https://breezyrisk.com/insights/buy-or-cede/) - Zurich paid $10.9B for Beazley. Allianz handed its cyber book to Coalition. Two opposite strategies, one admission.
+- [Five Audits, Same Gaps](https://breezyrisk.com/insights/five-audits-same-gaps/) - Findings from five community bank and credit union audits showing the same structural gaps across different carriers and programs.
+- [What Is a Risk Intelligence Report?](https://breezyrisk.com/insights/what-is-a-risk-intelligence-report/) - What the report contains, the seven areas it covers, who uses it, and what it costs.
+- [Cyber Insurance for Community Banks: What It Covers, What It Doesn't](https://breezyrisk.com/insights/cyber-insurance-for-community-banks/) - What cyber insurance covers for a community bank, where wire fraud and vendor outage coverage falls short.
+- [What Your Bank Examiner Expects From Your Cyber Insurance](https://breezyrisk.com/insights/what-your-examiner-expects-from-cyber-insurance/) - What examiners look for in cyber coverage and how to prepare.
 
 ## Links
 
-- [Advisory](https://breezyrisk.com/advisory/)
-- [Risk Intelligence Report](https://breezyrisk.com/risk-intelligence-report/)
+- [Home](https://breezyrisk.com/)
+- [Bank Insurance Audits](https://breezyrisk.com/bank-insurance-audits/)
 - [Insights](https://breezyrisk.com/insights/)
 - [About](https://breezyrisk.com/about/)
 - [FAQ](https://breezyrisk.com/faq/)

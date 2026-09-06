@@ -552,7 +552,7 @@
 // ============================================
 .hero {
     padding: 180px 0 48px;
-    background: linear-gradient(135deg, $bg-light 0%, $white 100%);
+    background: #0A2540;
     position: relative;
     overflow: hidden;
 
@@ -563,7 +563,7 @@
         right: -20%;
         width: 800px;
         height: 800px;
-        background: radial-gradient(circle, rgba(0, 212, 170, 0.08) 0%, transparent 70%);
+        background: radial-gradient(circle, rgba(0, 212, 170, 0.10) 0%, transparent 70%);
         pointer-events: none;
     }
 }
@@ -581,7 +581,12 @@
         font-size: 44px;
         line-height: 1.2;
         letter-spacing: -0.03em;
+        color: #fff;
     }
+}
+
+.hero-tagline {
+    color: #fff;
 }
 
 .hero-visual {
@@ -618,11 +623,11 @@
     font-family: $font-heading;
     font-size: 19px;
     font-weight: 700;
-    color: $text-primary;
+    color: #fff;
     margin: 0 0 6px;
 
     a {
-        color: $text-primary;
+        color: #fff;
         text-decoration: none;
 
         &:hover {
@@ -634,7 +639,7 @@
 .hero-byline-credentials {
     font-size: 14px;
     line-height: 1.55;
-    color: $text-secondary;
+    color: rgba(255, 255, 255, 0.6);
     margin: 0 0 12px;
 }
 
@@ -693,7 +698,7 @@
     font-weight: 400;
     line-height: 1.7;
     margin: 20px 0 0;
-    color: $text-secondary;
+    color: #fff;
 }
 
 .hero-subtext {
